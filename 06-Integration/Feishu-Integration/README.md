@@ -1,0 +1,219 @@
+# Feishu-Integration
+
+- **分类**：`06-Integration`
+- **成熟度**：`usable`
+- **一句话**：飞书协同与 AI 应用集成落地
+
+---
+
+## 适用场景
+
+- 企业 IM 入口
+- 审批流
+- 多维表格
+- 机器人推送
+- 周度 Demo 协同
+
+
+## 问题定义
+
+国内 FDE 交付强依赖飞书，集成不当导致采纳低、数据孤岛。
+
+
+## 方法论框架
+
+**集成模式**：机器人、小程序、多维表格、审批、Webhook、SSO。
+**原则**：AI 输出要嵌入已有协作流，不做孤立页面。
+
+
+## 输入 / 输出
+
+### 输入
+
+- 飞书应用权限
+- 业务流程
+- 账号体系
+
+### 输出
+
+- 集成方案
+- 权限申请清单
+- 联调记录
+- 用户指引
+
+
+## 执行步骤
+
+1. 梳理触达场景
+2. 选集成模式
+3. 申请权限
+4. 开发联调
+5. 试点
+6. 推广
+
+
+## 常见误区
+
+- ❌ 权限过大
+- ❌ 不做 SSO
+- ❌ 机器人无审计
+
+
+## 交付物清单
+
+- [ ] 集成方案
+- [ ] 权限清单
+- [ ] 用户指引
+
+
+## 与国内 FDE 生态关联
+
+国内 FDE 标配协同层；与 Operations 周度 Demo 机制结合。
+
+
+## 阶段门控
+
+| 阶段 | 进入条件 | 退出标准 |
+| --- | --- | --- |
+| PoC 准备 | 干系人识别、场景卡草稿、数据/权限前置条件确认 | 范围与验收指标书面确认 |
+| PoC/Beta 执行 | 方法论对齐、AIBP 双签场景卡 | 核心交付物初稿 + 周度 Demo ≥1 次 |
+| 生产门禁 | RBAC/评估/人审/日志检查通过 | evaluation.md 指标 ≥80% |
+| 复盘资产化 | 阶段结束或里程碑完成 | 可复用模板/评估集沉淀至 `10-Templates` 或 `_catalog` |
+
+
+## 协作接口
+
+| 角色 | 本 Skill 中的职责 | 交接物 |
+| --- | --- | --- |
+| FDE | 主导本 Skill 执行与交付 | 过程文档 + 验收材料 |
+| AIBP | 提供业务口径、Ground Truth、验收反馈 | 场景卡 / 样本 / 指标定义 |
+| 业务 Owner | 决策优先级与范围 | 签字确认的范围与验收 |
+| IT/安全 | 评审权限、部署、信创/等保边界 | 评审意见与整改清单 |
+
+
+## 关联 Skill
+
+### 推荐组合
+
+- [AIBP-Collaboration-Playbook](../../02-Discovery/AIBP-Collaboration-Playbook/README.md) — 周度 Demo 协同
+- [FDE-Adoption-Growth](../../07-Operations/FDE-Adoption-Growth/README.md) — 采纳嵌入协作流
+- [Customer-Service-Bot](../../07-Operations/Customer-Service-Bot/README.md) — 客服机器人入口
+
+### 外部工程参考
+
+- `.agents/skills/lark-bitable`
+
+
+## 场景深潜
+
+### 场景 1：企业 IM 入口
+
+**触发信号**：PoC/Beta/生产任一阶段出现「企业 IM 入口」相关诉求、阻塞或复盘需求。
+
+**关键动作**：梳理触达场景
+
+**FDE 注意**：避免 权限过大
+
+**成功标志**：交付物清单勾选，evaluation.md 达标，AIBP/业务 Owner 书面确认。
+
+### 场景 2：审批流
+
+**触发信号**：PoC/Beta/生产任一阶段出现「审批流」相关诉求、阻塞或复盘需求。
+
+**关键动作**：选集成模式
+
+**FDE 注意**：避免 不做 SSO
+
+**成功标志**：交付物清单勾选，evaluation.md 达标，AIBP/业务 Owner 书面确认。
+
+### 场景 3：多维表格
+
+**触发信号**：PoC/Beta/生产任一阶段出现「多维表格」相关诉求、阻塞或复盘需求。
+
+**关键动作**：申请权限
+
+**FDE 注意**：避免 机器人无审计
+
+**成功标志**：交付物清单勾选，evaluation.md 达标，AIBP/业务 Owner 书面确认。
+
+### 场景 4：机器人推送
+
+**触发信号**：PoC/Beta/生产任一阶段出现「机器人推送」相关诉求、阻塞或复盘需求。
+
+**关键动作**：开发联调
+
+**FDE 注意**：避免 权限过大
+
+**成功标志**：交付物清单勾选，evaluation.md 达标，AIBP/业务 Owner 书面确认。
+
+### 场景 5：周度 Demo 协同
+
+**触发信号**：PoC/Beta/生产任一阶段出现「周度 Demo 协同」相关诉求、阻塞或复盘需求。
+
+**关键动作**：试点
+
+**FDE 注意**：避免 不做 SSO
+
+**成功标志**：交付物清单勾选，evaluation.md 达标，AIBP/业务 Owner 书面确认。
+
+
+
+## 术语表
+
+| 术语 | 含义 |
+| --- | --- |
+| FDE | Forward Deployed Engineer，嵌入客户现场的技术交付角色 |
+| AIBP | AI Business Partner，业务效果与 Ground Truth 负责人 |
+| PoC | Proof of Concept，验证核心假设的最小可运行版本 |
+| Beta | 小范围试点，验证采纳与流程嵌入 |
+| 信创 | 信息技术应用创新，国产化软硬件与合规要求 |
+| EDD | Evaluation Driven Development，评估驱动开发 |
+| Ground Truth | 业务真值样本，用于评估与验收 |
+| 场景卡 | FDE 与 AIBP 对场景范围、指标、边界的共同协议 |
+| 周度 Demo | 按周演示进展、收集反馈的项目节奏控制器 |
+| 上线门禁 | 生产发布前对权限、评估、人审、日志的检查关卡 |
+
+
+## 常见问题 FAQ
+
+**Q1：执行【Feishu-Integration】时如何避免「权限过大」？**
+
+A：按 README 方法论逐步执行，在周度 Demo 展示阶段性交付物；若 PoC 材料不齐，先输出「待验证清单」再推进。
+
+**Q2：私有化/信创/等保环境下有哪些额外约束？**
+
+A：在 prompt 约束段明确部署形态；涉及数据不出域、国产化组件、审计日志时同步引用 Private-Deployment-Gateway 与 RBAC-Audit。
+
+**Q3：与 AIBP 分工边界不清怎么办？**
+
+A：回到 AIBP-Collaboration-Playbook 更新 RACI；AIBP 负责 Ground Truth 与业务验收，FDE 负责可交付技术资产。
+
+**Q4：PoC 通过后如何衔接到 Beta/生产？**
+
+A：输出物中标注下一阶段 Skill（如 RAG-Evaluation→Private-Deployment-Gateway→FDE-Adoption-Growth），并在 checklist 触发上线门禁。
+
+
+
+## 案例片段（示意）
+
+> 以下为示意性片段，实际项目请替换为客户真实信息（数据脱敏）。
+
+**背景**：周度 Demo 协同。
+
+**应用本 Skill 前**：AI 输出在独立页面，一线不用。
+
+**应用本 Skill 后**：
+1. 按【Feishu-Integration】方法论输出核心交付物
+2. 在周度 Demo 展示进展，AIBP 共审 Ground Truth/指标
+3. 对照 evaluation.md 自评，触发上线门禁（如适用）
+
+**结果**：试点 5 人周活 100%。
+
+
+## 版本记录
+
+| 版本 | 日期 | 变更 |
+| --- | --- | --- |
+| v1.1 | 2026-07-12 | FDE 场景增强：交叉引用、场景深潜、FAQ |
+| v1.0 | 2026-07-12 | 目录重组后首次充实版 |
+

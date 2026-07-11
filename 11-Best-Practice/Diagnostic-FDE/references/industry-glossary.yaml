@@ -1,0 +1,51 @@
+# 行业术语 → 产品术语映射表
+
+# 使用方式：在Step ⑤能力匹配时，将客户描述的行业术语翻译为腾讯云产品术语
+# 格式：industry_term → product_terms[]
+
+# === 通用痛点术语 ===
+数据孤岛: [MCP连接器, DataWay, API网关]
+系统不互通: [MCP连接器, DataWay, API网关]
+信息断层: [MCP连接器, 知识引擎, RAG]
+手工操作多: [WorkBuddy Skill, Automation, Agent]
+重复劳动: [WorkBuddy Skill, Automation, Agent]
+效率低: [WorkBuddy Agent, 混元API, 流程自动化]
+决策慢: [混元API, BI, 知识引擎, 数据中台]
+缺少数据支撑: [WeData, CDWPG, 数据中台]
+人力成本高: [AI Agent, Automation, 智能客服]
+响应慢: [智能客服, 混元对话, 知识引擎]
+
+# === 零售/电商 ===
+补货不准: [时序预测, TI平台, DataWay]
+库存周转: [智能预测, 供应链优化, Agent]
+选品: [混元API, 数据分析, 推荐引擎]
+门店数字化: [小程序, 微搭, MCP连接器]
+全渠道: [CDP, DataWay, Automation]
+会员运营: [混元API, 用户画像, 向量DB]
+私域流量: [企业微信, 小程序, Agent]
+
+# === 医疗/药品 ===
+电子病历: [FHIR标准, MCP连接器, 知识引擎]
+合规审查: [混元API, 知识引擎, 规则引擎]
+药品追溯: [区块链, TDSQL, DataWay]
+临床决策: [知识引擎, RAG, 混元API]
+医保对接: [MCP连接器, API网关]
+远程诊疗: [音视频, 混元多模态, 知识引擎]
+
+# === 金融 ===
+风控: [混元API, TI平台, 实时计算]
+反欺诈: [实时计算, ML模型, 规则引擎]
+智能投顾: [混元API, 知识引擎, RAG]
+合规报告: [混元API, 文档处理, Automation]
+KYC: [混元多模态, OCR, 知识引擎]
+
+# === 制造 ===
+预测性维护: [IoT, TI平台, 时序数据库]
+质量检测: [混元多模态, CV模型, TI平台]
+生产排程: [优化算法, TI平台, Agent]
+供应链协同: [MCP连接器, DataWay, Automation]
+
+# === 物流 ===
+路径优化: [优化算法, 地图API, Agent]
+仓储管理: [WMS对接, MCP连接器, Agent]
+签收确认: [混元多模态, OCR, 移动端]

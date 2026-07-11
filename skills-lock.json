@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "skills": {
+    "crm-automation": {
+      "source": "claude-office-skills/skills",
+      "sourceType": "github",
+      "skillPath": "crm-automation/SKILL.md",
+      "computedHash": "3802668496ec7e9099a90f43279700302faa78e6f767c6184be0cc05d86fde4f"
+    },
+    "crm-data-quality": {
+      "source": "hubspot/agent-cli-skills",
+      "sourceType": "github",
+      "skillPath": "crm-data-quality/SKILL.md",
+      "computedHash": "5e2106938c55bd8fb09031d73b8849abb2322edcbb629346a8da21e57a7fe1fd"
+    },
+    "cs-sop": {
+      "source": "asgard-ai-platform/skills",
+      "sourceType": "github",
+      "skillPath": "cs-sop/SKILL.md",
+      "computedHash": "672aff783bd6680836d9c6613f9a35e66cefcbdf6993428aec8b3ca9fffd3852"
+    },
+    "deployment-engineer": {
+      "source": "charon-fan/agent-playbook",
+      "sourceType": "github",
+      "skillPath": "skills/deployment-engineer/SKILL.md",
+      "computedHash": "65b0cc7f60b1593323b349a3e87567d25b8c5e66da0cc1c6675b969efc0be7ef"
+    },
+    "deployment-pipeline-design": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "skillPath": "plugins/cicd-automation/skills/deployment-pipeline-design/SKILL.md",
+      "computedHash": "57b928db2182b0fae02581e95a3b77f0354d2b1f5a48dd12eadf2f0ddbb34db8"
+    },
+    "designing-growth-loops": {
+      "source": "refoundai/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/designing-growth-loops/SKILL.md",
+      "computedHash": "6242d733e5e1755e4a6094ba9cb8f7cd57899e0314bcbaf255475fbed7d8b719"
+    },
+    "enterprise-sales": {
+      "source": "refoundai/lenny-skills",
+      "sourceType": "github",
+      "skillPath": "skills/enterprise-sales/SKILL.md",
+      "computedHash": "ce1132a63addb0187c9cbe3b99bd3dae75eadd77816842c598796952467ce16c"
+    },
+    "enterprise-user-management-ai-analytics": {
+      "source": "aradotso/data-skills",
+      "sourceType": "github",
+      "skillPath": "skills/enterprise-user-management-ai-analytics/SKILL.md",
+      "computedHash": "3e32a51f15e2285eddbcb4a590ba7525ee771f7cf1b59648ea8237a13c7235cd"
+    },
+    "langchain-rag": {
+      "source": "langchain-ai/langchain-skills",
+      "sourceType": "github",
+      "skillPath": "config/skills/langchain-rag/SKILL.md",
+      "computedHash": "53fa807b2094c4ee9136ff23a9330321c1a22959870e4a1f7bd53b753b623f94"
+    },
+    "mcp-apps-builder": {
+      "source": "mcp-use/mcp-use",
+      "sourceType": "github",
+      "skillPath": "skills/mcp-apps-builder/SKILL.md",
+      "computedHash": "5fa5b139ad3ff2b66bb37a1ece1a9178299719afcca273403990953bf709c378"
+    },
+    "mcp-builder": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "skillPath": "skills/mcp-builder/SKILL.md",
+      "computedHash": "826e46adf81e1372282e205c34e1a2ee876e72148007726e4a2512599d2fef7b"
+    },
+    "rag-architect": {
+      "source": "jeffallan/claude-skills",
+      "sourceType": "github",
+      "skillPath": "skills/rag-architect/SKILL.md",
+      "computedHash": "650ce80b998ce2c3004c5276a1eabaa2ad4131d4256832eed9a5e06cdc98454d"
+    },
+    "rag-implementation": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "skillPath": "plugins/llm-application-dev/skills/rag-implementation/SKILL.md",
+      "computedHash": "595e221310222b991452ac6d850097b466fbda46860c9ce933ddd56a0998dac9"
+    },
+    "saas-revenue-growth-metrics": {
+      "source": "deanpeters/product-manager-skills",
+      "sourceType": "github",
+      "skillPath": "skills/saas-revenue-growth-metrics/SKILL.md",
+      "computedHash": "690d42ad4c3e73ad0c7f062a74fea0ed4382516a853f5c0e3203b67ef43846e5"
+    },
+    "security-requirement-extraction": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "skillPath": "plugins/security-scanning/skills/security-requirement-extraction/SKILL.md",
+      "computedHash": "f47e7b78acead81ce5d7901660239079db5f62803e2196a19959cd4f19c6c434"
+    },
+    "security-review": {
+      "source": "getsentry/skills",
+      "sourceType": "github",
+      "skillPath": "skills/security-review/SKILL.md",
+      "computedHash": "ec9792f5fd065e020c48ab5a57707c83435c286c449ba98dfa726d7b1842c868"
+    },
+    "supply-chain-optimizer": {
+      "source": "travisjneuman/.claude",
+      "sourceType": "github",
+      "skillPath": "skills/supply-chain-optimizer/SKILL.md",
+      "computedHash": "4a37f23a9617ba06515a3d2cda878385d3c6e9d02e76a8d4229810a24c33f23f"
+    },
+    "supply-chain-risk-auditor": {
+      "source": "trailofbits/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/supply-chain-risk-auditor/skills/supply-chain-risk-auditor/SKILL.md",
+      "computedHash": "483d9ce83cd95ef1b343c879c608e87ab30ec8ede5873f8ea22707e6ebab033a"
+    },
+    "tiktok-shop-customer-service": {
+      "source": "nexscope-ai/ecommerce-skills",
+      "sourceType": "github",
+      "skillPath": "tiktok-shop-customer-service/SKILL.md",
+      "computedHash": "5f319255ee3bd94836d0ddda49111b96a8601b5a4ff3e126a936824ab2ff87bb"
+    }
+  }
+}
