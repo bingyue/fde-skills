@@ -6,7 +6,7 @@
 
 ## 核心 Skill（5 个）
 
-计入仓库 **28 个核心 Skill**，均含 README / prompt / checklist / evaluation 四件套。
+计入仓库 **29 个核心 Skill**，均含 README / prompt / checklist / evaluation 四件套。
 
 | Skill | 一句话 | 路径 |
 | --- | --- | --- |
@@ -54,3 +54,4 @@
 - Executive-Communication-Framework（金字塔汇报）
 - Expectation-Management-Script
 - AIBP-Collaboration-Playbook
+- Sidecar-AI-Transformation（体外创新 / Sidecar AI 转型分析）

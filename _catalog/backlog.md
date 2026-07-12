@@ -9,6 +9,8 @@
 - [x] 删除 Vercel-Deployment、Landing-Page-Brief、空目录 02-Business
 - [x] 28 核心 Skill FDE 场景增强（交叉引用、阶段门禁、PoC→Beta→生产）
 - [x] references 清理作者邮箱/SEO-PLAN，保留 Apache-2.0 来源说明
+- [x] 新增 `Sidecar-AI-Transformation`：体外创新 / 插件式 AI 转型场景分析，核心 Skill 增至 29 个
+- [x] 新增 `FDE-Issue-Tree-Analysis`：问题树诊断、MECE 根因拆解与验证闭环，核心 Skill 增至 30 个
 
 ## 待整理来源
 
@@ -23,6 +25,7 @@
 - [ ] 核心 Skill 成熟度从 `usable` 提升到 `validated`（需现场项目验证）
 - [ ] `04-AI-Delivery` 增补 MCP-Governance 独立 Skill（可选，当前合并在 Tool-Audit）
 - [ ] 各 Skill `assets/` 示例模板（场景卡、评估表、SOW 样例）
+- [ ] 沉淀行业问题树模板库（RAG/知识库、Agent、流程自动化、权限、数据质量、采纳增长）
 
 ## 刻意不做
 

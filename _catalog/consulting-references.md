@@ -3,7 +3,7 @@
 咨询方法论与 PPT 类外部 Skill，落地于 `11-Best-Practice/references/`。
 
 导入日期：2026-07-12  
-**不计入** 28 个核心 Skill 数量。
+**不计入** 29 个核心 Skill 数量。
 
 ## 导入结果总览
 

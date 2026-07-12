@@ -1,6 +1,6 @@
 ﻿# FDE-Skills Index
 
-> 全量索引 · 28 个核心 Skill · 11 个交付目录  
+> 全量索引 · 30 个核心 Skill · 11 个交付目录
 > 仓库：[github.com/bingyue/fde-skills](https://github.com/bingyue/fde-skills)
 
 ---
@@ -10,7 +10,7 @@
 | # | 分类 | 定位 | Skill 数 | 路径 |
 | --- | --- | --- | ---: | --- |
 | 1 | Foundation | 立项基线：干系人、SOW、自评、成长、话术 | 5 | [01-Foundation](./01-Foundation/) |
-| 2 | Discovery | 需求发现：访谈、流程、咨询拆解、预期、沟通、AIBP | 6 | [02-Discovery](./02-Discovery/) |
+| 2 | Discovery | 需求发现：访谈、流程、咨询拆解、问题树诊断、预期、沟通、AIBP、体外创新 | 8 | [02-Discovery](./02-Discovery/) |
 | 3 | Solution-Design | 方案规格：PRD、API 评审 | 2 | [03-Solution-Design](./03-Solution-Design/) |
 | 4 | AI-Delivery | AI 构建：RAG 评估、工具审计 | 2 | [04-AI-Delivery](./04-AI-Delivery/) |
 | 5 | Deployment | 私有化部署与网关 | 1 | [05-Deployment](./05-Deployment/) |
@@ -45,9 +45,11 @@
 | Business-Interview | 结构化业务访谈与需求澄清 | `02-Discovery/Business-Interview` | usable |
 | Process-Mapping | 当前流程梳理与 AI 介入点识别 | `02-Discovery/Process-Mapping` | usable |
 | Consultative-Problem-Solving | Issue Tree + DIVE 咨询式问题拆解 | `02-Discovery/Consultative-Problem-Solving` | usable |
+| FDE-Issue-Tree-Analysis | 问题树诊断：MECE 根因拆解与验证闭环 | `02-Discovery/FDE-Issue-Tree-Analysis` | usable |
 | Expectation-Management-Script | 概率性 AI 的预期管理与边界声明 | `02-Discovery/Expectation-Management-Script` | usable |
 | Executive-Communication-Framework | 5 分钟高层汇报与决策请求框架 | `02-Discovery/Executive-Communication-Framework` | usable |
 | AIBP-Collaboration-Playbook | FDE 与 AIBP 双负责人协作机制 | `02-Discovery/AIBP-Collaboration-Playbook` | usable |
+| Sidecar-AI-Transformation | 体外创新 / Sidecar AI 转型场景分析 | `02-Discovery/Sidecar-AI-Transformation` | usable |
 
 ### 03-Solution-Design · 方案规格
 
@@ -181,7 +183,9 @@
 
 | 日期 | 变更 |
 | --- | --- |
+| 2026-07-12 | 新增 FDE-Issue-Tree-Analysis，核心 Skill 增至 30 个 |
 | 2026-07-12 | 全库 FDE 场景增强：28 核心 Skill 交叉引用/阶段门禁；references 清理作者信息 |
+| 2026-07-12 | 新增 Sidecar-AI-Transformation，核心 Skill 增至 29 个 |
 | 2026-07-12 | 咨询 Reference 迁入 `11-Best-Practice/references/`（MECE、麦肯锡系列、PPT、GE 矩阵） |
 | 2026-07-12 | 迁移 FDE-Full-Lifecycle、Diagnostic-FDE、FDE-Customer-Product-Bridge 至 11-Best-Practice |
 | 2026-07-12 | 目录精简为 11 个；25 个 Skill 扩充；新增国内 FDE 主题 Skill |

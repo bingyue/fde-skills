@@ -32,9 +32,11 @@
 | Business-Interview | 02-Discovery | 01-Foundation | 结构化业务访谈 |
 | Process-Mapping | 02-Discovery | 03-Solution-Design | 流程与 AI 介入点 |
 | Consultative-Problem-Solving | 02-Discovery | 11-Best-Practice | Issue Tree + DIVE |
+| FDE-Issue-Tree-Analysis | 02-Discovery | 04-AI-Delivery | 问题树诊断、MECE 根因拆解与验证闭环 |
 | Expectation-Management-Script | 02-Discovery | 08-Security-Compliance | 概率性边界与人审 |
 | Executive-Communication-Framework | 02-Discovery | 07-Operations | 高层 ROI 与决策 |
 | AIBP-Collaboration-Playbook | 02-Discovery | 07-Operations | FDE+AIBP 双负责人 |
+| Sidecar-AI-Transformation | 02-Discovery | 03-Solution-Design | 体外创新 / Sidecar 边界与主链路决策 |
 | PRD-Generator | 03-Solution-Design | 02-Discovery | 场景卡扩展为 PRD |
 | API-Design-Review | 03-Solution-Design | 06-Integration | 系统集成契约评审 |
 | RAG-Evaluation | 04-AI-Delivery | 08-Security-Compliance | EDD 与 Golden Dataset |
@@ -55,7 +57,7 @@
 
 ## 咨询 Reference 映射（`11-Best-Practice/references/`）
 
-不计入 28 个核心 Skill。详见 [`consulting-references.md`](./consulting-references.md)。
+不计入 30 个核心 Skill。详见 [`consulting-references.md`](./consulting-references.md)。
 
 | reference | local_path | maps_to_local_skill | 用途 |
 | --- | --- | --- | --- |

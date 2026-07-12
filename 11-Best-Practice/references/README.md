@@ -1,6 +1,6 @@
 ﻿# 咨询方法论 Reference 库
 
-> **定位**：外部导入的咨询/PPT 方法论 Skill，供本库核心 Skill **按需引用**，不计入 28 个核心 Skill 数量。  
+> **定位**：外部导入的咨询/PPT 方法论 Skill，供本库核心 Skill **按需引用**，不计入 29 个核心 Skill 数量。
 > **路径**：`11-Best-Practice/references/`
 
 ---
