@@ -1,6 +1,6 @@
 ﻿# FDE-Skills Index
 
-> 全量索引 · 30 个核心 Skill · 11 个交付目录
+> 全量索引 · 31 个核心 Skill · 11 个交付目录
 > 仓库：[github.com/bingyue/fde-skills](https://github.com/bingyue/fde-skills)
 
 ---
@@ -11,7 +11,7 @@
 | --- | --- | --- | ---: | --- |
 | 1 | Foundation | 立项基线：干系人、SOW、自评、成长、话术 | 5 | [01-Foundation](./01-Foundation/) |
 | 2 | Discovery | 需求发现：访谈、流程、咨询拆解、问题树诊断、预期、沟通、AIBP、体外创新 | 8 | [02-Discovery](./02-Discovery/) |
-| 3 | Solution-Design | 方案规格：PRD、API 评审 | 2 | [03-Solution-Design](./03-Solution-Design/) |
+| 3 | Solution-Design | 方案规格：PoC 技术选型、PRD、API 评审 | 3 | [03-Solution-Design](./03-Solution-Design/) |
 | 4 | AI-Delivery | AI 构建：RAG 评估、工具审计 | 2 | [04-AI-Delivery](./04-AI-Delivery/) |
 | 5 | Deployment | 私有化部署与网关 | 1 | [05-Deployment](./05-Deployment/) |
 | 6 | Integration | 企业系统集成 | 1 | [06-Integration](./06-Integration/) |
@@ -35,7 +35,7 @@
 | Stakeholder-Mapping | 识别决策链、影响者与协同角色 | `01-Foundation/Stakeholder-Mapping` | usable |
 | SOW-Generator | 生成 PoC 范围、验收指标与变更条款 | `01-Foundation/SOW-Generator` | usable |
 | FDE-Self-Assessment | 四角色能力自评与 30/60/90 天补齐计划 | `01-Foundation/FDE-Self-Assessment` | usable |
-| FDE-Growth-Roadmap | 从入门到带队的分阶段成长路线 | `01-Foundation/FDE-Growth-Roadmap` | usable |
+| FDE-Growth-Roadmap | FDE 入行、求职、晋升、生涯设计与职场困境辅导 | `01-Foundation/FDE-Growth-Roadmap` | usable |
 | Communication-Script-Library | 面向高层/业务/IT/合规/一线的分角色话术 | `01-Foundation/Communication-Script-Library` | usable |
 
 ### 02-Discovery · 需求发现
@@ -55,6 +55,7 @@
 
 | Skill | 一句话 | 路径 | 成熟度 |
 | --- | --- | --- | --- |
+| FDE-PoC-Tech-Stack-Selector | 强制检索最新国内 AI 实践，输出明确 PoC 技术栈与构建蓝图 | `03-Solution-Design/FDE-PoC-Tech-Stack-Selector` | usable |
 | PRD-Generator | 从场景卡扩展为可执行 PRD | `03-Solution-Design/PRD-Generator` | usable |
 | API-Design-Review | 系统集成 API 契约评审 | `03-Solution-Design/API-Design-Review` | usable |
 
@@ -155,9 +156,10 @@
 
 | 角色 | 推荐 Skill |
 | --- | --- |
-| FDE 新人 | FDE-Self-Assessment → FDE-Growth-Roadmap → Business-Interview |
+| FDE 入行/求职 | FDE-Self-Assessment → FDE-Growth-Roadmap → Business-Interview |
+| FDE 晋升/生涯困境 | FDE-Growth-Roadmap → Stakeholder-Mapping → Communication-Script-Library |
 | 咨询转型 | Consultative-Problem-Solving → Executive-Communication-Framework → China-FDE-Consulting-Pattern |
-| AI 工程师 | RAG-Evaluation → Tool-Audit → Private-Deployment-Gateway |
+| AI 工程师 | FDE-PoC-Tech-Stack-Selector → RAG-Evaluation / Tool-Audit → Private-Deployment-Gateway |
 | 客户成功 | FDE-Adoption-Growth → Expectation-Management-Script → Communication-Script-Library |
 | 项目经理 | Stakeholder-Mapping → SOW-Generator → AIBP-Collaboration-Playbook |
 
@@ -183,6 +185,7 @@
 
 | 日期 | 变更 |
 | --- | --- |
+| 2026-07-12 | 新增 FDE-PoC-Tech-Stack-Selector，强制最新检索并输出明确 PoC 技术栈，核心 Skill 增至 31 个 |
 | 2026-07-12 | 新增 FDE-Issue-Tree-Analysis，核心 Skill 增至 30 个 |
 | 2026-07-12 | 全库 FDE 场景增强：28 核心 Skill 交叉引用/阶段门禁；references 清理作者信息 |
 | 2026-07-12 | 新增 Sidecar-AI-Transformation，核心 Skill 增至 29 个 |

@@ -11,6 +11,8 @@
 - [x] references 清理作者邮箱/SEO-PLAN，保留 Apache-2.0 来源说明
 - [x] 新增 `Sidecar-AI-Transformation`：体外创新 / 插件式 AI 转型场景分析，核心 Skill 增至 29 个
 - [x] 新增 `FDE-Issue-Tree-Analysis`：问题树诊断、MECE 根因拆解与验证闭环，核心 Skill 增至 30 个
+- [x] `FDE-Growth-Roadmap` 升级为入行、求职、晋升、生涯设计与职场困境复合型 Skill
+- [x] 新增 `FDE-PoC-Tech-Stack-Selector`：强制检索最新国内 AI 技术，输出明确主方案/降级方案与构建蓝图，核心 Skill 增至 31 个
 
 ## 待整理来源
 

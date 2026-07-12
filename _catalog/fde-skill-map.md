@@ -27,7 +27,7 @@
 | Stakeholder-Mapping | 01-Foundation | 02-Discovery | Kickoff 干系人分析 |
 | SOW-Generator | 01-Foundation | 10-Templates | PoC 范围与验收书面化 |
 | FDE-Self-Assessment | 01-Foundation | 11-Best-Practice | 四角色能力基线 |
-| FDE-Growth-Roadmap | 01-Foundation | 11-Best-Practice | 成长与作品集绑定 |
+| FDE-Growth-Roadmap | 01-Foundation | 11-Best-Practice | 入行、求职、晋升、生涯设计与职业困境辅导 |
 | Communication-Script-Library | 01-Foundation | 02-Discovery | 分角色沟通话术 |
 | Business-Interview | 02-Discovery | 01-Foundation | 结构化业务访谈 |
 | Process-Mapping | 02-Discovery | 03-Solution-Design | 流程与 AI 介入点 |
@@ -37,6 +37,7 @@
 | Executive-Communication-Framework | 02-Discovery | 07-Operations | 高层 ROI 与决策 |
 | AIBP-Collaboration-Playbook | 02-Discovery | 07-Operations | FDE+AIBP 双负责人 |
 | Sidecar-AI-Transformation | 02-Discovery | 03-Solution-Design | 体外创新 / Sidecar 边界与主链路决策 |
+| FDE-PoC-Tech-Stack-Selector | 03-Solution-Design | 04-AI-Delivery | 强制最新检索、PoC 技术栈决策与构建蓝图 |
 | PRD-Generator | 03-Solution-Design | 02-Discovery | 场景卡扩展为 PRD |
 | API-Design-Review | 03-Solution-Design | 06-Integration | 系统集成契约评审 |
 | RAG-Evaluation | 04-AI-Delivery | 08-Security-Compliance | EDD 与 Golden Dataset |
@@ -57,7 +58,7 @@
 
 ## 咨询 Reference 映射（`11-Best-Practice/references/`）
 
-不计入 30 个核心 Skill。详见 [`consulting-references.md`](./consulting-references.md)。
+不计入 31 个核心 Skill。详见 [`consulting-references.md`](./consulting-references.md)。
 
 | reference | local_path | maps_to_local_skill | 用途 |
 | --- | --- | --- | --- |
