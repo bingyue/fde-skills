@@ -2,6 +2,9 @@
 
 ## Unreleased — 2026-10-07
 
+- Fix clean-checkout migration validation: require all 368 versioned historical assets, while treating two explicitly identified, Git-ignored Python caches as optional local artifacts.
+- Add an attributed FDE前线-style cover and four bilingual delivery, platform and application diagrams, with editable SVG sources, rendering instructions and provenance.
+
 - Make Chinese the default README and package introduction; provide English in README_EN.md and retain README_CN.md as a compatibility entry point.
 
 - Refresh the English and Chinese READMEs with aligned project documentation, contribution paths, roadmap, author 邴越 (Bing Yue), FDE前线 and FDEChina.ai community links.

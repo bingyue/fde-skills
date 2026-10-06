@@ -1,5 +1,7 @@
 # FDE Skills
 
+![FDE Skills — enterprise AI delivery; by Bing Yue, FDE前线 and FDEChina.ai](docs/assets/visuals/00-FDE-Skills-首图.png)
+
 **Open-source skills for Forward Deployed Engineers and Enterprise AI Delivery.**
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](LICENSE)
@@ -37,6 +39,12 @@ FDE Skills is an open-source **Skill Library and Delivery Framework** for Forwar
 | Engineering | Python CLI, JSON Schemas, searchable [registry](skills.json), automated validation and CI |
 
 A Skill marked `ready` has been authored and structurally checked. It does not imply customer validation. Example data and evaluation results are synthetic unless explicitly documented otherwise.
+
+## Project architecture
+
+![One canonical Skill source and industry context, validated and exported to four coding agents](docs/assets/visuals/02-platform-architecture.png)
+
+This diagram shows the implemented toolchain. Native client behavior requires separate verification. [View all diagrams and editable sources](docs/visuals/README.md).
 
 ## Quick start
 
@@ -76,6 +84,8 @@ Need → Discovery → Diagnosis → Solution → Architecture → Build → Eva
 
 Each delivery gate requires evidence, an owner and a pass/fail decision. Missing inputs become a gap report; failed evaluations lead to remediation before progression. Read the [delivery framework](docs/concepts/delivery-framework.md) and [FDE Skill Specification](docs/skill-spec/README.md).
 
+![Eight delivery stages grouped into understanding, design, build and verification, and delivery](docs/assets/visuals/01-delivery-framework.png)
+
 | Category | Representative Skills |
 | --- | --- |
 | discovery | customer-discovery, field-observation, industry-research |
@@ -105,6 +115,8 @@ Industry packs reference core Skills and add knowledge, constraints, metrics, te
 | [Medical beauty](industries/medical-beauty/README.md) | Service information, consultation routing, appointments and compliance boundaries |
 | [Recruitment](industries/recruitment/README.md) | Role requirements, candidate evidence, interview support and human review |
 
+![Five industry workflows with reusable tasks, domain context and acceptance evidence](docs/assets/visuals/03-industry-applications.png)
+
 Every case walks through Discovery, Diagnosis, Solution, Architecture, Build, Eval, Deploy and Delivery:
 
 1. [Enterprise AI diagnosis](examples/01-enterprise-ai-diagnosis/README.md)
@@ -118,6 +130,12 @@ python scripts/run_example.py 02-enterprise-knowledge-base
 ```
 
 These reproducible offline examples include deliberately failing baselines. Their checks demonstrate contracts and delivery gates; production model quality and business impact require evaluation with real systems and authorized data.
+
+### Application reference architecture: enterprise knowledge agent
+
+![Knowledge agent reference design with identity, access, retrieval, provenance and evaluation](docs/assets/visuals/04-knowledge-agent.png)
+
+This is an application architecture that the Skills can help design. Customer projects implement and validate the runtime components; this repository supplies methods, contracts, templates and offline examples.
 
 ## Repository layout
 

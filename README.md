@@ -1,5 +1,7 @@
 # FDE Skills
 
+![FDE Skills：让 AI 像 FDE 一样交付；邴越 · FDE前线 · FDEChina.ai](docs/assets/visuals/00-FDE-Skills-首图.png)
+
 **面向 Forward Deployed Engineer 与企业 AI 落地工程师的开源技能库和交付框架。**
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](LICENSE)
@@ -37,6 +39,12 @@
 | 工程设施 | Python CLI、JSON Schema、可搜索的 [Registry](skills.json)、自动校验与 CI |
 
 Skill 的 `ready` 状态表示已编写并通过结构校验，不代表经过客户现场验证。案例数据和评测结果默认属于合成教学样本，真实验证须另行记录证据。
+
+## 项目架构
+
+![一份标准源定义服务四类 AI Coding Agent：Skill 与行业 Pack 经过校验、索引和适配导出](docs/assets/visuals/02-平台架构.png)
+
+图中展示仓库已实现的工具链。原生客户端的运行表现仍需独立验证；[查看全部图解与可编辑源文件](docs/visuals/README.md)。
 
 ## 快速开始
 
@@ -76,6 +84,8 @@ fde export opencode --skill delivery-handover --output ../customer-project
 
 每个阶段都需要证据、负责人和明确的通过或不通过结论。缺少输入时输出缺口清单，评测失败时先修复再推进。详见[交付框架](docs/concepts/delivery-framework.md)和 [FDE Skill Specification](docs/skill-spec/README.md)。
 
+![FDE 交付闭环：理解业务、定义方案、构建验证、上线交付，以证据推进八个阶段](docs/assets/visuals/01-交付闭环.png)
+
 | 分类 | 代表 Skills |
 | --- | --- |
 | discovery · 需求发现 | customer-discovery、field-observation、industry-research |
@@ -105,6 +115,8 @@ fde export opencode --skill delivery-handover --output ../customer-project
 | [医美](industries/medical-beauty/README.md) | 服务信息、咨询分流、预约与合规边界 |
 | [招聘](industries/recruitment/README.md) | 岗位要求、候选人证据、面试辅助与人工复核 |
 
+![五类行业应用地图：业务任务、行业扩展与验收证据](docs/assets/visuals/03-行业应用地图.png)
+
 每个案例都包含 Discovery、Diagnosis、Solution、Architecture、Build、Eval、Deploy、Delivery 的完整过程：
 
 1. [企业 AI 诊断](examples/01-enterprise-ai-diagnosis/README.md)
@@ -118,6 +130,12 @@ python scripts/run_example.py 02-enterprise-knowledge-base
 ```
 
 案例可以离线复现，包含故意失败的基线，用于演示契约和交付门槛。生产模型质量与业务效果仍需使用真实系统和经过授权的数据验证。
+
+### 应用参考架构：企业知识 Agent
+
+![企业知识 Agent 参考架构：用户身份与权限、任务编排、检索引用、知识治理和评测观测闭环](docs/assets/visuals/04-知识Agent参考架构.png)
+
+这张图展示可由 Skills 指导设计的应用架构。运行组件由客户项目实现与验证；本仓库提供方法、契约、模板和离线示例。
 
 ## 仓库结构
 

@@ -109,7 +109,16 @@ def test_original_working_tree_preserved(root):
         (root / "docs/migration/original-inventory.json").read_text(encoding="utf-8")
     )
     assert len(inventory) == 370
+    # These two interpreter caches are retained locally, but intentionally
+    # ignored by Git. A clean checkout must still verify all 368 source assets.
+    local_caches = {
+        "_catalog/scripts/__pycache__/expand_skills.cpython-314.pyc",
+        "_catalog/scripts/__pycache__/expand_skills_data.cpython-314.pyc",
+    }
+    assert sum(entry["path"] not in local_caches for entry in inventory) == 368
     for entry in inventory:
         path = root / entry["preserved_path"]
+        if entry["path"] in local_caches and not path.exists():
+            continue
         assert path.is_file(), entry["path"]
         assert hashlib.sha256(path.read_bytes()).hexdigest() == entry["sha256"], entry["path"]

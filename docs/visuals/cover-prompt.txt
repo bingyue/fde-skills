@@ -1,0 +1,12 @@
+Create a polished wide GitHub README hero cover for the open source project "FDE Skills". Use case: ads-marketing, a project editorial cover. Target landscape ratio 12:5, ideally 2400 x 1000 pixels.
+
+Visual direction: the recent Chinese FDE前线 cover language: warm ivory textured paper background (#FFF8F0), deep espresso near-black headline (#3B2B25), vivid orange accent (#E7652D), restrained cobalt blue and sage green accents. Large editorial typography on the left 62%, a refined handcrafted 3D paper-and-clay illustration on the right 38%. High-end, warm, credible enterprise editorial design. A small rounded orange FDE前线 brand tab at upper left. Plenty of clean negative space and crisp legible Chinese typography. Use subtle torn-paper orange and cobalt corners like a premium magazine collage, no heavy shadows.
+
+Exact text, do not add other text:
+Small upper-left tab: "FDE前线"
+Main title, very large: "FDE Skills"
+Secondary headline on its own line: "让 AI 像 FDE 一样交付"
+Subheading on one line: "理解业务 · 构建系统 · 验证价值"
+Bottom-left signature, prominently readable: "邴越 · FDE前线 · FDEChina.ai"
+
+Right-side illustration: an elegant miniature bridge or connected stepped workflow made of orange and blue knowledge/document modules, progressing from a neatly organized business folder to a system-building module and then a small growing green plant beside a completed deliverable. Thin flowing orange connection line ties the stages together. Represents business understanding through engineering to real outcomes. Professional abstract objects, no people, no robots, no AI brain, no rocket, no charts with invented data, no computer interfaces, no tiny text. Ensure the illustration never overlaps the text. Keep generous 60 pixel safe margins at all edges, signature clear above bottom border. Make "邴越" accurate. No date, no McKinsey name or logo, no unrelated logos, no watermark. Opaque background.

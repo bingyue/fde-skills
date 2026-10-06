@@ -8,3 +8,5 @@ recursive-include src *.py
 prune legacy
 prune logs
 global-exclude *.py[cod] .DS_Store .env .env.*
+recursive-include docs/assets/visuals *.png *.svg
+recursive-include docs/visuals *.md *.cjs *.json *.txt

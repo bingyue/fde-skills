@@ -4,6 +4,8 @@ Date: 2026-10-06. Host: macOS arm64, Python 3.14.4. This record documents local 
 
 ## Follow-up verification — 2026-10-07
 
+- The first remote CI run exposed a migration-test portability issue: two Python interpreter caches were local and Git-ignored. The test now requires all 368 versioned assets and checks the two identified caches only when present; the original 370-entry inventory and local files remain unchanged.
+- After that correction, a clean checkout from the staged Git index, without either cache, passed all 53 tests and `fde validate`. The visual update also passed text-boundary checks for eight bilingual diagrams; rebuilt source distributions include all 18 visual assets.
 - Updated both READMEs with author 邴越 (Bing Yue), FDE前线, FDEChina.ai, project navigation and aligned contribution/community sections.
 - Adopted AGPL-3.0-only for the current original project. The 2026-10-06 MIT entry below describes the earlier migration state; current terms and retained historical grants are documented in [NOTICE](../NOTICE.md).
 - Updated all 60 Skill declarations, the creation template, package metadata, export defaults and generated registry. Distributions, initialized libraries and canonical exports include LICENSE and NOTICE.md.
@@ -16,7 +18,7 @@ Date: 2026-10-06. Host: macOS arm64, Python 3.14.4. This record documents local 
 | Requirement | Evidence |
 | --- | --- |
 | Existing repository and Git history | Same fde-skills path and bingyue/fde-skills remote; original three commits retained |
-| Preserve existing valid and uncommitted material | [370-file inventory](migration/original-inventory.json); SHA-256 preservation test |
+| Preserve existing valid and uncommitted material | [370-entry inventory](migration/original-inventory.json); SHA-256 checks for 368 versioned assets plus two local caches when present |
 | Original analysis and migration decisions | [Audit and 31 mappings](migration/README.md) |
 | Unified product/package/docs names | [Chinese README](../README.md), [English README](../README_EN.md), [pyproject](../pyproject.toml); old names limited to historical references |
 | Required root and category structure | 12 populated skills categories plus docs, industries, templates, examples, schemas, scripts, tests and adapters |

@@ -1,0 +1,19 @@
+{
+  "canvas": {
+    "width": 1600,
+    "height": 900
+  },
+  "diagrams": [
+    "01-交付闭环.png",
+    "01-delivery-framework.png",
+    "02-平台架构.png",
+    "02-platform-architecture.png",
+    "03-行业应用地图.png",
+    "03-industry-applications.png",
+    "04-知识Agent参考架构.png",
+    "04-knowledge-agent.png"
+  ],
+  "text_bounds": "passed",
+  "fonts": "PingFang SC / Noto Sans CJK SC / Microsoft YaHei / Arial",
+  "review": "See qa-report.md for visual inspection."
+}
