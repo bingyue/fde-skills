@@ -19,4 +19,4 @@ fde export opencode --industry manufacturing --output ./factory-project
 
 Without `--skill`, export selects the Pack's `extends` set. An explicitly selected Skill outside that set is rejected. Add a reference deliberately if appropriate; do not silently ignore the overlay.
 
-To add a Pack, define the business tasks first, reuse existing Skills, supply knowledge boundaries, test key negative cases, and run `fde validate`. The [five examples](../../README.md#industry-packs-and-delivery-examples) show implementation patterns. Medical beauty and recruitment Packs cover administrative assistance, review and escalation; customers must validate local professional and regulatory requirements before production.
+To add a Pack, define the business tasks first, reuse existing Skills, supply knowledge boundaries, test key negative cases, and run `fde validate`. The [five examples](../../README_EN.md#industry-packs-and-delivery-examples) show implementation patterns. Medical beauty and recruitment Packs cover administrative assistance, review and escalation; customers must validate local professional and regulatory requirements before production.

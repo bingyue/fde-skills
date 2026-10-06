@@ -2,6 +2,8 @@
 
 ## Unreleased — 2026-10-07
 
+- Make Chinese the default README and package introduction; provide English in README_EN.md and retain README_CN.md as a compatibility entry point.
+
 - Refresh the English and Chinese READMEs with aligned project documentation, contribution paths, roadmap, author 邴越 (Bing Yue), FDE前线 and FDEChina.ai community links.
 - Adopt GNU AGPL v3 only (AGPL-3.0-only) for the current original project at the author's direction. Preserve earlier grants and the original terms of historical third-party material.
 - Synchronize package metadata, 60 canonical Skills, scaffolding, generated registry and adapter exports with the license declaration.

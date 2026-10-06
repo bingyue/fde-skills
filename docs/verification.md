@@ -18,7 +18,7 @@ Date: 2026-10-06. Host: macOS arm64, Python 3.14.4. This record documents local 
 | Existing repository and Git history | Same fde-skills path and bingyue/fde-skills remote; original three commits retained |
 | Preserve existing valid and uncommitted material | [370-file inventory](migration/original-inventory.json); SHA-256 preservation test |
 | Original analysis and migration decisions | [Audit and 31 mappings](migration/README.md) |
-| Unified product/package/docs names | [English README](../README.md), [Chinese README](../README_CN.md), [pyproject](../pyproject.toml); old names limited to historical references |
+| Unified product/package/docs names | [Chinese README](../README.md), [English README](../README_EN.md), [pyproject](../pyproject.toml); old names limited to historical references |
 | Required root and category structure | 12 populated skills categories plus docs, industries, templates, examples, schemas, scripts, tests and adapters |
 | Full Skill Specification | [Specification](skill-spec/README.md), strict [Skill Schema](../schemas/skill.schema.json), duplicate YAML keys rejected |
 | 50 requested delivery tasks + 10 FDE core tasks | [Coverage manifest](migration/core-coverage.json) and independent required-name assertions in tests |

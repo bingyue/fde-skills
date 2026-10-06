@@ -1,4 +1,4 @@
-include README.md README_CN.md LICENSE NOTICE.md skills.json
+include README.md README_CN.md README_EN.md LICENSE NOTICE.md skills.json
 recursive-include skills *
 recursive-include industries *
 recursive-include schemas *.json
