@@ -1,0 +1,48 @@
+{
+  "policy": {
+    "escalate_terms": [
+      "保证交期",
+      "自动签合同"
+    ],
+    "escalation": "合同与交期承诺转授权销售核实，不能自动保证。"
+  },
+  "documents": [
+    {
+      "id": "public-current",
+      "terms": [
+        "AB-120"
+      ],
+      "content": "AB-120最小起订量MOQ为50套；价格、目的港与运费须由授权销售确认。",
+      "active": true,
+      "tenant": "tenant-a",
+      "roles": [
+        "staff",
+        "manager"
+      ]
+    },
+    {
+      "id": "public-retired",
+      "terms": [
+        "AB-120"
+      ],
+      "content": "过期版本：此信息不可用于当前业务决策。",
+      "active": false,
+      "tenant": "tenant-a",
+      "roles": [
+        "staff"
+      ]
+    },
+    {
+      "id": "restricted",
+      "terms": [
+        "VIP合同"
+      ],
+      "content": "VIP客户内部折扣属于sales-manager角色资料。",
+      "active": true,
+      "tenant": "tenant-a",
+      "roles": [
+        "specialist"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+kind: synthetic
+input:
+  context:
+    evidence: 产品PIM每天更新，客服PDF每月更新且无版本
+  constraints:
+    boundary: 持有导出文件不等于有权用于训练或索引
+expected:
+  artifact: source-register.md
+  decision: PIM为规格权威源；PDF仅补说明并标时效；先确认索引授权
+  required_fields:
+  - 来源
+  - owner
+  - 权限
+  - 格式
+  - 更新
+  - 保留期
+  - 用途
+checks:
+- 每个接入源有用途、owner和授权范围；未知项进入阻塞清单
+- 持有导出文件不等于有权用于训练或索引
+negative_case:
+  input: 来源无owner
+  expected: 不索引，保留调查项。保留证据，不宣布未经验证的通过。

@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: 用户只能查本部门文档，跨部门问答需拒绝
+  constraints:
+    boundary: 不能用模型准确率替代用户任务完成定义
+expected:
+  artifact: prd.md
+  decision: REQ-ACL-01：其他部门文档即使语义匹配也不返回正文或标题
+  required_fields:
+  - 问题
+  - 用户故事
+  - 功能非功能
+  - 状态
+  - 验收用例
+  - 追溯表
+checks:
+- 每条must需求有测试；权限和超时行为可验证
+- 不能用模型准确率替代用户任务完成定义
+negative_case:
+  input: 用户故事无owner
+  expected: 标记待确认，不代替业务签字。保留证据，不宣布未经验证的通过。

@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: CEO想做AI客服，一线担心错误，IT无数据导出流程
+  constraints:
+    boundary: 访谈认可不能等同采购意愿或采用承诺
+expected:
+  artifact: discovery-report.md
+  decision: 先确认客服高频问题与错误成本；指定数据owner；只读试点验证一线节省时间
+  required_fields:
+  - 问题证据
+  - 业务基线
+  - 决策链
+  - 数据条件
+  - 购买采纳
+  - 下一实验
+checks:
+- 每个核心假设有支持/反证；下一步含停止条件
+- 访谈认可不能等同采购意愿或采用承诺
+negative_case:
+  input: 没有实际使用者参与
+  expected: 暂缓需求冻结，继续发现。保留证据，不宣布未经验证的通过。

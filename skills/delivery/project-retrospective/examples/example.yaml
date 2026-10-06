@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: PoC成功后两周都在修文档权限同步
+  constraints:
+    boundary: 避免责备个体或事后把已知结果写成当时显然结论
+expected:
+  artifact: retrospective.md
+  decision: 将撤权传播测试加入通用回归；为owner同步失败加告警；不简单归咎模型
+  required_fields:
+  - 预期实际
+  - 根因
+  - 有效做法
+  - 改进
+  - 资产
+  - owner
+checks:
+- 每个行动对应证据、负责人、验收物；记录未确定原因
+- 避免责备个体或事后把已知结果写成当时显然结论
+negative_case:
+  input: 没有决策记录
+  expected: 标回忆证据，先做补充访谈。保留证据，不宣布未经验证的通过。

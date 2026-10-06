@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: 用户上月偏好英文，本次明确要求中文
+  constraints:
+    boundary: 未经授权不存敏感资料；检索记忆不能替代当前授权
+expected:
+  artifact: memory-design.md
+  decision: 会话内中文优先；长期偏好只有明确更新授权才改；保留来源与时间
+  required_fields:
+  - 短期长期
+  - 键与隔离
+  - 写入条件
+  - 有效期
+  - 纠错
+  - 删除
+checks:
+- 跨租户隔离与删除传播通过；旧记忆不覆盖新确认事实
+- 未经授权不存敏感资料；检索记忆不能替代当前授权
+negative_case:
+  input: 用户请求删除后缓存仍命中
+  expected: 停止使用并修复删除链路。保留证据，不宣布未经验证的通过。

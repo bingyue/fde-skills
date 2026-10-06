@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: 两周验证产品规格检索，100条FAQ，禁止写CRM
+  constraints:
+    boundary: PoC未通过不自动扩大范围；门槛须在跑分前确定
+expected:
+  artifact: poc-charter.md
+  decision: PoC只读；正确且有出处≥90/100为示例门槛；低于门槛归因后决定停止或补样本
+  required_fields:
+  - 假设
+  - 范围内外
+  - 时间盒
+  - 基线
+  - 成功门槛
+  - 停止条件
+checks:
+- 范围能映射到测试；成功与失败均有下一步决策
+- PoC未通过不自动扩大范围；门槛须在跑分前确定
+negative_case:
+  input: 数据晚交一周
+  expected: 重新时间盒，不压缩评测或暗改门槛。保留证据，不宣布未经验证的通过。

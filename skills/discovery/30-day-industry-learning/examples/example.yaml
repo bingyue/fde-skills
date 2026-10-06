@@ -1,0 +1,21 @@
+kind: synthetic
+input:
+  context:
+    evidence: 制造业新人每天1小时，可访谈两位维修工程师
+  constraints:
+    boundary: 不能用读书数量替代业务理解；无现场访问时明确替代证据
+expected:
+  artifact: learning-plan.md
+  decision: 第一周设备术语图；第二周维修流程；第三周手册查询基线；第四周方案评审
+  required_fields:
+  - 周目标
+  - 每日任务
+  - 产物
+  - 验证人
+  - 复盘
+checks:
+- 每周有可审阅产物；第30天能讲清任务、风险、指标和验证路径
+- 不能用读书数量替代业务理解；无现场访问时明确替代证据
+negative_case:
+  input: 约不到专家
+  expected: 使用公开案例做暂定模型并记录验证缺口。保留证据，不宣布未经验证的通过。

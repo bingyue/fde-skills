@@ -1,0 +1,90 @@
+name: ecommerce
+display_name: 电商 / Ecommerce
+version: 1.0.0
+description: 商品知识、售前售后与订单履约的AI辅助
+extends:
+- ai-security-testing
+- customer-discovery
+- delivery-handover
+- enterprise-ai-diagnosis
+- evaluation-driven-development
+- human-in-the-loop
+- knowledge-base-design
+- ontology-design
+- pain-point-analysis
+- permission-model
+- rag-architecture
+- rag-evaluation
+- source-inventory
+- tool-design
+- workflow-design
+knowledge:
+- topic: 权威知识
+  guidance: 按ecommerce业务对象登记有效版本、审核人、适用范围和更新周期；冲突资料进入复核。
+  source: 客户已批准的业务资料与数据目录；实施时填写具体来源
+- topic: 业务流程
+  guidance: 商品知识、售前售后与订单履约的AI辅助；每个流程定义触发、输入、系统后置条件与人工负责人。
+  source: 客户现场观察、流程SOP和授权访谈
+- topic: 政策边界
+  guidance: 由客户专业负责人核验适用地区、机构政策和当前要求；本Pack不构成法律或专业结论。
+  source: 客户合规/业务负责人确认的政策清单
+constraints:
+- 价格、库存、促销和售后政策均带生效时间；实时值通过授权系统查询
+- 退款、改址和取消订单需要对象权限、幂等键及适用审批
+- 跨店铺、跨租户资料严格隔离；评价和会话先脱敏
+metrics:
+- name: 规格正确率
+  definition: 正确规格回答数/可回答规格问题数
+  target: 在客户冻结集约定门槛
+- name: 越权泄露数
+  definition: 跨店或跨客户测试中返回受保护信息的次数
+  target: 必须为0
+- name: 净处理时间
+  definition: 人工基线时间减AI处理与复核时间
+  target: 试点期间分层统计
+terminology:
+- term: SKU
+  definition: 具体销售单元，不可混用SPU或相似型号
+- term: AHT
+  definition: 平均处理时长，需要包含复核时间
+- term: 一次解决率
+  definition: 无需再次联系且问题解决的会话占比
+scenarios:
+- name: product-qa
+  task: 用SKU与有效商品版本回答材质、尺寸和适用问题
+  skills:
+  - knowledge-base-design
+  - rag-architecture
+  acceptance: 规格结论能回指有效SKU资料
+- name: order-support
+  task: 查询授权客户自己的订单与物流
+  skills:
+  - tool-design
+  - permission-model
+  acceptance: 订单归属校验通过且不泄露支付信息
+- name: returns-triage
+  task: 依据实际订单与当期退换政策分流
+  skills:
+  - workflow-design
+  - human-in-the-loop
+  acceptance: 政策来源、例外和人审队列完整
+- name: review-insights
+  task: 从脱敏评价提炼问题并回链原文
+  skills:
+  - customer-discovery
+  - pain-point-analysis
+  acceptance: 区分频率、严重性和样本偏差
+- name: inventory-assist
+  task: 解释库存可售状态并提示补货
+  skills:
+  - ontology-design
+  - source-inventory
+  acceptance: 库存时间戳与仓库范围明确
+- name: service-eval
+  task: 测试过期促销、越权订单和无依据承诺
+  skills:
+  - rag-evaluation
+  - ai-security-testing
+  acceptance: 不承诺未批准退款、优惠或到货日
+cases:
+- case.md

@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: 检索助手基线80%，换chunk和模型后90%但不知哪项有效
+  constraints:
+    boundary: 不在看到结果后降低门槛；测试集不能反复充当调参集
+expected:
+  artifact: edd-plan.md
+  decision: 分别做chunk-only和model-only对照；记录延迟成本；仅发布通过硬门槛方案
+  required_fields:
+  - 任务契约
+  - 数据切分
+  - 基线
+  - 实验日志
+  - 门禁
+  - 回归
+checks:
+- 每次实验记录输入版本、变更、分层结果与决定
+- 不在看到结果后降低门槛；测试集不能反复充当调参集
+negative_case:
+  input: 失败样本来自保留集
+  expected: 登记泄漏并替换下一版本保留集。保留证据，不宣布未经验证的通过。

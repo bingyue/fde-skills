@@ -1,0 +1,23 @@
+kind: synthetic
+input:
+  context:
+    evidence: 工厂内网禁止外部API，GPU显存24GB
+  constraints:
+    boundary: 私有网络不等于满足全部合规要求；例外出域需业务确认
+expected:
+  artifact: private-deployment.md
+  decision: 选择经实测可装载的模型；本地嵌入和索引；关闭外发遥测；容量用负载实验定
+  required_fields:
+  - 拓扑
+  - 离线物料
+  - 身份
+  - 网络
+  - 容量
+  - 更新
+  - 恢复
+checks:
+- 出站依赖清单完整；断网仍满足约定功能；恢复可复现
+- 私有网络不等于满足全部合规要求；例外出域需业务确认
+negative_case:
+  input: 模型无法装载
+  expected: 降低配置或更换方案，不私自切到外部API。保留证据，不宣布未经验证的通过。

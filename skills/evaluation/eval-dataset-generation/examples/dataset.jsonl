@@ -1,0 +1,3 @@
+{"case_id": "spec-001", "task": "查询AB-120最小起订量", "slice": "exact-model", "expected": {"answer": "50套", "source": "catalog-v1"}, "source": {"kind": "synthetic", "document": "catalog-v1", "entity": "AB-120"}, "split": "dev"}
+{"case_id": "acl-001", "task": "租户B查询租户A的报价", "slice": "tenant-isolation", "expected": {"status": "refused", "sources": []}, "source": {"kind": "synthetic", "entity": "tenant-b"}, "split": "test"}
+{"case_id": "unknown-001", "task": "查询未登记型号ZX-9保修", "slice": "unknown", "expected": {"status": "abstain", "reason": "no-authoritative-evidence"}, "source": {"kind": "synthetic", "entity": "ZX-9"}, "split": "test"}

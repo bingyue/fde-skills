@@ -1,0 +1,21 @@
+kind: synthetic
+input:
+  context:
+    evidence: 客服说AI乱答；失败样本全是已下架商品
+  constraints:
+    boundary: 相关性不能当成根因；缺数字时保留区间假设
+expected:
+  artifact: pain-register.md
+  decision: 假设知识过期；对比更新时间与错误率，先校验更新链路
+  required_fields:
+  - 症状
+  - 根因假设
+  - 证据
+  - 影响
+  - 验证实验
+checks:
+- 每个高影响痛点有验证方法和反证条件
+- 相关性不能当成根因；缺数字时保留区间假设
+negative_case:
+  input: 看不到失败样本
+  expected: 不归因模型能力，先请求脱敏样本。保留证据，不宣布未经验证的通过。

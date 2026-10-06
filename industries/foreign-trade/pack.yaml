@@ -1,0 +1,89 @@
+name: foreign-trade
+display_name: 外贸 / Foreign trade
+version: 1.0.0
+description: 从询盘识别、产品知识到客户跟进的受控销售辅助
+extends:
+- agent-design
+- ai-scenario-prioritization
+- customer-discovery
+- delivery-handover
+- enterprise-ai-diagnosis
+- evaluation-driven-development
+- human-in-the-loop
+- knowledge-base-design
+- ontology-design
+- prompt-design
+- rag-architecture
+- rag-evaluation
+- tool-design
+- workflow-design
+knowledge:
+- topic: 权威知识
+  guidance: 按foreign-trade业务对象登记有效版本、审核人、适用范围和更新周期；冲突资料进入复核。
+  source: 客户已批准的业务资料与数据目录；实施时填写具体来源
+- topic: 业务流程
+  guidance: 从询盘识别、产品知识到客户跟进的受控销售辅助；每个流程定义触发、输入、系统后置条件与人工负责人。
+  source: 客户现场观察、流程SOP和授权访谈
+- topic: 政策边界
+  guidance: 由客户专业负责人核验适用地区、机构政策和当前要求；本Pack不构成法律或专业结论。
+  source: 客户合规/业务负责人确认的政策清单
+constraints:
+- 型号、单位、币种、贸易条款、生效日和报价有效期逐项保留；不得补猜
+- 邮件默认草稿；合同、报价和交期承诺由授权销售审核
+- 客户联系方式、沟通偏好和退订状态遵循客户批准政策；数据出域需确认
+metrics:
+- name: 询盘字段准确率
+  definition: 正确提取字段数/经审核字段数
+  target: 按语言和型号切片约定
+- name: 首次响应时间
+  definition: 收到询盘至人工确认首次有效回复的时长
+  target: 比较同时间窗口基线
+- name: 未授权发送数
+  definition: 未经批准调用外发工具的次数
+  target: 必须为0
+terminology:
+- term: RFQ
+  definition: Request for Quotation，询价请求；尚不代表订单
+- term: MOQ
+  definition: 最小起订量，按具体SKU与报价版本核实
+- term: Incoterms
+  definition: 合同贸易术语；须核实双方选用版本与条款，不自动推断
+scenarios:
+- name: inquiry-analysis
+  task: 抽取RFQ型号、数量、目的地与缺失条件
+  skills:
+  - prompt-design
+  - customer-discovery
+  acceptance: 缺失型号或币种标unknown，保留原文
+- name: lead-qualification
+  task: 按客户授权评分规则分层销售线索
+  skills:
+  - ontology-design
+  - ai-scenario-prioritization
+  acceptance: 来源与评分理由可审计，不编造购买意愿
+- name: product-knowledge
+  task: 用版本化产品目录回答参数与认证
+  skills:
+  - knowledge-base-design
+  - rag-architecture
+  acceptance: 认证只引用有效原件，型号精确匹配
+- name: multilingual-service
+  task: 在多语言中保持规格、币种、单位和交期一致
+  skills:
+  - prompt-design
+  - rag-evaluation
+  acceptance: 人工检查关键商务术语与数字
+- name: email-drafting
+  task: 生成带来源的报价澄清或跟进邮件草稿
+  skills:
+  - agent-design
+  - human-in-the-loop
+  acceptance: 发送由授权人员确认；不发明报价或承诺
+- name: customer-follow-up
+  task: 按CRM状态建议下一步并记录已批准动作
+  skills:
+  - workflow-design
+  - tool-design
+  acceptance: 时区、同意状态与重复发送控制有效
+cases:
+- case.md

@@ -1,0 +1,10 @@
+include README.md README_CN.md LICENSE NOTICE.md skills.json
+recursive-include skills *
+recursive-include industries *
+recursive-include schemas *.json
+recursive-include templates *
+recursive-include adapters *.md *.json
+recursive-include src *.py
+prune legacy
+prune logs
+global-exclude *.py[cod] .DS_Store .env .env.*

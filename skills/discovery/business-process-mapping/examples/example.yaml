@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: 报价实际处理20分钟，审批等待2天，退回率30%
+  constraints:
+    boundary: 流程优化建议与现状事实分别记录
+expected:
+  artifact: process-map.md
+  decision: 优先梳理审批规则和资料完整性；不将2天全部记为可被AI节省的工时
+  required_fields:
+  - 触发
+  - 步骤
+  - 输入输出
+  - 系统
+  - 等待时间
+  - 异常路径
+checks:
+- 每个节点有角色、输入、输出；异常路径闭环；时长注明样本窗口
+- 流程优化建议与现状事实分别记录
+negative_case:
+  input: 缺少异常案例
+  expected: 保留未验证分支并补采样。保留证据，不宣布未经验证的通过。

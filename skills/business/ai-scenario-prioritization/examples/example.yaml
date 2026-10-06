@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: 知识检索收益3成本1；自动退款收益5但权限未批准
+  constraints:
+    boundary: 不能用高收益抵消不可接受的安全边界
+expected:
+  artifact: prioritized-backlog.md
+  decision: 知识检索先做；退款进入权限验证队列，不参与当前实施排序
+  required_fields:
+  - 候选
+  - 硬门槛
+  - 评分依据
+  - 排序
+  - 敏感性
+  - 下一动作
+checks:
+- 排序可复算；前两名差距不稳时安排证据实验
+- 不能用高收益抵消不可接受的安全边界
+negative_case:
+  input: 权重变化使冠军翻转
+  expected: 报告不确定排序并先补证据。保留证据，不宣布未经验证的通过。

@@ -1,0 +1,89 @@
+name: medical-beauty
+display_name: 医美 / Medical beauty
+version: 1.0.0
+description: 项目咨询、客服、预约、到店和知识运营的非临床辅助
+extends:
+- agent-design
+- ai-security-testing
+- customer-discovery
+- delivery-handover
+- enterprise-ai-diagnosis
+- evaluation-driven-development
+- guardrail-design
+- human-in-the-loop
+- knowledge-base-design
+- prompt-design
+- rag-architecture
+- source-inventory
+- tool-design
+- workflow-design
+knowledge:
+- topic: 权威知识
+  guidance: 按medical-beauty业务对象登记有效版本、审核人、适用范围和更新周期；冲突资料进入复核。
+  source: 客户已批准的业务资料与数据目录；实施时填写具体来源
+- topic: 业务流程
+  guidance: 项目咨询、客服、预约、到店和知识运营的非临床辅助；每个流程定义触发、输入、系统后置条件与人工负责人。
+  source: 客户现场观察、流程SOP和授权访谈
+- topic: 政策边界
+  guidance: 由客户专业负责人核验适用地区、机构政策和当前要求；本Pack不构成法律或专业结论。
+  source: 客户合规/业务负责人确认的政策清单
+constraints:
+- 仅处理机构批准的服务信息与行政流程；诊断、治疗方案、禁忌和疗效判断转合格专业人员
+- 不保证效果、不制造容貌焦虑、不诱导隐瞒病史；疑似紧急情况提示及时联系当地急救或医疗服务
+- 健康信息最小化采集并按机构授权保管；营销/预约同意与医疗知情同意分别处理
+metrics:
+- name: 临床问题正确转接率
+  definition: 正确转专业人员的临床问题数/临床问题总数
+  target: 高风险样本不得漏转
+- name: 未经依据疗效承诺数
+  definition: 生成保证效果或确定性治疗承诺的次数
+  target: 必须为0
+- name: 预约完整率
+  definition: 信息确认且未重复的有效预约数/预约请求数
+  target: 含取消和变更场景
+terminology:
+- term: 有效咨询
+  definition: 用户同意沟通且问题在服务范围内的咨询
+- term: 预约到店率
+  definition: 实际到店数/有效预约数，排除与取消口径需预先定义
+- term: 专业转接
+  definition: 将临床或不良反应问题交机构指定专业人员处理
+scenarios:
+- name: service-consultation
+  task: 提供已审核的服务流程与准备事项
+  skills:
+  - knowledge-base-design
+  - guardrail-design
+  acceptance: 不诊断、不个性化推荐治疗、不保证效果
+- name: customer-service
+  task: 识别问题并检索批准的项目介绍
+  skills:
+  - rag-architecture
+  - prompt-design
+  acceptance: 资料有审核人和有效期；未知内容转人工
+- name: appointment
+  task: 按授权时段创建或修改预约请求
+  skills:
+  - workflow-design
+  - tool-design
+  acceptance: 确认项目、门店、时间与联系授权，幂等防重复
+- name: arrival-follow-up
+  task: 在客户同意范围内生成到店提醒草稿
+  skills:
+  - agent-design
+  - human-in-the-loop
+  acceptance: 禁止越过同意范围发送或营销施压
+- name: knowledge-governance
+  task: 维护项目知识、禁用表达和审核版本
+  skills:
+  - knowledge-base-design
+  - source-inventory
+  acceptance: 临床及宣传内容由机构指定合格人员审核
+- name: compliance-routing
+  task: 将症状、不良反应和禁忌问题升级给专业人员
+  skills:
+  - guardrail-design
+  - ai-security-testing
+  acceptance: 风险咨询不进入自动转化流程
+cases:
+- case.md

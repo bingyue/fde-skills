@@ -1,0 +1,23 @@
+kind: synthetic
+input:
+  context:
+    evidence: 客户运维拿到Runbook但未独立部署
+  constraints:
+    boundary: 密钥不写入交付文档；演示给客户看不等于客户会操作
+expected:
+  artifact: handover.md
+  decision: 要求在测试环境按文档部署并恢复备份；记录失败步骤，修订后再签收
+  required_fields:
+  - 资产清单
+  - 责任转移
+  - 演练
+  - 访问
+  - 培训
+  - 支持
+  - 未决项
+checks:
+- 接收人完成teach-back与恢复演练；临时访问清理；每个未决项有owner
+- 密钥不写入交付文档；演示给客户看不等于客户会操作
+negative_case:
+  input: 接收团队无人负责
+  expected: 延期移交并明确过渡支持责任。保留证据，不宣布未经验证的通过。

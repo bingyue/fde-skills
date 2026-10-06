@@ -1,0 +1,23 @@
+kind: synthetic
+input:
+  context:
+    evidence: 发现3天，开发10天，评测5天，部署2天，日费2000元
+  constraints:
+    boundary: 报价是商业建议需授权人员确认；币种税费与有效期写清
+expected:
+  artifact: proposal-pricing.md
+  decision: 示例基础服务4万元，模型与硬件另列，维护单独报价；需求变更走书面评估
+  required_fields:
+  - 工作包
+  - 假设
+  - 价格区间
+  - 里程碑
+  - 排除项
+  - 变更
+  - 维护
+checks:
+- 每项费用能追溯范围和工期；持续运维不隐藏在一次开发费内
+- 报价是商业建议需授权人员确认；币种税费与有效期写清
+negative_case:
+  input: 客户要求无限修改
+  expected: 定义变更预算和验收边界再出固定价。保留证据，不宣布未经验证的通过。

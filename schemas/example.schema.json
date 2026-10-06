@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FDE worked example",
+  "type": "object",
+  "properties": {
+    "kind": {
+      "enum": [
+        "synthetic",
+        "anonymized",
+        "public"
+      ]
+    },
+    "input": {
+      "type": "object",
+      "minProperties": 1
+    },
+    "expected": {
+      "type": "object",
+      "properties": {
+        "artifact": {
+          "type": "string",
+          "minLength": 1
+        },
+        "decision": {
+          "type": "string",
+          "minLength": 1
+        },
+        "required_fields": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "artifact",
+        "decision",
+        "required_fields"
+      ],
+      "additionalProperties": false
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "negative_case": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "type": "string",
+          "minLength": 1
+        },
+        "expected": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "input",
+        "expected"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "kind",
+    "input",
+    "expected",
+    "checks",
+    "negative_case"
+  ],
+  "additionalProperties": false
+}

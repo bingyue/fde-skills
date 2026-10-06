@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: 数据不能出内网，需支持中文PDF和每日更新
+  constraints:
+    boundary: 选型需标注版本和核验日期；不能以流行度替代约束匹配
+expected:
+  artifact: technical-design.md
+  decision: 本地解析+权限索引+内网推理；OCR质量先测试；扫描件失败进入人工队列
+  required_fields:
+  - 模块
+  - 数据流
+  - 接口
+  - 技术取舍
+  - 失败模式
+  - 实施计划
+checks:
+- 每个must需求有负责组件；关键风险有验证结果或明确阻塞
+- 选型需标注版本和核验日期；不能以流行度替代约束匹配
+negative_case:
+  input: 硬件容量未知
+  expected: 先给容量实验，不承诺延迟SLA。保留证据，不宣布未经验证的通过。

@@ -1,0 +1,23 @@
+kind: synthetic
+input:
+  context:
+    evidence: 操作员说只用MES，现场发现先在Excel合并排班
+  constraints:
+    boundary: 不秘密记录个人敏感信息；观察事实与推断分开
+expected:
+  artifact: field-notes.md
+  decision: 记录Excel→人工核对→MES导入三步；询问绕行原因，验证接口缺口
+  required_fields:
+  - 时间
+  - 动作
+  - 工具
+  - 等待
+  - 绕行
+  - 证据
+  - 解释
+checks:
+- 有完整任务轨迹与异常样本；时间和来源可追溯
+- 不秘密记录个人敏感信息；观察事实与推断分开
+negative_case:
+  input: 观察改变操作者行为
+  expected: 注明观察效应并复核日志。保留证据，不宣布未经验证的通过。

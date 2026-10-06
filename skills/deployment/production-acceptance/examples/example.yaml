@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: 灰度10名客服，约定p95<3秒和无跨组访问
+  constraints:
+    boundary: 测试环境成绩不能直接代替生产证据；破坏性实验需受控
+expected:
+  artifact: production-acceptance.md
+  decision: 按真实灰度窗口报告p95和分母；记录跨组拒绝与恢复演练
+  required_fields:
+  - 环境
+  - 负载
+  - 安全
+  - 恢复
+  - 缺陷
+  - 结论
+checks:
+- 版本和环境可追溯；关键用户旅程与恢复目标达标
+- 测试环境成绩不能直接代替生产证据；破坏性实验需受控
+negative_case:
+  input: 观察样本不足
+  expected: 标有条件验收和观察期，不声称全面达标。保留证据，不宣布未经验证的通过。

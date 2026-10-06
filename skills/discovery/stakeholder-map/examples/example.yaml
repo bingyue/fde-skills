@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: 业务主管出预算，IT持有数据，客服主管负责使用
+  constraints:
+    boundary: 不推断个人性格；用职责和可观察行为描述阻力
+expected:
+  artifact: stakeholder-map.md
+  decision: 预算A=业务主管；数据A=IT；UAT A=客服主管；范围冲突升级业务主管
+  required_fields:
+  - 角色
+  - 影响力
+  - 利益诉求
+  - 决策权
+  - RACI
+  - 升级路径
+checks:
+- 预算、数据、验收、运营均有唯一责任角色；没有双重最终批准人
+- 不推断个人性格；用职责和可观察行为描述阻力
+negative_case:
+  input: 数据所有者未知
+  expected: 不默认业务主管有权授权，登记阻塞项。保留证据，不宣布未经验证的通过。

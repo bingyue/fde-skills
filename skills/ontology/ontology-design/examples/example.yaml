@@ -1,0 +1,23 @@
+kind: synthetic
+input:
+  context:
+    evidence: CRM客户是公司，ERP客户是结算账户，一公司多账户
+  constraints:
+    boundary: 不要把所有表直接变成实体；区分概念、数据实例与操作权限
+expected:
+  artifact: ontology.md
+  decision: Company与BillingAccount分开，通过belongs_to关联；信用冻结在账户层生效
+  required_fields:
+  - 实体
+  - 属性
+  - 关系
+  - 标识
+  - 状态
+  - 动作
+  - 来源映射
+checks:
+- 模型能解释两个系统冲突样本；动作有前置与后置条件
+- 不要把所有表直接变成实体；区分概念、数据实例与操作权限
+negative_case:
+  input: 标识无法可靠关联
+  expected: 保留未解析关系，不自动合并同名客户。保留证据，不宣布未经验证的通过。

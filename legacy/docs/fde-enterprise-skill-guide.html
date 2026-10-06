@@ -1,0 +1,1196 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="基于 fde-skills 代码仓库的 FDE 企业落地典型 Skill 分类与使用说明">
+  <title>FDE 企业落地典型 Skill 分类与使用说明</title>
+  <style>
+    :root {
+      --ink: #14252b;
+      --muted: #5f6f70;
+      --paper: #f4f0e6;
+      --paper-strong: #fffdf7;
+      --navy: #102b35;
+      --teal: #0b6b69;
+      --orange: #ee6b3a;
+      --yellow: #e9bd58;
+      --line: #cfc8b8;
+      --shadow: 0 18px 50px rgba(20, 37, 43, .12);
+      --serif: "Source Han Serif SC", "Noto Serif CJK SC", "Songti SC", "STSong", serif;
+      --sans: "Source Han Sans SC", "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% 5%, rgba(233, 189, 88, .18), transparent 28rem),
+        linear-gradient(90deg, rgba(16, 43, 53, .035) 1px, transparent 1px),
+        var(--paper);
+      background-size: auto, 34px 34px, auto;
+      font-family: var(--sans);
+      line-height: 1.72;
+    }
+
+    a { color: var(--teal); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover { color: var(--orange); }
+    code, pre { font-family: "SFMono-Regular", "Cascadia Code", "Noto Sans Mono CJK SC", monospace; }
+    button, input { font: inherit; }
+
+    .shell {
+      display: grid;
+      grid-template-columns: 264px minmax(0, 1fr);
+      min-height: 100vh;
+    }
+
+    .rail {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      padding: 28px 22px;
+      color: #e8eee9;
+      background:
+        linear-gradient(160deg, rgba(255,255,255,.04), transparent 42%),
+        var(--navy);
+      overflow: auto;
+      z-index: 10;
+    }
+
+    .rail-mark {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+
+    .rail-mark b {
+      display: grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      color: var(--navy);
+      background: var(--yellow);
+      border-radius: 50% 50% 50% 10%;
+      font-family: var(--serif);
+      font-size: 18px;
+    }
+
+    .rail-mark span {
+      font-family: var(--serif);
+      font-size: 17px;
+      line-height: 1.28;
+    }
+
+    .rail small {
+      display: block;
+      color: #a9bbb8;
+      font-size: 11px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .toc {
+      display: grid;
+      gap: 4px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .toc a {
+      display: block;
+      padding: 8px 10px;
+      color: #cddbd7;
+      border-left: 2px solid transparent;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    .toc a:hover,
+    .toc a.active {
+      color: white;
+      border-left-color: var(--orange);
+      background: rgba(255,255,255,.06);
+    }
+
+    .rail-footer {
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,.12);
+      font-size: 12px;
+      color: #9fb1ae;
+    }
+
+    .rail-footer a { color: #f3d48c; }
+
+    main { min-width: 0; }
+
+    .hero {
+      position: relative;
+      min-height: 660px;
+      padding: 72px clamp(28px, 7vw, 112px) 62px;
+      color: #f7f3e8;
+      background:
+        linear-gradient(125deg, rgba(16,43,53,.97), rgba(11,107,105,.90)),
+        var(--navy);
+      overflow: hidden;
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      border: 1px solid rgba(255,255,255,.16);
+      transform: rotate(18deg);
+    }
+
+    .hero::before {
+      width: 420px;
+      height: 420px;
+      right: -100px;
+      top: -110px;
+      border-radius: 48% 52% 30% 70%;
+    }
+
+    .hero::after {
+      width: 280px;
+      height: 280px;
+      right: 140px;
+      bottom: -180px;
+      border-color: rgba(233,189,88,.4);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 34px;
+      color: #f5d997;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 44px;
+      height: 3px;
+      background: var(--orange);
+    }
+
+    h1, h2, h3 {
+      font-family: var(--serif);
+      font-weight: 700;
+      letter-spacing: -.02em;
+    }
+
+    h1 {
+      position: relative;
+      max-width: 900px;
+      margin: 0;
+      font-size: clamp(44px, 6.6vw, 88px);
+      line-height: 1.04;
+      z-index: 1;
+    }
+
+    .hero-lead {
+      position: relative;
+      max-width: 740px;
+      margin: 30px 0 0;
+      color: #d8e5e1;
+      font-size: clamp(17px, 2vw, 23px);
+      z-index: 1;
+    }
+
+    .hero-meta {
+      position: relative;
+      display: flex;
+      gap: 22px;
+      flex-wrap: wrap;
+      margin-top: 26px;
+      color: #a9c1bc;
+      font-size: 13px;
+      z-index: 1;
+    }
+
+    .stats {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(110px, 1fr));
+      gap: 1px;
+      max-width: 820px;
+      margin-top: 54px;
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.18);
+      z-index: 1;
+    }
+
+    .stat {
+      min-height: 118px;
+      padding: 20px;
+      background: rgba(13, 48, 57, .78);
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--yellow);
+      font-family: var(--serif);
+      font-size: 38px;
+      line-height: 1;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 12px;
+      color: #ccdad7;
+      font-size: 12px;
+    }
+
+    .content {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 76px clamp(24px, 6vw, 88px) 110px;
+    }
+
+    .section {
+      padding: 50px 0;
+      scroll-margin-top: 24px;
+    }
+
+    .section + .section { border-top: 1px solid var(--line); }
+
+    .section-heading {
+      display: grid;
+      grid-template-columns: 110px minmax(0, 1fr);
+      gap: 26px;
+      align-items: start;
+      margin-bottom: 34px;
+    }
+
+    .section-no {
+      color: var(--orange);
+      font-family: var(--serif);
+      font-size: 42px;
+      line-height: 1;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(30px, 4vw, 50px);
+      line-height: 1.15;
+    }
+
+    h3 {
+      margin: 0 0 12px;
+      font-size: 24px;
+      line-height: 1.3;
+    }
+
+    .section-intro {
+      max-width: 810px;
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .lead-panel {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      background: var(--paper-strong);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .lead-panel > div { padding: clamp(28px, 5vw, 58px); }
+    .lead-panel .dark {
+      color: white;
+      background: var(--navy);
+    }
+
+    .principles {
+      margin: 22px 0 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: p;
+    }
+
+    .principles li {
+      position: relative;
+      padding: 13px 0 13px 42px;
+      border-bottom: 1px solid rgba(20,37,43,.1);
+      counter-increment: p;
+    }
+
+    .principles li::before {
+      content: counter(p, decimal-leading-zero);
+      position: absolute;
+      left: 0;
+      color: var(--orange);
+      font-family: var(--serif);
+      font-weight: 700;
+    }
+
+    .lifecycle {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+      margin-top: 32px;
+      border: 1px solid var(--line);
+      background: var(--line);
+    }
+
+    .phase {
+      min-height: 230px;
+      padding: 24px 20px;
+      background: var(--paper-strong);
+    }
+
+    .phase:nth-child(even) { background: #ece8dc; }
+    .phase small { color: var(--orange); font-weight: 800; letter-spacing: .1em; }
+    .phase h3 { margin-top: 14px; font-size: 21px; }
+    .phase p { color: var(--muted); font-size: 13px; }
+    .phase b { display: block; margin-top: 16px; color: var(--teal); font-size: 12px; }
+
+    .gates {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 28px;
+      padding-bottom: 8px;
+    }
+
+    .gate {
+      min-height: 180px;
+      padding: 18px;
+      color: white;
+      background: var(--navy);
+      border-top: 5px solid var(--yellow);
+    }
+
+    .gate:nth-child(3n+2) { border-top-color: var(--orange); }
+    .gate:nth-child(3n) { border-top-color: #55aaa4; }
+    .gate strong { font-family: var(--serif); font-size: 18px; }
+    .gate p { margin: 12px 0 0; color: #c8d7d3; font-size: 12px; }
+
+    .toolbar {
+      position: sticky;
+      top: 12px;
+      display: grid;
+      grid-template-columns: minmax(240px, 1fr) auto;
+      gap: 14px;
+      align-items: center;
+      margin: 0 0 30px;
+      padding: 14px;
+      background: rgba(255, 253, 247, .92);
+      border: 1px solid var(--line);
+      box-shadow: 0 12px 34px rgba(20,37,43,.09);
+      backdrop-filter: blur(12px);
+      z-index: 5;
+    }
+
+    .search {
+      width: 100%;
+      padding: 11px 14px;
+      color: var(--ink);
+      background: transparent;
+      border: 0;
+      border-bottom: 2px solid var(--navy);
+      outline: 0;
+    }
+
+    .search:focus { border-color: var(--orange); }
+
+    .filters { display: flex; gap: 6px; flex-wrap: wrap; }
+    .filter {
+      padding: 7px 10px;
+      color: var(--navy);
+      background: transparent;
+      border: 1px solid var(--line);
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+    .filter:hover,
+    .filter.active {
+      color: white;
+      background: var(--navy);
+      border-color: var(--navy);
+    }
+
+    .category-list { display: grid; gap: 28px; }
+
+    .category {
+      position: relative;
+      display: grid;
+      grid-template-columns: 230px minmax(0, 1fr);
+      background: var(--paper-strong);
+      border: 1px solid var(--line);
+      box-shadow: 0 12px 34px rgba(20,37,43,.06);
+      overflow: hidden;
+    }
+
+    .category-head {
+      padding: 28px 24px;
+      color: white;
+      background: var(--navy);
+    }
+
+    .category-head .code {
+      color: var(--yellow);
+      font-family: var(--serif);
+      font-size: 38px;
+      line-height: 1;
+    }
+
+    .category-head h3 { margin-top: 18px; font-size: 22px; }
+    .category-head p { color: #c9d9d5; font-size: 13px; }
+    .category-head .phase-tag {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 4px 8px;
+      color: var(--navy);
+      background: var(--yellow);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .category-body {
+      min-width: 0;
+      padding: 26px;
+    }
+
+    .io-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .io {
+      padding: 12px 14px;
+      background: #efebe0;
+      border-left: 3px solid var(--teal);
+      font-size: 12px;
+    }
+
+    .io b { display: block; margin-bottom: 4px; color: var(--teal); }
+
+    .skill-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    .skill-table th {
+      padding: 9px 10px;
+      color: var(--muted);
+      border-bottom: 2px solid var(--navy);
+      text-align: left;
+      font-size: 10px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .skill-table td {
+      padding: 12px 10px;
+      border-bottom: 1px solid #ddd6c7;
+      vertical-align: top;
+    }
+
+    .skill-table tr:last-child td { border-bottom: 0; }
+    .skill-table td:first-child { width: 28%; font-weight: 700; }
+    .skill-table td:nth-child(2) { width: 34%; }
+    .skill-table td:nth-child(3) { color: var(--muted); }
+
+    .empty {
+      display: none;
+      padding: 38px;
+      text-align: center;
+      color: var(--muted);
+      border: 1px dashed var(--line);
+    }
+
+    .mode-grid,
+    .playbook-grid,
+    .governance-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .mode,
+    .playbook,
+    .governance {
+      padding: 26px;
+      background: var(--paper-strong);
+      border: 1px solid var(--line);
+    }
+
+    .mode .label,
+    .playbook .label {
+      color: var(--orange);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .mode p,
+    .playbook p,
+    .governance p { color: var(--muted); font-size: 14px; }
+
+    pre {
+      margin: 18px 0 0;
+      padding: 18px;
+      color: #dcebe7;
+      background: #0d252c;
+      border-left: 5px solid var(--orange);
+      overflow-x: auto;
+      white-space: pre-wrap;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .route {
+      margin-top: 16px;
+      padding: 16px;
+      color: var(--navy);
+      background: #eee8d8;
+      border: 1px solid #d8cfba;
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    .note {
+      margin: 30px 0 0;
+      padding: 22px 24px;
+      background: #fff2dc;
+      border-left: 6px solid var(--orange);
+    }
+
+    .asset-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--paper-strong);
+      border: 1px solid var(--line);
+    }
+
+    .asset-table th,
+    .asset-table td {
+      padding: 13px 15px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+    }
+
+    .asset-table th { color: white; background: var(--navy); }
+    .asset-table td:nth-child(2) { color: var(--orange); font-family: var(--serif); font-size: 22px; }
+
+    .print-box {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      align-items: center;
+      padding: 30px;
+      color: white;
+      background: var(--teal);
+    }
+
+    .print-button {
+      padding: 12px 18px;
+      color: var(--navy);
+      background: var(--yellow);
+      border: 0;
+      cursor: pointer;
+      font-weight: 800;
+    }
+
+    .footer {
+      padding: 32px clamp(24px, 6vw, 88px);
+      color: #bdd0cc;
+      background: var(--navy);
+      font-size: 12px;
+    }
+
+    .footer strong { color: var(--yellow); }
+
+    @media (max-width: 1000px) {
+      .shell { grid-template-columns: 1fr; }
+      .rail { display: none; }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .lifecycle { grid-template-columns: 1fr 1fr; }
+      .category { grid-template-columns: 1fr; }
+      .category-head { display: grid; grid-template-columns: 70px 1fr; column-gap: 16px; }
+      .category-head .phase-tag { grid-column: 2; justify-self: start; }
+      .category-head p { grid-column: 2; }
+    }
+
+    @media (max-width: 720px) {
+      .hero { min-height: auto; padding: 52px 24px; }
+      .stats { grid-template-columns: 1fr 1fr; }
+      .content { padding: 48px 18px 72px; }
+      .section-heading { grid-template-columns: 1fr; gap: 8px; }
+      .section-no { font-size: 24px; }
+      .lead-panel,
+      .mode-grid,
+      .playbook-grid,
+      .governance-grid,
+      .io-grid { grid-template-columns: 1fr; }
+      .lifecycle { grid-template-columns: 1fr; }
+      .gates {
+        grid-template-columns: repeat(7, minmax(150px, 1fr));
+        overflow-x: auto;
+      }
+      .toolbar { position: static; grid-template-columns: 1fr; }
+      .skill-table { display: block; overflow-x: auto; white-space: nowrap; }
+      .print-box { grid-template-columns: 1fr; }
+    }
+
+    @media print {
+      @page { size: A4; margin: 14mm 13mm 16mm; }
+      body { background: white; color: #111; font-size: 9.5pt; }
+      .shell { display: block; }
+      .rail, .toolbar, .print-button { display: none !important; }
+      .hero {
+        min-height: 245mm;
+        padding: 34mm 18mm;
+        background: var(--navy) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        break-after: page;
+      }
+      h1 { font-size: 39pt; }
+      .content { max-width: none; padding: 0; }
+      .section { padding: 12mm 0; break-before: page; border: 0 !important; }
+      .section-heading { grid-template-columns: 18mm 1fr; }
+      h2 { font-size: 23pt; }
+      .lead-panel, .category, .mode, .playbook, .governance, .asset-table {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+      .lifecycle { grid-template-columns: repeat(5, 1fr); }
+      .phase { min-height: 0; padding: 10px; }
+      .gates { grid-template-columns: repeat(4, 1fr); overflow: visible; }
+      .gate { min-height: 0; }
+      .category { grid-template-columns: 38mm 1fr; margin-bottom: 8mm; }
+      .category-head, .gate, .asset-table th, .print-box {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .category-body { padding: 12px; }
+      .skill-table { font-size: 8pt; }
+      .skill-table th, .skill-table td { padding: 5px 6px; }
+      .mode-grid, .playbook-grid, .governance-grid { gap: 8px; }
+      a { color: #111; text-decoration: none; }
+      .footer { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <aside class="rail" aria-label="文档目录">
+      <div class="rail-mark">
+        <b>FDE</b>
+        <span>企业落地<br>Skill 现场手册</span>
+      </div>
+      <small>Navigation</small>
+      <ul class="toc">
+        <li><a href="#overview">01 / 仓库定位</a></li>
+        <li><a href="#lifecycle">02 / 生命周期与门禁</a></li>
+        <li><a href="#catalog">03 / 11 类 Skill</a></li>
+        <li><a href="#usage">04 / 使用方式</a></li>
+        <li><a href="#playbooks">05 / 典型组合打法</a></li>
+        <li><a href="#governance">06 / 治理与维护</a></li>
+        <li><a href="#export">07 / PDF 导出</a></li>
+      </ul>
+      <div class="rail-footer">
+        基于 2026-07-23 工作树<br>
+        <a href="fde-enterprise-skill-guide.md">查看 Markdown 版</a>
+      </div>
+    </aside>
+
+    <main>
+      <header class="hero">
+        <div class="eyebrow">Forward Deployed Engineering · Field Manual</div>
+        <h1>FDE 企业落地典型<br>Skill 分类与使用说明</h1>
+        <p class="hero-lead">把企业 AI 从“能演示”推进到“可验收、可生产、有人用、可复用”的仓库级操作手册。</p>
+        <div class="hero-meta">
+          <span>仓库：fde-skills</span>
+          <span>盘点日期：2026-07-23</span>
+          <span>版本口径：当前工作树</span>
+        </div>
+        <div class="stats" aria-label="仓库统计">
+          <div class="stat"><strong>31</strong><span>核心交付 Skill</span></div>
+          <div class="stat"><strong>11</strong><span>企业落地分类</span></div>
+          <div class="stat"><strong>8</strong><span>核心 SKILL.md</span></div>
+          <div class="stat"><strong>19</strong><span>外部镜像 Skill</span></div>
+        </div>
+      </header>
+
+      <div class="content">
+        <section class="section" id="overview">
+          <div class="section-heading">
+            <div class="section-no">01</div>
+            <div>
+              <h2>不是 Prompt 集合，<br>而是交付能力操作系统</h2>
+              <p class="section-intro">仓库以可重复执行、检查和验收的能力包为基本单元。选择 Skill 的起点是项目阶段与决策问题，而不是模型、框架或厂商名称。</p>
+            </div>
+          </div>
+
+          <div class="lead-panel">
+            <div class="dark">
+              <h3>三层企业分类</h3>
+              <p><strong>主交付链：</strong>01–07，覆盖立项、发现、方案、构建、部署、集成和采纳。</p>
+              <p><strong>横切门禁：</strong>08，把数据、权限、工具和生产风险变成可审计条件。</p>
+              <p><strong>方法与资产：</strong>09–11，提供行业样例、模板、全流程总控和产品化复用。</p>
+            </div>
+            <div>
+              <h3>六条使用原则</h3>
+              <ol class="principles">
+                <li>先定阶段，再选 Skill</li>
+                <li>先证据，后方案</li>
+                <li>一个主 Skill，若干辅 Skill</li>
+                <li>用 evaluation.md 结束任务</li>
+                <li>PoC 成功不等于企业落地</li>
+                <li>项目结束必须资产化</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="lifecycle">
+          <div class="section-heading">
+            <div class="section-no">02</div>
+            <div>
+              <h2>从 Audit 到复用：<br>五段生命周期，七个门禁</h2>
+              <p class="section-intro">门禁不是文档数量检查。只有当证据能支撑下一阶段的资源、风险和技术决策时，项目才真正过门。</p>
+            </div>
+          </div>
+
+          <div class="lifecycle">
+            <article class="phase"><small>AUDIT</small><h3>审计</h3><p>看清组织、工作流、数据和真实问题。</p><b>01 Foundation · 02 Discovery</b></article>
+            <article class="phase"><small>EVALS</small><h3>评估</h3><p>形成主方案，验证效果、风险与价值。</p><b>03 Solution · 04 AI · 08 Security</b></article>
+            <article class="phase"><small>DEPLOY</small><h3>部署</h3><p>进入客户环境，完成上线、集成与接管。</p><b>05 Deployment · 06 Integration</b></article>
+            <article class="phase"><small>ADOPT</small><h3>采纳</h3><p>让用户持续使用，并形成业务结果。</p><b>07 Operations · 09 Industry</b></article>
+            <article class="phase"><small>REUSE</small><h3>产品化</h3><p>把单客户经验转为模板、组件和产品能力。</p><b>10 Templates · 11 Best Practice</b></article>
+          </div>
+
+          <div class="gates">
+            <article class="gate"><strong>G0 立项</strong><p>决策链、范围、验收与升级路径书面化。</p></article>
+            <article class="gate"><strong>G1 发现</strong><p>问题、流程、基线、边界和人工兜底清晰。</p></article>
+            <article class="gate"><strong>G2 方案</strong><p>唯一主方案、淘汰项、回退和接口契约齐备。</p></article>
+            <article class="gate"><strong>G3 评估</strong><p>Golden Dataset、回归、风险和 ROI 达标。</p></article>
+            <article class="gate"><strong>G4 生产</strong><p>监控、回滚、灾备、权限和运维接管通过。</p></article>
+            <article class="gate"><strong>G5 采纳</strong><p>活跃、任务成功、业务价值和运营 Owner 成立。</p></article>
+            <article class="gate"><strong>G6 复用</strong><p>组件、模板、产品反馈和复盘进入资产库。</p></article>
+          </div>
+        </section>
+
+        <section class="section" id="catalog">
+          <div class="section-heading">
+            <div class="section-no">03</div>
+            <div>
+              <h2>11 类 Skill 全景</h2>
+              <p class="section-intro">搜索名称、触发场景或交付物，也可以按 FDE 阶段筛选。每个名称均链接到仓库实际目录。</p>
+            </div>
+          </div>
+
+          <div class="toolbar" role="search">
+            <input id="search" class="search" type="search" placeholder="搜索：RAG、私有化、采纳、Issue Tree、SOW…" aria-label="搜索 Skill">
+            <div class="filters" aria-label="阶段筛选">
+              <button class="filter active" data-phase="all">全部</button>
+              <button class="filter" data-phase="audit">Audit</button>
+              <button class="filter" data-phase="evals">Evals</button>
+              <button class="filter" data-phase="deploy">Deploy</button>
+              <button class="filter" data-phase="adopt">Adopt</button>
+              <button class="filter" data-phase="assets">Assets</button>
+            </div>
+          </div>
+
+          <div id="category-list" class="category-list"></div>
+          <div id="empty" class="empty">没有匹配结果。可尝试“流程”“权限”“PoC”或切换到“全部”。</div>
+        </section>
+
+        <section class="section" id="usage">
+          <div class="section-heading">
+            <div class="section-no">04</div>
+            <div>
+              <h2>两种核心调用形态</h2>
+              <p class="section-intro">当前仓库已经形成一致的方法论，但自动发现形态仍处于混合状态。使用时先判断目录中是否有 SKILL.md。</p>
+            </div>
+          </div>
+
+          <div class="mode-grid">
+            <article class="mode">
+              <div class="label">Mode A · Agent Native</div>
+              <h3>含 SKILL.md 的 8 个核心 Skill</h3>
+              <p>Growth Roadmap、Self Assessment、Issue Tree、Sidecar、PoC Tech Stack、Full Lifecycle、Diagnostic FDE、Customer-Product Bridge。</p>
+              <pre>请使用 fde-poc-tech-stack-selector Skill。
+背景：……
+Primary Metric：……
+数据与部署约束：……
+输出主方案、降级方案、淘汰项、
+10 日计划和 Go/No-Go。</pre>
+            </article>
+            <article class="mode">
+              <div class="label">Mode B · Four-Part Package</div>
+              <h3>README + Prompt + Checklist + Evaluation</h3>
+              <p>多数核心能力采用四件套；少数另有 workflow.md。显式告诉 Agent 目录，并要求逐个读取和执行。</p>
+              <pre>请按 `02-Discovery/Business-Interview/` 执行：
+1. README.md 确认边界
+2. prompt.md 选择本阶段 Prompt
+3. checklist.md 作为过程门禁
+4. evaluation.md 判断能否进入下一阶段
+5. 输出证据与待确认项</pre>
+            </article>
+            <article class="mode">
+              <div class="label">Implementation Extension</div>
+              <h3>19 个外部镜像 Skill</h3>
+              <p><code>.agents/skills/</code> 提供 RAG、MCP、部署、安全、客服与增长等实现增强，并由 <code>skills-lock.json</code> 记录来源与哈希。</p>
+              <p>本地核心 Skill 决定业务问题、交付物与验收；外部 Skill 补充工程模式。版本、许可、数据流和安全边界仍须重新核验。</p>
+            </article>
+            <article class="mode">
+              <div class="label">Consulting Reference</div>
+              <h3>6 个咨询与汇报 Reference</h3>
+              <p>MECE、McKinsey Frameworks、Report、PPT Design、Elite PPT Pro、GE Matrix 用于增强结构、分析和表达。</p>
+              <p>Reference 不替代客户证据、技术验证和阶段门禁。</p>
+            </article>
+          </div>
+
+          <div class="note">
+            <strong>运行时提醒：</strong>目录里存在 <code>SKILL.md</code> 不代表所有 Agent 客户端都会自动注册。自动发现取决于客户端搜索路径和安装配置；无法发现时使用显式路径模式。
+          </div>
+        </section>
+
+        <section class="section" id="playbooks">
+          <div class="section-heading">
+            <div class="section-no">05</div>
+            <div>
+              <h2>六套典型组合打法</h2>
+              <p class="section-intro">组合的目的不是调用更多 Skill，而是为每个 Stage Gate 选择恰好足够的证据和交付物。</p>
+            </div>
+          </div>
+
+          <div class="playbook-grid">
+            <article class="playbook">
+              <div class="label">01 · New Customer PoC</div>
+              <h3>从模糊需求到生产</h3>
+              <div class="route">Stakeholder → Interview → Process → Problem Solving → SOW → PRD → Tech Stack → Eval/Audit → Deploy → Integrate → Adopt → Product Bridge</div>
+              <p>用 FDE-Full-Lifecycle 做总控，各专项 Skill 负责具体交付物。</p>
+            </article>
+            <article class="playbook">
+              <div class="label">02 · Enterprise RAG</div>
+              <h3>知识库效果治理</h3>
+              <div class="route">Interview → Process → Issue Tree → Tech Stack → RAG Evaluation → Deploy → Adoption</div>
+              <p>先做小规模 Golden Dataset，把解析、召回、生成、引用和业务采纳分层评估。</p>
+            </article>
+            <article class="playbook">
+              <div class="label">03 · Agent / MCP</div>
+              <h3>工具型 Agent 落地</h3>
+              <div class="route">Problem Solving → PRD → API Review → Tech Stack → Tool Audit → RBAC → Deploy</div>
+              <p>确定性流程优先；高风险动作必须有最小权限、确认、幂等、审计和回滚。</p>
+            </article>
+            <article class="playbook">
+              <div class="label">04 · Private / Xinchuang</div>
+              <h3>信创、内网、数据不出域</h3>
+              <div class="route">Stakeholder → Interview → RBAC 前置 → Tech Stack → Private Gateway → API Review → Integration</div>
+              <p>私有化不仅是模型落内网，还包括身份、密钥、日志、供应链、容量、灾备和运维接管。</p>
+            </article>
+            <article class="playbook">
+              <div class="label">05 · Sidecar</div>
+              <h3>主链路阻力大时体外验证</h3>
+              <div class="route">Stakeholder → Process → Sidecar → AIBP → Tech Stack → Fast PoC → Adoption → Merge / Keep / Stop</div>
+              <p>Sidecar 不能绕开治理；需预先定义数据同步、审计、回退和终止条件。</p>
+            </article>
+            <article class="playbook">
+              <div class="label">06 · Adoption Rescue</div>
+              <h3>PoC 成功但没人用</h3>
+              <div class="route">Adoption → Re-interview → Re-map Process → Expectation → Dashboard → Executive → Product Bridge</div>
+              <p>优先排查真实需求、使用成本、可信度、Champion、反馈入口和任务成功指标。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="governance">
+          <div class="section-heading">
+            <div class="section-no">06</div>
+            <div>
+              <h2>治理与仓库维护</h2>
+              <p class="section-intro">能力包的价值来自现场证据、时效性和可复用性，而不来自目录数量。</p>
+            </div>
+          </div>
+
+          <div class="governance-grid">
+            <article class="governance"><h3>usable ≠ validated</h3><p>31 个核心 Skill 当前成熟度为 usable。项目复盘应记录客户类型、采用步骤、结果指标、失效内容和成熟度升级证据。</p></article>
+            <article class="governance"><h3>补齐自动发现</h3><p>优先为 Interview、Process、PRD、RAG Evaluation、Tool Audit、Private Gateway、RBAC 和 Adoption 补齐 SKILL.md。</p></article>
+            <article class="governance"><h3>选型保持时效</h3><p>涉及“最新、支持、兼容、可私有化、生产级”的判断，必须在执行当天核对官方文档、Release 和许可证。</p></article>
+            <article class="governance"><h3>保护企业数据</h3><p>客户密钥、生产配置、个人信息和受监管数据不得进入未批准服务；高风险动作保留人工确认和审计。</p></article>
+          </div>
+
+          <h3 style="margin-top:36px">当前资产口径</h3>
+          <table class="asset-table">
+            <thead><tr><th>资产类型</th><th>数量</th><th>说明</th></tr></thead>
+            <tbody>
+              <tr><td>核心 Skill</td><td>31</td><td>INDEX.md 纳入统计，成熟度 usable</td></tr>
+              <tr><td>交付分类</td><td>11</td><td>01 Foundation 至 11 Best-Practice</td></tr>
+              <tr><td>核心 SKILL.md</td><td>8</td><td>当前工作树实盘结果</td></tr>
+              <tr><td>咨询 Reference</td><td>6</td><td>不计入核心 Skill</td></tr>
+              <tr><td>外部镜像 Skill</td><td>19</td><td>位于 .agents/skills/，锁文件记录来源</td></tr>
+              <tr><td>补充模板包</td><td>1</td><td>10-Templates/Career-Job-Search</td></tr>
+            </tbody>
+          </table>
+
+          <h3 style="margin-top:36px">仓库实操</h3>
+          <pre>cd /Users/admin/Documents/Github/fde-skills
+
+# 查看全量分类与核心 Skill
+open INDEX.md
+
+# 搜索交付关键词
+rg -n "Golden Dataset|私有化|RBAC|采纳" .
+
+# 查看 Agent 原生 Skill
+find . -name SKILL.md -not -path "./.git/*" | sort</pre>
+        </section>
+
+        <section class="section" id="export">
+          <div class="section-heading">
+            <div class="section-no">07</div>
+            <div>
+              <h2>打印与 PDF 导出</h2>
+              <p class="section-intro">HTML 已包含 A4 打印样式；Markdown 包含 YAML 元数据、目录层级和分页标记。</p>
+            </div>
+          </div>
+
+          <div class="print-box">
+            <div>
+              <h3>推荐：浏览器直接打印本页</h3>
+              <p>选择 A4、背景图形开启、页边距默认。也可以使用 Markdown 版配合 Pandoc + XeLaTeX。</p>
+            </div>
+            <button class="print-button" onclick="window.print()">打印 / 另存为 PDF</button>
+          </div>
+
+          <pre>cd /Users/admin/Documents/Github/fde-skills
+pandoc docs/fde-enterprise-skill-guide.md \
+  --from=gfm+raw_html \
+  --toc --number-sections \
+  --pdf-engine=xelatex \
+  -V CJKmainfont="PingFang SC" \
+  -V geometry:margin=20mm \
+  -o docs/fde-enterprise-skill-guide.pdf</pre>
+        </section>
+      </div>
+
+      <footer class="footer">
+        <strong>FDE-Skills</strong> · 文档基于当前仓库工作树生成。更新 INDEX、Skill 数量、成熟度或 SKILL.md 覆盖时，请同步更新本手册。
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    const groups = [
+      {
+        code: "01", title: "Foundation", subtitle: "立项与交付基线", phase: "audit",
+        intent: "新客户入场、范围与决策链不清，或需要建立 FDE 能力基线。",
+        input: "组织架构、立项材料、预算周期、合规约束、项目案例",
+        output: "干系人图、SOW、验收、沟通节奏、成长计划",
+        skills: [
+          ["Stakeholder-Mapping", "决策链和阻力不清", "干系人图、升级路径", "../01-Foundation/Stakeholder-Mapping/"],
+          ["SOW-Generator", "PoC 范围与验收需固化", "SOW、里程碑、变更流程", "../01-Foundation/SOW-Generator/"],
+          ["FDE-Self-Assessment", "建立角色能力基线", "四角色评分、30/60/90 计划", "../01-Foundation/FDE-Self-Assessment/"],
+          ["FDE-Growth-Roadmap", "入行、晋升或职业选择", "证据矩阵、成长实验", "../01-Foundation/FDE-Growth-Roadmap/"],
+          ["Communication-Script-Library", "多角色沟通口径不一致", "话术、追问、禁忌词", "../01-Foundation/Communication-Script-Library/"]
+        ]
+      },
+      {
+        code: "02", title: "Discovery", subtitle: "需求发现与咨询拆解", phase: "audit",
+        intent: "客户诉求模糊、流程不可见、价值点不清或主系统阻力过大。",
+        input: "访谈纪要、SOP、失败样本、现状流程、业务指标",
+        output: "场景卡、流程图、Issue Tree、验证假设、协作机制",
+        skills: [
+          ["Business-Interview", "需要结构化访谈业务和一线", "纪要、痛点、指标假设", "../02-Discovery/Business-Interview/"],
+          ["Process-Mapping", "不知道 AI 插入哪个节点", "As-Is、介入点、例外、基线", "../02-Discovery/Process-Mapping/"],
+          ["Consultative-Problem-Solving", "“建平台”等诉求过宽", "Issue Tree、DIVE、PoC 假设", "../02-Discovery/Consultative-Problem-Solving/"],
+          ["FDE-Issue-Tree-Analysis", "RAG/Agent 失败原因复杂", "问题树、Top 假设、实验", "../02-Discovery/FDE-Issue-Tree-Analysis/"],
+          ["Expectation-Management-Script", "要求 100% 准确或全自动", "边界、人审、迭代路线", "../02-Discovery/Expectation-Management-Script/"],
+          ["Executive-Communication-Framework", "需要高层汇报与决策", "一页纸、选项、ROI 简版", "../02-Discovery/Executive-Communication-Framework/"],
+          ["AIBP-Collaboration-Playbook", "FDE 与业务职责不清", "RACI、双签场景卡、周 Demo", "../02-Discovery/AIBP-Collaboration-Playbook/"],
+          ["Sidecar-AI-Transformation", "主链路阻力大，先体外验证", "边界、接口、合并/终止条件", "../02-Discovery/Sidecar-AI-Transformation/"]
+        ]
+      },
+      {
+        code: "03", title: "Solution-Design", subtitle: "方案规格与技术决策", phase: "evals",
+        intent: "把已收敛的场景转成 PRD、技术栈、接口契约和 PoC 蓝图。",
+        input: "场景卡、验收指标、数据与部署约束、API、团队能力",
+        output: "PRD、主/降级方案、ADR、API 契约、联调计划",
+        skills: [
+          ["FDE-PoC-Tech-Stack-Selector", "两周内确定 PoC 技术路线", "证据表、主/降级方案、10 日计划", "../03-Solution-Design/FDE-PoC-Tech-Stack-Selector/"],
+          ["PRD-Generator", "场景卡需扩展为研发规格", "PRD、用户故事、验收、数据需求", "../03-Solution-Design/PRD-Generator/"],
+          ["API-Design-Review", "需要跨系统联调或动作执行", "契约、风险、错误与联调计划", "../03-Solution-Design/API-Design-Review/"]
+        ]
+      },
+      {
+        code: "04", title: "AI-Delivery", subtitle: "AI 构建、评估与工具治理", phase: "evals",
+        intent: "原型需要可重复评估，或 Agent/MCP 工具需要权限和失败审计。",
+        input: "历史问题、失败样本、知识库、工具列表、API、权限",
+        output: "Golden Dataset、回归报告、工具风险、人审与整改",
+        skills: [
+          ["RAG-Evaluation", "知识库无法客观验收", "评估集、五层指标、回归门禁", "../04-AI-Delivery/RAG-Evaluation/"],
+          ["Tool-Audit", "Agent/MCP 可执行外部动作", "工具审计、风险、人审节点", "../04-AI-Delivery/Tool-Audit/"]
+        ]
+      },
+      {
+        code: "05", title: "Deployment", subtitle: "私有化部署与模型网关", phase: "deploy",
+        intent: "数据不出域、内网隔离、信创、多模型路由或 PoC 进入生产。",
+        input: "网络拓扑、国产化清单、SLA、容量与合规约束",
+        output: "部署架构、Gateway、上线清单、回滚、Runbook",
+        skills: [
+          ["Private-Deployment-Gateway", "私有化、信创或多模型网关", "部署架构、Gateway、上线与运维", "../05-Deployment/Private-Deployment-Gateway/"]
+        ]
+      },
+      {
+        code: "06", title: "Integration", subtitle: "企业协同与系统集成", phase: "deploy",
+        intent: "AI 能力需进入飞书消息、审批、多维表格或客户工作流。",
+        input: "应用权限、账号体系、业务事件、API、同步规则",
+        output: "集成方案、权限申请、联调、用户指引、审计",
+        skills: [
+          ["Feishu-Integration", "飞书消息/审批/多维表格接入", "集成、权限、联调和用户指引", "../06-Integration/Feishu-Integration/"]
+        ]
+      },
+      {
+        code: "07", title: "Operations", subtitle: "运营采纳与价值持续化", phase: "adopt",
+        intent: "技术指标通过但使用率低，或需要持续运营和价值看板。",
+        input: "用户、使用日志、业务指标、工单、知识库、数据源",
+        output: "采纳漏斗、Champion、SOP、看板、培训和周复盘",
+        skills: [
+          ["Customer-Service-Bot", "客服问答、草稿、分流和人工升级", "Agent、知识库、SOP、运营看板", "../07-Operations/Customer-Service-Bot/"],
+          ["FDE-Adoption-Growth", "PoC 成功但没人持续使用", "采纳计划、Champion、成功看板", "../07-Operations/FDE-Adoption-Growth/"],
+          ["SQL-Dashboard-Brief", "需要经营或采纳指标看板", "指标字典、SQL 逻辑、权限矩阵", "../07-Operations/SQL-Dashboard-Brief/"]
+        ]
+      },
+      {
+        code: "08", title: "Security-Compliance", subtitle: "权限、安全与合规门禁", phase: "evals",
+        intent: "敏感数据、跨租户、工具执行、生产权限或监管要求。",
+        input: "角色、数据分级、权限模型、日志、法规与内部控制",
+        output: "RBAC、风险分级、审计报告、整改和合规对照",
+        skills: [
+          ["RBAC-Audit", "上生产前需要权限与日志审计", "RBAC 报告、矩阵、整改、对照", "../08-Security-Compliance/RBAC-Audit/"]
+        ]
+      },
+      {
+        code: "09", title: "Industry", subtitle: "行业场景样例", phase: "adopt",
+        intent: "用完整行业样例理解数据、预警、推送和运营 SOP 的组合。",
+        input: "行业数据源、预警规则、渠道和责任人",
+        output: "日报、Agent 配置、预警规则和运营 SOP",
+        skills: [
+          ["AI-Operations-Daily", "跨境/品牌运营日报与复盘", "日报、预警、推送和 SOP", "../09-Industry/AI-Operations-Daily/"]
+        ]
+      },
+      {
+        code: "10", title: "Templates", subtitle: "标准交付模板", phase: "assets",
+        intent: "把分析结果装配成可签署、评审和持续维护的交付物。",
+        input: "已完成的场景、范围、指标和商务信息",
+        output: "标准 SOW；另有 Career-Job-Search 补充模板包",
+        skills: [
+          ["SOW-Template", "需要标准 SOW 与填写指引", "SOW、检查清单、变更记录", "../10-Templates/SOW-Template/"]
+        ]
+      },
+      {
+        code: "11", title: "Best-Practice", subtitle: "方法论总控与复用闭环", phase: "assets",
+        intent: "需要全流程总控、售前诊断、本土化方法或客户到产品反馈。",
+        input: "客户行业、阶段、团队、现场证据和目标受众",
+        output: "总控方案、诊断包、ROI、复用资产、产品研发输入",
+        skills: [
+          ["Palantir-FDE-Pattern", "理解国际 FDE 模式与本土化边界", "对照、可借鉴/不适用清单", "../11-Best-Practice/Palantir-FDE-Pattern/"],
+          ["China-FDE-Consulting-Pattern", "国内咨询式交付总纲", "五环打法、会议地图、资产清单", "../11-Best-Practice/China-FDE-Consulting-Pattern/"],
+          ["FDE-Full-Lifecycle", "Audit 到 Deployment 全程总控", "审计、方案、ROI、部署、抽象", "../11-Best-Practice/FDE-Full-Lifecycle/"],
+          ["Diagnostic-FDE", "ToB 售前完整方案包", "行业、诊断、架构、ROI、PoC", "../11-Best-Practice/Diagnostic-FDE/"],
+          ["FDE-Customer-Product-Bridge", "现场需求转产品/研发输入", "结构化需求、问题、行动表", "../11-Best-Practice/FDE-Customer-Product-Bridge/"]
+        ]
+      }
+    ];
+
+    const list = document.getElementById("category-list");
+    const empty = document.getElementById("empty");
+    const search = document.getElementById("search");
+    let activePhase = "all";
+
+    function escapeHtml(value) {
+      return value.replace(/[&<>"']/g, char => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"
+      })[char]);
+    }
+
+    function render() {
+      const query = search.value.trim().toLowerCase();
+      let matched = 0;
+      list.innerHTML = groups.map(group => {
+        if (activePhase !== "all" && group.phase !== activePhase) return "";
+        const groupText = [group.title, group.subtitle, group.intent, group.input, group.output].join(" ").toLowerCase();
+        const skills = group.skills.filter(skill => {
+          if (!query) return true;
+          return groupText.includes(query) || skill.join(" ").toLowerCase().includes(query);
+        });
+        if (!skills.length) return "";
+        matched += skills.length;
+        const rows = skills.map(skill => `
+          <tr class="skill-row">
+            <td><a href="${escapeHtml(skill[3])}">${escapeHtml(skill[0])}</a></td>
+            <td>${escapeHtml(skill[1])}</td>
+            <td>${escapeHtml(skill[2])}</td>
+          </tr>`).join("");
+        return `
+          <article class="category" data-phase="${group.phase}">
+            <div class="category-head">
+              <div class="code">${group.code}</div>
+              <div>
+                <h3>${escapeHtml(group.title)}<br><small>${escapeHtml(group.subtitle)}</small></h3>
+              </div>
+              <p>${escapeHtml(group.intent)}</p>
+              <span class="phase-tag">${group.phase}</span>
+            </div>
+            <div class="category-body">
+              <div class="io-grid">
+                <div class="io"><b>典型输入</b>${escapeHtml(group.input)}</div>
+                <div class="io"><b>典型输出</b>${escapeHtml(group.output)}</div>
+              </div>
+              <table class="skill-table">
+                <thead><tr><th>Skill</th><th>何时使用</th><th>核心交付物</th></tr></thead>
+                <tbody>${rows}</tbody>
+              </table>
+            </div>
+          </article>`;
+      }).join("");
+      empty.style.display = matched ? "none" : "block";
+    }
+
+    search.addEventListener("input", render);
+    document.querySelectorAll(".filter").forEach(button => {
+      button.addEventListener("click", () => {
+        document.querySelectorAll(".filter").forEach(item => item.classList.remove("active"));
+        button.classList.add("active");
+        activePhase = button.dataset.phase;
+        render();
+      });
+    });
+
+    const tocLinks = [...document.querySelectorAll(".toc a")];
+    const sections = tocLinks.map(link => document.querySelector(link.getAttribute("href"))).filter(Boolean);
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        tocLinks.forEach(link => link.classList.toggle("active", link.getAttribute("href") === `#${entry.target.id}`));
+      });
+    }, { rootMargin: "-20% 0px -68% 0px" });
+    sections.forEach(section => observer.observe(section));
+
+    render();
+  </script>
+</body>
+</html>

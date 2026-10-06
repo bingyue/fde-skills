@@ -1,0 +1,23 @@
+kind: synthetic
+input:
+  context:
+    evidence: 目标为出口机械配件中小企业，需要定位询盘流程
+  constraints:
+    boundary: 注明来源、日期与地区；行业平均不能代替客户基线
+expected:
+  artifact: industry-brief.md
+  decision: 研究RFQ→选型→报价→样品→订单链；关注回复时效和报价正确率；待核验客户数据
+  required_fields:
+  - 价值链
+  - 工作流
+  - 指标
+  - 术语
+  - 监管问题
+  - 来源
+  - 假设
+checks:
+- 事实和推断分栏；每个关键结论有来源；列待验证问题
+- 注明来源、日期与地区；行业平均不能代替客户基线
+negative_case:
+  input: 资料互相矛盾
+  expected: 呈现口径差异，不强行合成确定数字。保留证据，不宣布未经验证的通过。

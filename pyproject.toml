@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fde-skills"
+version = "1.0.0"
+description = "Open-source skills for Forward Deployed Engineers and Enterprise AI Delivery"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "AGPL-3.0-only"
+license-files = ["LICENSE", "NOTICE.md"]
+authors = [{name = "邴越 (Bing Yue)"}]
+maintainers = [{name = "邴越 (Bing Yue)"}]
+dependencies = ["PyYAML>=6.0.2,<7", "jsonschema>=4.23,<5"]
+keywords = ["fde", "agent-skills", "enterprise-ai", "delivery"]
+classifiers = ["Programming Language :: Python :: 3", "Operating System :: OS Independent"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "build>=1.2,<2", "ruff>=0.11,<1"]
+
+[project.scripts]
+fde = "fde_skills.cli:main"
+
+[project.urls]
+Homepage = "https://fdechina.ai/"
+Repository = "https://github.com/bingyue/fde-skills"
+Documentation = "https://github.com/bingyue/fde-skills#readme"
+Issues = "https://github.com/bingyue/fde-skills/issues"
+Changelog = "https://github.com/bingyue/fde-skills/blob/master/CHANGELOG.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]

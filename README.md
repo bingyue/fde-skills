@@ -1,161 +1,185 @@
-﻿# FDE-Skills
+# FDE Skills
 
-面向**国内 FDE（Forward Deployed Engineer）企业交付**的可复用能力库。
+**Open-source skills for Forward Deployed Engineers and Enterprise AI Delivery.**
 
-> Skill 是可复用的交付能力单元（Capability），不是 Prompt 碎片，也不是工具清单。  
-> 一个优秀的 FDE，靠的不是记住多少 Prompt，而是积累一套能快速解决企业问题的 Skill 库。
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](pyproject.toml)
+[![Validation](https://github.com/bingyue/fde-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/bingyue/fde-skills/actions/workflows/ci.yml)
 
-**仓库地址**：[github.com/bingyue/fde-skills](https://github.com/bingyue/fde-skills)
+**English** · [简体中文](README_CN.md) · [FDEChina.ai](https://fdechina.ai/) · [Skill index](INDEX.md) · [Documentation](docs/getting-started/quickstart.md) · [Contributing](CONTRIBUTING.md)
 
----
+FDE Skills is an open-source **Skill Library and Delivery Framework** for Forward Deployed Engineers and enterprise AI practitioners. It helps Codex, Claude Code, Cursor and OpenCode follow a structured method for understanding a business, diagnosing needs, designing solutions, building systems, evaluating outcomes and completing delivery.
 
-## 这是什么
+**FDE Skills goes beyond teaching AI to write code: it teaches AI to work like a Forward Deployed Engineer, from the first customer conversation to a system operating in production.**
 
-FDE-Skills 把 FDE 在企业现场的高频交付动作，沉淀为**可直接复用**的标准化能力包。每个 Skill 包含场景定义、方法论、执行步骤、Prompt、检查清单与验收指标，覆盖从立项到采纳的完整链路。
-
-**适用人群**
-
-- 转型 FDE / Applied AI 的工程师、咨询顾问、产品经理
-- 在企业内推进 AI PoC → Beta → 生产的交付团队
-- 需要把一次项目经验变成可复用资产的方法论实践者
-
----
-
-## 核心理念
-
-| 原则 | 说明 |
+| Principle | What it means in practice |
 | --- | --- |
-| 按交付场景分类 | 不按工具（Dify/Coze）或业务系统（CRM/ERP）碎片化 |
-| 可交付、可评估 | 每个 Skill 有明确输入、输出、验收指标与失败处理 |
-| 国内 FDE 主线 | 咨询式拆解 → 方案设计 → AI 交付 → 私有化部署 → 运营采纳 → 资产化 |
-| 先本地化再引用 | 外部 Skill（skills.sh）下载到 `.agents/skills/` 后映射，不只贴链接 |
+| **Business First** | Understand the workflow, stakeholders and business value before designing AI. |
+| **Evaluation Driven** | Define evidence, measurable acceptance criteria and failure cases for every AI application. |
+| **From PoC to Production** | Plan for deployment, operations, rollback and ownership from the start. |
 
----
+## What you can do
 
-## 目录体系（11 + `_catalog`）
+- Turn a customer request into a diagnosis, opportunity map, scoped PoC and delivery plan.
+- Design enterprise knowledge bases, RAG systems, agents, tools, permissions and human review.
+- Build evaluation datasets and assess retrieval, hallucination, task success, security and cost.
+- Prepare deployment, production acceptance, service levels and delivery handover.
+- Reuse industry context and contribute lessons from real delivery work.
 
-```text
-01-Foundation          立项、干系人、SOW、自评、成长、话术
-02-Discovery           访谈、流程、咨询式拆解、问题树诊断、预期管理、高层沟通、AIBP 协作、体外创新
-03-Solution-Design     PoC 技术选型、PRD、API 设计评审
-04-AI-Delivery         RAG 评估、Agent 工具审计
-05-Deployment          私有化网关、三层 PoC 路径
-06-Integration         飞书等企业协同集成
-07-Operations          客服 Bot、采纳增长、经营看板
-08-Security-Compliance RBAC、合规审计
-09-Industry            高价值行业示例（精简）
-10-Templates           SOW 等交付模板
-11-Best-Practice       方法论总纲、全流程、诊断型售前、客户-产品-研发桥接
-  └─ references/       咨询/PPT 外部 Reference（MECE、麦肯锡系列等，不计入核心 Skill）
-_catalog               索引、映射、外部导入编目
+## Library at a glance
+
+| Component | Available today |
+| --- | --- |
+| Core Skills | **60 Skills in 12 categories**, with structured contracts, workflows, quality gates, output templates and positive/negative examples |
+| Industry packs | **5 packs**: ecommerce, foreign trade, manufacturing, medical beauty and recruitment |
+| Agent adapters | **4 adapters**: Codex, Claude Code, Cursor and OpenCode, generated from one canonical source |
+| Delivery examples | **5 end-to-end cases**, 40 stage artifacts and 60 executable synthetic checks |
+| Engineering | Python CLI, JSON Schemas, searchable [registry](skills.json), automated validation and CI |
+
+A Skill marked `ready` has been authored and structurally checked. It does not imply customer validation. Example data and evaluation results are synthetic unless explicitly documented otherwise.
+
+## Quick start
+
+Requires **Python 3.10+**. From a checkout of this repository:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -e '.[dev]'
+
+fde list
+fde search rag
+fde show enterprise-ai-diagnosis
+fde validate
 ```
 
-当前共 **31 个核心 Skill**，成熟度 `usable`。完整列表见 [`INDEX.md`](./INDEX.md)。
+On Windows PowerShell, activate with `.venv\Scripts\Activate.ps1`.
 
----
+Export Skills into an existing project:
 
-## 快速开始
-
-### 1. 按交付阶段选用 Skill
-
-```text
-立项 → 01-Foundation（Stakeholder-Mapping, SOW-Generator）
-发现 → 02-Discovery（Consultative-Problem-Solving, FDE-Issue-Tree-Analysis, Sidecar-AI-Transformation）
-方案 → 03-Solution-Design（FDE-PoC-Tech-Stack-Selector, PRD-Generator, API-Design-Review）
-AI   → 04-AI-Delivery（RAG-Evaluation, Tool-Audit）
-部署 → 05-Deployment（Private-Deployment-Gateway）
-运营 → 07-Operations（FDE-Adoption-Growth, Customer-Service-Bot）
+```bash
+fde export codex --skill enterprise-ai-diagnosis --output ../customer-project
+fde export claude-code --industry foreign-trade --output ../customer-project
+fde export cursor --skill rag-architecture --output ../customer-project
+fde export opencode --skill delivery-handover --output ../customer-project
 ```
 
-### 2. 使用单个 Skill
+Exports include native `SKILL.md` files, the complete FDE contract, examples, templates and license notices. The CLI runs locally without model calls or credentials. See [adapter setup and behavior](docs/getting-started/adapters.md).
 
-进入对应目录，按顺序阅读：
+## How a Skill works
 
-1. `README.md` — 场景、方法论、步骤、误区、交付物
-2. `prompt.md` — 分阶段 Prompt（可直接复制到 Agent）
-3. `checklist.md` — 准备 / 执行 / 验收 / 复盘
-4. `evaluation.md` — 指标矩阵与验收门槛
-5. `workflow.md` — 部分关键 Skill 提供（如 DIVE、AIBP、私有化部署）
-
-### 3. 国内 FDE 推荐入口
-
-| 你想解决什么 | 从这里开始 |
-| --- | --- |
-| 不知道自己适不适合做 FDE | `01-Foundation/FDE-Self-Assessment` |
-| FDE 入行、求职、晋升或职业困境 | `01-Foundation/FDE-Growth-Roadmap` |
-| 客户说「我要做智能体平台」 | `02-Discovery/Consultative-Problem-Solving` |
-| AI 知识库 / Agent 效果问题复杂 | `02-Discovery/FDE-Issue-Tree-Analysis` |
-| 主链路阻力大，想先体外验证 AI 价值 | `02-Discovery/Sidecar-AI-Transformation` |
-| 客户期望 100% 自动化 | `02-Discovery/Expectation-Management-Script` |
-| 向老板汇报 PoC 进展 | `02-Discovery/Executive-Communication-Framework` |
-| FDE 与业务方分工不清 | `02-Discovery/AIBP-Collaboration-Playbook` |
-| PoC 阶段不知道选什么 AI 技术栈 | `03-Solution-Design/FDE-PoC-Tech-Stack-Selector` |
-| 信创/私有化部署 | `05-Deployment/Private-Deployment-Gateway` |
-| PoC 成功但没人用 | `07-Operations/FDE-Adoption-Growth` |
-| 理解国内 FDE 交付总纲 | `11-Best-Practice/China-FDE-Consulting-Pattern` |
-| FDE 三阶段全流程（Audit/Evals/Deploy） | `11-Best-Practice/FDE-Full-Lifecycle` |
-| ToB 售前完整方案包 | `11-Best-Practice/Diagnostic-FDE` |
-| 客户现场转产品/研发 | `11-Best-Practice/FDE-Customer-Product-Bridge` |
-| 结构化输出 / MECE | `11-Best-Practice/references/MECE` + `Consultative-Problem-Solving` |
-| 麦肯锡风报告 / PPT | `11-Best-Practice/references/McKinsey-Report` → `McKinsey-PPT-Design` |
-
----
-
-## Skill 标准结构
+Each canonical Skill lives at `skills/<category>/<name>/SKILL.md`. Markdown instructions and YAML front matter define when to use it, required inputs, expected outputs, workflow, constraints, tools and evaluation criteria. Supporting files provide a worked example and an output template.
 
 ```text
-<category>/<skill-name>/
-├── README.md       # 150+ 行：场景、方法论、步骤、误区、交付物
-├── prompt.md       # 分阶段多段 Prompt
-├── checklist.md    # 准备 / 执行 / 验收 / 复盘
-├── evaluation.md   # 指标、门槛、验收样例
-├── workflow.md     # 关键 Skill 可选
-└── assets/         # 模板样例（逐步补充）
+Need → Discovery → Diagnosis → Solution → Architecture → Build → Eval → Deploy → Delivery
 ```
 
-**成熟度**：`draft` → `usable` → `validated`（需现场项目验证后升级）
+Each delivery gate requires evidence, an owner and a pass/fail decision. Missing inputs become a gap report; failed evaluations lead to remediation before progression. Read the [delivery framework](docs/concepts/delivery-framework.md) and [FDE Skill Specification](docs/skill-spec/README.md).
 
----
-
-## 外部 Skill 导入
-
-来自 [skills.sh](https://skills.sh) 的候选 Skill 已下载到 `.agents/skills/`（19 个），并映射到本库分类。
-
-咨询/PPT 类 Reference（6 个）落地于 `11-Best-Practice/references/`，与核心 Skill 组合使用。
-
-- 工程类导入明细：[`_catalog/external-skills-imported.md`](./_catalog/external-skills-imported.md)
-- 咨询 Reference 编目：[`_catalog/consulting-references.md`](./_catalog/consulting-references.md)
-- 新增外部 Skill：先 `npx skills add <repo>@<skill>`，再登记编目
-
----
-
-## 文档导航
-
-| 文档 | 说明 |
+| Category | Representative Skills |
 | --- | --- |
-| [`INDEX.md`](./INDEX.md) | 全量 Skill 索引与交付链路 |
-| [`SOURCES.md`](./SOURCES.md) | 内容来源与引用规范 |
-| [`CONTRIBUTING.md`](./CONTRIBUTING.md) | 贡献指南与目录归类规则 |
-| [`SKILL-TEMPLATE.md`](./SKILL-TEMPLATE.md) | 新建 Skill 模板 |
-| [`_catalog/`](./_catalog/) | 映射表、待办、扩充脚本 |
+| discovery | customer-discovery, field-observation, industry-research |
+| diagnosis | enterprise-ai-diagnosis, pain-point-analysis |
+| solution | requirement-to-poc, poc-scope, technical-solution-design |
+| architecture | system-architecture, rag-architecture, permission-model |
+| knowledge | source-inventory, knowledge-base-design, retrieval-strategy |
+| agent | agent-design, workflow-design, human-in-the-loop |
+| ontology | ontology-design |
+| engineering | evaluation-driven-development, mcp-design, observability-design |
+| evaluation | rag-evaluation, tool-calling-evaluation, prompt-regression |
+| deployment | docker-deployment, private-deployment, poc-to-production |
+| delivery | enterprise-acceptance, sla-design, delivery-handover |
+| business | roi-assessment, ai-opportunity-mapping, enterprise-ai-pricing |
 
----
+Browse all 60 Skills in the [index](INDEX.md), or use `fde search <keyword>`.
 
-## 版本记录
+## Industry packs and delivery examples
 
-**v0.2.0（2026-07-12）**
+Industry packs reference core Skills and add knowledge, constraints, metrics, terminology and cases. This keeps domain knowledge reusable without duplicating workflows. See the [pack specification](docs/skill-spec/industry-packs.md).
 
-- 目录从 17 个精简为 11 个交付目录 + `_catalog`
-- 25 个 Skill 从骨架扩充为可交付内容
-- 新增国内 FDE 主题：自评、成长路线、沟通话术、咨询式拆解、预期管理、AIBP 协作、采纳增长
-- 外部 Skill 本地化导入 19 个
+| Pack | Focus |
+| --- | --- |
+| [Ecommerce](industries/ecommerce/README.md) | Product knowledge, customer service and operations |
+| [Foreign trade](industries/foreign-trade/README.md) | Inquiries, follow-up, product knowledge, multilingual service and email drafts |
+| [Manufacturing](industries/manufacturing/README.md) | Equipment knowledge, quality, SOPs, maintenance, supply chain and production data |
+| [Medical beauty](industries/medical-beauty/README.md) | Service information, consultation routing, appointments and compliance boundaries |
+| [Recruitment](industries/recruitment/README.md) | Role requirements, candidate evidence, interview support and human review |
 
-**v0.1.0（2026-07-11）**
+Every case walks through Discovery, Diagnosis, Solution, Architecture, Build, Eval, Deploy and Delivery:
 
-- 初始化仓库与首批交付能力骨架
+1. [Enterprise AI diagnosis](examples/01-enterprise-ai-diagnosis/README.md)
+2. [Enterprise knowledge base](examples/02-enterprise-knowledge-base/README.md)
+3. [Foreign trade sales agent](examples/03-foreign-trade-sales-agent/README.md)
+4. [Medical beauty consultation and appointment agent](examples/04-medical-beauty-conversion-agent/README.md)
+5. [Manufacturing knowledge agent](examples/05-manufacturing-knowledge-agent/README.md)
 
----
+```bash
+python scripts/run_example.py 02-enterprise-knowledge-base
+```
+
+These reproducible offline examples include deliberately failing baselines. Their checks demonstrate contracts and delivery gates; production model quality and business impact require evaluation with real systems and authorized data.
+
+## Repository layout
+
+```text
+fde-skills/
+├── skills/          # Canonical definitions in 12 delivery categories
+├── industries/      # Five additive industry packs
+├── adapters/        # Codex, Claude Code, Cursor and OpenCode profiles
+├── templates/       # Skill scaffolds and delivery records
+├── examples/        # Five complete delivery cases
+├── schemas/         # Skill, example and industry JSON Schemas
+├── src/fde_skills/   # CLI and offline example baseline
+├── scripts/         # Validation, registry and example entry points
+├── tests/           # Contract, CLI, adapter and regression tests
+├── docs/            # Concepts, specification, guides and migration history
+├── legacy/          # Preserved historical assets and upstream notices
+└── skills.json      # Generated registry for search and future integrations
+```
+
+## Contributing
+
+Contributions are welcome in Chinese or English: improve a Skill, add a verified failure case, extend an industry pack, improve an adapter or fix documentation. Start with the [contribution guide](CONTRIBUTING.md) and [complete Skill contribution tutorial](docs/getting-started/contribute-a-skill.md).
+
+```bash
+fde skill create supplier-onboarding --category discovery
+# Complete the draft, output template and positive/negative examples.
+fde registry build
+fde validate
+pytest -q
+ruff check src tests scripts setup.py
+```
+
+Use `fde skill create` without a name for interactive creation, or `fde init ./my-library` to scaffold a separate library. Keep canonical definitions in `skills/` and regenerate derived files. Submit bug reports and proposals through [Issues](https://github.com/bingyue/fde-skills/issues), and changes through [Pull Requests](https://github.com/bingyue/fde-skills/pulls).
+
+## Roadmap
+
+| Phase | Direction | Status |
+| --- | --- | --- |
+| 1 | 50+ Core Skills | Initial library of 60 Skills implemented |
+| 2 | Industry Skill Packs | Five initial packs; field validation ongoing |
+| 3 | Codex / Claude Code / Cursor / OpenCode Adapters | Four exporters implemented; client runtime verification remains |
+| 4 | FDE Blueprint Integration | Planned |
+| 5 | Skill Registry / Marketplace | Local registry available; marketplace planned |
+
+See the [detailed roadmap](ROADMAP.md), [changelog](CHANGELOG.md) and [verification record](docs/verification.md).
+
+## Author and community
+
+**Author and maintainer: [邴越 (Bing Yue)](https://github.com/bingyue).** Community contributions are welcome.
+
+- **[FDEChina.ai · FDE中国社区](https://fdechina.ai/)** — enterprise AI delivery cases, methods, learning resources and community opportunities.
+- **FDE前线** — follow the WeChat Official Account and WeChat Channels account by searching for **「FDE前线」**.
+- **[FDE Skills on GitHub](https://github.com/bingyue/fde-skills)** — source code, Skills, proposals and contributions.
+
+We welcome engineers, business practitioners and industry specialists who want to turn delivery experience into reusable, verifiable Skills. Use GitHub for repository issues and the community channels for broader FDE discussions.
 
 ## License
 
-MIT（待补充 LICENSE 文件）
+Copyright © 2026 **邴越 (Bing Yue) and FDE Skills contributors**.
+
+The current original FDE Skills library, CLI, documentation, templates and examples are licensed under the **GNU Affero General Public License v3.0 only (`AGPL-3.0-only`)**. See the full [LICENSE](LICENSE).
+
+When a modified covered program supports remote network interaction, AGPL section 13 requires offering its Corresponding Source to those remote users. Distribution and other conditions are set out in the license itself.
+
+Historical third-party material retains its original terms and is excluded from supported packages and adapter exports. Earlier license grants are not revoked. See [NOTICE](NOTICE.md), [source provenance](SOURCES.md) and the [migration record](docs/migration/README.md).

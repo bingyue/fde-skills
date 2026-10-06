@@ -1,0 +1,48 @@
+{
+  "policy": {
+    "escalate_terms": [
+      "改工资",
+      "全部员工薪酬"
+    ],
+    "escalation": "薪酬与高影响修改转授权HR处理。"
+  },
+  "documents": [
+    {
+      "id": "public-current",
+      "terms": [
+        "年假政策"
+      ],
+      "content": "有效2026政策：年假申请由直属主管审核，来源HR-2026。",
+      "active": true,
+      "tenant": "tenant-a",
+      "roles": [
+        "staff",
+        "manager"
+      ]
+    },
+    {
+      "id": "public-retired",
+      "terms": [
+        "年假政策"
+      ],
+      "content": "过期版本：此信息不可用于当前业务决策。",
+      "active": false,
+      "tenant": "tenant-a",
+      "roles": [
+        "staff"
+      ]
+    },
+    {
+      "id": "restricted",
+      "terms": [
+        "财务预算"
+      ],
+      "content": "财务内部预算只允许finance角色查看。",
+      "active": true,
+      "tenant": "tenant-a",
+      "roles": [
+        "specialist"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "agent": "claude-code",
+  "directory": ".claude/skills",
+  "format": "agent-skills",
+  "spec_version": "1.0.0",
+  "verified_on": "2026-10-06",
+  "source": "https://code.claude.com/docs/en/skills"
+}

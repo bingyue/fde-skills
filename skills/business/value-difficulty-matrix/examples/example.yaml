@@ -1,0 +1,21 @@
+kind: synthetic
+input:
+  context:
+    evidence: FAQ检索价值4难度2；自动排产价值5难度5
+  constraints:
+    boundary: 不要跨部门混用收入增长和工时节省的未经归一分数
+expected:
+  artifact: value-difficulty.md
+  decision: FAQ为快速验证候选；排产先验证约束与仿真数据
+  required_fields:
+  - 价值口径
+  - 难度口径
+  - 坐标
+  - 置信区间
+  - 象限动作
+checks:
+- 每个坐标有证据；低价值高难度项目有明确暂停条件
+- 不要跨部门混用收入增长和工时节省的未经归一分数
+negative_case:
+  input: 坐标来自主观投票
+  expected: 标为假设矩阵，安排估算验证。保留证据，不宣布未经验证的通过。

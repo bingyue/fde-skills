@@ -1,0 +1,21 @@
+kind: synthetic
+input:
+  context:
+    evidence: 有FAQ和Demo，无数据owner，无回归集
+  constraints:
+    boundary: 不要用平均分掩盖关键权限或数据缺口
+expected:
+  artifact: maturity-assessment.md
+  decision: 知识基础可试验；数据治理unknown；先任命owner并建立拒答回归集
+  required_fields:
+  - 维度
+  - 证据
+  - 等级
+  - 阻塞差距
+  - 90天行动
+checks:
+- 每个等级有证据和置信度；未取证维度标unknown；计划有验收物
+- 不要用平均分掩盖关键权限或数据缺口
+negative_case:
+  input: 只有问卷自报
+  expected: 输出暂定等级，不给生产就绪结论。保留证据，不宣布未经验证的通过。

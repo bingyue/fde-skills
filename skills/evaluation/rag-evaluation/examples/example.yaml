@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: 100题中90题召回正确，85题有支持引用，1题越权
+  constraints:
+    boundary: 流畅回答不等于正确；LLM裁判需抽样人工校准
+expected:
+  artifact: rag-eval-report.md
+  decision: Recall@k=90%；支持引用85%；即使平均分达标仍因越权阻断上线
+  required_fields:
+  - Recall@k
+  - 引用有效率
+  - groundedness
+  - 拒答
+  - 切片
+  - 延迟
+checks:
+- 每个指标有公式、分母和切片；权限泄露为硬失败
+- 流畅回答不等于正确；LLM裁判需抽样人工校准
+negative_case:
+  input: 相关性标签不足
+  expected: 先标注，不能仅用端到端评分归因检索。保留证据，不宣布未经验证的通过。

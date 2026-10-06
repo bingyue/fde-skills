@@ -1,0 +1,2592 @@
+[
+  {
+    "path": ".agents/skills/crm-automation/SKILL.md",
+    "sha256": "b3c9f124b28b87d90ea6471595e33941a6cf67d0043007f642562500abd4209a",
+    "bytes": 12244,
+    "lines": 545,
+    "preserved_path": "legacy/.agents/skills/crm-automation/SKILL.md"
+  },
+  {
+    "path": ".agents/skills/crm-data-quality/SKILL.md",
+    "sha256": "5c51e00fb3addfb8d3f546d086e22bd3852112ab6af86efc4b0a82d1d94b4de0",
+    "bytes": 4561,
+    "lines": 100,
+    "preserved_path": "legacy/.agents/skills/crm-data-quality/SKILL.md"
+  },
+  {
+    "path": ".agents/skills/cs-sop/SKILL.md",
+    "sha256": "1b751b3da1f50e9e60f4b7bbb400c39d3f1cb881313f26f11b7a3d2fe63191b5",
+    "bytes": 5021,
+    "lines": 120,
+    "preserved_path": "legacy/.agents/skills/cs-sop/SKILL.md"
+  },
+  {
+    "path": ".agents/skills/cs-sop/examples/sample_scenario.md",
+    "sha256": "720f5e70475ac717ff9b58255bd69032857190124ba82929a535c13e7ec059e6",
+    "bytes": 6154,
+    "lines": 129,
+    "preserved_path": "legacy/.agents/skills/cs-sop/examples/sample_scenario.md"
+  },
+  {
+    "path": ".agents/skills/deployment-engineer/README.md",
+    "sha256": "e7ed36511e9debb1101a8e5ad4a4986024ee8a18d5c8ef1718d406a139f80c6b",
+    "bytes": 876,
+    "lines": 40,
+    "preserved_path": "legacy/.agents/skills/deployment-engineer/README.md"
+  },
+  {
+    "path": ".agents/skills/deployment-engineer/SKILL.md",
+    "sha256": "5170fec6492b058b11b5935fbb6cb9fb3eeee6b997f916a01de1f35880483ded",
+    "bytes": 5273,
+    "lines": 248,
+    "preserved_path": "legacy/.agents/skills/deployment-engineer/SKILL.md"
+  },
+  {
+    "path": ".agents/skills/deployment-engineer/references/kubernetes.md",
+    "sha256": "3d32abb6d77b71e3713bb7b52ff1a56a7a70ed6d7c242f65231a7859f01c148c",
+    "bytes": 1002,
+    "lines": 46,
+    "preserved_path": "legacy/.agents/skills/deployment-engineer/references/kubernetes.md"
+  },
+  {
+    "path": ".agents/skills/deployment-engineer/references/monitoring.md",
+    "sha256": "7d5b543bad89c073a8799ec23d3a763ee1a93561fdeef706709e49d65c50f5c8",
+    "bytes": 242,
+    "lines": 14,
+    "preserved_path": "legacy/.agents/skills/deployment-engineer/references/monitoring.md"
+  },
+  {
+    "path": ".agents/skills/deployment-engineer/references/pipelines.md",
+    "sha256": "159110d90edf8c1baf3cdef161b631d56ac5aeed7b29e7d9084ca791080a0d71",
+    "bytes": 176,
+    "lines": 12,
+    "preserved_path": "legacy/.agents/skills/deployment-engineer/references/pipelines.md"
+  },
+  {
+    "path": ".agents/skills/deployment-engineer/scripts/generate_deploy.py",
+    "sha256": "cd9e2dba9fc6b83b7363f0b728523dbc9e1c975ecfe8d81950874f56355c3fa1",
+    "bytes": 2073,
+    "lines": 72,
+    "preserved_path": "legacy/.agents/skills/deployment-engineer/scripts/generate_deploy.py"
+  },
+  {
+    "path": ".agents/skills/deployment-engineer/scripts/validate_deploy.py",
+    "sha256": "e4856ba548654fd74dcd180d1befe421dac194616200a7f7ca9f0187278b3789",
+    "bytes": 1162,
+    "lines": 46,
+    "preserved_path": "legacy/.agents/skills/deployment-engineer/scripts/validate_deploy.py"
+  },
+  {
+    "path": ".agents/skills/deployment-pipeline-design/SKILL.md",
+    "sha256": "9a56bd9401c1dc8ef5a15758d7234f211193097ddb3895d46d1ddcd730687b18",
+    "bytes": 5522,
+    "lines": 106,
+    "preserved_path": "legacy/.agents/skills/deployment-pipeline-design/SKILL.md"
+  },
+  {
+    "path": ".agents/skills/deployment-pipeline-design/references/advanced-strategies.md",
+    "sha256": "4f7dd0252f8a0d0c195e729500e4b1ae72c94157358faec5303e78d9b9c13a52",
+    "bytes": 15950,
+    "lines": 629,
+    "preserved_path": "legacy/.agents/skills/deployment-pipeline-design/references/advanced-strategies.md"
+  },
+  {
+    "path": ".agents/skills/deployment-pipeline-design/references/details.md",
+    "sha256": "0de81a3e3d168fa301f9b49a6be321a247c3ef8be40c167a283df4a3ee0d5a3b",
+    "bytes": 12315,
+    "lines": 399,
+    "preserved_path": "legacy/.agents/skills/deployment-pipeline-design/references/details.md"
+  },
+  {
+    "path": ".agents/skills/designing-growth-loops/SKILL.md",
+    "sha256": "883c52ab90993434a2361ca5d36cc4f4c0d9306d15463315747f48702dd40116",
+    "bytes": 4385,
+    "lines": 71,
+    "preserved_path": "legacy/.agents/skills/designing-growth-loops/SKILL.md"
+  },
+  {
+    "path": ".agents/skills/designing-growth-loops/references/guest-insights.md",
+    "sha256": "374c61a35283bfcf5b82fb278b629121808749190f7149b206d2c9b4c3bfcde1",
+    "bytes": 56628,
+    "lines": 1112,
+    "preserved_path": "legacy/.agents/skills/designing-growth-loops/references/guest-insights.md"
+  },
+  {
+    "path": ".agents/skills/enterprise-sales/SKILL.md",
+    "sha256": "0a9cae47fee3c8c501ea53b1902bbbea9d2f8fdce5bc7cfdc1cfbddb5c2236fd",
+    "bytes": 4416,
+    "lines": 71,
+    "preserved_path": "legacy/.agents/skills/enterprise-sales/SKILL.md"
+  },
+  {
+    "path": ".agents/skills/enterprise-sales/references/guest-insights.md",
+    "sha256": "019e0c3c9814548d008e56a7c0f29829b92c8e58a1e562b28143b56151105725",
+    "bytes": 16722,
+    "lines": 324,
+    "preserved_path": "legacy/.agents/skills/enterprise-sales/references/guest-insights.md"
+  },
+  {
+    "path": ".agents/skills/enterprise-user-management-ai-analytics/SKILL.md",
+    "sha256": "ac24601be2be5fb91e1e74bc5b9dc5a89c8f3c2feb0866ececfa09d00681d880",
+    "bytes": 26498,
+    "lines": 1020,
+    "preserved_path": "legacy/.agents/skills/enterprise-user-management-ai-analytics/SKILL.md"
+  },
+  {
+    "path": ".agents/skills/langchain-rag/SKILL.md",
+    "sha256": "599a137f876df31f074fa7c43241374ba1b1fe6045c905ba02ee986067dcaa10",
+    "bytes": 14622,
+    "lines": 544,
+    "preserved_path": "legacy/.agents/skills/langchain-rag/SKILL.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/LICENSE.txt",
+    "sha256": "de698392d1a131731f56937c4491ca0d1eeadddfb245dab1a598c077ad8c4e26",
+    "bytes": 9164,
+    "lines": 71,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/LICENSE.txt"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/SKILL.md",
+    "sha256": "74ec634e3a7540aa27a81705624abcb782996ed3c3cd4684cf85c17ccd455c88",
+    "bytes": 17903,
+    "lines": 425,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/SKILL.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/references/authentication/auth0.md",
+    "sha256": "1faab1fab31882e389b2f042012db673608641b0a82de2300f50f24c2bbfa38a",
+    "bytes": 7338,
+    "lines": 222,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/references/authentication/auth0.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/references/authentication/better-auth.md",
+    "sha256": "256f9903c5af488373e0e335708b1220b733c262a5eb9ed0586920b018179452",
+    "bytes": 7780,
+    "lines": 212,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/references/authentication/better-auth.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/references/authentication/clerk.md",
+    "sha256": "ee985e400e825da3e3d553d584a4d045764b3d57b213747dc3dd378e406812c8",
+    "bytes": 4192,
+    "lines": 137,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/references/authentication/clerk.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/references/authentication/custom.md",
+    "sha256": "bda437c9df77c60ded36f60917faf972a95de6a965eb41c452ed85b5883958af",
+    "bytes": 13057,
+    "lines": 354,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/references/authentication/custom.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/references/authentication/keycloak.md",
+    "sha256": "734a71df2ca2c9ac8ae5c7c57eca572d80f4db0fdeb3de3150647960b846efa9",
+    "bytes": 8273,
+    "lines": 218,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/references/authentication/keycloak.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/references/authentication/overview.md",
+    "sha256": "11188c1abc7c9755148671f402e1937de1fa48cedece7e6699e5e7d374c5b08e",
+    "bytes": 8649,
+    "lines": 208,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/references/authentication/overview.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/references/authentication/supabase.md",
+    "sha256": "cdd9ea8cd47e98aac03a9f60f4e09cd6235b47f8f81f8a3aac39b2fa0bad2fb9",
+    "bytes": 9526,
+    "lines": 223,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/references/authentication/supabase.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/references/authentication/workos.md",
+    "sha256": "acf8cf6c22ad7d50f3b5221daf40346e6d26213425c5c6c6ecb7ab3cd3f7b5c4",
+    "bytes": 6213,
+    "lines": 208,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/references/authentication/workos.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/references/foundations/architecture.md",
+    "sha256": "38437a6361c105a292392495068857e0c00c479e134cda31ea8a39f50271a692",
+    "bytes": 8456,
+    "lines": 350,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/references/foundations/architecture.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/references/foundations/concepts.md",
+    "sha256": "ced3a8b1a235cfcab2f8fe7d0cb7045508d5f433417a58a4dcf9322a8b3fa39a",
+    "bytes": 3395,
+    "lines": 125,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/references/foundations/concepts.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/references/foundations/deployment.md",
+    "sha256": "a677c639d47b47fef72889efb2af6eaa8dc43fac145d655ad0c04331d7578bad",
+    "bytes": 5750,
+    "lines": 137,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/references/foundations/deployment.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/references/foundations/quickstart.md",
+    "sha256": "80675d7718f7f2586eb9074e1411ed53b59b27d3559da95114c149cd3fb7f524",
+    "bytes": 6155,
+    "lines": 246,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/references/foundations/quickstart.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/references/patterns/common-patterns.md",
+    "sha256": "6d5afd7271acff58f3f070631c99bcae67708b98e16e0f5a0852ac94b35daee9",
+    "bytes": 21203,
+    "lines": 768,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/references/patterns/common-patterns.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/references/server/prompts.md",
+    "sha256": "76ad693135979e76fc4ab356acdd6dfcc9a8bdbcb40691192f9fc878ed862757",
+    "bytes": 16730,
+    "lines": 618,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/references/server/prompts.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/references/server/proxy.md",
+    "sha256": "1a1cddb0561998395b2ba3082cd021335c31b6adc6ade020847b224a0c129b28",
+    "bytes": 3297,
+    "lines": 79,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/references/server/proxy.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/references/server/resources.md",
+    "sha256": "5eb7625c3ef168f8f6eeb8d3a789ec7a06dfcc171086fb2597ca50f438f7259b",
+    "bytes": 11592,
+    "lines": 502,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/references/server/resources.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/references/server/response-helpers.md",
+    "sha256": "590acea7ce19a175eca417c8b3705944278a84c6c63d804563133b4eeb992b16",
+    "bytes": 12685,
+    "lines": 627,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/references/server/response-helpers.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/references/server/tools.md",
+    "sha256": "d64ae3df657604ec7b5fc0cee17b3815fc1ef60976a2beed952c9da4e6d6894d",
+    "bytes": 12839,
+    "lines": 466,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/references/server/tools.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/references/widgets/advanced.md",
+    "sha256": "4fa20a3b03486129433fd2e36adce9f87aa403ce5fca1d3636ade48f857a7767",
+    "bytes": 19955,
+    "lines": 811,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/references/widgets/advanced.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/references/widgets/basics.md",
+    "sha256": "eadf64e0c0523f35e2150628500de2b8a13ac729ee3e60d14e3f21f833163334",
+    "bytes": 20275,
+    "lines": 755,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/references/widgets/basics.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/references/widgets/files.md",
+    "sha256": "0b11e2c72af2102ac24e62051a074bcf15cf069c75985f938e85099a0442a00e",
+    "bytes": 4793,
+    "lines": 147,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/references/widgets/files.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/references/widgets/interactivity.md",
+    "sha256": "857d7e7a3937a552844475a5c88ec5a917d091458da04e334d2c4d8c16f6b6f2",
+    "bytes": 22793,
+    "lines": 834,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/references/widgets/interactivity.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/references/widgets/model-context.md",
+    "sha256": "6232210f3b8fa5824478648cf19f7edb6970bbe5e14517f104d8b1619b802a93",
+    "bytes": 5499,
+    "lines": 163,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/references/widgets/model-context.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/references/widgets/state.md",
+    "sha256": "cbdcab76360372bd51ee897d7649c92edc2904dcf082db61b01cfb6daea1ef62",
+    "bytes": 15923,
+    "lines": 640,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/references/widgets/state.md"
+  },
+  {
+    "path": ".agents/skills/mcp-apps-builder/references/widgets/ui-guidelines.md",
+    "sha256": "124d940a3385fd0d0de541d273ea2ae9409163eec5e9e458a5a24026737689aa",
+    "bytes": 15818,
+    "lines": 760,
+    "preserved_path": "legacy/.agents/skills/mcp-apps-builder/references/widgets/ui-guidelines.md"
+  },
+  {
+    "path": ".agents/skills/mcp-builder/LICENSE.txt",
+    "sha256": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+    "bytes": 11345,
+    "lines": 202,
+    "preserved_path": "legacy/.agents/skills/mcp-builder/LICENSE.txt"
+  },
+  {
+    "path": ".agents/skills/mcp-builder/SKILL.md",
+    "sha256": "0f4592dcb53cf2b5d6b7febee6b4152018b565551a1c29e3c612f57b218ab295",
+    "bytes": 9092,
+    "lines": 236,
+    "preserved_path": "legacy/.agents/skills/mcp-builder/SKILL.md"
+  },
+  {
+    "path": ".agents/skills/mcp-builder/reference/evaluation.md",
+    "sha256": "8c99479f8a2d22a636c38e274537aac3610879e26f34e0709825077c4576f427",
+    "bytes": 21663,
+    "lines": 602,
+    "preserved_path": "legacy/.agents/skills/mcp-builder/reference/evaluation.md"
+  },
+  {
+    "path": ".agents/skills/mcp-builder/reference/mcp_best_practices.md",
+    "sha256": "80fb4369a349447cf18ecdd7494fe7938b6065377e9f08c077cec411093a3007",
+    "bytes": 7330,
+    "lines": 249,
+    "preserved_path": "legacy/.agents/skills/mcp-builder/reference/mcp_best_practices.md"
+  },
+  {
+    "path": ".agents/skills/mcp-builder/reference/node_mcp_server.md",
+    "sha256": "c3ba35a4f599dd53be9c6555ae72c19a7bf412cd5426576c2c08d42755482c66",
+    "bytes": 28550,
+    "lines": 970,
+    "preserved_path": "legacy/.agents/skills/mcp-builder/reference/node_mcp_server.md"
+  },
+  {
+    "path": ".agents/skills/mcp-builder/reference/python_mcp_server.md",
+    "sha256": "2da52f77e675191014ca2e146a4b95aa04d0ca7dd7e2b100322df15ade685e80",
+    "bytes": 25099,
+    "lines": 719,
+    "preserved_path": "legacy/.agents/skills/mcp-builder/reference/python_mcp_server.md"
+  },
+  {
+    "path": ".agents/skills/mcp-builder/scripts/connections.py",
+    "sha256": "9403668a2041568772082a8b334122c1f88daf0541fb393af4522d0094a47a6e",
+    "bytes": 4875,
+    "lines": 151,
+    "preserved_path": "legacy/.agents/skills/mcp-builder/scripts/connections.py"
+  },
+  {
+    "path": ".agents/skills/mcp-builder/scripts/evaluation.py",
+    "sha256": "49ed1d17cdce5da101b210197740713f49b935c29d4f339542a14b132658e6f7",
+    "bytes": 12579,
+    "lines": 373,
+    "preserved_path": "legacy/.agents/skills/mcp-builder/scripts/evaluation.py"
+  },
+  {
+    "path": ".agents/skills/mcp-builder/scripts/example_evaluation.xml",
+    "sha256": "9272b348ddcc4b06ba562367ccd0770e018158c0068ac5116d5e34aaeff8777a",
+    "bytes": 1194,
+    "lines": 22,
+    "preserved_path": "legacy/.agents/skills/mcp-builder/scripts/example_evaluation.xml"
+  },
+  {
+    "path": ".agents/skills/mcp-builder/scripts/requirements.txt",
+    "sha256": "d5d7558b2368ecea9dfeed7d1fbc71ee9e0750bebd1282faa527d528a344c3c7",
+    "bytes": 29,
+    "lines": 2,
+    "preserved_path": "legacy/.agents/skills/mcp-builder/scripts/requirements.txt"
+  },
+  {
+    "path": ".agents/skills/rag-architect/SKILL.md",
+    "sha256": "9038b0d030c9cbdbddb47141ec3314d7c998390f9011e8acd856b91132698e21",
+    "bytes": 7741,
+    "lines": 196,
+    "preserved_path": "legacy/.agents/skills/rag-architect/SKILL.md"
+  },
+  {
+    "path": ".agents/skills/rag-architect/references/chunking-strategies.md",
+    "sha256": "1b732310ebf7b5e64c5abef46b13a11614f1c3dc331c214389f2643504a9a809",
+    "bytes": 25083,
+    "lines": 878,
+    "preserved_path": "legacy/.agents/skills/rag-architect/references/chunking-strategies.md"
+  },
+  {
+    "path": ".agents/skills/rag-architect/references/embedding-models.md",
+    "sha256": "a840774bb2f5a635f454ccf7f2e9da72725552382ebf2a2b412b0d578f6bb8c8",
+    "bytes": 15330,
+    "lines": 561,
+    "preserved_path": "legacy/.agents/skills/rag-architect/references/embedding-models.md"
+  },
+  {
+    "path": ".agents/skills/rag-architect/references/rag-evaluation.md",
+    "sha256": "de20bdaa8180b00bdd931dd79870926f747de4dafc1c0a66a64609293a8131e0",
+    "bytes": 24288,
+    "lines": 833,
+    "preserved_path": "legacy/.agents/skills/rag-architect/references/rag-evaluation.md"
+  },
+  {
+    "path": ".agents/skills/rag-architect/references/retrieval-optimization.md",
+    "sha256": "caca467d9b0b2b0d3beba5e77f3333bd23f05c971a5dc101084293aa3d66df86",
+    "bytes": 21922,
+    "lines": 795,
+    "preserved_path": "legacy/.agents/skills/rag-architect/references/retrieval-optimization.md"
+  },
+  {
+    "path": ".agents/skills/rag-architect/references/vector-databases.md",
+    "sha256": "2782da946dee97da4dfa796aaee62852a7d0b92b8d713a7d8350fb7733ab63cc",
+    "bytes": 14257,
+    "lines": 589,
+    "preserved_path": "legacy/.agents/skills/rag-architect/references/vector-databases.md"
+  },
+  {
+    "path": ".agents/skills/rag-implementation/SKILL.md",
+    "sha256": "0dc4aeb9a999127821fd938f07ddc3ca873324b1124f66c5d7ccb50f61a66ef0",
+    "bytes": 4555,
+    "lines": 138,
+    "preserved_path": "legacy/.agents/skills/rag-implementation/SKILL.md"
+  },
+  {
+    "path": ".agents/skills/rag-implementation/references/details.md",
+    "sha256": "d117db50282eb6e9c1e1d2672316db1518885054c6489e46dd2a5d7b7bf4955c",
+    "bytes": 11063,
+    "lines": 410,
+    "preserved_path": "legacy/.agents/skills/rag-implementation/references/details.md"
+  },
+  {
+    "path": ".agents/skills/saas-revenue-growth-metrics/SKILL.md",
+    "sha256": "db11f14d62c3740c29cfa9a18e90f1bb282433413b9f1938ac8638226f61bb70",
+    "bytes": 23150,
+    "lines": 642,
+    "preserved_path": "legacy/.agents/skills/saas-revenue-growth-metrics/SKILL.md"
+  },
+  {
+    "path": ".agents/skills/saas-revenue-growth-metrics/examples/healthy-saas.md",
+    "sha256": "d8913c3a9eff73e14afd3c92575915fb39bbafd92ccbcf2dd50b6ada89996565",
+    "bytes": 3404,
+    "lines": 131,
+    "preserved_path": "legacy/.agents/skills/saas-revenue-growth-metrics/examples/healthy-saas.md"
+  },
+  {
+    "path": ".agents/skills/saas-revenue-growth-metrics/examples/warning-signs.md",
+    "sha256": "ea5b04ea17df95939c2969c3b6ffb519b9ebc68334b8dc32073525a82fe8642d",
+    "bytes": 6470,
+    "lines": 229,
+    "preserved_path": "legacy/.agents/skills/saas-revenue-growth-metrics/examples/warning-signs.md"
+  },
+  {
+    "path": ".agents/skills/saas-revenue-growth-metrics/template.md",
+    "sha256": "e0449a6708775cfd783f415f8c2331503041e6b8d7d43954ad5fb71840939971",
+    "bytes": 4321,
+    "lines": 192,
+    "preserved_path": "legacy/.agents/skills/saas-revenue-growth-metrics/template.md"
+  },
+  {
+    "path": ".agents/skills/security-requirement-extraction/SKILL.md",
+    "sha256": "bf391927dc404280e0f4d8c0ec20513c579fc6c277dfd04ad5a8e0a730ce8dde",
+    "bytes": 2537,
+    "lines": 67,
+    "preserved_path": "legacy/.agents/skills/security-requirement-extraction/SKILL.md"
+  },
+  {
+    "path": ".agents/skills/security-requirement-extraction/references/details.md",
+    "sha256": "e304b0e15e876dfc99e09302491fa1c635e0a509e5a04b91ed1047b6400f12da",
+    "bytes": 21889,
+    "lines": 611,
+    "preserved_path": "legacy/.agents/skills/security-requirement-extraction/references/details.md"
+  },
+  {
+    "path": ".agents/skills/security-review/LICENSE",
+    "sha256": "0fc858d87f467971ee612fc183896257a1c160a1610a443896b33ae4d2a44ef7",
+    "bytes": 884,
+    "lines": 22,
+    "preserved_path": "legacy/.agents/skills/security-review/LICENSE"
+  },
+  {
+    "path": ".agents/skills/security-review/SKILL.md",
+    "sha256": "6d36fa39ada88c8e66fdd4c52c3b846b0f27602d49871856d4bff90cc94719e5",
+    "bytes": 11775,
+    "lines": 312,
+    "preserved_path": "legacy/.agents/skills/security-review/SKILL.md"
+  },
+  {
+    "path": ".agents/skills/security-review/infrastructure/docker.md",
+    "sha256": "84bd49469c5a0cbd42fecdcce752de98cf6821b601dfef6a1920df61f030ae62",
+    "bytes": 9400,
+    "lines": 432,
+    "preserved_path": "legacy/.agents/skills/security-review/infrastructure/docker.md"
+  },
+  {
+    "path": ".agents/skills/security-review/languages/javascript.md",
+    "sha256": "f4226c82de13da9dec9be7b509932d74a4ade2c8d46b98a078a5b38bf8aa3319",
+    "bytes": 10028,
+    "lines": 387,
+    "preserved_path": "legacy/.agents/skills/security-review/languages/javascript.md"
+  },
+  {
+    "path": ".agents/skills/security-review/languages/python.md",
+    "sha256": "32d0b1304d132fc582320d584d54bbaea566d51700cd16b3f0be723ed834a556",
+    "bytes": 9492,
+    "lines": 363,
+    "preserved_path": "legacy/.agents/skills/security-review/languages/python.md"
+  },
+  {
+    "path": ".agents/skills/security-review/references/api-security.md",
+    "sha256": "65b2456b4c5ae0d6d9849eac8196ac03fbefbf88657c5e069a8aa5063dd6afbf",
+    "bytes": 12741,
+    "lines": 519,
+    "preserved_path": "legacy/.agents/skills/security-review/references/api-security.md"
+  },
+  {
+    "path": ".agents/skills/security-review/references/authentication.md",
+    "sha256": "7bc598cd4af33bb62406f5a0e8ff7adebff83c04e5fb449e6738f96ae0e26be6",
+    "bytes": 9071,
+    "lines": 353,
+    "preserved_path": "legacy/.agents/skills/security-review/references/authentication.md"
+  },
+  {
+    "path": ".agents/skills/security-review/references/authorization.md",
+    "sha256": "5ccfd579a1eca4d9d374eb00b04ba33cc9a2918e14e5cb7620c136a6feaeffff",
+    "bytes": 10007,
+    "lines": 372,
+    "preserved_path": "legacy/.agents/skills/security-review/references/authorization.md"
+  },
+  {
+    "path": ".agents/skills/security-review/references/business-logic.md",
+    "sha256": "fc8ec30eb19f73759e8901e58d7ca66fc87035703325cc8a844298102fa6298a",
+    "bytes": 12660,
+    "lines": 443,
+    "preserved_path": "legacy/.agents/skills/security-review/references/business-logic.md"
+  },
+  {
+    "path": ".agents/skills/security-review/references/cryptography.md",
+    "sha256": "1e1301624e0c9b1699e1d95af11df06a67d104ff06443e93711bb656152f364c",
+    "bytes": 8703,
+    "lines": 329,
+    "preserved_path": "legacy/.agents/skills/security-review/references/cryptography.md"
+  },
+  {
+    "path": ".agents/skills/security-review/references/csrf.md",
+    "sha256": "7b57ba0a45a291eee24578af8b0c69515c76e452c33d8c2d717c66ee3bbdda20",
+    "bytes": 9943,
+    "lines": 398,
+    "preserved_path": "legacy/.agents/skills/security-review/references/csrf.md"
+  },
+  {
+    "path": ".agents/skills/security-review/references/data-protection.md",
+    "sha256": "920b7dfb86dc696002d31022c1f7665ef602dd1ed76f1124ad937d488ce2b381",
+    "bytes": 9565,
+    "lines": 378,
+    "preserved_path": "legacy/.agents/skills/security-review/references/data-protection.md"
+  },
+  {
+    "path": ".agents/skills/security-review/references/deserialization.md",
+    "sha256": "be9946daf389ad594fbc4065246ff334c389da1e2cf593180ca150b0204287fb",
+    "bytes": 10234,
+    "lines": 410,
+    "preserved_path": "legacy/.agents/skills/security-review/references/deserialization.md"
+  },
+  {
+    "path": ".agents/skills/security-review/references/error-handling.md",
+    "sha256": "e12d3c9f713614223ce797935f3a4c2ac1a7f1fcf0ea24e865a1a70efeab4fb9",
+    "bytes": 11632,
+    "lines": 436,
+    "preserved_path": "legacy/.agents/skills/security-review/references/error-handling.md"
+  },
+  {
+    "path": ".agents/skills/security-review/references/file-security.md",
+    "sha256": "a0a001fb79fe9f1169fa3ba523225164744c42d8779341f15d3d0fc349185f2a",
+    "bytes": 12344,
+    "lines": 457,
+    "preserved_path": "legacy/.agents/skills/security-review/references/file-security.md"
+  },
+  {
+    "path": ".agents/skills/security-review/references/injection.md",
+    "sha256": "d3989e97af773f521170b430a0e629b26c6ff2051cd826fa62a895523f268178",
+    "bytes": 6813,
+    "lines": 259,
+    "preserved_path": "legacy/.agents/skills/security-review/references/injection.md"
+  },
+  {
+    "path": ".agents/skills/security-review/references/logging.md",
+    "sha256": "acca4eeebfc451bb62a7c085d1121ffa443e8cd0831548c2ae6f7fc606056cbc",
+    "bytes": 12012,
+    "lines": 433,
+    "preserved_path": "legacy/.agents/skills/security-review/references/logging.md"
+  },
+  {
+    "path": ".agents/skills/security-review/references/misconfiguration.md",
+    "sha256": "919c44e309eaa6427a8bb44a2ed645fbf2b46d9dfe86a0fcdb2d084201898390",
+    "bytes": 10305,
+    "lines": 435,
+    "preserved_path": "legacy/.agents/skills/security-review/references/misconfiguration.md"
+  },
+  {
+    "path": ".agents/skills/security-review/references/modern-threats.md",
+    "sha256": "d2ac69d91ade6df9c4bf89b2be0d203651d1a0cc5a67d03db8013af52c8ffe6b",
+    "bytes": 13269,
+    "lines": 475,
+    "preserved_path": "legacy/.agents/skills/security-review/references/modern-threats.md"
+  },
+  {
+    "path": ".agents/skills/security-review/references/ssrf.md",
+    "sha256": "646a8244fa61997b9b4f093169be1af4f94e6a3d04dcae8d426bb821870b2bff",
+    "bytes": 10734,
+    "lines": 413,
+    "preserved_path": "legacy/.agents/skills/security-review/references/ssrf.md"
+  },
+  {
+    "path": ".agents/skills/security-review/references/supply-chain.md",
+    "sha256": "ef3000d91763ccdddfbce2660943c4090b4c16b3b33afe980f4e10947729e1f1",
+    "bytes": 9149,
+    "lines": 405,
+    "preserved_path": "legacy/.agents/skills/security-review/references/supply-chain.md"
+  },
+  {
+    "path": ".agents/skills/security-review/references/xss.md",
+    "sha256": "4735df1e581b757b078605fbc27d37e85cfe182c45ab326c9e536c71a930680c",
+    "bytes": 7599,
+    "lines": 336,
+    "preserved_path": "legacy/.agents/skills/security-review/references/xss.md"
+  },
+  {
+    "path": ".agents/skills/supply-chain-optimizer/SKILL.md",
+    "sha256": "f71b787f452626905c5a299fcfd5c88e37acd772a8121cb4b3e3dff3d0f59520",
+    "bytes": 12874,
+    "lines": 317,
+    "preserved_path": "legacy/.agents/skills/supply-chain-optimizer/SKILL.md"
+  },
+  {
+    "path": ".agents/skills/supply-chain-risk-auditor/SKILL.md",
+    "sha256": "9f978cffec0a13596e7047d80a7890d44457048be0700b44016b020a0980051f",
+    "bytes": 5770,
+    "lines": 62,
+    "preserved_path": "legacy/.agents/skills/supply-chain-risk-auditor/SKILL.md"
+  },
+  {
+    "path": ".agents/skills/supply-chain-risk-auditor/agents/openai.yaml",
+    "sha256": "11a851b1841f3e828e7609045d91e0632cac07dfc008b2740f487cee83a5efd1",
+    "bytes": 128,
+    "lines": 4,
+    "preserved_path": "legacy/.agents/skills/supply-chain-risk-auditor/agents/openai.yaml"
+  },
+  {
+    "path": ".agents/skills/supply-chain-risk-auditor/assets/trail-of-bits-mark.svg",
+    "sha256": "4bf74c789b38dcf6ad762c136b6832363d27ae19fbaa9a18ec18d66ecce6ca05",
+    "bytes": 3084,
+    "lines": 1,
+    "preserved_path": "legacy/.agents/skills/supply-chain-risk-auditor/assets/trail-of-bits-mark.svg"
+  },
+  {
+    "path": ".agents/skills/supply-chain-risk-auditor/resources/results-template.md",
+    "sha256": "39ae26b3d55fc51d1837b252c5e5b2410ce7a35cfc21bc005b80cf4f18d79c01",
+    "bytes": 1174,
+    "lines": 41,
+    "preserved_path": "legacy/.agents/skills/supply-chain-risk-auditor/resources/results-template.md"
+  },
+  {
+    "path": ".agents/skills/tiktok-shop-customer-service/SKILL.md",
+    "sha256": "43453045474d812e4dd2fe36b9ac995bf586362730fe5f7d5be82260f6fc43cc",
+    "bytes": 1837,
+    "lines": 56,
+    "preserved_path": "legacy/.agents/skills/tiktok-shop-customer-service/SKILL.md"
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "1873747388f8f4bf5f0484502958d5fb8c3f94355a7c834be7ff2e13d9d83e73",
+    "bytes": 32,
+    "lines": 3,
+    "preserved_path": "legacy/.gitignore"
+  },
+  {
+    "path": "01-Foundation/Communication-Script-Library/README.md",
+    "sha256": "3c341e3e180db939fcbf8e4ea3e94e647d274150cab77fefbcecbc58bbba816a",
+    "bytes": 7971,
+    "lines": 233,
+    "preserved_path": "legacy/01-Foundation/Communication-Script-Library/README.md"
+  },
+  {
+    "path": "01-Foundation/Communication-Script-Library/checklist.md",
+    "sha256": "ee2d243335fa9267de19a08b3c6e032b37377712d150a4d381e73d18e2df58e9",
+    "bytes": 1026,
+    "lines": 38,
+    "preserved_path": "legacy/01-Foundation/Communication-Script-Library/checklist.md"
+  },
+  {
+    "path": "01-Foundation/Communication-Script-Library/evaluation.md",
+    "sha256": "1da86152e349dcd31e9e940532bef9c30fc86210b992e04795f9d60ae13455c5",
+    "bytes": 1889,
+    "lines": 61,
+    "preserved_path": "legacy/01-Foundation/Communication-Script-Library/evaluation.md"
+  },
+  {
+    "path": "01-Foundation/Communication-Script-Library/prompt.md",
+    "sha256": "23ea6f05c009f1632ef491bb478c224ffa6bc612375b808054505c2e71d25f33",
+    "bytes": 3630,
+    "lines": 130,
+    "preserved_path": "legacy/01-Foundation/Communication-Script-Library/prompt.md"
+  },
+  {
+    "path": "01-Foundation/FDE-Growth-Roadmap/README.md",
+    "sha256": "98ca563757aa8d4949090121faa3c4c20554e9a5acaa2259e20eae9103d16fa8",
+    "bytes": 14984,
+    "lines": 350,
+    "preserved_path": "legacy/01-Foundation/FDE-Growth-Roadmap/README.md"
+  },
+  {
+    "path": "01-Foundation/FDE-Growth-Roadmap/SKILL.md",
+    "sha256": "3edfe41d56c0e3e83dc4b62dadd8d53f359d7b345eac362863e1c847ee23b79d",
+    "bytes": 1785,
+    "lines": 37,
+    "preserved_path": "legacy/01-Foundation/FDE-Growth-Roadmap/SKILL.md"
+  },
+  {
+    "path": "01-Foundation/FDE-Growth-Roadmap/checklist.md",
+    "sha256": "23e4664a3d806d7631fad30511d9a0bd928b5630237a4f6d4f4e24e90979f0bd",
+    "bytes": 5012,
+    "lines": 121,
+    "preserved_path": "legacy/01-Foundation/FDE-Growth-Roadmap/checklist.md"
+  },
+  {
+    "path": "01-Foundation/FDE-Growth-Roadmap/evaluation.md",
+    "sha256": "ae167ae99b57f59b98e301dfe0748918ba2417fb24f662ad384e03373804bc7c",
+    "bytes": 5635,
+    "lines": 155,
+    "preserved_path": "legacy/01-Foundation/FDE-Growth-Roadmap/evaluation.md"
+  },
+  {
+    "path": "01-Foundation/FDE-Growth-Roadmap/examples.md",
+    "sha256": "72ce23f73d13944b9552d1dd7669a0ca6ce971f17ddd8d80508c572a6b2f2c97",
+    "bytes": 8555,
+    "lines": 214,
+    "preserved_path": "legacy/01-Foundation/FDE-Growth-Roadmap/examples.md"
+  },
+  {
+    "path": "01-Foundation/FDE-Growth-Roadmap/prompt.md",
+    "sha256": "1d2b8291f3ca0d573586bd423e36b5746e4c454fd66297dc65e2e1c4585654e3",
+    "bytes": 8838,
+    "lines": 284,
+    "preserved_path": "legacy/01-Foundation/FDE-Growth-Roadmap/prompt.md"
+  },
+  {
+    "path": "01-Foundation/FDE-Growth-Roadmap/references.md",
+    "sha256": "52d73e7d80bbec9f1bdfe3944d30be755a3603a680baf2059791508130db2781",
+    "bytes": 6578,
+    "lines": 153,
+    "preserved_path": "legacy/01-Foundation/FDE-Growth-Roadmap/references.md"
+  },
+  {
+    "path": "01-Foundation/FDE-Growth-Roadmap/workflow.md",
+    "sha256": "61558a4f614866fb1b5dc8fa3f21c430fc85cce38b8b3fbd4afcc0893f38655a",
+    "bytes": 3176,
+    "lines": 143,
+    "preserved_path": "legacy/01-Foundation/FDE-Growth-Roadmap/workflow.md"
+  },
+  {
+    "path": "01-Foundation/FDE-Self-Assessment/README.md",
+    "sha256": "33c69a9ad6f4ca39c3251a2ca00ec292a5987fb401c197b1ab9dbe0b923ab873",
+    "bytes": 7104,
+    "lines": 216,
+    "preserved_path": "legacy/01-Foundation/FDE-Self-Assessment/README.md"
+  },
+  {
+    "path": "01-Foundation/FDE-Self-Assessment/SKILL.md",
+    "sha256": "81674e893373d72c088b4e95586f1331011fb87d6d33cb7f84823920d48aebc6",
+    "bytes": 2011,
+    "lines": 39,
+    "preserved_path": "legacy/01-Foundation/FDE-Self-Assessment/SKILL.md"
+  },
+  {
+    "path": "01-Foundation/FDE-Self-Assessment/checklist.md",
+    "sha256": "7574a54fa5537e71651559f3cbde24777b886dcf90dcedbc65dd637e3eae7777",
+    "bytes": 1139,
+    "lines": 41,
+    "preserved_path": "legacy/01-Foundation/FDE-Self-Assessment/checklist.md"
+  },
+  {
+    "path": "01-Foundation/FDE-Self-Assessment/evaluation.md",
+    "sha256": "6888458483b6d7f7dad9f308281438f1883ffaca7c9b42f5d591c0d33339dfdb",
+    "bytes": 2157,
+    "lines": 68,
+    "preserved_path": "legacy/01-Foundation/FDE-Self-Assessment/evaluation.md"
+  },
+  {
+    "path": "01-Foundation/FDE-Self-Assessment/prompt.md",
+    "sha256": "ec623569945815d084d007407311689af3ed4e14ec190e7c7266117e69ef9960",
+    "bytes": 3784,
+    "lines": 127,
+    "preserved_path": "legacy/01-Foundation/FDE-Self-Assessment/prompt.md"
+  },
+  {
+    "path": "01-Foundation/FDE-Self-Assessment/templates/four-role-rubric.md",
+    "sha256": "17808a388c21a9f026739ddcf4822989d1f600570aa4e3f67cb6c1debb73f85e",
+    "bytes": 2738,
+    "lines": 67,
+    "preserved_path": "legacy/01-Foundation/FDE-Self-Assessment/templates/four-role-rubric.md"
+  },
+  {
+    "path": "01-Foundation/SOW-Generator/README.md",
+    "sha256": "cce42a57076e09fc37ecb346d06be4cd213768d42bfbc6fabed77682321b3a97",
+    "bytes": 6292,
+    "lines": 209,
+    "preserved_path": "legacy/01-Foundation/SOW-Generator/README.md"
+  },
+  {
+    "path": "01-Foundation/SOW-Generator/checklist.md",
+    "sha256": "30d2be38f8eccba48a4c925e0e87e410f472ce617b6381747df3ede2a209cf30",
+    "bytes": 815,
+    "lines": 36,
+    "preserved_path": "legacy/01-Foundation/SOW-Generator/checklist.md"
+  },
+  {
+    "path": "01-Foundation/SOW-Generator/evaluation.md",
+    "sha256": "fd9ab89f05e6ea7a26844ca6ab662aa2f83c90340a67679e38643a7b38620411",
+    "bytes": 1734,
+    "lines": 60,
+    "preserved_path": "legacy/01-Foundation/SOW-Generator/evaluation.md"
+  },
+  {
+    "path": "01-Foundation/SOW-Generator/prompt.md",
+    "sha256": "2f68c50356ddbc3538696e633b35bfe0cfabc72ee33f4f44420589d4ff5c621d",
+    "bytes": 2994,
+    "lines": 110,
+    "preserved_path": "legacy/01-Foundation/SOW-Generator/prompt.md"
+  },
+  {
+    "path": "01-Foundation/Stakeholder-Mapping/README.md",
+    "sha256": "d09d02e2fedf287c47f252c30e2777e00d46f0f02e60eb10bc7498e33645f2b5",
+    "bytes": 6308,
+    "lines": 204,
+    "preserved_path": "legacy/01-Foundation/Stakeholder-Mapping/README.md"
+  },
+  {
+    "path": "01-Foundation/Stakeholder-Mapping/checklist.md",
+    "sha256": "4aa7e94abae21236d82df094334e7a7ecd2e78e029ff7bd8c0123977235ea6b0",
+    "bytes": 803,
+    "lines": 35,
+    "preserved_path": "legacy/01-Foundation/Stakeholder-Mapping/checklist.md"
+  },
+  {
+    "path": "01-Foundation/Stakeholder-Mapping/evaluation.md",
+    "sha256": "b1db1418fc615cb82ea5e951c56957e7dc15bc661eea88cbec6d07b38b99ce6b",
+    "bytes": 1742,
+    "lines": 60,
+    "preserved_path": "legacy/01-Foundation/Stakeholder-Mapping/evaluation.md"
+  },
+  {
+    "path": "01-Foundation/Stakeholder-Mapping/prompt.md",
+    "sha256": "4e585d45bf995b92c260b1aaab809b2c13480d8144b63ea561a4e7cd70067ead",
+    "bytes": 3009,
+    "lines": 110,
+    "preserved_path": "legacy/01-Foundation/Stakeholder-Mapping/prompt.md"
+  },
+  {
+    "path": "02-Discovery/AIBP-Collaboration-Playbook/README.md",
+    "sha256": "e5ea0d82c6c43a4e9492d3deb314f18eb2a564bce7980a062bd1e3e1ccedeb4f",
+    "bytes": 6528,
+    "lines": 219,
+    "preserved_path": "legacy/02-Discovery/AIBP-Collaboration-Playbook/README.md"
+  },
+  {
+    "path": "02-Discovery/AIBP-Collaboration-Playbook/checklist.md",
+    "sha256": "26d0131c31916d79aa35e336fb954ac5a4c78bfb4fc3e997c28fe227e14ee141",
+    "bytes": 824,
+    "lines": 35,
+    "preserved_path": "legacy/02-Discovery/AIBP-Collaboration-Playbook/checklist.md"
+  },
+  {
+    "path": "02-Discovery/AIBP-Collaboration-Playbook/evaluation.md",
+    "sha256": "04f221645815904e5f5bc9eabd5043eb308799c9839e711473dea3149b06349e",
+    "bytes": 1729,
+    "lines": 60,
+    "preserved_path": "legacy/02-Discovery/AIBP-Collaboration-Playbook/evaluation.md"
+  },
+  {
+    "path": "02-Discovery/AIBP-Collaboration-Playbook/prompt.md",
+    "sha256": "403b936ad41cff666cde7c44d64db148b15dc06234b1bf1c4cc5fec7c346e487",
+    "bytes": 3021,
+    "lines": 110,
+    "preserved_path": "legacy/02-Discovery/AIBP-Collaboration-Playbook/prompt.md"
+  },
+  {
+    "path": "02-Discovery/AIBP-Collaboration-Playbook/workflow.md",
+    "sha256": "972f1b5f1bdd371b2a941c221f9deb7ed6cad181dd320234b2863a2836a0c554",
+    "bytes": 409,
+    "lines": 17,
+    "preserved_path": "legacy/02-Discovery/AIBP-Collaboration-Playbook/workflow.md"
+  },
+  {
+    "path": "02-Discovery/Business-Interview/README.md",
+    "sha256": "b3489da4e9e29690c829c75416bd4a5d779aa3cb73fe0c85af3574c1afa90ff7",
+    "bytes": 6243,
+    "lines": 207,
+    "preserved_path": "legacy/02-Discovery/Business-Interview/README.md"
+  },
+  {
+    "path": "02-Discovery/Business-Interview/checklist.md",
+    "sha256": "41c95f9af2a65c0dac55b69ed670d6085f2e942e0aac4972d549a669578b28d8",
+    "bytes": 804,
+    "lines": 36,
+    "preserved_path": "legacy/02-Discovery/Business-Interview/checklist.md"
+  },
+  {
+    "path": "02-Discovery/Business-Interview/evaluation.md",
+    "sha256": "9b41378ef6bccf4bbb55097bc6188c0e1b1dceddbd0d92b8897741b0f295198e",
+    "bytes": 1731,
+    "lines": 60,
+    "preserved_path": "legacy/02-Discovery/Business-Interview/evaluation.md"
+  },
+  {
+    "path": "02-Discovery/Business-Interview/prompt.md",
+    "sha256": "9f55ad016b4002e34e0f68b9c29114662a430be657773701afdea5d6003a2435",
+    "bytes": 3003,
+    "lines": 110,
+    "preserved_path": "legacy/02-Discovery/Business-Interview/prompt.md"
+  },
+  {
+    "path": "02-Discovery/Consultative-Problem-Solving/README.md",
+    "sha256": "30559db5688cf25cfe3cdc4ff0bf4f76bef6faea46fb3dc72ab5eafea6a05a74",
+    "bytes": 6652,
+    "lines": 226,
+    "preserved_path": "legacy/02-Discovery/Consultative-Problem-Solving/README.md"
+  },
+  {
+    "path": "02-Discovery/Consultative-Problem-Solving/checklist.md",
+    "sha256": "afe3f571326a125c338c5742f9accd28195d34827a25fd23b5415ef85a983389",
+    "bytes": 833,
+    "lines": 36,
+    "preserved_path": "legacy/02-Discovery/Consultative-Problem-Solving/checklist.md"
+  },
+  {
+    "path": "02-Discovery/Consultative-Problem-Solving/evaluation.md",
+    "sha256": "4d99c602941565115eb23beffdbaef4dd1846936bf4a5a51289aa74021f738df",
+    "bytes": 1743,
+    "lines": 60,
+    "preserved_path": "legacy/02-Discovery/Consultative-Problem-Solving/evaluation.md"
+  },
+  {
+    "path": "02-Discovery/Consultative-Problem-Solving/prompt.md",
+    "sha256": "8e03d480a6e2abbb8a33e26e54355ffa8d2402962ba85ea224ca40fa0c471ce1",
+    "bytes": 3049,
+    "lines": 110,
+    "preserved_path": "legacy/02-Discovery/Consultative-Problem-Solving/prompt.md"
+  },
+  {
+    "path": "02-Discovery/Consultative-Problem-Solving/workflow.md",
+    "sha256": "583bcbd91b994767d3b00752a1580526fba9c39fb451c0a75940c2e3ccb7996b",
+    "bytes": 855,
+    "lines": 40,
+    "preserved_path": "legacy/02-Discovery/Consultative-Problem-Solving/workflow.md"
+  },
+  {
+    "path": "02-Discovery/Executive-Communication-Framework/README.md",
+    "sha256": "8aad9e421369cc7078d580116404355dee8fe1f4a16fcad3c6029c15dd3469ec",
+    "bytes": 6531,
+    "lines": 218,
+    "preserved_path": "legacy/02-Discovery/Executive-Communication-Framework/README.md"
+  },
+  {
+    "path": "02-Discovery/Executive-Communication-Framework/checklist.md",
+    "sha256": "01328e4618dccf8c573ea762a87b06f3a7ec0269a6cb199178d55227e6f9ecb8",
+    "bytes": 803,
+    "lines": 35,
+    "preserved_path": "legacy/02-Discovery/Executive-Communication-Framework/checklist.md"
+  },
+  {
+    "path": "02-Discovery/Executive-Communication-Framework/evaluation.md",
+    "sha256": "9b82780d1d33783a77e95ec6c8215c8b9482357d216a1cc3a89a762074e90ea7",
+    "bytes": 1721,
+    "lines": 60,
+    "preserved_path": "legacy/02-Discovery/Executive-Communication-Framework/evaluation.md"
+  },
+  {
+    "path": "02-Discovery/Executive-Communication-Framework/prompt.md",
+    "sha256": "0c77154372378f4108dba733806cc7921dbf976c9274a99c921cd6e9aea914d3",
+    "bytes": 3050,
+    "lines": 110,
+    "preserved_path": "legacy/02-Discovery/Executive-Communication-Framework/prompt.md"
+  },
+  {
+    "path": "02-Discovery/Expectation-Management-Script/README.md",
+    "sha256": "3cc61c0db6071176b7d2d25a3f8819956265522922b0f3ceccd9d92ec2525082",
+    "bytes": 6565,
+    "lines": 217,
+    "preserved_path": "legacy/02-Discovery/Expectation-Management-Script/README.md"
+  },
+  {
+    "path": "02-Discovery/Expectation-Management-Script/checklist.md",
+    "sha256": "6c29d7363f260012175a64e00ca0c520a77cb04cc0f44eeb6445dcd134bae41f",
+    "bytes": 817,
+    "lines": 35,
+    "preserved_path": "legacy/02-Discovery/Expectation-Management-Script/checklist.md"
+  },
+  {
+    "path": "02-Discovery/Expectation-Management-Script/evaluation.md",
+    "sha256": "4343676d7a6525c5bc3e90208cf8af783ec5313a8fdc7aa995b0d6b0c2108925",
+    "bytes": 1744,
+    "lines": 60,
+    "preserved_path": "legacy/02-Discovery/Expectation-Management-Script/evaluation.md"
+  },
+  {
+    "path": "02-Discovery/Expectation-Management-Script/prompt.md",
+    "sha256": "43029f2f27e3475b9ae43f80dd63b0b96483c28bec04ac4431d0c64a88b1df22",
+    "bytes": 3040,
+    "lines": 110,
+    "preserved_path": "legacy/02-Discovery/Expectation-Management-Script/prompt.md"
+  },
+  {
+    "path": "02-Discovery/FDE-Issue-Tree-Analysis/README.md",
+    "sha256": "e7a64b2a4dc5f76e909a41a9a481965647f2ff3742361e59bb839e5aceb156fe",
+    "bytes": 12824,
+    "lines": 319,
+    "preserved_path": "legacy/02-Discovery/FDE-Issue-Tree-Analysis/README.md"
+  },
+  {
+    "path": "02-Discovery/FDE-Issue-Tree-Analysis/SKILL.md",
+    "sha256": "a9a867e049cd549bf79224e1e1d7c3eb10c8a5ca7e3d090be18d3c23197e7fa8",
+    "bytes": 2219,
+    "lines": 38,
+    "preserved_path": "legacy/02-Discovery/FDE-Issue-Tree-Analysis/SKILL.md"
+  },
+  {
+    "path": "02-Discovery/FDE-Issue-Tree-Analysis/checklist.md",
+    "sha256": "cb48d01941ad680c2f6aa21ffb6615af0f6073afcb0e38f6f9633c9055a0ed94",
+    "bytes": 5217,
+    "lines": 128,
+    "preserved_path": "legacy/02-Discovery/FDE-Issue-Tree-Analysis/checklist.md"
+  },
+  {
+    "path": "02-Discovery/FDE-Issue-Tree-Analysis/evaluation.md",
+    "sha256": "f9e7aa7da0841d1f3366ff1cbe72cdc74ec6010e72a86bce09ff0a3db457a058",
+    "bytes": 5431,
+    "lines": 149,
+    "preserved_path": "legacy/02-Discovery/FDE-Issue-Tree-Analysis/evaluation.md"
+  },
+  {
+    "path": "02-Discovery/FDE-Issue-Tree-Analysis/examples/ai-knowledge-base-issue-tree.md",
+    "sha256": "b795e65d8cb8fbe0473038c4be706055a33a59686761c2f0bc34e0c157577473",
+    "bytes": 13031,
+    "lines": 274,
+    "preserved_path": "legacy/02-Discovery/FDE-Issue-Tree-Analysis/examples/ai-knowledge-base-issue-tree.md"
+  },
+  {
+    "path": "02-Discovery/FDE-Issue-Tree-Analysis/prompt.md",
+    "sha256": "cdb6e7f3073650455bfd8088696a57c42df32ab1120ef2d2932cf39ee6c6239f",
+    "bytes": 6357,
+    "lines": 186,
+    "preserved_path": "legacy/02-Discovery/FDE-Issue-Tree-Analysis/prompt.md"
+  },
+  {
+    "path": "02-Discovery/Process-Mapping/README.md",
+    "sha256": "ae645098c0a6b82149da635bf0977d5e7877738d966625387cdd358ce0fac499",
+    "bytes": 6107,
+    "lines": 204,
+    "preserved_path": "legacy/02-Discovery/Process-Mapping/README.md"
+  },
+  {
+    "path": "02-Discovery/Process-Mapping/checklist.md",
+    "sha256": "e2e334da3dcd679998bb8331b2c001cca844b846890e398762ed8e06d34b22ae",
+    "bytes": 786,
+    "lines": 35,
+    "preserved_path": "legacy/02-Discovery/Process-Mapping/checklist.md"
+  },
+  {
+    "path": "02-Discovery/Process-Mapping/evaluation.md",
+    "sha256": "e58275825c13e16534ae68ed2ce6126b1297b54d5a5c7474771f3f1966ea3282",
+    "bytes": 1741,
+    "lines": 60,
+    "preserved_path": "legacy/02-Discovery/Process-Mapping/evaluation.md"
+  },
+  {
+    "path": "02-Discovery/Process-Mapping/prompt.md",
+    "sha256": "c13d6e1d80c6d9533208ee2d5b0a665cebfc704fcf47876239091c0543d8067d",
+    "bytes": 3008,
+    "lines": 110,
+    "preserved_path": "legacy/02-Discovery/Process-Mapping/prompt.md"
+  },
+  {
+    "path": "02-Discovery/Sidecar-AI-Transformation/README.md",
+    "sha256": "51266fb326d9ca0abca5a86c8063fccac69e6451743e69369c3be28e49b410f8",
+    "bytes": 15541,
+    "lines": 305,
+    "preserved_path": "legacy/02-Discovery/Sidecar-AI-Transformation/README.md"
+  },
+  {
+    "path": "02-Discovery/Sidecar-AI-Transformation/SKILL.md",
+    "sha256": "7727413fad1d3fc9ad044a6e3a8917c762dd87189a54c5d17205a91fa0ac0a9a",
+    "bytes": 2227,
+    "lines": 38,
+    "preserved_path": "legacy/02-Discovery/Sidecar-AI-Transformation/SKILL.md"
+  },
+  {
+    "path": "02-Discovery/Sidecar-AI-Transformation/checklist.md",
+    "sha256": "f15845888cfe3a6819b1a4797550744686dee0657dcc1cd9e8c1480575f0960b",
+    "bytes": 6369,
+    "lines": 123,
+    "preserved_path": "legacy/02-Discovery/Sidecar-AI-Transformation/checklist.md"
+  },
+  {
+    "path": "02-Discovery/Sidecar-AI-Transformation/evaluation.md",
+    "sha256": "8eaba62224ec81e06f9a76cf7cbf7bfcd88ac3902c4dec2c49c882567f3489f1",
+    "bytes": 7253,
+    "lines": 182,
+    "preserved_path": "legacy/02-Discovery/Sidecar-AI-Transformation/evaluation.md"
+  },
+  {
+    "path": "02-Discovery/Sidecar-AI-Transformation/prompt.md",
+    "sha256": "0d40a0a64a5b3aea314fb9189bbe4ed5181d9e3744123c695f43d0b2c55265e1",
+    "bytes": 8738,
+    "lines": 255,
+    "preserved_path": "legacy/02-Discovery/Sidecar-AI-Transformation/prompt.md"
+  },
+  {
+    "path": "02-Discovery/Sidecar-AI-Transformation/workflow.md",
+    "sha256": "6022a8a4d81d6781651820585f9fdc097008468e450737a78cd59524373d4f31",
+    "bytes": 6027,
+    "lines": 243,
+    "preserved_path": "legacy/02-Discovery/Sidecar-AI-Transformation/workflow.md"
+  },
+  {
+    "path": "03-Solution-Design/API-Design-Review/README.md",
+    "sha256": "7f73a1a4181e2789a0a996ccc4330ae8a7fdcc55590e0746115b853491ab460f",
+    "bytes": 5946,
+    "lines": 203,
+    "preserved_path": "legacy/03-Solution-Design/API-Design-Review/README.md"
+  },
+  {
+    "path": "03-Solution-Design/API-Design-Review/checklist.md",
+    "sha256": "58a3ea35803b5c3c4f531849b8023f68b019dcd8bd4483d4f40fb7779444d2ee",
+    "bytes": 759,
+    "lines": 34,
+    "preserved_path": "legacy/03-Solution-Design/API-Design-Review/checklist.md"
+  },
+  {
+    "path": "03-Solution-Design/API-Design-Review/evaluation.md",
+    "sha256": "3956a73e4bf400813fcdbe7b708763069c70e982cebf09a35d5c5c5728b353aa",
+    "bytes": 1714,
+    "lines": 60,
+    "preserved_path": "legacy/03-Solution-Design/API-Design-Review/evaluation.md"
+  },
+  {
+    "path": "03-Solution-Design/API-Design-Review/prompt.md",
+    "sha256": "b44a74bf90c885eecf32eb8852067275b19ff6523a40fe830af4bfc361382c23",
+    "bytes": 2995,
+    "lines": 110,
+    "preserved_path": "legacy/03-Solution-Design/API-Design-Review/prompt.md"
+  },
+  {
+    "path": "03-Solution-Design/FDE-PoC-Tech-Stack-Selector/README.md",
+    "sha256": "fe9ca0df421fdeaf50ead84975c35c2b7dc0c951eb576a0e1d48f055ecb06f57",
+    "bytes": 14216,
+    "lines": 397,
+    "preserved_path": "legacy/03-Solution-Design/FDE-PoC-Tech-Stack-Selector/README.md"
+  },
+  {
+    "path": "03-Solution-Design/FDE-PoC-Tech-Stack-Selector/SKILL.md",
+    "sha256": "514c44161edeaf07d780ec96e62e98c8c34141128a403d73850e3c1970665bd9",
+    "bytes": 6302,
+    "lines": 167,
+    "preserved_path": "legacy/03-Solution-Design/FDE-PoC-Tech-Stack-Selector/SKILL.md"
+  },
+  {
+    "path": "03-Solution-Design/FDE-PoC-Tech-Stack-Selector/checklist.md",
+    "sha256": "7710960421cf6da6eeefac82b30e63b5c9f98ffb8f5b1e2d4100a1eff4c3ab73",
+    "bytes": 4899,
+    "lines": 131,
+    "preserved_path": "legacy/03-Solution-Design/FDE-PoC-Tech-Stack-Selector/checklist.md"
+  },
+  {
+    "path": "03-Solution-Design/FDE-PoC-Tech-Stack-Selector/evaluation.md",
+    "sha256": "9c4038315d627332702186439d58056e926161d019b25a5f8027b21a0e599bac",
+    "bytes": 4884,
+    "lines": 143,
+    "preserved_path": "legacy/03-Solution-Design/FDE-PoC-Tech-Stack-Selector/evaluation.md"
+  },
+  {
+    "path": "03-Solution-Design/FDE-PoC-Tech-Stack-Selector/examples/knowledge-base-poc.md",
+    "sha256": "2f95b5f81f52f696607b55c3cad906efb5a5be2bd7c02f1480dd9bbdbaff68b8",
+    "bytes": 5931,
+    "lines": 152,
+    "preserved_path": "legacy/03-Solution-Design/FDE-PoC-Tech-Stack-Selector/examples/knowledge-base-poc.md"
+  },
+  {
+    "path": "03-Solution-Design/FDE-PoC-Tech-Stack-Selector/prompt.md",
+    "sha256": "4bbc5e2836c57e6ae2ad88e528e69d81f2d540628533b2384f649eda2c3baaf0",
+    "bytes": 7173,
+    "lines": 215,
+    "preserved_path": "legacy/03-Solution-Design/FDE-PoC-Tech-Stack-Selector/prompt.md"
+  },
+  {
+    "path": "03-Solution-Design/FDE-PoC-Tech-Stack-Selector/references.md",
+    "sha256": "127e9b6f871899ae25916088674ddf971af193c7cf4a7660329603c3d8ef0b1e",
+    "bytes": 7408,
+    "lines": 237,
+    "preserved_path": "legacy/03-Solution-Design/FDE-PoC-Tech-Stack-Selector/references.md"
+  },
+  {
+    "path": "03-Solution-Design/FDE-PoC-Tech-Stack-Selector/templates/poc-build-plan.md",
+    "sha256": "2e6b2f80dda00a7701a7a87b0bdce27189bceed41174b1facc889b7733db8afc",
+    "bytes": 1951,
+    "lines": 86,
+    "preserved_path": "legacy/03-Solution-Design/FDE-PoC-Tech-Stack-Selector/templates/poc-build-plan.md"
+  },
+  {
+    "path": "03-Solution-Design/FDE-PoC-Tech-Stack-Selector/templates/tech-decision-record.md",
+    "sha256": "66fe0d13a0c1d27393e29a250dc6ae59470b9c81c6081e60b476cff194a6f308",
+    "bytes": 2377,
+    "lines": 125,
+    "preserved_path": "legacy/03-Solution-Design/FDE-PoC-Tech-Stack-Selector/templates/tech-decision-record.md"
+  },
+  {
+    "path": "03-Solution-Design/FDE-PoC-Tech-Stack-Selector/workflow.md",
+    "sha256": "4a268464ea20e9aaa4a585864c951ce2ff9f52a793c8526e0251f7d46f9792e1",
+    "bytes": 6184,
+    "lines": 253,
+    "preserved_path": "legacy/03-Solution-Design/FDE-PoC-Tech-Stack-Selector/workflow.md"
+  },
+  {
+    "path": "03-Solution-Design/PRD-Generator/README.md",
+    "sha256": "f891241fb5617829edb034c324e166c6e7d94c6514b1425cffa18be0286630eb",
+    "bytes": 6042,
+    "lines": 205,
+    "preserved_path": "legacy/03-Solution-Design/PRD-Generator/README.md"
+  },
+  {
+    "path": "03-Solution-Design/PRD-Generator/checklist.md",
+    "sha256": "9547c4389a609822bbf66acfdf7f4b16306dfc223d7f29a5c1d10fb9739edc95",
+    "bytes": 767,
+    "lines": 34,
+    "preserved_path": "legacy/03-Solution-Design/PRD-Generator/checklist.md"
+  },
+  {
+    "path": "03-Solution-Design/PRD-Generator/evaluation.md",
+    "sha256": "af0403d64e3dd8d419aafae2d8ee6229a2e93304164304a5a595c6e9763919b7",
+    "bytes": 1711,
+    "lines": 60,
+    "preserved_path": "legacy/03-Solution-Design/PRD-Generator/evaluation.md"
+  },
+  {
+    "path": "03-Solution-Design/PRD-Generator/prompt.md",
+    "sha256": "f4be7278772f8e976765f585008b342f770ec89d3643f234bb5d23ce71fd280e",
+    "bytes": 2974,
+    "lines": 110,
+    "preserved_path": "legacy/03-Solution-Design/PRD-Generator/prompt.md"
+  },
+  {
+    "path": "04-AI-Delivery/RAG-Evaluation/README.md",
+    "sha256": "4529eb44cf48d0827cfa3867d1bed12688f3d1db68e1424fd425ed3bdd732267",
+    "bytes": 6336,
+    "lines": 220,
+    "preserved_path": "legacy/04-AI-Delivery/RAG-Evaluation/README.md"
+  },
+  {
+    "path": "04-AI-Delivery/RAG-Evaluation/checklist.md",
+    "sha256": "999bae4087a707b7a30cdd9445e2e6947aa7f0387403df451814cd4a4245a7dc",
+    "bytes": 783,
+    "lines": 35,
+    "preserved_path": "legacy/04-AI-Delivery/RAG-Evaluation/checklist.md"
+  },
+  {
+    "path": "04-AI-Delivery/RAG-Evaluation/evaluation.md",
+    "sha256": "a1ac8ae99b2f3a4df7a8ac90186acde1abc470f19a8fa7fcda70fa6f498455c7",
+    "bytes": 1701,
+    "lines": 60,
+    "preserved_path": "legacy/04-AI-Delivery/RAG-Evaluation/evaluation.md"
+  },
+  {
+    "path": "04-AI-Delivery/RAG-Evaluation/prompt.md",
+    "sha256": "c7f416863848100d1508b5e6806bab655bc325bb16d7b7f0dcaf9a42171d8a4f",
+    "bytes": 2987,
+    "lines": 110,
+    "preserved_path": "legacy/04-AI-Delivery/RAG-Evaluation/prompt.md"
+  },
+  {
+    "path": "04-AI-Delivery/Tool-Audit/README.md",
+    "sha256": "e56e39a6dd38613ee253136b6a52546cf2ac49a8e3119536ff322f42a7e09916",
+    "bytes": 6076,
+    "lines": 210,
+    "preserved_path": "legacy/04-AI-Delivery/Tool-Audit/README.md"
+  },
+  {
+    "path": "04-AI-Delivery/Tool-Audit/checklist.md",
+    "sha256": "41b8f5b71433a6d49c0d9bf584087f1bb6170f70d51b9c9c450bd8e4ce32fe1a",
+    "bytes": 770,
+    "lines": 34,
+    "preserved_path": "legacy/04-AI-Delivery/Tool-Audit/checklist.md"
+  },
+  {
+    "path": "04-AI-Delivery/Tool-Audit/evaluation.md",
+    "sha256": "7ade02cc09316e3f0e25d1a706aa23106593c00ec29369843a66d24a7af9bd8b",
+    "bytes": 1711,
+    "lines": 60,
+    "preserved_path": "legacy/04-AI-Delivery/Tool-Audit/evaluation.md"
+  },
+  {
+    "path": "04-AI-Delivery/Tool-Audit/prompt.md",
+    "sha256": "47ccba155aab9fd13e1d2878b77f030950fa7f2f0a254c779fb3aa52ee353ce5",
+    "bytes": 2977,
+    "lines": 110,
+    "preserved_path": "legacy/04-AI-Delivery/Tool-Audit/prompt.md"
+  },
+  {
+    "path": "05-Deployment/Private-Deployment-Gateway/README.md",
+    "sha256": "46f93620f239c4d6ea0d59f3b652d5c73e62253309902f80009498379e46c646",
+    "bytes": 6244,
+    "lines": 218,
+    "preserved_path": "legacy/05-Deployment/Private-Deployment-Gateway/README.md"
+  },
+  {
+    "path": "05-Deployment/Private-Deployment-Gateway/checklist.md",
+    "sha256": "213f7a5da17d62e235ab00edc3e4ecadc6933c9c5927a866fe641423ca34e8de",
+    "bytes": 806,
+    "lines": 35,
+    "preserved_path": "legacy/05-Deployment/Private-Deployment-Gateway/checklist.md"
+  },
+  {
+    "path": "05-Deployment/Private-Deployment-Gateway/evaluation.md",
+    "sha256": "e44d46e438986de80e762e42d36145cbfad9c981d3bdfd26a1ba92607024dae3",
+    "bytes": 1731,
+    "lines": 60,
+    "preserved_path": "legacy/05-Deployment/Private-Deployment-Gateway/evaluation.md"
+  },
+  {
+    "path": "05-Deployment/Private-Deployment-Gateway/prompt.md",
+    "sha256": "8330c14e6b00027583c69717d1b149d17338d2625800bf49d52de0145cb7ab91",
+    "bytes": 3021,
+    "lines": 110,
+    "preserved_path": "legacy/05-Deployment/Private-Deployment-Gateway/prompt.md"
+  },
+  {
+    "path": "05-Deployment/Private-Deployment-Gateway/workflow.md",
+    "sha256": "48766107d5a8faed4db098581ab828b7096b3a38c5d739fd8e64b1f74235ea7d",
+    "bytes": 301,
+    "lines": 11,
+    "preserved_path": "legacy/05-Deployment/Private-Deployment-Gateway/workflow.md"
+  },
+  {
+    "path": "06-Integration/Feishu-Integration/README.md",
+    "sha256": "5a5105dc4cdce2c7b88f97e09affecb6b23954807b967fe20d8e72877e5810b8",
+    "bytes": 6344,
+    "lines": 219,
+    "preserved_path": "legacy/06-Integration/Feishu-Integration/README.md"
+  },
+  {
+    "path": "06-Integration/Feishu-Integration/checklist.md",
+    "sha256": "61be6d75506365b88af8c84a44a7b1385360a30256e1add90bfb6bcf3ed2be61",
+    "bytes": 773,
+    "lines": 34,
+    "preserved_path": "legacy/06-Integration/Feishu-Integration/checklist.md"
+  },
+  {
+    "path": "06-Integration/Feishu-Integration/evaluation.md",
+    "sha256": "de53519098ee8e6055b19492be920562e9f6d7a04a4ef06d00d49a23326d79ba",
+    "bytes": 1719,
+    "lines": 60,
+    "preserved_path": "legacy/06-Integration/Feishu-Integration/evaluation.md"
+  },
+  {
+    "path": "06-Integration/Feishu-Integration/prompt.md",
+    "sha256": "66a51f62d838f116bf25b69f7fd2cbfa0b8fa0a836e4b62db54d3ee2b4bc02fe",
+    "bytes": 3000,
+    "lines": 110,
+    "preserved_path": "legacy/06-Integration/Feishu-Integration/prompt.md"
+  },
+  {
+    "path": "07-Operations/Customer-Service-Bot/README.md",
+    "sha256": "e00c75a4c8a16a3e4f3575e8d2075881164053b26e076f360dd02199dd99385f",
+    "bytes": 6088,
+    "lines": 210,
+    "preserved_path": "legacy/07-Operations/Customer-Service-Bot/README.md"
+  },
+  {
+    "path": "07-Operations/Customer-Service-Bot/checklist.md",
+    "sha256": "7451de3deb0c28cfc0a578a47005a097c1d9861fad8b3be4b0abd7f459dd4a16",
+    "bytes": 781,
+    "lines": 35,
+    "preserved_path": "legacy/07-Operations/Customer-Service-Bot/checklist.md"
+  },
+  {
+    "path": "07-Operations/Customer-Service-Bot/evaluation.md",
+    "sha256": "76ee5c6e280aa388b49e864824c79c86e52fc94cb80c554cb3781ba653e9b549",
+    "bytes": 1683,
+    "lines": 60,
+    "preserved_path": "legacy/07-Operations/Customer-Service-Bot/evaluation.md"
+  },
+  {
+    "path": "07-Operations/Customer-Service-Bot/prompt.md",
+    "sha256": "d0975b26cc010afdad1dee0f53e5fe5bff355bb1c39941c9ca43f80f6113180d",
+    "bytes": 3003,
+    "lines": 110,
+    "preserved_path": "legacy/07-Operations/Customer-Service-Bot/prompt.md"
+  },
+  {
+    "path": "07-Operations/FDE-Adoption-Growth/README.md",
+    "sha256": "124d01c0c74866e8d656e9d3dc554db88dac0e80f587bc03888b11ebada0e8f7",
+    "bytes": 6199,
+    "lines": 211,
+    "preserved_path": "legacy/07-Operations/FDE-Adoption-Growth/README.md"
+  },
+  {
+    "path": "07-Operations/FDE-Adoption-Growth/checklist.md",
+    "sha256": "b359b65cf25c30179646b8c57829cee83fa223a6c3ef98fe1c839fdf980f3701",
+    "bytes": 779,
+    "lines": 35,
+    "preserved_path": "legacy/07-Operations/FDE-Adoption-Growth/checklist.md"
+  },
+  {
+    "path": "07-Operations/FDE-Adoption-Growth/evaluation.md",
+    "sha256": "cfcdb29baa0175dc642a1afd8b0fbe11c3af9f97446dc3b48b86d2b90bec3050",
+    "bytes": 1692,
+    "lines": 60,
+    "preserved_path": "legacy/07-Operations/FDE-Adoption-Growth/evaluation.md"
+  },
+  {
+    "path": "07-Operations/FDE-Adoption-Growth/prompt.md",
+    "sha256": "438435ecd40536625616ed0a178cbf1e4f53fbd8a454190c2dbe8bc57622c12c",
+    "bytes": 3006,
+    "lines": 110,
+    "preserved_path": "legacy/07-Operations/FDE-Adoption-Growth/prompt.md"
+  },
+  {
+    "path": "07-Operations/FDE-Adoption-Growth/workflow.md",
+    "sha256": "627dd9daec5e675a3663a37b7b881a68eda5657cf2d3eec1df0aa17c268b7f75",
+    "bytes": 210,
+    "lines": 8,
+    "preserved_path": "legacy/07-Operations/FDE-Adoption-Growth/workflow.md"
+  },
+  {
+    "path": "07-Operations/SQL-Dashboard-Brief/README.md",
+    "sha256": "00a159d4cbb84d28a26060e5b56521a558fed87de320293f793a499a6f01e8a2",
+    "bytes": 6047,
+    "lines": 208,
+    "preserved_path": "legacy/07-Operations/SQL-Dashboard-Brief/README.md"
+  },
+  {
+    "path": "07-Operations/SQL-Dashboard-Brief/checklist.md",
+    "sha256": "24fc4781e14aab33260b31eccb8bfadbbbb0e6ae6ca9514211b6f21c09da31f5",
+    "bytes": 773,
+    "lines": 34,
+    "preserved_path": "legacy/07-Operations/SQL-Dashboard-Brief/checklist.md"
+  },
+  {
+    "path": "07-Operations/SQL-Dashboard-Brief/evaluation.md",
+    "sha256": "05f762785fa528db59667056c01983440e798c10cb2571d7465872aecb30ef5a",
+    "bytes": 1721,
+    "lines": 60,
+    "preserved_path": "legacy/07-Operations/SQL-Dashboard-Brief/evaluation.md"
+  },
+  {
+    "path": "07-Operations/SQL-Dashboard-Brief/prompt.md",
+    "sha256": "605f96485273e84ec46a6caeae036b628713c4fddf000de2cda5624e149cb8a2",
+    "bytes": 3006,
+    "lines": 110,
+    "preserved_path": "legacy/07-Operations/SQL-Dashboard-Brief/prompt.md"
+  },
+  {
+    "path": "08-Security-Compliance/RBAC-Audit/README.md",
+    "sha256": "c871c42d72a585cc8c82c875ee817e0746bdd931519c0d2a09f1a6970d2e28de",
+    "bytes": 6064,
+    "lines": 210,
+    "preserved_path": "legacy/08-Security-Compliance/RBAC-Audit/README.md"
+  },
+  {
+    "path": "08-Security-Compliance/RBAC-Audit/checklist.md",
+    "sha256": "1a5da199210c27436d59472c195bb06a6b445db38a1db385efa0f05bbabfaaa4",
+    "bytes": 753,
+    "lines": 33,
+    "preserved_path": "legacy/08-Security-Compliance/RBAC-Audit/checklist.md"
+  },
+  {
+    "path": "08-Security-Compliance/RBAC-Audit/evaluation.md",
+    "sha256": "c50a5016aef26779fa8da5554b0fde7aec908f2135466d4643f22cdb69f456dd",
+    "bytes": 1708,
+    "lines": 60,
+    "preserved_path": "legacy/08-Security-Compliance/RBAC-Audit/evaluation.md"
+  },
+  {
+    "path": "08-Security-Compliance/RBAC-Audit/prompt.md",
+    "sha256": "65baea02af97c002bf2719c397360895bcecac95db2768c90a04f9952faca154",
+    "bytes": 2965,
+    "lines": 110,
+    "preserved_path": "legacy/08-Security-Compliance/RBAC-Audit/prompt.md"
+  },
+  {
+    "path": "09-Industry/AI-Operations-Daily/README.md",
+    "sha256": "95708f90f3423052e80329a1f6f0d277ebf9513ef60f427005b964448cc84d98",
+    "bytes": 6012,
+    "lines": 205,
+    "preserved_path": "legacy/09-Industry/AI-Operations-Daily/README.md"
+  },
+  {
+    "path": "09-Industry/AI-Operations-Daily/checklist.md",
+    "sha256": "c27e615fc79a084bbcf5f0f7dd185107e34777ad7dcfdba4552b9d4c594f1089",
+    "bytes": 770,
+    "lines": 34,
+    "preserved_path": "legacy/09-Industry/AI-Operations-Daily/checklist.md"
+  },
+  {
+    "path": "09-Industry/AI-Operations-Daily/evaluation.md",
+    "sha256": "a65e93bf6eee9acf94d6c5a826639ace65f1385e6d79382b25490441b997d89b",
+    "bytes": 1716,
+    "lines": 60,
+    "preserved_path": "legacy/09-Industry/AI-Operations-Daily/evaluation.md"
+  },
+  {
+    "path": "09-Industry/AI-Operations-Daily/prompt.md",
+    "sha256": "966e516498b2e7b49f39d1bf55fce426849b44f7390442c4ff893a3d41f48250",
+    "bytes": 2999,
+    "lines": 110,
+    "preserved_path": "legacy/09-Industry/AI-Operations-Daily/prompt.md"
+  },
+  {
+    "path": "10-Templates/Career-Job-Search/README.md",
+    "sha256": "c9525f9da1a062f151674758da0a3da596721a77c82de64fcc00036f4485588b",
+    "bytes": 1357,
+    "lines": 55,
+    "preserved_path": "legacy/10-Templates/Career-Job-Search/README.md"
+  },
+  {
+    "path": "10-Templates/Career-Job-Search/due-diligence-questions.md",
+    "sha256": "0b0f336a05c57322aee2a72f7438c2d19aad70f226697137eac05a3834d4d594",
+    "bytes": 2238,
+    "lines": 68,
+    "preserved_path": "legacy/10-Templates/Career-Job-Search/due-diligence-questions.md"
+  },
+  {
+    "path": "10-Templates/Career-Job-Search/jd-evidence-matrix.md",
+    "sha256": "956462c5938083bf3b5ee5e6d87cebcd3c956dde8beb601ce97d811242f7562a",
+    "bytes": 1086,
+    "lines": 49,
+    "preserved_path": "legacy/10-Templates/Career-Job-Search/jd-evidence-matrix.md"
+  },
+  {
+    "path": "10-Templates/Career-Job-Search/job-funnel-tracker.md",
+    "sha256": "f64451f194ca00eb9488975740c17348f4cf68af86c236b52e9f885d65fa9201",
+    "bytes": 1163,
+    "lines": 45,
+    "preserved_path": "legacy/10-Templates/Career-Job-Search/job-funnel-tracker.md"
+  },
+  {
+    "path": "10-Templates/Career-Job-Search/portfolio-index.md",
+    "sha256": "188b4929ae3fa1c2a5183d3940f8e5b64acc18e20cb5408a47936dec15de6850",
+    "bytes": 1051,
+    "lines": 42,
+    "preserved_path": "legacy/10-Templates/Career-Job-Search/portfolio-index.md"
+  },
+  {
+    "path": "10-Templates/Career-Job-Search/resume-case-card.md",
+    "sha256": "ae2626df6a4004d3614867f2c01dc16651c723fbd651136579f650e93a67d9ba",
+    "bytes": 1408,
+    "lines": 57,
+    "preserved_path": "legacy/10-Templates/Career-Job-Search/resume-case-card.md"
+  },
+  {
+    "path": "10-Templates/SOW-Template/README.md",
+    "sha256": "a158968ad8a74341073e533fa9f5165c349ad791d905c5037c1066b43d206b35",
+    "bytes": 5458,
+    "lines": 188,
+    "preserved_path": "legacy/10-Templates/SOW-Template/README.md"
+  },
+  {
+    "path": "10-Templates/SOW-Template/checklist.md",
+    "sha256": "54ac508dead97ea4d1a1e4d4a3c1c9c0052dc9acfe6d7dd680a8d173e9bb7a9d",
+    "bytes": 759,
+    "lines": 33,
+    "preserved_path": "legacy/10-Templates/SOW-Template/checklist.md"
+  },
+  {
+    "path": "10-Templates/SOW-Template/evaluation.md",
+    "sha256": "d2402a46a5ae0c01ddc1753342761b998270827565aad991796ee324b8899e4d",
+    "bytes": 1700,
+    "lines": 60,
+    "preserved_path": "legacy/10-Templates/SOW-Template/evaluation.md"
+  },
+  {
+    "path": "10-Templates/SOW-Template/prompt.md",
+    "sha256": "c481598c7b873043e578a9b8a3ceee785d9531ff19897ba3d14390766bce6cb9",
+    "bytes": 2968,
+    "lines": 110,
+    "preserved_path": "legacy/10-Templates/SOW-Template/prompt.md"
+  },
+  {
+    "path": "11-Best-Practice/China-FDE-Consulting-Pattern/README.md",
+    "sha256": "19e1ed6d238b91b9424cd1cacf245044fd4554cac74af8a2019880e041174557",
+    "bytes": 6231,
+    "lines": 213,
+    "preserved_path": "legacy/11-Best-Practice/China-FDE-Consulting-Pattern/README.md"
+  },
+  {
+    "path": "11-Best-Practice/China-FDE-Consulting-Pattern/checklist.md",
+    "sha256": "efc139c21fe569bd64ff465170e9500408bfcb9a6a61db121b77487e4dd94918",
+    "bytes": 788,
+    "lines": 34,
+    "preserved_path": "legacy/11-Best-Practice/China-FDE-Consulting-Pattern/checklist.md"
+  },
+  {
+    "path": "11-Best-Practice/China-FDE-Consulting-Pattern/evaluation.md",
+    "sha256": "ab87e3e2b22b6f158d8cdd68ddef66ab3bbd77c5409d9845999b6f6a623ecc74",
+    "bytes": 1717,
+    "lines": 60,
+    "preserved_path": "legacy/11-Best-Practice/China-FDE-Consulting-Pattern/evaluation.md"
+  },
+  {
+    "path": "11-Best-Practice/China-FDE-Consulting-Pattern/prompt.md",
+    "sha256": "01faf4bdb2bea5ac5d4dcc87ee4e2f3e2a7b4429fd1df8c5cfa80cd0a2430e6f",
+    "bytes": 3035,
+    "lines": 110,
+    "preserved_path": "legacy/11-Best-Practice/China-FDE-Consulting-Pattern/prompt.md"
+  },
+  {
+    "path": "11-Best-Practice/China-FDE-Consulting-Pattern/workflow.md",
+    "sha256": "4fc9788a84bb769224f279282835f2f43f1bf730274debdf4d6a189ad24ce920",
+    "bytes": 577,
+    "lines": 13,
+    "preserved_path": "legacy/11-Best-Practice/China-FDE-Consulting-Pattern/workflow.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/README.md",
+    "sha256": "e6f0f9e640972b3943ee7ba4ec90c0156f01b350fb39645a93f3f1692b7c3917",
+    "bytes": 4978,
+    "lines": 146,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/README.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/SKILL.md",
+    "sha256": "20b2aa452508638e703169c0334311b2fce1124d300b854e8a60ef95eca592fe",
+    "bytes": 21804,
+    "lines": 641,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/SKILL.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/_meta.json",
+    "sha256": "85e9aaee701f86e5a6fd2e28f7ca26295294fc6563d7e78644a67e4522b9815b",
+    "bytes": 107,
+    "lines": 6,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/_meta.json"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/checklist.md",
+    "sha256": "5004dd4f4f75faf5222e65560ae743c1908815d97b25824d6e6adfef2f0a625e",
+    "bytes": 1736,
+    "lines": 46,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/checklist.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/evaluation.md",
+    "sha256": "2f629d3795cc9783372cb54d286e5dda3f7fcf2e0a2581c1621c9da98636e55e",
+    "bytes": 1165,
+    "lines": 33,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/evaluation.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/prompt.md",
+    "sha256": "1faa6b4318f55a4fe957cfacfa97eb04c2c8cac1b98571634355013be88a2419",
+    "bytes": 2380,
+    "lines": 82,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/prompt.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/references/architecture-patterns.md",
+    "sha256": "e34609462bbf76b9b13f18de74e56f68b6e94187aec4b3a8072d00cd649c886f",
+    "bytes": 5524,
+    "lines": 197,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/references/architecture-patterns.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/references/capability-map.md",
+    "sha256": "706432e787557ee4d5cc5b097d3e153894438f50ac972124ec22a28529fbfa99",
+    "bytes": 7460,
+    "lines": 136,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/references/capability-map.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/references/industry-glossary.yaml",
+    "sha256": "9073f687c8b1960fa2795379e5762e0d11a33f92001a5023daa21c5cbb60988d",
+    "bytes": 2056,
+    "lines": 51,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/references/industry-glossary.yaml"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/references/trade-offs.md",
+    "sha256": "be83f8faa63073e70c953757aa50727b0d441815a888d9bc5d207d6c30405987",
+    "bytes": 6299,
+    "lines": 151,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/references/trade-offs.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/scripts/architecture_gen.py",
+    "sha256": "9ac9af1194997ac0040ea5fdbfe72f58fcae3a738f0631677e4e366d04ffd34f",
+    "bytes": 6180,
+    "lines": 196,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/scripts/architecture_gen.py"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/scripts/capability_match.py",
+    "sha256": "63625172dd8e45ebf7a9aebbcc967152ee565ed57d6edc1e72ae216be383554f",
+    "bytes": 6626,
+    "lines": 189,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/scripts/capability_match.py"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/scripts/gap_analysis.py",
+    "sha256": "bdd74892e25dcee29acada0ff92d35f510482ad625a17ce60ac99ecc872ddfa7",
+    "bytes": 5604,
+    "lines": 161,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/scripts/gap_analysis.py"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/scripts/roi_calc.py",
+    "sha256": "9dd99942ff9028981b9c35f83b2106007434099c20073f5c74a647f39a5cb5ab",
+    "bytes": 6676,
+    "lines": 163,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/scripts/roi_calc.py"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/competitive-teardown/SKILL.md",
+    "sha256": "e7df2e7aa6afdbdf7fcdd0b755364a21b7ff726d64a57af1dd153e0e8a35134a",
+    "bytes": 8424,
+    "lines": 171,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/competitive-teardown/SKILL.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/competitive-teardown/references/analysis-templates.md",
+    "sha256": "a15c1f0ec1082d631dad4d3f71cba55d279b67c7bc1e28cece94348ce7d497ea",
+    "bytes": 6674,
+    "lines": 203,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/competitive-teardown/references/analysis-templates.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/competitive-teardown/references/competitive-analysis-frameworks.md",
+    "sha256": "1623daccd60e95c1269524118f9559508f04f55cb907d139692fb4d43a4b12cf",
+    "bytes": 3286,
+    "lines": 107,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/competitive-teardown/references/competitive-analysis-frameworks.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/competitive-teardown/references/data-collection-guide.md",
+    "sha256": "f004177f6a328b38210b84f2e92f1757785881758ba2ec2d2b35ab0a6c419c9c",
+    "bytes": 4977,
+    "lines": 104,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/competitive-teardown/references/data-collection-guide.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/competitive-teardown/references/scoring-rubric.md",
+    "sha256": "b330021fee37ff5404ae55570982bbd054d359a1115cdf0595ad11f47c9f5d55",
+    "bytes": 5076,
+    "lines": 116,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/competitive-teardown/references/scoring-rubric.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/competitive-teardown/scripts/competitive_matrix_builder.py",
+    "sha256": "dd5fab0a157d1013b17d2620bb6c7a9704ba8ad27ed2bd92c924117f9c7644e7",
+    "bytes": 10783,
+    "lines": 299,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/competitive-teardown/scripts/competitive_matrix_builder.py"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/experiment-designer/SKILL.md",
+    "sha256": "c686e366cd57d0c8e7458a10e9e5ad9348dd3132b7176af6d25015d9842b1793",
+    "bytes": 3129,
+    "lines": 104,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/experiment-designer/SKILL.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/experiment-designer/references/experiment-playbook.md",
+    "sha256": "ff4593085405c2f0cb3520f2d119fba7feceb7992d96767e33be3eca3339371e",
+    "bytes": 1934,
+    "lines": 70,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/experiment-designer/references/experiment-playbook.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/experiment-designer/references/statistics-reference.md",
+    "sha256": "0d177b53dcdf1bef0005e170cbd696ea8917e24128d9ca3868aa7b4dd31ab9aa",
+    "bytes": 1546,
+    "lines": 56,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/experiment-designer/references/statistics-reference.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/experiment-designer/scripts/sample_size_calculator.py",
+    "sha256": "dd62f18aa2f8e5d7ae757e9685434c4a52cc6f91671065b5ad6ea6168b914e16",
+    "bytes": 3024,
+    "lines": 100,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/experiment-designer/scripts/sample_size_calculator.py"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/product-analytics/SKILL.md",
+    "sha256": "1c459548d5209d83b97a19bdfbf1add985284a39a806d9c5ed471d01e811a250",
+    "bytes": 5501,
+    "lines": 147,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/product-analytics/SKILL.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/product-analytics/references/dashboard-templates.md",
+    "sha256": "b2bcaf22a6e2e5fe89a0655a07d28d66a00d4c8e943ac2cc73e606f5927d26fd",
+    "bytes": 2014,
+    "lines": 66,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/product-analytics/references/dashboard-templates.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/product-analytics/references/metrics-frameworks.md",
+    "sha256": "b753304d18865cbbbc900cc35077a93a4dde694a02257a8279256bbc311cc9fa",
+    "bytes": 2425,
+    "lines": 84,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/product-analytics/references/metrics-frameworks.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/product-analytics/scripts/metrics_calculator.py",
+    "sha256": "377b1db289f0cd17f330d7dc5d34ee1d7201d22ec940c789adc03b4efe93c9e1",
+    "bytes": 7349,
+    "lines": 195,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/product-analytics/scripts/metrics_calculator.py"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/product-discovery/SKILL.md",
+    "sha256": "52d492cb9eefe2136b21a295a9041bc60e11d7261f3f8ce84f3b58d83c8e75e4",
+    "bytes": 3312,
+    "lines": 114,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/product-discovery/SKILL.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/product-discovery/references/discovery-frameworks.md",
+    "sha256": "2d1e59f597c9d1f09a201ec7c12bdc9a816c0707b585f32080db31dfd6b44bab",
+    "bytes": 1849,
+    "lines": 72,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/product-discovery/references/discovery-frameworks.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/product-discovery/scripts/assumption_mapper.py",
+    "sha256": "158e0348d347f8877b6e791e20920596f45bcef1269cc836fdb68ccd83e9503d",
+    "bytes": 4062,
+    "lines": 123,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/product-discovery/scripts/assumption_mapper.py"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/product-manager-toolkit/SKILL.md",
+    "sha256": "39dd480e8a03699d95ccf0aeb457a7e861e822ee77904c6f3ee2efbc0a24992f",
+    "bytes": 10083,
+    "lines": 352,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/product-manager-toolkit/SKILL.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/product-manager-toolkit/assets/prd_template.md",
+    "sha256": "8cca95e7a6d7cbdd75cbad2d7c545fc9651b50ee8ec133f8f288d9b44255f186",
+    "bytes": 3415,
+    "lines": 132,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/product-manager-toolkit/assets/prd_template.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/product-manager-toolkit/assets/rice_input_template.csv",
+    "sha256": "e112d1f5b1cfddffeb753cc6209f9c319fca9a353d410d0675a0ef7a3511ed71",
+    "bytes": 130,
+    "lines": 4,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/product-manager-toolkit/assets/rice_input_template.csv"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/product-manager-toolkit/references/frameworks.md",
+    "sha256": "6ce2eb6a15bc67040d16fdd4bcc0f2ef3c37f384d19b7dcdfa2065c7f4ee324d",
+    "bytes": 16748,
+    "lines": 559,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/product-manager-toolkit/references/frameworks.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/product-manager-toolkit/references/input-output-examples.md",
+    "sha256": "2bd22268392286df74a35a1be774dfd9bb632a0a369e6a90ad1bd1cef32471fe",
+    "bytes": 3779,
+    "lines": 156,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/product-manager-toolkit/references/input-output-examples.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/product-manager-toolkit/references/prd_templates.md",
+    "sha256": "cd0d50ea82142ad801e2cd5a9c1a7ce88ce024259df7da15923b9d6bf2d3c85d",
+    "bytes": 7249,
+    "lines": 317,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/product-manager-toolkit/references/prd_templates.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/product-manager-toolkit/scripts/customer_interview_analyzer.py",
+    "sha256": "ccf0efcca639b2506f6205da759df6171f4df338ac09c64ea8f5e3776645c7c5",
+    "bytes": 17404,
+    "lines": 452,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/product-manager-toolkit/scripts/customer_interview_analyzer.py"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/product-manager-toolkit/scripts/rice_prioritizer.py",
+    "sha256": "9ceb1964ebb949f6aaa7afda9651cd8d4ea1502df2fe58ed9e8cceb080a3f043",
+    "bytes": 11872,
+    "lines": 296,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/product-manager-toolkit/scripts/rice_prioritizer.py"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/product-strategist/SKILL.md",
+    "sha256": "96762613353ca78815f60b316dbd63eca0a4269e36d2e611bb9d3c9a351953e5",
+    "bytes": 7325,
+    "lines": 227,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/product-strategist/SKILL.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/product-strategist/assets/okr_template.md",
+    "sha256": "1a15349e3dbb5a46d0b0be50444ba504a3dbd728aabe61aed603e6b98c71e8cd",
+    "bytes": 3831,
+    "lines": 106,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/product-strategist/assets/okr_template.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/product-strategist/references/examples/sample_growth_okrs.json",
+    "sha256": "2cd15f94c44de6df32731746e5082e26fc5626cbdf75fe6bc27b60c7cc6168df",
+    "bytes": 10288,
+    "lines": 366,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/product-strategist/references/examples/sample_growth_okrs.json"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/product-strategist/references/okr_framework.md",
+    "sha256": "f2893540bf149085df11fb7578c389ee5fb1b00ef0b57be0b2f9621cc8f58d57",
+    "bytes": 10223,
+    "lines": 328,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/product-strategist/references/okr_framework.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/product-strategist/references/strategy_types.md",
+    "sha256": "03c0c85181412c43bc8089d835b19e8a89c9128c478e9f4f4796cd871d4acef6",
+    "bytes": 11914,
+    "lines": 320,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/product-strategist/references/strategy_types.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/product-strategist/scripts/okr_cascade_generator.py",
+    "sha256": "c6e9f1426267c726067e18d29dcc9273854fb57e9ec431e57202662ce4132e45",
+    "bytes": 22736,
+    "lines": 592,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/product-strategist/scripts/okr_cascade_generator.py"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/research-summarizer/.claude-plugin/plugin.json",
+    "sha256": "92d343328086a27ffb98348629520655c3b985eb9f4e45be578d1bb20b5320b0",
+    "bytes": 585,
+    "lines": 13,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/research-summarizer/.claude-plugin/plugin.json"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/research-summarizer/SKILL.md",
+    "sha256": "e8acedc76fe60958f4ad1f7421dba754d4c1829e06ec21427b787beca9878915",
+    "bytes": 9489,
+    "lines": 274,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/research-summarizer/SKILL.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/research-summarizer/references/citation-formats.md",
+    "sha256": "8cd7a5d83bd3fabc3c96c4c09ed98fa256b2c9386b696e7f959c92d0565f100d",
+    "bytes": 3284,
+    "lines": 105,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/research-summarizer/references/citation-formats.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/research-summarizer/references/summary-templates.md",
+    "sha256": "fb33626a2352325c4b03ef41f103952cb2c5ebc9802a8e4f543f56bac2bb927d",
+    "bytes": 4129,
+    "lines": 120,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/research-summarizer/references/summary-templates.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/research-summarizer/scripts/extract_citations.py",
+    "sha256": "4a6c28af504ac8ceaf9b21acf58836d152c199057bc94645caa1f5911a51cf20",
+    "bytes": 9704,
+    "lines": 309,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/research-summarizer/scripts/extract_citations.py"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/research-summarizer/scripts/format_summary.py",
+    "sha256": "a50533a8adbf8732eb8f5c98f05e6b49a3fab9448692d43445fcc4adc4622144",
+    "bytes": 10834,
+    "lines": 244,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/research-summarizer/scripts/format_summary.py"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/roadmap-communicator/SKILL.md",
+    "sha256": "d54b8192051b329d60d8258b1367f39c50c91c725ac326742c3932b91834ac64",
+    "bytes": 2590,
+    "lines": 92,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/roadmap-communicator/SKILL.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/roadmap-communicator/references/communication-templates.md",
+    "sha256": "4e58c1ec8a77f0f895ff5fee4a0897863e67f81193cdc1f43220ff90d2c807d2",
+    "bytes": 961,
+    "lines": 63,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/roadmap-communicator/references/communication-templates.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/roadmap-communicator/references/roadmap-templates.md",
+    "sha256": "19305c353c9f645882b734a4f31dc9e7461a25de38bb7ca71e6890a8fce38fb2",
+    "bytes": 1064,
+    "lines": 44,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/roadmap-communicator/references/roadmap-templates.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/roadmap-communicator/scripts/changelog_generator.py",
+    "sha256": "d670f2a18bda14c42e3f1a4729e91eef85a7283e728db0a828edb7b24e387ca7",
+    "bytes": 5023,
+    "lines": 151,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/roadmap-communicator/scripts/changelog_generator.py"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/ux-researcher-designer/SKILL.md",
+    "sha256": "930b60b47baffa313cc02b08689ac2b93be0a6e4b05dc8c12fbcdd43ebaa79a5",
+    "bytes": 11962,
+    "lines": 419,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/ux-researcher-designer/SKILL.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/ux-researcher-designer/assets/research_plan_template.md",
+    "sha256": "9ad59b152028118baf4959df2a9b981704731254849c973659074b8297493a4d",
+    "bytes": 4802,
+    "lines": 162,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/ux-researcher-designer/assets/research_plan_template.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/ux-researcher-designer/references/example-personas.md",
+    "sha256": "e2f8d8a65f3c1c4d4be0edc03db3e382592b03c51946bdcba610984da99e9750",
+    "bytes": 11990,
+    "lines": 411,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/ux-researcher-designer/references/example-personas.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/ux-researcher-designer/references/journey-mapping-guide.md",
+    "sha256": "27059750646dfbbc036dd5d647df70d63591afa1a5454de3326fb9ad672b81ac",
+    "bytes": 18102,
+    "lines": 497,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/ux-researcher-designer/references/journey-mapping-guide.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/ux-researcher-designer/references/persona-methodology.md",
+    "sha256": "a31e7a35880af5d7768f337f165dab9168a88016fed91e39f187cfa9c2fc1e5f",
+    "bytes": 11644,
+    "lines": 387,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/ux-researcher-designer/references/persona-methodology.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/ux-researcher-designer/references/usability-testing-frameworks.md",
+    "sha256": "0a71d1fc59676df7d005f6bdc42e09ed94e924b6ef98837f5877f0bf3fc31676",
+    "bytes": 11932,
+    "lines": 412,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/ux-researcher-designer/references/usability-testing-frameworks.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/sub-skills/ux-researcher-designer/scripts/persona_generator.py",
+    "sha256": "8b4d3bf4d4a946ece102d75ce29156134d44af81da754117d73d79bb8c765268",
+    "bytes": 23675,
+    "lines": 570,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/sub-skills/ux-researcher-designer/scripts/persona_generator.py"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/templates/case-study.md",
+    "sha256": "6e23289919c76127ca1aad0a2b277628f24dccf9b013057907d5b6776ae82c74",
+    "bytes": 1385,
+    "lines": 58,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/templates/case-study.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/templates/evaluation-framework.md",
+    "sha256": "cc3885c37d756f0a55980c90ddd445a90cbb39bb8a095cb4cba6eb7bfc2cf5fe",
+    "bytes": 2185,
+    "lines": 82,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/templates/evaluation-framework.md"
+  },
+  {
+    "path": "11-Best-Practice/Diagnostic-FDE/templates/poc-plan.md",
+    "sha256": "2444e9ada122fd38f9212a0b1f87cb716844f0b7f4b7a183f3f07582414fc9fb",
+    "bytes": 3516,
+    "lines": 142,
+    "preserved_path": "legacy/11-Best-Practice/Diagnostic-FDE/templates/poc-plan.md"
+  },
+  {
+    "path": "11-Best-Practice/FDE-Customer-Product-Bridge/README.md",
+    "sha256": "6968d19ae89d2a5daa8585c055610d8ce9a7c389294d269f6cb54cc8e30f109a",
+    "bytes": 4511,
+    "lines": 125,
+    "preserved_path": "legacy/11-Best-Practice/FDE-Customer-Product-Bridge/README.md"
+  },
+  {
+    "path": "11-Best-Practice/FDE-Customer-Product-Bridge/SKILL.md",
+    "sha256": "6e3a40e7cb7074183177c7356b7452c5e8bd0cc875c1f4ce099e58f447d19379",
+    "bytes": 8652,
+    "lines": 319,
+    "preserved_path": "legacy/11-Best-Practice/FDE-Customer-Product-Bridge/SKILL.md"
+  },
+  {
+    "path": "11-Best-Practice/FDE-Customer-Product-Bridge/_meta.json",
+    "sha256": "1ec2baacbf0ca8f3188d5dfffd4c16105d6388f216aadef1f6f3b12c104044c4",
+    "bytes": 146,
+    "lines": 6,
+    "preserved_path": "legacy/11-Best-Practice/FDE-Customer-Product-Bridge/_meta.json"
+  },
+  {
+    "path": "11-Best-Practice/FDE-Customer-Product-Bridge/checklist.md",
+    "sha256": "92ac31cbc57bc6632b973c9556151b04c1459b3d6a290fc9beb5afcd5cd1dfa3",
+    "bytes": 1840,
+    "lines": 57,
+    "preserved_path": "legacy/11-Best-Practice/FDE-Customer-Product-Bridge/checklist.md"
+  },
+  {
+    "path": "11-Best-Practice/FDE-Customer-Product-Bridge/evaluation.md",
+    "sha256": "b4281e8515889f9f7fc4b6be39155f14ae3439e1243dc90cfb733774969589ee",
+    "bytes": 1674,
+    "lines": 44,
+    "preserved_path": "legacy/11-Best-Practice/FDE-Customer-Product-Bridge/evaluation.md"
+  },
+  {
+    "path": "11-Best-Practice/FDE-Customer-Product-Bridge/prompt.md",
+    "sha256": "a07bbd4737710b50fc65570895bf9e50bd63bbebf9df5e0a213ff21761041f53",
+    "bytes": 3274,
+    "lines": 102,
+    "preserved_path": "legacy/11-Best-Practice/FDE-Customer-Product-Bridge/prompt.md"
+  },
+  {
+    "path": "11-Best-Practice/FDE-Full-Lifecycle/README.md",
+    "sha256": "afaf33f5d0e39ec7a128356b702fb173fb9405d8c095c195e7c5ce9229443ce7",
+    "bytes": 4377,
+    "lines": 133,
+    "preserved_path": "legacy/11-Best-Practice/FDE-Full-Lifecycle/README.md"
+  },
+  {
+    "path": "11-Best-Practice/FDE-Full-Lifecycle/SKILL.md",
+    "sha256": "c325cfc68de7b6b672221992417a6f0653dd4eaa8249439e4ade16dc89b252fd",
+    "bytes": 6509,
+    "lines": 158,
+    "preserved_path": "legacy/11-Best-Practice/FDE-Full-Lifecycle/SKILL.md"
+  },
+  {
+    "path": "11-Best-Practice/FDE-Full-Lifecycle/_meta.json",
+    "sha256": "dc9e06a77d2ac4680eb942a151c676134c1830bdfb622ab0d16245895c93f7fb",
+    "bytes": 122,
+    "lines": 6,
+    "preserved_path": "legacy/11-Best-Practice/FDE-Full-Lifecycle/_meta.json"
+  },
+  {
+    "path": "11-Best-Practice/FDE-Full-Lifecycle/checklist.md",
+    "sha256": "595c57b1ec564770f796d5b8a1a3e35e58421d40301b6b9bbea35d7756bced6f",
+    "bytes": 1341,
+    "lines": 46,
+    "preserved_path": "legacy/11-Best-Practice/FDE-Full-Lifecycle/checklist.md"
+  },
+  {
+    "path": "11-Best-Practice/FDE-Full-Lifecycle/evaluation.md",
+    "sha256": "a192c1819daadf0aad904a3f87ade079a7b67e0948dc72500c0206f240e583ab",
+    "bytes": 1284,
+    "lines": 33,
+    "preserved_path": "legacy/11-Best-Practice/FDE-Full-Lifecycle/evaluation.md"
+  },
+  {
+    "path": "11-Best-Practice/FDE-Full-Lifecycle/prompt.md",
+    "sha256": "5b9c8b4d4a433ab094d012fb7c9559b810fcbeaa8542721ce4b6478dab60e651",
+    "bytes": 2706,
+    "lines": 85,
+    "preserved_path": "legacy/11-Best-Practice/FDE-Full-Lifecycle/prompt.md"
+  },
+  {
+    "path": "11-Best-Practice/FDE-Full-Lifecycle/references/fde-cases.md",
+    "sha256": "c602610abba1755fa55befc1b22285b3f9d1dee75bae2c3d8c309a1439a11862",
+    "bytes": 4784,
+    "lines": 139,
+    "preserved_path": "legacy/11-Best-Practice/FDE-Full-Lifecycle/references/fde-cases.md"
+  },
+  {
+    "path": "11-Best-Practice/FDE-Full-Lifecycle/references/fde-framework.md",
+    "sha256": "e6d6f0d6ad18e1e0e9e15ec28dc333072cb7ab575dc4a157089322cbc588c745",
+    "bytes": 8189,
+    "lines": 276,
+    "preserved_path": "legacy/11-Best-Practice/FDE-Full-Lifecycle/references/fde-framework.md"
+  },
+  {
+    "path": "11-Best-Practice/FDE-Full-Lifecycle/references/fde-toolkit.md",
+    "sha256": "aa05bbe24976c677047c96ff3e38ba00c349bd2816328d97c6a29c64563b8b8a",
+    "bytes": 7035,
+    "lines": 261,
+    "preserved_path": "legacy/11-Best-Practice/FDE-Full-Lifecycle/references/fde-toolkit.md"
+  },
+  {
+    "path": "11-Best-Practice/FDE-Full-Lifecycle/scripts/client_audit.py",
+    "sha256": "2bf26ca90f7fb7ec8879bea739fdff000346c64817217fb9b98e15aeade1b911",
+    "bytes": 13215,
+    "lines": 374,
+    "preserved_path": "legacy/11-Best-Practice/FDE-Full-Lifecycle/scripts/client_audit.py"
+  },
+  {
+    "path": "11-Best-Practice/FDE-Full-Lifecycle/skill-card.md",
+    "sha256": "e02fa6c67b1268860038ff7b65da2ecfbdd89983cdd66e6299b1c3a4c23aa420",
+    "bytes": 2441,
+    "lines": 42,
+    "preserved_path": "legacy/11-Best-Practice/FDE-Full-Lifecycle/skill-card.md"
+  },
+  {
+    "path": "11-Best-Practice/Palantir-FDE-Pattern/README.md",
+    "sha256": "5c45ee672a32f060bcadb6ee5f883ce07ede05e66158eca696c8d4b868a70df5",
+    "bytes": 5648,
+    "lines": 191,
+    "preserved_path": "legacy/11-Best-Practice/Palantir-FDE-Pattern/README.md"
+  },
+  {
+    "path": "11-Best-Practice/Palantir-FDE-Pattern/checklist.md",
+    "sha256": "4dd2048c6820593d8dd7d432ebaf139218eacf085796673aaba579db196432cf",
+    "bytes": 771,
+    "lines": 33,
+    "preserved_path": "legacy/11-Best-Practice/Palantir-FDE-Pattern/checklist.md"
+  },
+  {
+    "path": "11-Best-Practice/Palantir-FDE-Pattern/evaluation.md",
+    "sha256": "bd920b97c907f579d719f0c971bae68a24564fabc0dfad71fefa99e56a032a96",
+    "bytes": 1711,
+    "lines": 60,
+    "preserved_path": "legacy/11-Best-Practice/Palantir-FDE-Pattern/evaluation.md"
+  },
+  {
+    "path": "11-Best-Practice/Palantir-FDE-Pattern/prompt.md",
+    "sha256": "559268777cc653d345ec3a634747c89bc21fa0b754abd04d048241043c94a64c",
+    "bytes": 3014,
+    "lines": 110,
+    "preserved_path": "legacy/11-Best-Practice/Palantir-FDE-Pattern/prompt.md"
+  },
+  {
+    "path": "11-Best-Practice/README.md",
+    "sha256": "311656a2ae78301fcbaa5e59540f8cf16152b6467e172696c8624348d749c3f5",
+    "bytes": 2507,
+    "lines": 60,
+    "preserved_path": "legacy/11-Best-Practice/README.md"
+  },
+  {
+    "path": "11-Best-Practice/references/Elite-PPT-Pro/SKILL.md",
+    "sha256": "93e651d717b99b5e1e86ac49240ca2f030dc204690043102db01920316ade212",
+    "bytes": 5749,
+    "lines": 146,
+    "preserved_path": "legacy/11-Best-Practice/references/Elite-PPT-Pro/SKILL.md"
+  },
+  {
+    "path": "11-Best-Practice/references/Elite-PPT-Pro/_meta.json",
+    "sha256": "5deb4be64c4546fbb855d8e3c26d9a9ba4783363c50025535b835f9d4c30f1ff",
+    "bytes": 106,
+    "lines": 6,
+    "preserved_path": "legacy/11-Best-Practice/references/Elite-PPT-Pro/_meta.json"
+  },
+  {
+    "path": "11-Best-Practice/references/Elite-PPT-Pro/_skillhub_meta.json",
+    "sha256": "016056bd8bc2d8a600a7c8d301032e05305d55d94f0e4f12bcf5939b583fe861",
+    "bytes": 83,
+    "lines": 5,
+    "preserved_path": "legacy/11-Best-Practice/references/Elite-PPT-Pro/_skillhub_meta.json"
+  },
+  {
+    "path": "11-Best-Practice/references/Elite-PPT-Pro/references/code-templates.md",
+    "sha256": "a5f17bf923a5877674238bfea506c850193e793d17701097f52d3f097156cb4e",
+    "bytes": 6575,
+    "lines": 270,
+    "preserved_path": "legacy/11-Best-Practice/references/Elite-PPT-Pro/references/code-templates.md"
+  },
+  {
+    "path": "11-Best-Practice/references/Elite-PPT-Pro/references/qa-checklist.md",
+    "sha256": "983b8b9415b747b04b8872fccfb0338e4b6e5839c7bccc821dadeb318281cb0e",
+    "bytes": 3658,
+    "lines": 100,
+    "preserved_path": "legacy/11-Best-Practice/references/Elite-PPT-Pro/references/qa-checklist.md"
+  },
+  {
+    "path": "11-Best-Practice/references/Elite-PPT-Pro/references/slide-types.md",
+    "sha256": "20145794b1974fdf86747d7c86dfd2affdff0493b390fad2a578ecb6ddf105df",
+    "bytes": 101435,
+    "lines": 2391,
+    "preserved_path": "legacy/11-Best-Practice/references/Elite-PPT-Pro/references/slide-types.md"
+  },
+  {
+    "path": "11-Best-Practice/references/Elite-PPT-Pro/references/themes.md",
+    "sha256": "b0a3ee59e2fbc47bbaf05963653a36bc60fcc0c2db22f2d609289d20f88ff7ec",
+    "bytes": 2328,
+    "lines": 125,
+    "preserved_path": "legacy/11-Best-Practice/references/Elite-PPT-Pro/references/themes.md"
+  },
+  {
+    "path": "11-Best-Practice/references/GE-Matrix-Analysis/SKILL.md",
+    "sha256": "9898b4b3073cd1887604581819b2ff68488061e3cdc7632beae2eee06349fd1f",
+    "bytes": 14090,
+    "lines": 364,
+    "preserved_path": "legacy/11-Best-Practice/references/GE-Matrix-Analysis/SKILL.md"
+  },
+  {
+    "path": "11-Best-Practice/references/GE-Matrix-Analysis/_meta.json",
+    "sha256": "c9fde8d5a6d02c000fc0aea1b4b84a460c1fb0aa55129121d6a691cf78ce30c4",
+    "bytes": 163,
+    "lines": 6,
+    "preserved_path": "legacy/11-Best-Practice/references/GE-Matrix-Analysis/_meta.json"
+  },
+  {
+    "path": "11-Best-Practice/references/MECE/SKILL.md",
+    "sha256": "ba1e777adf36f2a355ac43fb9a67fb59f6a4004229bf9393adb733f9da61f8a5",
+    "bytes": 14501,
+    "lines": 243,
+    "preserved_path": "legacy/11-Best-Practice/references/MECE/SKILL.md"
+  },
+  {
+    "path": "11-Best-Practice/references/MECE/_meta.json",
+    "sha256": "8d4a65d329772c1ddf23979197cd52e48d0e9778e0602e2b7aa063878478c35d",
+    "bytes": 97,
+    "lines": 6,
+    "preserved_path": "legacy/11-Best-Practice/references/MECE/_meta.json"
+  },
+  {
+    "path": "11-Best-Practice/references/MECE/references/examples.md",
+    "sha256": "fe0b2215e72c89cc7ac9c1658ac365c069137b6c3f82f1f880e6cb27d3ed0beb",
+    "bytes": 2699,
+    "lines": 70,
+    "preserved_path": "legacy/11-Best-Practice/references/MECE/references/examples.md"
+  },
+  {
+    "path": "11-Best-Practice/references/MECE/references/faq.md",
+    "sha256": "a5a9d81538a92959d7f78a10009aec97c12680ab473a4f65b6c4481950952fb2",
+    "bytes": 1970,
+    "lines": 24,
+    "preserved_path": "legacy/11-Best-Practice/references/MECE/references/faq.md"
+  },
+  {
+    "path": "11-Best-Practice/references/MECE/references/pyramid-principles.md",
+    "sha256": "805ce133bf4e83d2b4437676b96053e35f86e427a004aea165e8716e79f91bf1",
+    "bytes": 20100,
+    "lines": 423,
+    "preserved_path": "legacy/11-Best-Practice/references/MECE/references/pyramid-principles.md"
+  },
+  {
+    "path": "11-Best-Practice/references/McKinsey-Frameworks/SKILL.md",
+    "sha256": "99855779c176d6e32b91d645a8ba664b8ed935c8ff18297c6320f671bb7f7fc7",
+    "bytes": 8075,
+    "lines": 272,
+    "preserved_path": "legacy/11-Best-Practice/references/McKinsey-Frameworks/SKILL.md"
+  },
+  {
+    "path": "11-Best-Practice/references/McKinsey-Frameworks/_meta.json",
+    "sha256": "a9225c45e8a684a6267a86a900782c23383b5446faf5b94e36dceb222619f330",
+    "bytes": 138,
+    "lines": 6,
+    "preserved_path": "legacy/11-Best-Practice/references/McKinsey-Frameworks/_meta.json"
+  },
+  {
+    "path": "11-Best-Practice/references/McKinsey-PPT-Design/CHANGELOG.md",
+    "sha256": "7aa2bfe1abe6a30fb5ca1ba44e16bab625764712d2b720c2f5dc1be78445923a",
+    "bytes": 22499,
+    "lines": 338,
+    "preserved_path": "legacy/11-Best-Practice/references/McKinsey-PPT-Design/CHANGELOG.md"
+  },
+  {
+    "path": "11-Best-Practice/references/McKinsey-PPT-Design/README.md",
+    "sha256": "8164a5c34ea076ad29d9029fda6832ad5136d9476edac41033e7ce19811f6e76",
+    "bytes": 12938,
+    "lines": 303,
+    "preserved_path": "legacy/11-Best-Practice/references/McKinsey-PPT-Design/README.md"
+  },
+  {
+    "path": "11-Best-Practice/references/McKinsey-PPT-Design/SKILL.md",
+    "sha256": "c25f0ced3cea36ba90a280c41b053a8c85983ef09f77ebbc09ee79f4c8231d27",
+    "bytes": 290921,
+    "lines": 6116,
+    "preserved_path": "legacy/11-Best-Practice/references/McKinsey-PPT-Design/SKILL.md"
+  },
+  {
+    "path": "11-Best-Practice/references/McKinsey-PPT-Design/_meta.json",
+    "sha256": "f3a85169c22c88d0287c1cba2f9dfdce17a8afc71887c6c3cc310cb6ebb077d1",
+    "bytes": 133,
+    "lines": 6,
+    "preserved_path": "legacy/11-Best-Practice/references/McKinsey-PPT-Design/_meta.json"
+  },
+  {
+    "path": "11-Best-Practice/references/McKinsey-PPT-Design/examples/minimal_example.py",
+    "sha256": "da4d02afb54aa0209d0d6e3f7257fa6d2f5866bf7029cd12362a5938d19d00b4",
+    "bytes": 8645,
+    "lines": 223,
+    "preserved_path": "legacy/11-Best-Practice/references/McKinsey-PPT-Design/examples/minimal_example.py"
+  },
+  {
+    "path": "11-Best-Practice/references/McKinsey-PPT-Design/examples/requirements.txt",
+    "sha256": "ec66236b4ef0d385c99275ebdb22959a32261ab0c3f5cad870e06c7eb9d960f0",
+    "bytes": 32,
+    "lines": 2,
+    "preserved_path": "legacy/11-Best-Practice/references/McKinsey-PPT-Design/examples/requirements.txt"
+  },
+  {
+    "path": "11-Best-Practice/references/McKinsey-PPT-Design/references/color-palette.md",
+    "sha256": "f122c253a769a6d77459703dd47f3e5bdcfc53359ab3eaa2940dc461ba96e525",
+    "bytes": 1120,
+    "lines": 34,
+    "preserved_path": "legacy/11-Best-Practice/references/McKinsey-PPT-Design/references/color-palette.md"
+  },
+  {
+    "path": "11-Best-Practice/references/McKinsey-PPT-Design/references/layout-catalog.md",
+    "sha256": "b607394c4db907726e04023b1f2a3d315a9036d6c95f93b5646c126c8ebb3037",
+    "bytes": 5135,
+    "lines": 119,
+    "preserved_path": "legacy/11-Best-Practice/references/McKinsey-PPT-Design/references/layout-catalog.md"
+  },
+  {
+    "path": "11-Best-Practice/references/McKinsey-PPT-Design/scripts/minimal_example.py",
+    "sha256": "da4d02afb54aa0209d0d6e3f7257fa6d2f5866bf7029cd12362a5938d19d00b4",
+    "bytes": 8645,
+    "lines": 223,
+    "preserved_path": "legacy/11-Best-Practice/references/McKinsey-PPT-Design/scripts/minimal_example.py"
+  },
+  {
+    "path": "11-Best-Practice/references/McKinsey-PPT-Design/scripts/requirements.txt",
+    "sha256": "ec66236b4ef0d385c99275ebdb22959a32261ab0c3f5cad870e06c7eb9d960f0",
+    "bytes": 32,
+    "lines": 2,
+    "preserved_path": "legacy/11-Best-Practice/references/McKinsey-PPT-Design/scripts/requirements.txt"
+  },
+  {
+    "path": "11-Best-Practice/references/McKinsey-Report/SKILL.md",
+    "sha256": "438ceeb4893e4a27742cad7c775771e1d1724c7809cb9856d94eb1a83073305b",
+    "bytes": 7145,
+    "lines": 234,
+    "preserved_path": "legacy/11-Best-Practice/references/McKinsey-Report/SKILL.md"
+  },
+  {
+    "path": "11-Best-Practice/references/McKinsey-Report/references/frameworks.md",
+    "sha256": "4c0b540c1fe672dc096f7251a565aba92e9288301e5bafa0fe5cafcfe6719010",
+    "bytes": 11326,
+    "lines": 242,
+    "preserved_path": "legacy/11-Best-Practice/references/McKinsey-Report/references/frameworks.md"
+  },
+  {
+    "path": "11-Best-Practice/references/README.md",
+    "sha256": "c2c1ad6a7812de9bd2069623da31dc34106ee84a4f27a4450b262035e9ff0d42",
+    "bytes": 3170,
+    "lines": 81,
+    "preserved_path": "legacy/11-Best-Practice/references/README.md"
+  },
+  {
+    "path": "CONTRIBUTING.md",
+    "sha256": "b40d4bfb32890d9c6150023b1939c74ff2cee0a3d545b5f43139956014f1796e",
+    "bytes": 2611,
+    "lines": 63,
+    "preserved_path": "legacy/CONTRIBUTING.md"
+  },
+  {
+    "path": "INDEX.md",
+    "sha256": "00cb7415d0f410a9f9e468ec8fa99b9f6a934f50acf14455d2d08c298be59043",
+    "bytes": 11975,
+    "lines": 199,
+    "preserved_path": "legacy/INDEX.md"
+  },
+  {
+    "path": "README.md",
+    "sha256": "03a9fbee82e1bdbcefe55f6f87f98a8f07de8790c57c8430db1a5a106d293056",
+    "bytes": 7041,
+    "lines": 165,
+    "preserved_path": "legacy/README.md"
+  },
+  {
+    "path": "SKILL-TEMPLATE.md",
+    "sha256": "6cd2a0f24f86ce2e1d0f26847bd4691221cec5bb347313f8444dfe5dec8df531",
+    "bytes": 2081,
+    "lines": 134,
+    "preserved_path": "legacy/SKILL-TEMPLATE.md"
+  },
+  {
+    "path": "SOURCES.md",
+    "sha256": "ddc83d7c95150bd80c6aadbeb48267dd0c09b30bf92eba382ca021f6f5993a84",
+    "bytes": 2958,
+    "lines": 71,
+    "preserved_path": "legacy/SOURCES.md"
+  },
+  {
+    "path": "_catalog/backlog.md",
+    "sha256": "17d7957b43373d158099e70c824dfbb43246156f97135835746de77abe65a70f",
+    "bytes": 2852,
+    "lines": 42,
+    "preserved_path": "legacy/_catalog/backlog.md"
+  },
+  {
+    "path": "_catalog/consulting-references.md",
+    "sha256": "fa1f2ef25f407aac894f99034b1451bb05a46d09f94d5ae7fff6e427d8ec914a",
+    "bytes": 2449,
+    "lines": 48,
+    "preserved_path": "legacy/_catalog/consulting-references.md"
+  },
+  {
+    "path": "_catalog/external-skills-imported.md",
+    "sha256": "a6efc60cb8505014f84e134b4c9f317db4bd80797be6c23a9e77e7a529bde191",
+    "bytes": 3456,
+    "lines": 50,
+    "preserved_path": "legacy/_catalog/external-skills-imported.md"
+  },
+  {
+    "path": "_catalog/fde-skill-map.md",
+    "sha256": "aea127b5f217ecf61bd960447300aaf7110985da405dc8d123a8043488959ab7",
+    "bytes": 7411,
+    "lines": 112,
+    "preserved_path": "legacy/_catalog/fde-skill-map.md"
+  },
+  {
+    "path": "_catalog/local-skills-index.md",
+    "sha256": "231c343192ce7180294564a55fe1e59f7e3e8b5f2d98f62478b56885e59550a3",
+    "bytes": 3515,
+    "lines": 43,
+    "preserved_path": "legacy/_catalog/local-skills-index.md"
+  },
+  {
+    "path": "_catalog/online-skills-search.md",
+    "sha256": "4bba2997d17f14d5fd3c65692522f201b99fa66ce30cdcc824b26ba34f6d1819",
+    "bytes": 4791,
+    "lines": 35,
+    "preserved_path": "legacy/_catalog/online-skills-search.md"
+  },
+  {
+    "path": "_catalog/scripts/__pycache__/expand_skills.cpython-314.pyc",
+    "sha256": "70d2f2bfd1e7a8637cacd840d46bd1a37ebd13b5b50002217807e06f081bcaa9",
+    "bytes": 28354,
+    "lines": 620,
+    "preserved_path": "legacy/_catalog/scripts/__pycache__/expand_skills.cpython-314.pyc"
+  },
+  {
+    "path": "_catalog/scripts/__pycache__/expand_skills_data.cpython-314.pyc",
+    "sha256": "3f9b4bdbb41b22dd5b10893788a4f34fdda9af71c040670f6104141d9ea76eed",
+    "bytes": 43778,
+    "lines": 647,
+    "preserved_path": "legacy/_catalog/scripts/__pycache__/expand_skills_data.cpython-314.pyc"
+  },
+  {
+    "path": "_catalog/scripts/expand_skills.py",
+    "sha256": "c5af65634ae0da686c92caf91bda3dcaa7865db80aacc7666f01c65387bde26b",
+    "bytes": 26141,
+    "lines": 495,
+    "preserved_path": "legacy/_catalog/scripts/expand_skills.py"
+  },
+  {
+    "path": "_catalog/scripts/expand_skills_data.py",
+    "sha256": "92fe070dda4427fcd66e88a007d03dc0d18cf6549dbd484bbac91224e8d9ad5d",
+    "bytes": 40276,
+    "lines": 611,
+    "preserved_path": "legacy/_catalog/scripts/expand_skills_data.py"
+  },
+  {
+    "path": "docs/fde-enterprise-skill-guide-PPT.html",
+    "sha256": "ac97c525a66ea175cfe7bcc772c85d259a68d007ea968d89eacd99f03fa31126",
+    "bytes": 66036,
+    "lines": 1777,
+    "preserved_path": "legacy/docs/fde-enterprise-skill-guide-PPT.html"
+  },
+  {
+    "path": "docs/fde-enterprise-skill-guide.html",
+    "sha256": "e81d67c2e623db625ee216e5e616444fd4554b9db540fae81123b8c3ff77277b",
+    "bytes": 46305,
+    "lines": 1196,
+    "preserved_path": "legacy/docs/fde-enterprise-skill-guide.html"
+  },
+  {
+    "path": "docs/fde-enterprise-skill-guide.md",
+    "sha256": "e857a77760cf0a9f04e1c8a9155e50d35a4a8cb726c794fe86f7dc68619cab2a",
+    "bytes": 32360,
+    "lines": 697,
+    "preserved_path": "legacy/docs/fde-enterprise-skill-guide.md"
+  },
+  {
+    "path": "skills-lock.json",
+    "sha256": "47de1c5391f3c564e7f1e984989740706b6ffbd89eb28b1728c088ec0a15457c",
+    "bytes": 4997,
+    "lines": 119,
+    "preserved_path": "legacy/skills-lock.json"
+  }
+]

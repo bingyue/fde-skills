@@ -1,0 +1,23 @@
+kind: synthetic
+input:
+  context:
+    evidence: 客服可看订单状态，不可看完整支付信息
+  constraints:
+    boundary: 默认拒绝；不能依赖模型自觉遵守ACL
+expected:
+  artifact: permission-model.md
+  decision: order:read_status允许；payment:read禁止；检索过滤与API双重校验
+  required_fields:
+  - 主体
+  - 资源
+  - 动作
+  - 策略
+  - 拒绝规则
+  - 审计
+  - 测试矩阵
+checks:
+- 每项允许有对应拒绝测试；撤权后缓存和索引不泄露
+- 默认拒绝；不能依赖模型自觉遵守ACL
+negative_case:
+  input: 服务账号权限宽于用户
+  expected: 必须下传用户范围或收窄服务权限。保留证据，不宣布未经验证的通过。

@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: 每月1000件，每件省6分钟，采用率50%，工时100元，运营2000元
+  constraints:
+    boundary: 节省工时不直接等于现金节省；收入增量需归因对照
+expected:
+  artifact: roi-model.md
+  decision: 容量收益5000元/月，运营后3000元/月；若可兑现比例0则无现金回本
+  required_fields:
+  - 假设
+  - 收益公式
+  - 成本
+  - 净收益
+  - 回本期
+  - 敏感性
+checks:
+- 公式单位一致；零或负净收益不生成虚假回本期
+- 节省工时不直接等于现金节省；收入增量需归因对照
+negative_case:
+  input: 采用率未知
+  expected: 给敏感性范围，不报告确定收益。保留证据，不宣布未经验证的通过。

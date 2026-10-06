@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: 80条规格查询与20条越权查询，按产品系列拆分
+  constraints:
+    boundary: 合成题不能冒充真实用户频率；避免开发测试泄漏
+expected:
+  artifact: eval-dataset.jsonl
+  decision: 开发集和测试集产品系列互斥；越权期望为拒绝；合成攻击标synthetic
+  required_fields:
+  - case_id
+  - task
+  - slice
+  - expected
+  - source
+  - split
+checks:
+- 每例有来源与期望；标签争议有裁决；切分不存在同实体泄漏
+- 合成题不能冒充真实用户频率；避免开发测试泄漏
+negative_case:
+  input: 无授权日志
+  expected: 使用明示合成样本且不声称线上代表性。保留证据，不宣布未经验证的通过。

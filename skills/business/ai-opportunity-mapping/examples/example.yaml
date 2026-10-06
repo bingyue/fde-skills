@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: 售前和售后都需要产品规格，分别计划建知识库
+  constraints:
+    boundary: 不把所有场景都归为一个大Agent；保留非AI路径
+expected:
+  artifact: opportunity-map.md
+  decision: 先治理产品权威源与权限，再分别验证报价辅助和售后问答
+  required_fields:
+  - 价值链
+  - 机会
+  - 共享能力
+  - 依赖
+  - 风险
+  - 投资序列
+checks:
+- 每个机会有业务结果、前提、owner；共享依赖避免重复投资
+- 不把所有场景都归为一个大Agent；保留非AI路径
+negative_case:
+  input: 缺共享owner
+  expected: 先明确治理责任，不强行合并不同权限数据。保留证据，不宣布未经验证的通过。

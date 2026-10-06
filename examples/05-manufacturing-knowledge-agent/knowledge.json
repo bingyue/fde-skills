@@ -1,0 +1,49 @@
+{
+  "policy": {
+    "escalate_terms": [
+      "绕过联锁",
+      "远程启动",
+      "直接复位"
+    ],
+    "escalation": "设备操作与安全决策交授权维修员；不得执行绕过联锁或远程控制。"
+  },
+  "documents": [
+    {
+      "id": "public-current",
+      "terms": [
+        "P-100 E7"
+      ],
+      "content": "P-100设备E7报警：先按批准SOP隔离电源并联系授权维修员；禁止绕过联锁。",
+      "active": true,
+      "tenant": "tenant-a",
+      "roles": [
+        "staff",
+        "manager"
+      ]
+    },
+    {
+      "id": "public-retired",
+      "terms": [
+        "P-100 E7"
+      ],
+      "content": "过期版本：此信息不可用于当前业务决策。",
+      "active": false,
+      "tenant": "tenant-a",
+      "roles": [
+        "staff"
+      ]
+    },
+    {
+      "id": "restricted",
+      "terms": [
+        "产线配方"
+      ],
+      "content": "产线配方只允许process-engineer角色查看。",
+      "active": true,
+      "tenant": "tenant-a",
+      "roles": [
+        "specialist"
+      ]
+    }
+  ]
+}

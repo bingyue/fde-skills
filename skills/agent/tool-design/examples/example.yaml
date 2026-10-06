@@ -1,0 +1,23 @@
+kind: synthetic
+input:
+  context:
+    evidence: 工具为create_quote(customer_id,items,idempotency_key)
+  constraints:
+    boundary: 工具描述不是授权凭据；业务校验必须在执行端
+expected:
+  artifact: tool-contract.md
+  decision: 服务端验证客户归属与SKU有效性；返回quote_id/status；重复键返回同一quote
+  required_fields:
+  - 名称
+  - 参数schema
+  - 权限
+  - 副作用
+  - 幂等
+  - 错误
+  - 结果schema
+checks:
+- 越权、重复提交、无效参数和超时都有可验证结果
+- 工具描述不是授权凭据；业务校验必须在执行端
+negative_case:
+  input: 参数包含任意SQL或shell命令
+  expected: 缩小为白名单业务操作。保留证据，不宣布未经验证的通过。

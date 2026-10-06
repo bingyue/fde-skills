@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: 两个独立供应商资料审查，各耗时5分钟
+  constraints:
+    boundary: 不能因多Agent流行而拆分；共享写操作需串行或事务保护
+expected:
+  artifact: multi-agent-design.md
+  decision: 并行只读审查，由协调者合并差异；批准合同仍由原owner负责
+  required_fields:
+  - 角色
+  - 消息契约
+  - 调度
+  - 仲裁
+  - 预算
+  - 对照结果
+checks:
+- 多Agent对照改善约定指标；合并失败有确定处理
+- 不能因多Agent流行而拆分；共享写操作需串行或事务保护
+negative_case:
+  input: 结论冲突
+  expected: 列证据差异，不能投票代替事实核验。保留证据，不宣布未经验证的通过。

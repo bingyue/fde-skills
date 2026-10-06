@@ -1,0 +1,23 @@
+kind: synthetic
+input:
+  context:
+    evidence: 工作日客服系统，目标月成功请求99.5%
+  constraints:
+    boundary: 不承诺无法测量或无人负责的可用性
+expected:
+  artifact: sla.md
+  decision: SLI为有效请求成功比例；计划维护单列；P1响应15分钟为示例待双方确认
+  required_fields:
+  - SLI
+  - SLO
+  - 窗口
+  - 排除项
+  - 响应恢复
+  - 误差预算
+  - 升级
+checks:
+- 每项承诺有测量与责任角色；维护和依赖故障处理明确
+- 不承诺无法测量或无人负责的可用性
+negative_case:
+  input: 没有夜间值班
+  expected: 不能承诺7×24人工响应。保留证据，不宣布未经验证的通过。

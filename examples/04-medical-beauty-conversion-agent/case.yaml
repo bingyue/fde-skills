@@ -1,0 +1,30 @@
+name: 04-medical-beauty-conversion-agent
+kind: synthetic
+industry: medical-beauty
+stages:
+- stage: discovery
+  skill: customer-discovery
+  artifact: artifacts/discovery.md
+- stage: diagnosis
+  skill: enterprise-ai-diagnosis
+  artifact: artifacts/diagnosis.md
+- stage: solution
+  skill: requirement-to-poc
+  artifact: artifacts/solution.md
+- stage: architecture
+  skill: guardrail-design
+  artifact: artifacts/architecture.md
+- stage: build
+  skill: evaluation-driven-development
+  artifact: artifacts/build.md
+- stage: eval
+  skill: agent-task-evaluation
+  artifact: artifacts/eval.md
+- stage: deploy
+  skill: poc-to-production
+  artifact: artifacts/deploy.md
+- stage: delivery
+  skill: delivery-handover
+  artifact: artifacts/delivery.md
+data: knowledge.json
+evaluation: eval.jsonl

@@ -1,0 +1,21 @@
+kind: synthetic
+input:
+  context:
+    evidence: 创建预约工具200但系统未落库，Agent说已预约
+  constraints:
+    boundary: 不能以Agent自述完成或工具HTTP200判定任务成功
+expected:
+  artifact: agent-eval-report.md
+  decision: 该例失败；检查预约记录和客户时间匹配；定位工具响应契约缺陷
+  required_fields:
+  - 任务成功率
+  - 部分完成
+  - 副作用
+  - 预算
+  - 失败归因
+checks:
+- 每个成功都有后置条件证据；副作用和预算独立门槛
+- 不能以Agent自述完成或工具HTTP200判定任务成功
+negative_case:
+  input: 无沙箱写入权限
+  expected: 仅测dry-run并说明不能证明实际任务完成。保留证据，不宣布未经验证的通过。

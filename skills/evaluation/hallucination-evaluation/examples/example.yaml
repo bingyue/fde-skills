@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: 文档只写保修1年，回答声称终身免费维修
+  constraints:
+    boundary: 无法核实不自动等于事实错误；评审需显示证据
+expected:
+  artifact: hallucination-report.md
+  decision: 终身免费维修无证据且与保修政策冲突；任务判失败并回归拒答规则
+  required_fields:
+  - 原子声明
+  - 支持证据
+  - 矛盾
+  - 不可验证
+  - 拒答
+  - 严重性
+checks:
+- 高风险错误单列；评审分歧有裁决；不能只报整体平均
+- 无法核实不自动等于事实错误；评审需显示证据
+negative_case:
+  input: 没有权威来源
+  expected: 标不可验证，不伪造正确答案。保留证据，不宣布未经验证的通过。

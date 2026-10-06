@@ -1,0 +1,23 @@
+kind: synthetic
+input:
+  context:
+    evidence: 客服每天重复答规格，更新频繁，无自动写回需求
+  constraints:
+    boundary: 不编造客户案例或厂商能力证明
+expected:
+  artifact: solution-brief.md
+  decision: 推荐只读检索助手，先做两周盲测；规则FAQ为对照；CRM写回延后
+  required_fields:
+  - 决策请求
+  - 范围
+  - 备选
+  - 推荐
+  - 价值
+  - 风险
+  - 下一里程碑
+checks:
+- 读者能明确批准什么、投入多少、如何验收
+- 不编造客户案例或厂商能力证明
+negative_case:
+  input: 成本未取数
+  expected: 列估算区间与取数责任人。保留证据，不宣布未经验证的通过。

@@ -1,0 +1,50 @@
+{
+  "policy": {
+    "escalate_terms": [
+      "红肿",
+      "不良反应",
+      "禁忌",
+      "疗效保证"
+    ],
+    "escalation": "请联系机构合格专业人员评估；如情况紧急，请及时联系当地急救或医疗服务。"
+  },
+  "documents": [
+    {
+      "id": "public-current",
+      "terms": [
+        "预约流程"
+      ],
+      "content": "预约需确认门店、时段与联系授权；机构专业人员负责临床评估，不保证治疗效果。",
+      "active": true,
+      "tenant": "tenant-a",
+      "roles": [
+        "staff",
+        "manager"
+      ]
+    },
+    {
+      "id": "public-retired",
+      "terms": [
+        "预约流程"
+      ],
+      "content": "过期版本：此信息不可用于当前业务决策。",
+      "active": false,
+      "tenant": "tenant-a",
+      "roles": [
+        "staff"
+      ]
+    },
+    {
+      "id": "restricted",
+      "terms": [
+        "客户档案"
+      ],
+      "content": "健康档案只允许clinical角色在授权诊疗用途内访问。",
+      "active": true,
+      "tenant": "tenant-a",
+      "roles": [
+        "specialist"
+      ]
+    }
+  ]
+}

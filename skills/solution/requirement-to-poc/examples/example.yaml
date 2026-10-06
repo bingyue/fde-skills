@@ -1,0 +1,23 @@
+kind: synthetic
+input:
+  context:
+    evidence: 业务希望减少询盘回复时间，允许读产品表不允许发邮件
+  constraints:
+    boundary: PoC要验证核心风险，不可仅挑容易展示样本
+expected:
+  artifact: requirement-to-poc.md
+  decision: 构建询盘分类+产品检索+邮件草稿；人工基线与50例测试对比
+  required_fields:
+  - 假设
+  - 追溯
+  - 构建切片
+  - 数据集
+  - 门槛
+  - 演示
+  - 决策
+checks:
+- 需求→测试→实现→结果逐项可追溯；退出决定有证据
+- PoC要验证核心风险，不可仅挑容易展示样本
+negative_case:
+  input: 关键资料缺失
+  expected: 先验证数据准备可行性，不做无依据生成Demo。保留证据，不宣布未经验证的通过。

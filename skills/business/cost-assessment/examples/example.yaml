@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: 月1万任务，模型0.1元/次，固定2000元，复核3000元
+  constraints:
+    boundary: 使用核验价格与币种日期；不只报单次模型费用
+expected:
+  artifact: cost-model.md
+  decision: 总计6000元/月，0.6元/任务；若任务减半固定成本不减半
+  required_fields:
+  - 单位成本
+  - 固定变动
+  - 峰值
+  - 复核
+  - 敏感性
+  - 预算告警
+checks:
+- 公式可复算；固定成本与变动成本分开；预算超限有策略
+- 使用核验价格与币种日期；不只报单次模型费用
+negative_case:
+  input: 没有价格证据
+  expected: 标估算，保留价格参数不写实时报价。保留证据，不宣布未经验证的通过。

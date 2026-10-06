@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: 同产品两版手册参数不同，新版已生效
+  constraints:
+    boundary: 检索可见性不能扩大原文权限
+expected:
+  artifact: knowledge-design.md
+  decision: 回答只引用有效版本；旧版保留审计但不进当前检索；冲突提醒owner
+  required_fields:
+  - 信息架构
+  - 来源优先级
+  - 元数据
+  - 生命周期
+  - 权限
+  - 更新SOP
+checks:
+- 所有知识有权威源和失效机制；冲突不会静默合并
+- 检索可见性不能扩大原文权限
+negative_case:
+  input: 无法确定有效版
+  expected: 拒绝给出确定参数并升级人工。保留证据，不宣布未经验证的通过。

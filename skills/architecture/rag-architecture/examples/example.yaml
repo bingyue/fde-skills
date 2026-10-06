@@ -1,0 +1,24 @@
+kind: synthetic
+input:
+  context:
+    evidence: 型号精确查询与语义故障查询混合，文档按工厂隔离
+  constraints:
+    boundary: 检索过滤前后都验证租户边界；引用必须来自实际返回上下文
+expected:
+  artifact: rag-design.md
+  decision: 混合检索保留型号命中；工厂ACL作为强过滤；无授权证据时拒答
+  required_fields:
+  - 摄取
+  - 解析
+  - 索引
+  - 检索
+  - 重排
+  - 生成
+  - 引用
+  - 拒答
+checks:
+- 设计含删除同步、来源冲突、空召回和超时策略
+- 检索过滤前后都验证租户边界；引用必须来自实际返回上下文
+negative_case:
+  input: 检索器不支持安全过滤
+  expected: 改为隔离索引，不能后置文本遮盖。保留证据，不宣布未经验证的通过。

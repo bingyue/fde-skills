@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: 检索服务超时但业务工单必须保留
+  constraints:
+    boundary: 图中每条跨边界调用都要定义身份和失败策略
+expected:
+  artifact: architecture.md
+  decision: 请求队列与回答服务隔离；超时返回人工处理状态；工单写入幂等
+  required_fields:
+  - 上下文
+  - 容器
+  - 信任边界
+  - 数据流
+  - 故障隔离
+  - ADR
+checks:
+- 架构图、接口与部署拓扑一致；无无限重试链
+- 图中每条跨边界调用都要定义身份和失败策略
+negative_case:
+  input: 没有并发估计
+  expected: 以明确假设做负载试验，记录容量未知。保留证据，不宣布未经验证的通过。

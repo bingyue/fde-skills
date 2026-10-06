@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: 系统已上线但客服采用率只有20%，目标60%
+  constraints:
+    boundary: 文档齐全不能替代业务结果；不得代签或伪造客户同意
+expected:
+  artifact: acceptance-record.md
+  decision: 技术项通过；采用目标未通过；进入培训和流程嵌入整改，不宣称项目完全成功
+  required_fields:
+  - 需求ID
+  - 证据
+  - 业务结果
+  - 缺陷
+  - 例外
+  - 签字
+checks:
+- 每项必须需求有通过/失败与证据；延期项有可追踪责任
+- 文档齐全不能替代业务结果；不得代签或伪造客户同意
+negative_case:
+  input: 签字人无授权
+  expected: 记录待批准，不以会议出席当验收。保留证据，不宣布未经验证的通过。

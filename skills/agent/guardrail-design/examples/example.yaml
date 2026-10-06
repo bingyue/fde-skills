@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: 客服被要求忽略政策并泄露其他客户订单
+  constraints:
+    boundary: 关键词过滤或模型自评不能作为唯一边界
+expected:
+  artifact: guardrail-design.md
+  decision: 对象授权在订单服务拒绝；模型只返回授权范围内结果；记录安全事件
+  required_fields:
+  - 规则
+  - 执行层
+  - 检测
+  - 动作
+  - 误报漏报
+  - 回归集
+checks:
+- 关键禁止动作有确定性控制；每条规则有绕过测试
+- 关键词过滤或模型自评不能作为唯一边界
+negative_case:
+  input: 检测服务不可用
+  expected: 高风险写操作失败关闭，普通只读按既定降级。保留证据，不宣布未经验证的通过。

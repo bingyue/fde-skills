@@ -1,0 +1,302 @@
+[
+  {
+    "name": "customer-interview",
+    "category": "discovery",
+    "path": "skills/discovery/customer-interview"
+  },
+  {
+    "name": "stakeholder-map",
+    "category": "discovery",
+    "path": "skills/discovery/stakeholder-map"
+  },
+  {
+    "name": "ai-maturity-assessment",
+    "category": "diagnosis",
+    "path": "skills/diagnosis/ai-maturity-assessment"
+  },
+  {
+    "name": "business-process-mapping",
+    "category": "discovery",
+    "path": "skills/discovery/business-process-mapping"
+  },
+  {
+    "name": "pain-point-analysis",
+    "category": "diagnosis",
+    "path": "skills/diagnosis/pain-point-analysis"
+  },
+  {
+    "name": "ai-scenario-discovery",
+    "category": "discovery",
+    "path": "skills/discovery/ai-scenario-discovery"
+  },
+  {
+    "name": "ai-scenario-prioritization",
+    "category": "business",
+    "path": "skills/business/ai-scenario-prioritization"
+  },
+  {
+    "name": "value-difficulty-matrix",
+    "category": "business",
+    "path": "skills/business/value-difficulty-matrix"
+  },
+  {
+    "name": "roi-assessment",
+    "category": "business",
+    "path": "skills/business/roi-assessment"
+  },
+  {
+    "name": "poc-scope",
+    "category": "solution",
+    "path": "skills/solution/poc-scope"
+  },
+  {
+    "name": "prd-generation",
+    "category": "solution",
+    "path": "skills/solution/prd-generation"
+  },
+  {
+    "name": "solution-brief",
+    "category": "solution",
+    "path": "skills/solution/solution-brief"
+  },
+  {
+    "name": "technical-solution-design",
+    "category": "solution",
+    "path": "skills/solution/technical-solution-design"
+  },
+  {
+    "name": "system-architecture",
+    "category": "architecture",
+    "path": "skills/architecture/system-architecture"
+  },
+  {
+    "name": "source-inventory",
+    "category": "knowledge",
+    "path": "skills/knowledge/source-inventory"
+  },
+  {
+    "name": "data-quality-assessment",
+    "category": "knowledge",
+    "path": "skills/knowledge/data-quality-assessment"
+  },
+  {
+    "name": "knowledge-base-design",
+    "category": "knowledge",
+    "path": "skills/knowledge/knowledge-base-design"
+  },
+  {
+    "name": "rag-architecture",
+    "category": "architecture",
+    "path": "skills/architecture/rag-architecture"
+  },
+  {
+    "name": "chunk-strategy",
+    "category": "knowledge",
+    "path": "skills/knowledge/chunk-strategy"
+  },
+  {
+    "name": "retrieval-strategy",
+    "category": "knowledge",
+    "path": "skills/knowledge/retrieval-strategy"
+  },
+  {
+    "name": "agent-design",
+    "category": "agent",
+    "path": "skills/agent/agent-design"
+  },
+  {
+    "name": "multi-agent-design",
+    "category": "agent",
+    "path": "skills/agent/multi-agent-design"
+  },
+  {
+    "name": "workflow-design",
+    "category": "agent",
+    "path": "skills/agent/workflow-design"
+  },
+  {
+    "name": "tool-design",
+    "category": "agent",
+    "path": "skills/agent/tool-design"
+  },
+  {
+    "name": "mcp-design",
+    "category": "engineering",
+    "path": "skills/engineering/mcp-design"
+  },
+  {
+    "name": "ontology-design",
+    "category": "ontology",
+    "path": "skills/ontology/ontology-design"
+  },
+  {
+    "name": "prompt-design",
+    "category": "engineering",
+    "path": "skills/engineering/prompt-design"
+  },
+  {
+    "name": "context-engineering",
+    "category": "engineering",
+    "path": "skills/engineering/context-engineering"
+  },
+  {
+    "name": "memory-design",
+    "category": "agent",
+    "path": "skills/agent/memory-design"
+  },
+  {
+    "name": "permission-model",
+    "category": "architecture",
+    "path": "skills/architecture/permission-model"
+  },
+  {
+    "name": "human-in-the-loop",
+    "category": "agent",
+    "path": "skills/agent/human-in-the-loop"
+  },
+  {
+    "name": "guardrail-design",
+    "category": "agent",
+    "path": "skills/agent/guardrail-design"
+  },
+  {
+    "name": "eval-dataset-generation",
+    "category": "evaluation",
+    "path": "skills/evaluation/eval-dataset-generation"
+  },
+  {
+    "name": "golden-dataset-design",
+    "category": "evaluation",
+    "path": "skills/evaluation/golden-dataset-design"
+  },
+  {
+    "name": "rag-evaluation",
+    "category": "evaluation",
+    "path": "skills/evaluation/rag-evaluation"
+  },
+  {
+    "name": "agent-task-evaluation",
+    "category": "evaluation",
+    "path": "skills/evaluation/agent-task-evaluation"
+  },
+  {
+    "name": "hallucination-evaluation",
+    "category": "evaluation",
+    "path": "skills/evaluation/hallucination-evaluation"
+  },
+  {
+    "name": "tool-calling-evaluation",
+    "category": "evaluation",
+    "path": "skills/evaluation/tool-calling-evaluation"
+  },
+  {
+    "name": "prompt-regression",
+    "category": "evaluation",
+    "path": "skills/evaluation/prompt-regression"
+  },
+  {
+    "name": "ai-security-testing",
+    "category": "evaluation",
+    "path": "skills/evaluation/ai-security-testing"
+  },
+  {
+    "name": "docker-deployment",
+    "category": "deployment",
+    "path": "skills/deployment/docker-deployment"
+  },
+  {
+    "name": "private-deployment",
+    "category": "deployment",
+    "path": "skills/deployment/private-deployment"
+  },
+  {
+    "name": "go-live-checklist",
+    "category": "deployment",
+    "path": "skills/deployment/go-live-checklist"
+  },
+  {
+    "name": "production-acceptance",
+    "category": "deployment",
+    "path": "skills/deployment/production-acceptance"
+  },
+  {
+    "name": "observability-design",
+    "category": "engineering",
+    "path": "skills/engineering/observability-design"
+  },
+  {
+    "name": "cost-assessment",
+    "category": "business",
+    "path": "skills/business/cost-assessment"
+  },
+  {
+    "name": "sla-design",
+    "category": "delivery",
+    "path": "skills/delivery/sla-design"
+  },
+  {
+    "name": "enterprise-acceptance",
+    "category": "delivery",
+    "path": "skills/delivery/enterprise-acceptance"
+  },
+  {
+    "name": "project-retrospective",
+    "category": "delivery",
+    "path": "skills/delivery/project-retrospective"
+  },
+  {
+    "name": "enterprise-ai-pricing",
+    "category": "business",
+    "path": "skills/business/enterprise-ai-pricing"
+  },
+  {
+    "name": "industry-research",
+    "category": "discovery",
+    "path": "skills/discovery/industry-research"
+  },
+  {
+    "name": "30-day-industry-learning",
+    "category": "discovery",
+    "path": "skills/discovery/30-day-industry-learning"
+  },
+  {
+    "name": "customer-discovery",
+    "category": "discovery",
+    "path": "skills/discovery/customer-discovery"
+  },
+  {
+    "name": "field-observation",
+    "category": "discovery",
+    "path": "skills/discovery/field-observation"
+  },
+  {
+    "name": "requirement-to-poc",
+    "category": "solution",
+    "path": "skills/solution/requirement-to-poc"
+  },
+  {
+    "name": "poc-to-production",
+    "category": "deployment",
+    "path": "skills/deployment/poc-to-production"
+  },
+  {
+    "name": "evaluation-driven-development",
+    "category": "engineering",
+    "path": "skills/engineering/evaluation-driven-development"
+  },
+  {
+    "name": "ai-opportunity-mapping",
+    "category": "business",
+    "path": "skills/business/ai-opportunity-mapping"
+  },
+  {
+    "name": "enterprise-ai-diagnosis",
+    "category": "diagnosis",
+    "path": "skills/diagnosis/enterprise-ai-diagnosis"
+  },
+  {
+    "name": "delivery-handover",
+    "category": "delivery",
+    "path": "skills/delivery/delivery-handover"
+  }
+]

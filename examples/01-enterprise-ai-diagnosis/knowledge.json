@@ -1,0 +1,48 @@
+{
+  "policy": {
+    "escalate_terms": [
+      "ROI承诺",
+      "保证收益"
+    ],
+    "escalation": "不能保证收益；先核验基线、采用率和成本。"
+  },
+  "documents": [
+    {
+      "id": "public-current",
+      "terms": [
+        "ROI基线"
+      ],
+      "content": "每月1000任务，每任务6分钟，采用率50%，按100元/小时估算容量收益5000元/月；未确认现金兑现。",
+      "active": true,
+      "tenant": "tenant-a",
+      "roles": [
+        "staff",
+        "manager"
+      ]
+    },
+    {
+      "id": "public-retired",
+      "terms": [
+        "ROI基线"
+      ],
+      "content": "过期版本：此信息不可用于当前业务决策。",
+      "active": false,
+      "tenant": "tenant-a",
+      "roles": [
+        "staff"
+      ]
+    },
+    {
+      "id": "restricted",
+      "terms": [
+        "预算批准"
+      ],
+      "content": "预算和数据授权需要独立责任人，缺失时不能启动生产。",
+      "active": true,
+      "tenant": "tenant-a",
+      "roles": [
+        "specialist"
+      ]
+    }
+  ]
+}

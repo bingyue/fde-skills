@@ -1,0 +1,23 @@
+kind: synthetic
+input:
+  context:
+    evidence: 客服问答慢，无法区分模型还是检索
+  constraints:
+    boundary: 默认不记录完整敏感prompt；采样不能抹掉关键安全事件
+expected:
+  artifact: observability.md
+  decision: trace含retrieval_ms/model_ms/tool_ms；p95升高关联索引版本；告警指向运行手册
+  required_fields:
+  - trace
+  - 事件schema
+  - 指标
+  - 脱敏
+  - 保留
+  - 告警
+  - runbook
+checks:
+- 一次失败可串联到组件与版本；告警有动作并经演练
+- 默认不记录完整敏感prompt；采样不能抹掉关键安全事件
+negative_case:
+  input: trace丢关联
+  expected: 修复传播，不能靠全量记录用户文本替代。保留证据，不宣布未经验证的通过。

@@ -1,0 +1,23 @@
+kind: synthetic
+input:
+  context:
+    evidence: 内部产品查询需要只读MCP，按租户过滤
+  constraints:
+    boundary: 工具元数据不授予权限；禁止把客户端密钥写入示例
+expected:
+  artifact: mcp-design.md
+  decision: 提供product_lookup工具和产品schema资源；server从身份取tenant，拒绝任意tenant参数
+  required_fields:
+  - 能力目录
+  - 传输
+  - 身份
+  - 权限
+  - 工具schema
+  - 错误
+  - 测试
+checks:
+- 列出协议版本与验证日期；在目标客户端完成契约测试
+- 工具元数据不授予权限；禁止把客户端密钥写入示例
+negative_case:
+  input: 客户端协议不兼容
+  expected: 返回明确错误并提供受控HTTP替代。保留证据，不宣布未经验证的通过。

@@ -1,0 +1,90 @@
+name: manufacturing
+display_name: 制造业 / Manufacturing
+version: 1.0.0
+description: 设备、质检、SOP、维修、供应链及生产数据知识辅助
+extends:
+- agent-design
+- chunk-strategy
+- cost-assessment
+- customer-discovery
+- data-quality-assessment
+- delivery-handover
+- enterprise-ai-diagnosis
+- evaluation-driven-development
+- human-in-the-loop
+- knowledge-base-design
+- ontology-design
+- prompt-design
+- rag-architecture
+- retrieval-strategy
+- source-inventory
+knowledge:
+- topic: 权威知识
+  guidance: 按manufacturing业务对象登记有效版本、审核人、适用范围和更新周期；冲突资料进入复核。
+  source: 客户已批准的业务资料与数据目录；实施时填写具体来源
+- topic: 业务流程
+  guidance: 设备、质检、SOP、维修、供应链及生产数据知识辅助；每个流程定义触发、输入、系统后置条件与人工负责人。
+  source: 客户现场观察、流程SOP和授权访谈
+- topic: 政策边界
+  guidance: 由客户专业负责人核验适用地区、机构政策和当前要求；本Pack不构成法律或专业结论。
+  source: 客户合规/业务负责人确认的政策清单
+constraints:
+- 不得直接写PLC、绕过联锁或远程控制设备；设备操作由授权人员执行
+- SOP包含设备型号、版本、生效期和安全前置条件；停机与隔离步骤不可省略
+- OT网络和生产数据按批准边界访问；告警和建议需可追溯
+metrics:
+- name: 手册检索正确率
+  definition: 正确设备与版本的检索命中数/可回答任务数
+  target: 分设备型号评测
+- name: 危险建议数
+  definition: 违反安全前置条件或触发未授权设备动作的次数
+  target: 必须为0
+- name: 维修资料查找时间
+  definition: 开始查资料至找到经确认可用SOP的时间
+  target: 比较同故障类型基线
+terminology:
+- term: OEE
+  definition: 设备综合效率：可用率×性能×质量，时间口径需一致
+- term: SOP
+  definition: 经批准且有版本与适用范围的标准作业流程
+- term: MTTR
+  definition: 平均修复时间，开始/结束事件定义需统一
+scenarios:
+- name: equipment-knowledge
+  task: 按设备型号和序列号检索有效手册
+  skills:
+  - knowledge-base-design
+  - retrieval-strategy
+  acceptance: 版本与适用设备范围匹配
+- name: quality-assistance
+  task: 整理检验记录与缺陷分类建议
+  skills:
+  - data-quality-assessment
+  - prompt-design
+  acceptance: 按批准标准给出处，放行由质检人员负责
+- name: sop-retrieval
+  task: 返回带前置条件和警告的SOP片段
+  skills:
+  - chunk-strategy
+  - rag-architecture
+  acceptance: 安全警告与操作步骤一并展示
+- name: maintenance-triage
+  task: 根据故障代码和症状提出排查资料
+  skills:
+  - agent-design
+  - human-in-the-loop
+  acceptance: 高风险动作交授权维修员，保留维修记录
+- name: supply-chain-risk
+  task: 解释供应商交期与物料缺口
+  skills:
+  - source-inventory
+  - cost-assessment
+  acceptance: 库存和交期带时间戳，区分预测和承诺
+- name: production-data
+  task: 对产线指标和口径做一致性校验
+  skills:
+  - ontology-design
+  - data-quality-assessment
+  acceptance: 区分设备/班次/批次及计划和实际产量
+cases:
+- case.md

@@ -1,0 +1,21 @@
+kind: synthetic
+input:
+  context:
+    evidence: 销售说报价慢；最近三单等待产品参数分别为2、3、2天
+  constraints:
+    boundary: 不要把客户提出的工具名称当成已验证需求
+expected:
+  artifact: interview-notes.md
+  decision: 主要延迟在产品参数确认；先验证参数查询耗时，模型生成速度尚非根因
+  required_fields:
+  - 角色
+  - 事件时间线
+  - 原话证据
+  - 假设
+  - 待核实问题
+checks:
+- 每项需求能追溯到事件和角色；矛盾有责任人与验证动作
+- 不要把客户提出的工具名称当成已验证需求
+negative_case:
+  input: 只有管理层意见
+  expected: 标记一线证据缺失，安排观察再定范围。保留证据，不宣布未经验证的通过。

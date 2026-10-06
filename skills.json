@@ -1,0 +1,1032 @@
+{
+  "spec_version": "1.0.0",
+  "skills": [
+    {
+      "name": "30-day-industry-learning",
+      "display_name": "30 天行业学习 / 30-day industry learning",
+      "description": "30 天行业学习 / 30-day industry learning：工程师需要在一个月形成可交付行业理解。交付learning-plan.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "discovery",
+      "tags": [
+        "discovery",
+        "30",
+        "day",
+        "industry",
+        "learning"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/discovery/30-day-industry-learning/SKILL.md",
+      "sha256": "8063123e8f08011692a2e2097caf97972b398b9a71e571e51b8c7f98e99a9dcb"
+    },
+    {
+      "name": "agent-design",
+      "display_name": "Agent 设计 / Agent design",
+      "description": "Agent 设计 / Agent design：用户任务涉及决策和工具，需要定义有界执行者。交付agent-design.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "agent",
+      "tags": [
+        "agent",
+        "design"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/agent/agent-design/SKILL.md",
+      "sha256": "6b57ffad129a37ea94d1bee0302c47c00b59796df84623490e0bf6ec1701efc2"
+    },
+    {
+      "name": "agent-task-evaluation",
+      "display_name": "Agent 任务成功率 / Agent task success",
+      "description": "Agent 任务成功率 / Agent task success：Agent能调用工具但业务任务是否完成尚不明确。交付agent-eval-report.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "evaluation",
+      "tags": [
+        "evaluation",
+        "agent",
+        "task"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/evaluation/agent-task-evaluation/SKILL.md",
+      "sha256": "c8c15f06896410cde6ef2686d337e8325271c68af8d8ce9ad61594886864b925"
+    },
+    {
+      "name": "ai-maturity-assessment",
+      "display_name": "企业 AI 成熟度评估 / AI maturity",
+      "description": "企业 AI 成熟度评估 / AI maturity：企业想制定AI投入计划但能力基线未知。交付maturity-assessment.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "diagnosis",
+      "tags": [
+        "diagnosis",
+        "ai",
+        "maturity",
+        "assessment"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/diagnosis/ai-maturity-assessment/SKILL.md",
+      "sha256": "87525785ae080f2fc5a3460ac233db3c180abe0d293d923602db9b11c9b643ea"
+    },
+    {
+      "name": "ai-opportunity-mapping",
+      "display_name": "AI 机会地图 / AI opportunity mapping",
+      "description": "AI 机会地图 / AI opportunity mapping：需要跨部门识别可复用、可投资的AI机会组合。交付opportunity-map.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "business",
+      "tags": [
+        "business",
+        "ai",
+        "opportunity",
+        "mapping"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/business/ai-opportunity-mapping/SKILL.md",
+      "sha256": "5ecee72394da7e3d098667e58c1d7f97b1b274a81aa5d237004bb04d7a5a8120"
+    },
+    {
+      "name": "ai-scenario-discovery",
+      "display_name": "AI 场景发现 / AI scenario discovery",
+      "description": "AI 场景发现 / AI scenario discovery：从业务流程形成可验证的AI候选场景。交付scenario-cards.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "discovery",
+      "tags": [
+        "discovery",
+        "ai",
+        "scenario"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/discovery/ai-scenario-discovery/SKILL.md",
+      "sha256": "260a75ae5507e97ac2f1a7f6961258e522ac5bd3842c1c9d888563342c52d968"
+    },
+    {
+      "name": "ai-scenario-prioritization",
+      "display_name": "AI 场景优先级 / AI scenario prioritization",
+      "description": "AI 场景优先级 / AI scenario prioritization：候选场景多，需要决定先投哪个PoC。交付prioritized-backlog.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "business",
+      "tags": [
+        "business",
+        "ai",
+        "scenario",
+        "prioritization"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/business/ai-scenario-prioritization/SKILL.md",
+      "sha256": "c2e780fe2911ba62f19c547e2dbfd6784abaaa7550b140dc2f44f8cd9ddf8dfa"
+    },
+    {
+      "name": "ai-security-testing",
+      "display_name": "AI 安全测试 / AI security testing",
+      "description": "AI 安全测试 / AI security testing：上线前验证提示注入、越权、数据泄露与工具滥用。交付security-report.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "evaluation",
+      "tags": [
+        "evaluation",
+        "ai",
+        "security",
+        "testing"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/evaluation/ai-security-testing/SKILL.md",
+      "sha256": "a79c4c606a205a02b3fb43a374595bf6b21f242ecbc7cd55a8f083d4b006dc1b"
+    },
+    {
+      "name": "business-process-mapping",
+      "display_name": "业务流程梳理 / Business process mapping",
+      "description": "业务流程梳理 / Business process mapping：需要识别AI应该嵌入的具体流程节点。交付process-map.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "discovery",
+      "tags": [
+        "discovery",
+        "business",
+        "process",
+        "mapping"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/discovery/business-process-mapping/SKILL.md",
+      "sha256": "055551c739af63cb41283e404e073bab6434c2bdbd5d47a314ab1349f143a51a"
+    },
+    {
+      "name": "chunk-strategy",
+      "display_name": "Chunk 策略 / Chunk strategy",
+      "description": "Chunk 策略 / Chunk strategy：检索切片丢语义或上下文成本过高。交付chunk-experiment.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "knowledge",
+      "tags": [
+        "knowledge",
+        "chunk",
+        "strategy"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/knowledge/chunk-strategy/SKILL.md",
+      "sha256": "98980cd5464d36b01be9c51293fffe16db4278a293c4eea10a5c13ce0b75b13b"
+    },
+    {
+      "name": "context-engineering",
+      "display_name": "上下文工程 / Context Engineering",
+      "description": "上下文工程 / Context Engineering：长任务中指令、资料与历史竞争上下文预算。交付context-plan.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "engineering",
+      "tags": [
+        "engineering",
+        "context"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/engineering/context-engineering/SKILL.md",
+      "sha256": "e3826a5bea309075ac50a0c26ceb797795f160ee32392bb5dff632e493ae50ec"
+    },
+    {
+      "name": "cost-assessment",
+      "display_name": "成本评估 / Cost assessment",
+      "description": "成本评估 / Cost assessment：需要预算推理、存储、集成和运维总成本。交付cost-model.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "business",
+      "tags": [
+        "business",
+        "cost",
+        "assessment"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/business/cost-assessment/SKILL.md",
+      "sha256": "4811326213f141a042a53eeee616a75f53ef3bd7562feb3cfbf3aadb5084b207"
+    },
+    {
+      "name": "customer-discovery",
+      "display_name": "客户发现 / Customer discovery",
+      "description": "客户发现 / Customer discovery：正式开发前需要确认问题、采购、采纳与交付条件。交付discovery-report.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "discovery",
+      "tags": [
+        "discovery",
+        "customer"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/discovery/customer-discovery/SKILL.md",
+      "sha256": "fbefab737337eebfe5b355dadf6236242829c6ac7343c83b1e3a399ed8720383"
+    },
+    {
+      "name": "customer-interview",
+      "display_name": "客户需求访谈 / Customer interview",
+      "description": "客户需求访谈 / Customer interview：客户描述需求含糊，需要还原具体工作事件。交付interview-notes.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "discovery",
+      "tags": [
+        "discovery",
+        "customer",
+        "interview"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/discovery/customer-interview/SKILL.md",
+      "sha256": "f1baa85d369e9cb22a641d39dafa51197b558839ce61ffe2a778e24189c95df5"
+    },
+    {
+      "name": "data-quality-assessment",
+      "display_name": "数据质量评估 / Data quality",
+      "description": "数据质量评估 / Data quality：输入数据可能导致检索或业务决策失真。交付data-quality.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "knowledge",
+      "tags": [
+        "knowledge",
+        "data",
+        "quality",
+        "assessment"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/knowledge/data-quality-assessment/SKILL.md",
+      "sha256": "915a55961aa0109f943ed48a9302b3e4bafb5982c24b850df10ff1037a6c42e1"
+    },
+    {
+      "name": "delivery-handover",
+      "display_name": "交付移交 / Delivery handover",
+      "description": "交付移交 / Delivery handover：交付团队退出前客户需要独立运营、恢复和更新系统。交付handover.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "delivery",
+      "tags": [
+        "delivery",
+        "handover"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/delivery/delivery-handover/SKILL.md",
+      "sha256": "d7688313b267b8dcebae69a3142a53aa2719be91bfd7f01bf64a81955a72095f"
+    },
+    {
+      "name": "docker-deployment",
+      "display_name": "Docker 部署 / Docker deployment",
+      "description": "Docker 部署 / Docker deployment：AI服务需要可重复构建和受控运行。交付docker-release.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "deployment",
+      "tags": [
+        "deployment",
+        "docker"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/deployment/docker-deployment/SKILL.md",
+      "sha256": "995bc8b2aa79213d1348a39eb24943620fba711a68204f4a751c4b1ffe02a791"
+    },
+    {
+      "name": "enterprise-acceptance",
+      "display_name": "企业交付验收 / Enterprise acceptance",
+      "description": "企业交付验收 / Enterprise acceptance：项目要证明合同需求和业务目标完成。交付acceptance-record.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "delivery",
+      "tags": [
+        "delivery",
+        "enterprise",
+        "acceptance"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/delivery/enterprise-acceptance/SKILL.md",
+      "sha256": "b8ba8780628c3cf7fdd27029b8292a55c17fb87bd7356242579684a0bb1b112d"
+    },
+    {
+      "name": "enterprise-ai-diagnosis",
+      "display_name": "企业 AI 诊断 / Enterprise AI diagnosis",
+      "description": "企业 AI 诊断 / Enterprise AI diagnosis：企业提出宽泛AI转型目标，需要形成证据驱动的进入方案。交付diagnosis-report.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "diagnosis",
+      "tags": [
+        "diagnosis",
+        "enterprise",
+        "ai"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/diagnosis/enterprise-ai-diagnosis/SKILL.md",
+      "sha256": "38071b7b98f3cf16402aa2d690c72522094724a7d35dfbd69a1c7a3ac167cf15"
+    },
+    {
+      "name": "enterprise-ai-pricing",
+      "display_name": "企业 AI 方案报价 / Enterprise AI pricing",
+      "description": "企业 AI 方案报价 / Enterprise AI pricing：客户要求可交付且有边界的AI项目报价。交付proposal-pricing.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "business",
+      "tags": [
+        "business",
+        "enterprise",
+        "ai",
+        "pricing"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/business/enterprise-ai-pricing/SKILL.md",
+      "sha256": "91a0d14b98187829398ab54d1dab38ea5742279233563a6c152340f1792bb1a5"
+    },
+    {
+      "name": "eval-dataset-generation",
+      "display_name": "Eval Dataset 生成 / Eval dataset generation",
+      "description": "Eval Dataset 生成 / Eval dataset generation：需要覆盖真实任务的开发评测样本。交付eval-dataset.jsonl，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "evaluation",
+      "tags": [
+        "evaluation",
+        "eval",
+        "dataset",
+        "generation"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/evaluation/eval-dataset-generation/SKILL.md",
+      "sha256": "49d33ab8f83484929f6e1982ae380cbd4c35b737eb84f3b5077c8529469f66da"
+    },
+    {
+      "name": "evaluation-driven-development",
+      "display_name": "评测驱动开发 / Evaluation-driven development",
+      "description": "评测驱动开发 / Evaluation-driven development：AI需求不稳定，需要用可复现评测指导构建迭代。交付edd-plan.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "engineering",
+      "tags": [
+        "engineering",
+        "evaluation",
+        "driven",
+        "development"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/engineering/evaluation-driven-development/SKILL.md",
+      "sha256": "b0221271894578edf7c2655f98d0d3b48e2579c34fe6e601f2aa14232e4023aa"
+    },
+    {
+      "name": "field-observation",
+      "display_name": "现场观察 / Field observation",
+      "description": "现场观察 / Field observation：口述流程与实际工作可能存在差异。交付field-notes.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "discovery",
+      "tags": [
+        "discovery",
+        "field",
+        "observation"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/discovery/field-observation/SKILL.md",
+      "sha256": "deeafad28707137e5ffb8806fce67d0e425273d01c598d8d16e187c7122d1131"
+    },
+    {
+      "name": "go-live-checklist",
+      "display_name": "上线检查 / Go-live checklist",
+      "description": "上线检查 / Go-live checklist：试点即将进入真实企业业务流。交付go-live.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "deployment",
+      "tags": [
+        "deployment",
+        "go",
+        "live",
+        "checklist"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/deployment/go-live-checklist/SKILL.md",
+      "sha256": "c5fb4d861940e0fb786586684adf0b9e83df0ac6ba0e7a5cc963d6fc478747e1"
+    },
+    {
+      "name": "golden-dataset-design",
+      "display_name": "Golden Dataset 设计 / Golden dataset",
+      "description": "Golden Dataset 设计 / Golden dataset：需要稳定且不可被调参污染的验收基准。交付golden-dataset.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "evaluation",
+      "tags": [
+        "evaluation",
+        "golden",
+        "dataset",
+        "design"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/evaluation/golden-dataset-design/SKILL.md",
+      "sha256": "79d31cfab65d94e56d735afdf91d91b517667d08f9178ecda21467e89fb7b877"
+    },
+    {
+      "name": "guardrail-design",
+      "display_name": "Guardrail 设计 / Guardrail design",
+      "description": "Guardrail 设计 / Guardrail design：需要阻止越权、无证据结论和危险工具动作。交付guardrail-design.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "agent",
+      "tags": [
+        "agent",
+        "guardrail",
+        "design"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/agent/guardrail-design/SKILL.md",
+      "sha256": "466bbcc3ae7b9b90d23ef3e9a48bf55dbebadef7a9a9786ce9cd063104f2a133"
+    },
+    {
+      "name": "hallucination-evaluation",
+      "display_name": "幻觉评测 / Hallucination evaluation",
+      "description": "幻觉评测 / Hallucination evaluation：需要衡量模型无依据事实与错误确定性。交付hallucination-report.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "evaluation",
+      "tags": [
+        "evaluation",
+        "hallucination"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/evaluation/hallucination-evaluation/SKILL.md",
+      "sha256": "2175e6ab9d1c8c5504766c4ee4e37020b05d06890b8ae0e8ac930caf2e1d3424"
+    },
+    {
+      "name": "human-in-the-loop",
+      "display_name": "人工介入设计 / Human in the loop",
+      "description": "人工介入设计 / Human in the loop：自动化存在高影响决策或低置信度例外。交付hitl-design.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "agent",
+      "tags": [
+        "agent",
+        "human",
+        "in",
+        "the",
+        "loop"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/agent/human-in-the-loop/SKILL.md",
+      "sha256": "d4e72c0931d539856bd5bbd243086b5d20ff478d601e16f1ca0ffcbc4fad09f1"
+    },
+    {
+      "name": "industry-research",
+      "display_name": "行业研究 / Industry research",
+      "description": "行业研究 / Industry research：FDE进入陌生行业需建立可验证的业务与约束模型。交付industry-brief.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "discovery",
+      "tags": [
+        "discovery",
+        "industry",
+        "research"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/discovery/industry-research/SKILL.md",
+      "sha256": "93fc5e7811dea2fe092e4f63437b960d7c72853b3faee74ef65f86a90e19ad23"
+    },
+    {
+      "name": "knowledge-base-design",
+      "display_name": "知识库设计 / Knowledge base design",
+      "description": "知识库设计 / Knowledge base design：企业知识分散，需要可维护的权威知识体系。交付knowledge-design.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "knowledge",
+      "tags": [
+        "knowledge",
+        "base",
+        "design"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/knowledge/knowledge-base-design/SKILL.md",
+      "sha256": "e1bad51a8da7c289c75c389ff690ce669e38fa46f4641d9cbe43c19efa1555b0"
+    },
+    {
+      "name": "mcp-design",
+      "display_name": "MCP 设计 / MCP design",
+      "description": "MCP 设计 / MCP design：把企业工具作为MCP能力暴露给不同Agent。交付mcp-design.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "engineering",
+      "tags": [
+        "engineering",
+        "mcp",
+        "design"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/engineering/mcp-design/SKILL.md",
+      "sha256": "713d098ea645b1cf87870d16ad4a77d016674090eab64be9afcc50546736c1d5"
+    },
+    {
+      "name": "memory-design",
+      "display_name": "记忆设计 / Memory design",
+      "description": "记忆设计 / Memory design：跨会话需要保存业务状态与可撤销偏好。交付memory-design.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "agent",
+      "tags": [
+        "agent",
+        "memory",
+        "design"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/agent/memory-design/SKILL.md",
+      "sha256": "3a91bfc1a6c05f8935d41c036a47fcb15b2d18dcb7330be47bfc059c7a03aba7"
+    },
+    {
+      "name": "multi-agent-design",
+      "display_name": "多 Agent 设计 / Multi-Agent design",
+      "description": "多 Agent 设计 / Multi-Agent design：单Agent存在可测瓶颈，考虑协作分工。交付multi-agent-design.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "agent",
+      "tags": [
+        "agent",
+        "multi",
+        "design"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/agent/multi-agent-design/SKILL.md",
+      "sha256": "8d6fa75961575b2f477e3d6ee974fa558e1ec2e0955064acd65bb0ca83e74af6"
+    },
+    {
+      "name": "observability-design",
+      "display_name": "日志与可观测性 / Logging & Observability",
+      "description": "日志与可观测性 / Logging & Observability：需要追踪AI失败、成本和用户任务结果。交付observability.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "engineering",
+      "tags": [
+        "engineering",
+        "observability",
+        "design"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/engineering/observability-design/SKILL.md",
+      "sha256": "a4a6aae08431760491aa0dade73ed82b9d598b1ba3247ec6d528077a53bef449"
+    },
+    {
+      "name": "ontology-design",
+      "display_name": "Ontology 设计 / Ontology design",
+      "description": "Ontology 设计 / Ontology design：多系统同名对象含义不同，需要统一业务实体与动作。交付ontology.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "ontology",
+      "tags": [
+        "ontology",
+        "design"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/ontology/ontology-design/SKILL.md",
+      "sha256": "d43fd927906f1f69f260f78881206d99a3c1374f6730a2a5789c0cf306bc38c6"
+    },
+    {
+      "name": "pain-point-analysis",
+      "display_name": "痛点识别 / Pain point analysis",
+      "description": "痛点识别 / Pain point analysis：客户抱怨很多但缺乏根因与优先级证据。交付pain-register.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "diagnosis",
+      "tags": [
+        "diagnosis",
+        "pain",
+        "point",
+        "analysis"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/diagnosis/pain-point-analysis/SKILL.md",
+      "sha256": "11c83f6bedeecf9b2754141e83a33cb448b10af888f8b5d41e3587c31d8bc16c"
+    },
+    {
+      "name": "permission-model",
+      "display_name": "权限模型 / Permission model",
+      "description": "权限模型 / Permission model：企业AI跨数据与工具执行需要最小权限。交付permission-model.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "architecture",
+      "tags": [
+        "architecture",
+        "permission",
+        "model"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/architecture/permission-model/SKILL.md",
+      "sha256": "c8893d3b83e5c4cfda94dca95bbbbb7a42250a2103f45e66d885510ec1e208f1"
+    },
+    {
+      "name": "poc-scope",
+      "display_name": "PoC 范围定义 / PoC scope",
+      "description": "PoC 范围定义 / PoC scope：在限定预算与时间内验证一个业务假设。交付poc-charter.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "solution",
+      "tags": [
+        "solution",
+        "poc",
+        "scope"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/solution/poc-scope/SKILL.md",
+      "sha256": "bb08794aa22bd659d81965a14b05d47831bc3990421e6c2aba6199b764369308"
+    },
+    {
+      "name": "poc-to-production",
+      "display_name": "PoC 到生产 / PoC to Production",
+      "description": "PoC 到生产 / PoC to Production：PoC指标达标，需要补齐企业运行和采纳能力。交付production-plan.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "deployment",
+      "tags": [
+        "deployment",
+        "poc",
+        "to",
+        "production"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/deployment/poc-to-production/SKILL.md",
+      "sha256": "4795d710cf8de0641c1a69110b16710023bc4d377c5d29722c1a38735d1f27a9"
+    },
+    {
+      "name": "prd-generation",
+      "display_name": "PRD 生成 / PRD generation",
+      "description": "PRD 生成 / PRD generation：已确认业务场景需要转为开发验收契约。交付prd.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "solution",
+      "tags": [
+        "solution",
+        "prd",
+        "generation"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/solution/prd-generation/SKILL.md",
+      "sha256": "1cd95837595056f4a3d9db0e67896f660aebf103f59d673e6734984af1224a11"
+    },
+    {
+      "name": "private-deployment",
+      "display_name": "私有化部署 / Private deployment",
+      "description": "私有化部署 / Private deployment：企业要求内网、离线或受限出域部署。交付private-deployment.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "deployment",
+      "tags": [
+        "deployment",
+        "private"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/deployment/private-deployment/SKILL.md",
+      "sha256": "a465f0474157aa0fda676a73d48ab633b3e680cd9110b734032109598d32a5e5"
+    },
+    {
+      "name": "production-acceptance",
+      "display_name": "生产验收 / Production acceptance",
+      "description": "生产验收 / Production acceptance：系统部署后需证明真实环境满足运行要求。交付production-acceptance.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "deployment",
+      "tags": [
+        "deployment",
+        "production",
+        "acceptance"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/deployment/production-acceptance/SKILL.md",
+      "sha256": "f35c215bbc60f942056382e8b88b9f10492841d7690b24ddba7b7643d2211459"
+    },
+    {
+      "name": "project-retrospective",
+      "display_name": "项目复盘 / Project retrospective",
+      "description": "项目复盘 / Project retrospective：交付后需区分可复用经验与一次性补丁。交付retrospective.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "delivery",
+      "tags": [
+        "delivery",
+        "project",
+        "retrospective"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/delivery/project-retrospective/SKILL.md",
+      "sha256": "5507f3c761c2f38bca3de373baf0b1f5605e74a8073648b250d9037577407e09"
+    },
+    {
+      "name": "prompt-design",
+      "display_name": "Prompt 设计 / Prompt design",
+      "description": "Prompt 设计 / Prompt design：已定义任务需要稳定的模型指令契约。交付prompt-package.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "engineering",
+      "tags": [
+        "engineering",
+        "prompt",
+        "design"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/engineering/prompt-design/SKILL.md",
+      "sha256": "57fbd28afae8f0f0853c246e92af19d6669a7b85070437c0beaa845b2f9d7a5d"
+    },
+    {
+      "name": "prompt-regression",
+      "display_name": "Prompt 回归 / Prompt regression",
+      "description": "Prompt 回归 / Prompt regression：prompt、模型或上下文变更可能破坏既有行为。交付prompt-regression.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "evaluation",
+      "tags": [
+        "evaluation",
+        "prompt",
+        "regression"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/evaluation/prompt-regression/SKILL.md",
+      "sha256": "59c844cce63d8577a658db10c3c8015ee9b52306318e60e3c03467821d9dd5db"
+    },
+    {
+      "name": "rag-architecture",
+      "display_name": "RAG 架构设计 / RAG architecture",
+      "description": "RAG 架构设计 / RAG architecture：需要带出处且受权限控制的企业问答。交付rag-design.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "architecture",
+      "tags": [
+        "architecture",
+        "rag"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/architecture/rag-architecture/SKILL.md",
+      "sha256": "13ce8906effe9b266836f2b4b41769fa448fde19faf22b35d82e5ff50a6b0c69"
+    },
+    {
+      "name": "rag-evaluation",
+      "display_name": "RAG 评测 / RAG evaluation",
+      "description": "RAG 评测 / RAG evaluation：检索问答需要区分召回、引用和答案错误。交付rag-eval-report.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "evaluation",
+      "tags": [
+        "evaluation",
+        "rag"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/evaluation/rag-evaluation/SKILL.md",
+      "sha256": "e2133dea66013ac2771e80c1c90f5f3940a0d56604916df91e5905ff3a4983b3"
+    },
+    {
+      "name": "requirement-to-poc",
+      "display_name": "需求到 PoC / Requirement to PoC",
+      "description": "需求到 PoC / Requirement to PoC：客户愿望需要转为可构建、可判定的短周期实验。交付requirement-to-poc.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "solution",
+      "tags": [
+        "solution",
+        "requirement",
+        "to",
+        "poc"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/solution/requirement-to-poc/SKILL.md",
+      "sha256": "cf6310f02560cb904ae75d54e54f456d4bce1836f9920b96885c4fe37fe79d78"
+    },
+    {
+      "name": "retrieval-strategy",
+      "display_name": "检索策略 / Retrieval strategy",
+      "description": "检索策略 / Retrieval strategy：召回不足或噪声过高需要改进检索。交付retrieval-report.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "knowledge",
+      "tags": [
+        "knowledge",
+        "retrieval",
+        "strategy"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/knowledge/retrieval-strategy/SKILL.md",
+      "sha256": "39e076de8c78fdc87a887359e07d707b36de90892f2773856741de67449251aa"
+    },
+    {
+      "name": "roi-assessment",
+      "display_name": "ROI 评估 / ROI assessment",
+      "description": "ROI 评估 / ROI assessment：PoC立项或复盘需要可追溯的价值模型。交付roi-model.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "business",
+      "tags": [
+        "business",
+        "roi",
+        "assessment"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/business/roi-assessment/SKILL.md",
+      "sha256": "3f098c1b879d24c7479ad4fa67396a86dde21a5c8cca8dc483628c58040116da"
+    },
+    {
+      "name": "sla-design",
+      "display_name": "SLA 设计 / SLA design",
+      "description": "SLA 设计 / SLA design：企业需要约定可测服务承诺与故障响应。交付sla.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "delivery",
+      "tags": [
+        "delivery",
+        "sla",
+        "design"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/delivery/sla-design/SKILL.md",
+      "sha256": "515816d940f410b2bdd1358f7ce7dbd88914c14dc6204437e98f2b38bdc6ca61"
+    },
+    {
+      "name": "solution-brief",
+      "display_name": "方案简报 / Solution brief",
+      "description": "方案简报 / Solution brief：向业务与技术决策者提出一个可评审方案。交付solution-brief.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "solution",
+      "tags": [
+        "solution",
+        "brief"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/solution/solution-brief/SKILL.md",
+      "sha256": "e9e7ef9d322ab16c60e921485fb9f28fbc200b4911c1102bd7d0e09ce07dcc9d"
+    },
+    {
+      "name": "source-inventory",
+      "display_name": "数据源盘点 / Source inventory",
+      "description": "数据源盘点 / Source inventory：知识或Agent项目启动前确认可用数据。交付source-register.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "knowledge",
+      "tags": [
+        "knowledge",
+        "source",
+        "inventory"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/knowledge/source-inventory/SKILL.md",
+      "sha256": "00862b62c12d75d206fcb1c6954132f50e025ff25aa6f0719267a738dc013b4e"
+    },
+    {
+      "name": "stakeholder-map",
+      "display_name": "干系人地图 / Stakeholder map",
+      "description": "干系人地图 / Stakeholder map：立项、范围争议或跨部门移交需要明确决策链。交付stakeholder-map.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "discovery",
+      "tags": [
+        "discovery",
+        "stakeholder",
+        "map"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/discovery/stakeholder-map/SKILL.md",
+      "sha256": "2e7bb761879524971668914a5ffb3c6957c86103a7e3e8a9dde6d4d2a7560fbb"
+    },
+    {
+      "name": "system-architecture",
+      "display_name": "系统架构 / System architecture",
+      "description": "系统架构 / System architecture：跨服务AI应用需要清晰边界与可靠性设计。交付architecture.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "architecture",
+      "tags": [
+        "architecture",
+        "system"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/architecture/system-architecture/SKILL.md",
+      "sha256": "bcae5c0165d36cb049631478525c56f3d9f83d1337b52b8adf3c3da7d717ae63"
+    },
+    {
+      "name": "technical-solution-design",
+      "display_name": "技术方案设计 / Technical solution",
+      "description": "技术方案设计 / Technical solution：业务验收已确定，需要可实施的技术路线。交付technical-design.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "solution",
+      "tags": [
+        "solution",
+        "technical",
+        "design"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/solution/technical-solution-design/SKILL.md",
+      "sha256": "68490a988254a9aaa3a60e8f8fef9a6686ccca27a0a96650fb61079980395065"
+    },
+    {
+      "name": "tool-calling-evaluation",
+      "display_name": "Tool Calling 评测 / Tool calling evaluation",
+      "description": "Tool Calling 评测 / Tool calling evaluation：工具选择、参数、授权或重试可能错误。交付tool-eval-report.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "evaluation",
+      "tags": [
+        "evaluation",
+        "tool",
+        "calling"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/evaluation/tool-calling-evaluation/SKILL.md",
+      "sha256": "d793b7caa803552cabf57f3c315baa7b9f91a3f63162286a90d0c3386f0a572b"
+    },
+    {
+      "name": "tool-design",
+      "display_name": "工具设计 / Tool design",
+      "description": "工具设计 / Tool design：Agent需要访问企业系统的安全API契约。交付tool-contract.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "agent",
+      "tags": [
+        "agent",
+        "tool",
+        "design"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/agent/tool-design/SKILL.md",
+      "sha256": "b89189b47f088ae1677a282b72b7147cddb8c2d964446fd9a4b8af32e4b71a98"
+    },
+    {
+      "name": "value-difficulty-matrix",
+      "display_name": "价值 × 难度矩阵 / Value × Difficulty",
+      "description": "价值 × 难度矩阵 / Value × Difficulty：对场景组合做投资分组与讨论。交付value-difficulty.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "business",
+      "tags": [
+        "business",
+        "value",
+        "difficulty",
+        "matrix"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/business/value-difficulty-matrix/SKILL.md",
+      "sha256": "9ed2b5f07dc826f42726c56e4838f75a29c0387a596ed9c3d9213feac17362fa"
+    },
+    {
+      "name": "workflow-design",
+      "display_name": "工作流设计 / Workflow design",
+      "description": "工作流设计 / Workflow design：稳定业务过程需要可重试、可恢复的自动化。交付workflow.md，包含证据、决策与失败处置。",
+      "version": "1.0.0",
+      "category": "agent",
+      "tags": [
+        "agent",
+        "workflow",
+        "design"
+      ],
+      "status": "ready",
+      "dependencies": [],
+      "license": "AGPL-3.0-only",
+      "path": "skills/agent/workflow-design/SKILL.md",
+      "sha256": "713b6995b43d5ef9c3a6e42f4eb1d1d2e05da3f039ffd887e4cc4579cc843ed6"
+    }
+  ]
+}

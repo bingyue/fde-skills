@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: 客户重复提交同一个预约请求
+  constraints:
+    boundary: 不要将模型生成文本直接当状态转换指令
+expected:
+  artifact: workflow.md
+  decision: 使用客户+请求ID幂等键；重复请求返回已有预约；冲突时间转人工
+  required_fields:
+  - 状态
+  - 转移条件
+  - 事件
+  - 幂等键
+  - 超时
+  - 补偿
+checks:
+- 重复事件不会重复执行副作用；可从任一持久化状态恢复
+- 不要将模型生成文本直接当状态转换指令
+negative_case:
+  input: 预约API响应丢失
+  expected: 先查询状态，不能直接再次创建。保留证据，不宣布未经验证的通过。

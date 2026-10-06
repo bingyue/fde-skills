@@ -1,0 +1,21 @@
+kind: synthetic
+input:
+  context:
+    evidence: 每天200次查询产品规格，资料散在三个文件夹
+  constraints:
+    boundary: 不得把平台建设或聊天窗口本身当业务场景
+expected:
+  artifact: scenario-cards.md
+  decision: 候选为带出处规格检索；基线为统一目录搜索；指标为查找时间与规格正确率
+  required_fields:
+  - 用户任务
+  - 基线
+  - AI动作
+  - 非AI替代
+  - 验证指标
+checks:
+- 每张卡都有用户、触发、结果、非AI对照和可测收益
+- 不得把平台建设或聊天窗口本身当业务场景
+negative_case:
+  input: 没有任务量
+  expected: 先做观察采样，不报告预计ROI。保留证据，不宣布未经验证的通过。

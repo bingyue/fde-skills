@@ -1,0 +1,23 @@
+kind: synthetic
+input:
+  context:
+    evidence: 查询AB-120扭矩，向量召回AB-12
+  constraints:
+    boundary: 不把测试集用于调参；查询改写不得移除权限或关键限定
+expected:
+  artifact: retrieval-report.md
+  decision: 加入型号精确匹配和结构化过滤；在型号切片验证Recall@5
+  required_fields:
+  - 查询类型
+  - 基线
+  - 候选
+  - Recall@k
+  - MRR
+  - 延迟
+  - 失败桶
+checks:
+- 报告k、分母、分层指标和p95延迟；低频型号单列
+- 不把测试集用于调参；查询改写不得移除权限或关键限定
+negative_case:
+  input: 无相关性标签
+  expected: 先小规模人工标注，不仅凭回答流畅度选型。保留证据，不宣布未经验证的通过。

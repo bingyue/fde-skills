@@ -1,0 +1,32 @@
+name: FDE Skills validation
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.10', '3.12', '3.14']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -e '.[dev]'
+      - run: fde validate
+      - run: pytest -q
+      - run: ruff check src tests scripts setup.py
+      - run: fde registry build
+      - run: git diff --exit-code -- skills.json INDEX.md
+      - run: python -m build
+      - run: python scripts/smoke_wheel.py
+      - uses: actions/upload-artifact@v4
+        if: matrix.python == '3.12'
+        with:
+          name: fde-skills-distributions
+          path: dist/*

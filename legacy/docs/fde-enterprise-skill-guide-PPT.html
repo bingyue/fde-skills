@@ -1,0 +1,1777 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FDE 企业落地典型 Skill 分类与使用说明演示版">
+  <title>FDE 企业落地 Skill 指南 · 演示版</title>
+  <style>
+    :root {
+      --ink: #132930;
+      --ink-soft: #486065;
+      --muted: #738386;
+      --paper: #f5f1e7;
+      --paper-deep: #ebe5d8;
+      --white: #fffdf7;
+      --navy: #102b35;
+      --navy-2: #173b46;
+      --teal: #0b6b69;
+      --teal-soft: #d9ebe6;
+      --orange: #ee6b3a;
+      --orange-soft: #f8dfd3;
+      --yellow: #e9bd58;
+      --yellow-soft: #f6ecc9;
+      --green: #2c8a69;
+      --red: #b84c39;
+      --line: #cbc3b2;
+      --line-dark: rgba(255, 255, 255, .16);
+      --shadow: 0 22px 60px rgba(16, 43, 53, .18);
+      --sans: "Source Han Sans SC", "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+      --serif: "Source Han Serif SC", "Noto Serif CJK SC", "Songti SC", "STSong", serif;
+      --mono: "SFMono-Regular", "Cascadia Code", "Noto Sans Mono CJK SC", monospace;
+      --slide-w: 1280px;
+      --slide-h: 720px;
+      --scale: 1;
+    }
+
+    * { box-sizing: border-box; }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      background: var(--navy);
+      color: var(--ink);
+      font-family: var(--sans);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    button,
+    input { font: inherit; }
+
+    .deck {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 10% 5%, rgba(233, 189, 88, .13), transparent 26rem),
+        var(--navy);
+    }
+
+    .stage {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: var(--slide-w);
+      height: var(--slide-h);
+      transform: translate(-50%, -50%) scale(var(--scale));
+      transform-origin: center;
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      display: none;
+      width: var(--slide-w);
+      height: var(--slide-h);
+      padding: 62px 78px 56px;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(16, 43, 53, .028) 1px, transparent 1px),
+        linear-gradient(rgba(16, 43, 53, .028) 1px, transparent 1px),
+        var(--paper);
+      background-size: 32px 32px;
+    }
+
+    .slide.is-active {
+      display: flex;
+      flex-direction: column;
+      animation: slide-in .38s ease both;
+    }
+
+    @keyframes slide-in {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .slide.dark {
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 12%, rgba(233, 189, 88, .15), transparent 25rem),
+        linear-gradient(135deg, var(--navy), var(--navy-2));
+    }
+
+    .slide.cover {
+      justify-content: center;
+      padding-left: 106px;
+    }
+
+    .slide.cover::before {
+      content: "";
+      position: absolute;
+      width: 520px;
+      height: 520px;
+      right: -170px;
+      top: -200px;
+      border: 1px solid rgba(255, 255, 255, .18);
+      border-radius: 48% 52% 30% 70%;
+      transform: rotate(18deg);
+    }
+
+    .slide.cover::after {
+      content: "";
+      position: absolute;
+      width: 330px;
+      height: 330px;
+      right: 145px;
+      bottom: -260px;
+      border: 1px solid rgba(233, 189, 88, .42);
+      transform: rotate(18deg);
+    }
+
+    .brand {
+      position: absolute;
+      top: 36px;
+      left: 48px;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      color: var(--navy);
+      background: var(--yellow);
+      border-radius: 50% 50% 50% 10%;
+      font-family: var(--serif);
+      letter-spacing: 0;
+    }
+
+    .slide-kicker {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      margin: 0 0 18px;
+      color: var(--orange);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .slide-kicker::before {
+      content: "";
+      width: 46px;
+      height: 3px;
+      background: currentColor;
+    }
+
+    .dark .slide-kicker { color: var(--yellow); }
+
+    h1,
+    h2,
+    h3,
+    p { margin-top: 0; }
+
+    h1,
+    h2,
+    h3 { font-family: var(--serif); }
+
+    h1 {
+      max-width: 980px;
+      margin-bottom: 24px;
+      font-size: 70px;
+      line-height: 1.08;
+      letter-spacing: -.045em;
+    }
+
+    h2 {
+      margin-bottom: 18px;
+      font-size: 45px;
+      line-height: 1.15;
+      letter-spacing: -.035em;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      font-size: 25px;
+      line-height: 1.25;
+    }
+
+    h4 {
+      margin: 0 0 8px;
+      font-size: 17px;
+      line-height: 1.35;
+    }
+
+    p {
+      margin-bottom: 12px;
+      color: var(--ink-soft);
+      font-size: 17px;
+      line-height: 1.62;
+    }
+
+    .dark p { color: rgba(255, 253, 247, .74); }
+
+    .lede {
+      max-width: 800px;
+      color: var(--ink-soft);
+      font-size: 22px;
+      line-height: 1.55;
+    }
+
+    .dark .lede { color: rgba(255, 253, 247, .82); }
+
+    .hero-title {
+      position: relative;
+      max-width: 960px;
+      margin-bottom: 30px;
+      font-size: 78px;
+      z-index: 1;
+    }
+
+    .hero-subtitle {
+      position: relative;
+      max-width: 830px;
+      margin-bottom: 34px;
+      color: rgba(255, 253, 247, .82);
+      font-size: 24px;
+      z-index: 1;
+    }
+
+    .meta-row {
+      display: flex;
+      gap: 28px;
+      flex-wrap: wrap;
+      color: rgba(255, 253, 247, .56);
+      font-size: 14px;
+    }
+
+    .meta-row a {
+      color: var(--yellow);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .meta-row a:hover { text-decoration: underline; }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: 68px 1fr;
+      gap: 20px;
+      align-items: start;
+      margin-bottom: 28px;
+    }
+
+    .section-num {
+      color: var(--orange);
+      font-family: var(--serif);
+      font-size: 48px;
+      line-height: 1;
+    }
+
+    .section-head h2 { margin: -4px 0 4px; }
+
+    .section-head p {
+      max-width: 870px;
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .g2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .g3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .g4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .g5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+
+    .card {
+      min-width: 0;
+      padding: 22px 24px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      box-shadow: 0 8px 24px rgba(16, 43, 53, .06);
+    }
+
+    .card.soft { background: var(--paper-deep); }
+    .card.accent { border-top: 5px solid var(--orange); }
+    .card.teal { border-top: 5px solid var(--teal); }
+    .card.yellow { border-top: 5px solid var(--yellow); }
+
+    .card.dark-card {
+      color: var(--white);
+      background: var(--navy);
+      border-color: var(--navy);
+    }
+
+    .card.dark-card p { color: rgba(255, 253, 247, .72); }
+
+    .metric {
+      min-height: 168px;
+      padding: 24px;
+      background: var(--white);
+      border: 1px solid var(--line);
+    }
+
+    .metric strong {
+      display: block;
+      margin-bottom: 13px;
+      color: var(--teal);
+      font-family: var(--serif);
+      font-size: 54px;
+      line-height: 1;
+    }
+
+    .metric b {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 17px;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .signal {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      padding: 6px 10px;
+      color: var(--navy);
+      background: var(--yellow-soft);
+      border: 1px solid var(--yellow);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .04em;
+    }
+
+    .signal.teal {
+      color: var(--teal);
+      background: var(--teal-soft);
+      border-color: var(--teal);
+    }
+
+    .signal.orange {
+      color: var(--red);
+      background: var(--orange-soft);
+      border-color: var(--orange);
+    }
+
+    .quote {
+      margin-top: 22px;
+      padding: 18px 22px;
+      background: var(--navy);
+      color: var(--white);
+      border-left: 7px solid var(--yellow);
+      font-family: var(--serif);
+      font-size: 22px;
+      line-height: 1.5;
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      align-items: stretch;
+    }
+
+    .flow-step {
+      position: relative;
+      min-height: 154px;
+      padding: 22px 20px;
+      background: var(--white);
+      border: 1px solid var(--line);
+    }
+
+    .flow-step:not(:last-child)::after {
+      content: "→";
+      position: absolute;
+      top: 50%;
+      right: -18px;
+      width: 24px;
+      color: var(--orange);
+      font-size: 23px;
+      font-weight: 800;
+      text-align: center;
+      transform: translateY(-50%);
+      z-index: 2;
+    }
+
+    .flow-step strong {
+      display: block;
+      margin-bottom: 11px;
+      color: var(--teal);
+      font-family: var(--serif);
+      font-size: 27px;
+    }
+
+    .flow-step p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .bands { display: grid; gap: 12px; }
+
+    .band {
+      display: grid;
+      grid-template-columns: 170px 1fr 230px;
+      min-height: 108px;
+      border: 1px solid var(--line);
+      background: var(--white);
+    }
+
+    .band-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 18px 22px;
+      color: var(--white);
+      background: var(--navy);
+    }
+
+    .band-title strong {
+      font-family: var(--serif);
+      font-size: 25px;
+    }
+
+    .band-title small {
+      margin-top: 4px;
+      color: rgba(255, 253, 247, .6);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+    }
+
+    .band-skills {
+      display: flex;
+      gap: 8px;
+      align-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 16px 20px;
+    }
+
+    .band-out {
+      display: flex;
+      align-items: center;
+      padding: 16px 20px;
+      color: var(--ink-soft);
+      background: var(--paper-deep);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .chip {
+      display: inline-block;
+      padding: 6px 9px;
+      color: var(--ink);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .chip.strong {
+      color: var(--white);
+      background: var(--teal);
+      border-color: var(--teal);
+    }
+
+    .lifecycle {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 0;
+      margin-top: 20px;
+      border: 1px solid var(--line);
+    }
+
+    .life-stage {
+      position: relative;
+      min-height: 318px;
+      padding: 27px 23px;
+      background: var(--white);
+      border-right: 1px solid var(--line);
+    }
+
+    .life-stage:last-child { border-right: 0; }
+    .life-stage:nth-child(even) { background: var(--paper-deep); }
+
+    .life-stage .index {
+      color: var(--orange);
+      font-family: var(--serif);
+      font-size: 42px;
+      line-height: 1;
+    }
+
+    .life-stage h3 { margin-top: 22px; }
+    .life-stage p { font-size: 14px; }
+
+    .life-stage .dirs {
+      position: absolute;
+      right: 20px;
+      bottom: 22px;
+      left: 20px;
+      color: var(--teal);
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.5;
+    }
+
+    .gate-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 10px;
+    }
+
+    .gate {
+      min-height: 165px;
+      padding: 19px 19px 16px;
+      color: var(--white);
+      background: var(--navy);
+      border-top: 6px solid var(--yellow);
+    }
+
+    .gate:nth-child(3n+2) { border-color: var(--orange); }
+    .gate:nth-child(3n) { border-color: var(--teal); }
+    .gate:last-child {
+      grid-column: 2 / 4;
+      min-height: 128px;
+    }
+
+    .gate strong {
+      display: block;
+      margin-bottom: 10px;
+      font-family: var(--serif);
+      font-size: 22px;
+    }
+
+    .gate p {
+      margin: 0;
+      color: rgba(255, 253, 247, .7);
+      font-size: 13px;
+      line-height: 1.48;
+    }
+
+    .skill-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 7px 16px;
+      margin: 13px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .skill-list li {
+      position: relative;
+      padding-left: 15px;
+      color: var(--ink-soft);
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .skill-list li::before {
+      content: "";
+      position: absolute;
+      top: .62em;
+      left: 0;
+      width: 6px;
+      height: 6px;
+      background: var(--orange);
+    }
+
+    .category-map {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px 16px;
+    }
+
+    .category-row {
+      display: grid;
+      grid-template-columns: 46px 152px 1fr;
+      min-height: 60px;
+      background: var(--white);
+      border: 1px solid var(--line);
+    }
+
+    .category-code {
+      display: grid;
+      place-items: center;
+      color: var(--orange);
+      font-family: var(--serif);
+      font-size: 21px;
+      background: var(--paper-deep);
+    }
+
+    .category-name {
+      display: flex;
+      align-items: center;
+      padding: 10px 12px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .category-skills {
+      display: flex;
+      align-items: center;
+      padding: 9px 12px;
+      color: var(--ink-soft);
+      border-left: 1px solid var(--line);
+      font-size: 11px;
+      line-height: 1.35;
+    }
+
+    .mode {
+      min-height: 338px;
+      padding: 27px 28px;
+      background: var(--white);
+      border: 1px solid var(--line);
+    }
+
+    .mode .mode-no {
+      color: var(--orange);
+      font-family: var(--serif);
+      font-size: 46px;
+      line-height: 1;
+    }
+
+    .mode h3 { margin-top: 18px; }
+    .mode p { font-size: 15px; }
+
+    .file-stack {
+      display: grid;
+      gap: 7px;
+      margin-top: 18px;
+    }
+
+    .file {
+      display: grid;
+      grid-template-columns: 108px 1fr;
+      padding: 8px 10px;
+      background: var(--paper-deep);
+      font-family: var(--mono);
+      font-size: 11px;
+    }
+
+    .file b { color: var(--teal); }
+    .file span { color: var(--ink-soft); font-family: var(--sans); }
+
+    .route-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 13px;
+      counter-reset: route;
+    }
+
+    .route-step {
+      position: relative;
+      min-height: 108px;
+      padding: 17px 16px 14px 52px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      counter-increment: route;
+    }
+
+    .route-step::before {
+      content: counter(route, decimal-leading-zero);
+      position: absolute;
+      top: 16px;
+      left: 14px;
+      color: var(--orange);
+      font-family: var(--serif);
+      font-size: 22px;
+    }
+
+    .route-step strong {
+      display: block;
+      margin-bottom: 7px;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    .route-step span {
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.35;
+    }
+
+    .recipe {
+      min-height: 392px;
+      padding: 24px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-top: 6px solid var(--teal);
+    }
+
+    .recipe:nth-child(2) { border-top-color: var(--orange); }
+    .recipe:nth-child(3) { border-top-color: var(--yellow); }
+
+    .recipe .recipe-no {
+      color: var(--orange);
+      font-family: var(--serif);
+      font-size: 36px;
+      line-height: 1;
+    }
+
+    .recipe h3 { margin-top: 16px; }
+
+    .mini-route {
+      display: grid;
+      gap: 6px;
+      margin: 16px 0;
+    }
+
+    .mini-route span {
+      position: relative;
+      padding: 7px 10px 7px 26px;
+      color: var(--ink-soft);
+      background: var(--paper-deep);
+      font-size: 12px;
+    }
+
+    .mini-route span::before {
+      content: "→";
+      position: absolute;
+      left: 9px;
+      color: var(--teal);
+      font-weight: 800;
+    }
+
+    .funnel {
+      display: grid;
+      gap: 10px;
+      width: 48%;
+    }
+
+    .funnel-step {
+      position: relative;
+      min-height: 58px;
+      padding: 17px 18px;
+      color: var(--white);
+      background: var(--teal);
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .funnel-step:nth-child(2) { width: 86%; margin: auto; background: #247d74; }
+    .funnel-step:nth-child(3) { width: 72%; margin: auto; background: #3f8f83; }
+    .funnel-step:nth-child(4) { width: 58%; margin: auto; background: #5aa092; }
+    .funnel-step:nth-child(5) { width: 44%; margin: auto; background: var(--orange); }
+
+    .question-list {
+      display: grid;
+      gap: 10px;
+      width: 48%;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .question-list li {
+      position: relative;
+      min-height: 60px;
+      padding: 14px 16px 14px 49px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      color: var(--ink-soft);
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .question-list li::before {
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      color: var(--orange);
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    .question-list li:nth-child(1)::before { content: "01"; }
+    .question-list li:nth-child(2)::before { content: "02"; }
+    .question-list li:nth-child(3)::before { content: "03"; }
+    .question-list li:nth-child(4)::before { content: "04"; }
+    .question-list li:nth-child(5)::before { content: "05"; }
+
+    .roles {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .role {
+      min-height: 130px;
+      padding: 18px;
+      background: var(--white);
+      border: 1px solid var(--line);
+    }
+
+    .role b {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--teal);
+      font-size: 15px;
+    }
+
+    .role p {
+      margin: 0;
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    .priority {
+      display: grid;
+      grid-template-columns: 120px 1fr 160px;
+      align-items: center;
+      min-height: 70px;
+      background: var(--white);
+      border: 1px solid var(--line);
+    }
+
+    .priority + .priority { margin-top: 10px; }
+
+    .priority .horizon {
+      padding: 17px;
+      color: var(--white);
+      background: var(--navy);
+      font-family: var(--serif);
+      font-size: 19px;
+      text-align: center;
+    }
+
+    .priority .action {
+      padding: 12px 18px;
+      font-size: 14px;
+    }
+
+    .priority .proof {
+      padding: 12px 16px;
+      color: var(--teal);
+      border-left: 1px solid var(--line);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .closing {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .closing h2 {
+      max-width: 950px;
+      color: var(--white);
+      font-size: 62px;
+    }
+
+    .closing .lede {
+      max-width: 850px;
+      margin-bottom: 30px;
+      color: rgba(255, 253, 247, .76);
+    }
+
+    .closing-links {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      width: 1040px;
+    }
+
+    .closing-link {
+      display: block;
+      padding: 17px;
+      color: var(--white);
+      background: rgba(255, 255, 255, .07);
+      border: 1px solid var(--line-dark);
+      font-size: 13px;
+      text-decoration: none;
+    }
+
+    .closing-link:hover { border-color: var(--yellow); }
+
+    .closing-link b {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--yellow);
+    }
+
+    .slide-footer {
+      position: absolute;
+      right: 48px;
+      bottom: 24px;
+      left: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: .05em;
+    }
+
+    .dark .slide-footer { color: rgba(255, 253, 247, .45); }
+
+    .notes { display: none !important; }
+
+    .chrome {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      display: flex;
+      gap: 7px;
+      padding: 8px;
+      background: rgba(16, 43, 53, .9);
+      border: 1px solid rgba(255, 255, 255, .16);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, .2);
+      backdrop-filter: blur(12px);
+      z-index: 100;
+    }
+
+    .chrome button {
+      min-width: 38px;
+      height: 35px;
+      padding: 0 10px;
+      color: var(--white);
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, .16);
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+    .chrome button:hover {
+      color: var(--navy);
+      background: var(--yellow);
+      border-color: var(--yellow);
+    }
+
+    .chrome .export {
+      color: var(--navy);
+      background: var(--yellow);
+      border-color: var(--yellow);
+      font-weight: 800;
+    }
+
+    .progress {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 4px;
+      background: rgba(255, 255, 255, .08);
+      z-index: 101;
+    }
+
+    .progress span {
+      display: block;
+      width: 0;
+      height: 100%;
+      background: var(--orange);
+      transition: width .25s ease;
+    }
+
+    .help {
+      position: fixed;
+      top: 18px;
+      right: 18px;
+      padding: 7px 11px;
+      color: rgba(255, 255, 255, .66);
+      background: rgba(16, 43, 53, .72);
+      border: 1px solid rgba(255, 255, 255, .13);
+      font-size: 11px;
+      z-index: 90;
+    }
+
+    .overview {
+      position: fixed;
+      inset: 0;
+      display: none;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      align-content: start;
+      padding: 34px;
+      overflow: auto;
+      color: var(--white);
+      background: rgba(9, 28, 34, .97);
+      z-index: 200;
+    }
+
+    .overview.open { display: grid; }
+
+    .thumb {
+      position: relative;
+      min-height: 128px;
+      padding: 18px;
+      color: var(--white);
+      background: var(--navy-2);
+      border: 1px solid rgba(255, 255, 255, .16);
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .thumb:hover,
+    .thumb.current {
+      border-color: var(--yellow);
+      transform: translateY(-2px);
+    }
+
+    .thumb b {
+      display: block;
+      margin-bottom: 30px;
+      color: var(--yellow);
+      font-family: var(--serif);
+      font-size: 23px;
+    }
+
+    .thumb span { font-size: 13px; }
+
+    .notes-panel {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: none;
+      max-height: 34vh;
+      padding: 22px 30px;
+      overflow: auto;
+      color: var(--white);
+      background: rgba(9, 28, 34, .97);
+      border-top: 3px solid var(--yellow);
+      font-size: 16px;
+      line-height: 1.65;
+      z-index: 190;
+    }
+
+    .notes-panel.open { display: block; }
+
+    .print-note {
+      position: fixed;
+      top: 18px;
+      left: 50%;
+      display: none;
+      padding: 11px 16px;
+      color: var(--navy);
+      background: var(--yellow);
+      box-shadow: var(--shadow);
+      font-size: 12px;
+      font-weight: 800;
+      transform: translateX(-50%);
+      z-index: 300;
+    }
+
+    .print-note.show {
+      display: block;
+      animation: note-show 2.2s ease both;
+    }
+
+    @keyframes note-show {
+      0%, 100% { opacity: 0; transform: translate(-50%, -8px); }
+      12%, 82% { opacity: 1; transform: translate(-50%, 0); }
+    }
+
+    @media (max-width: 700px) {
+      .help { display: none; }
+      .chrome {
+        right: 8px;
+        bottom: 10px;
+        left: 8px;
+        justify-content: center;
+      }
+      .chrome button { flex: 1; min-width: 0; }
+      .overview { grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 18px; }
+    }
+
+    @page {
+      size: 13.333in 7.5in;
+      margin: 0;
+    }
+
+    @media print {
+      html,
+      body {
+        width: auto;
+        height: auto;
+        overflow: visible !important;
+        background: var(--white) !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      .deck {
+        width: auto;
+        height: auto;
+        overflow: visible;
+        background: var(--white);
+      }
+
+      .stage {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: none !important;
+        box-shadow: none;
+      }
+
+      .slide,
+      .slide.is-active {
+        position: relative !important;
+        inset: auto !important;
+        display: flex !important;
+        flex-direction: column;
+        width: 13.333in !important;
+        height: 7.5in !important;
+        margin: 0 !important;
+        animation: none !important;
+        break-after: page;
+        page-break-after: always;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      .slide:last-child {
+        break-after: auto;
+        page-break-after: auto;
+      }
+
+      .chrome,
+      .progress,
+      .help,
+      .overview,
+      .notes-panel,
+      .print-note { display: none !important; }
+
+      .notes { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="deck" aria-label="FDE 企业落地 Skill 演示文稿">
+    <div class="stage" id="stage">
+      <section class="slide dark cover is-active" data-title="封面">
+        <div class="brand"><span class="brand-mark">FDE</span><span>Enterprise Skill Field Guide</span></div>
+        <p class="slide-kicker">Forward Deployed Engineering · 2026</p>
+        <h1 class="hero-title">FDE 企业落地典型<br>Skill 分类与使用说明</h1>
+        <p class="hero-subtitle">把企业 AI 从“能演示”推进到“可验收、可生产、有人用、可复用”的交付能力操作系统。</p>
+        <div class="meta-row">
+          <a href="https://github.com/bingyue/fde-skills" target="_blank" rel="noopener">仓库：github.com/bingyue/fde-skills</a>
+          <span>31 个核心 Skill</span>
+          <span>11 个交付分类</span>
+          <span>2026-07-23</span>
+        </div>
+        <div class="notes">开场先强调：这不是 Prompt 清单，而是一套企业交付操作系统。整份演示围绕阶段、证据、门禁和复用四个关键词展开。</div>
+      </section>
+
+      <section class="slide" data-title="结论先行">
+        <div class="section-head">
+          <div class="section-num">01</div>
+          <div><h2>结论先行：仓库已经形成企业交付骨架</h2><p>当前最有价值的不是单个 Skill，而是它们之间构成的主交付链、横切门禁和资产化闭环。</p></div>
+        </div>
+        <div class="grid g4">
+          <div class="metric"><strong>31</strong><b>核心 Skill</b><span>覆盖立项、发现、方案、构建、部署与运营。</span></div>
+          <div class="metric"><strong>11</strong><b>企业分类</b><span>以交付阶段分类，不按工具或业务系统碎片化。</span></div>
+          <div class="metric"><strong>8</strong><b>核心 SKILL.md</b><span>可进入 Agent 原生发现，其余使用显式路径模式。</span></div>
+          <div class="metric"><strong>19</strong><b>外部镜像 Skill</b><span>补充 RAG、MCP、部署、安全与行业实现能力。</span></div>
+        </div>
+        <div class="quote">先定阶段，再选 Skill；先拿证据，再出方案；用验收过门，以复用闭环。</div>
+        <div class="notes">这一页用于统一口径。特别说明 31 个核心能力并不都已经 Agent 原生化：8 个有 SKILL.md，其余仍然是可直接使用的四件套能力包。</div>
+      </section>
+
+      <section class="slide" data-title="为什么需要能力操作系统">
+        <div class="section-head">
+          <div class="section-num">02</div>
+          <div><h2>企业 AI 的难点，不在 Demo，而在最后一公里</h2><p>技术可运行只是第一步。生产、采纳和复用分别需要新的证据、角色与门禁。</p></div>
+        </div>
+        <div class="flow">
+          <div class="flow-step"><span class="signal teal">DEMO</span><strong>能演示</strong><p>模型能回答、流程能跑通、界面能展示。</p></div>
+          <div class="flow-step"><span class="signal orange">GAP 1</span><strong>可生产</strong><p>身份、权限、日志、集成、回滚与运维接管。</p></div>
+          <div class="flow-step"><span class="signal orange">GAP 2</span><strong>有人用</strong><p>真实工作流、可信输出、Champion 与反馈闭环。</p></div>
+          <div class="flow-step"><span class="signal">GAP 3</span><strong>可复用</strong><p>组件、模板、评估集和产品能力进入下一项目。</p></div>
+        </div>
+        <div class="grid g3" style="margin-top:22px">
+          <div class="card accent"><h4>传统工程视角</h4><p>以功能完成和技术输出衡量成功。</p></div>
+          <div class="card teal"><h4>FDE 视角</h4><p>以业务结果、风险可控和生产采纳衡量成功。</p></div>
+          <div class="card yellow"><h4>仓库作用</h4><p>把高频交付动作沉淀为可重复执行和验收的能力包。</p></div>
+        </div>
+        <div class="notes">不要把 FDE 误解为驻场开发。FDE 的差异是对业务结果和产品化复用负责。仓库的价值是让最后一公里不再依赖个人英雄主义。</div>
+      </section>
+
+      <section class="slide" data-title="三层分类">
+        <div class="section-head">
+          <div class="section-num">03</div>
+          <div><h2>三层分类：主交付链、横切门禁、方法与资产</h2><p>目录编号即交付顺序；安全合规横切全程；行业、模板和最佳实践负责复用。</p></div>
+        </div>
+        <div class="bands">
+          <div class="band">
+            <div class="band-title"><strong>主交付链</strong><small>01–07</small></div>
+            <div class="band-skills"><span class="chip strong">Foundation</span><span class="chip strong">Discovery</span><span class="chip strong">Solution</span><span class="chip strong">AI Delivery</span><span class="chip strong">Deployment</span><span class="chip strong">Integration</span><span class="chip strong">Operations</span></div>
+            <div class="band-out">从立项、发现、设计、构建到生产采纳。</div>
+          </div>
+          <div class="band">
+            <div class="band-title"><strong>横切门禁</strong><small>08</small></div>
+            <div class="band-skills"><span class="chip strong">Security &amp; Compliance</span><span class="chip">数据分级</span><span class="chip">RBAC</span><span class="chip">工具审计</span><span class="chip">日志与追溯</span></div>
+            <div class="band-out">把权限、数据与生产风险转为可审计条件。</div>
+          </div>
+          <div class="band">
+            <div class="band-title"><strong>方法与资产</strong><small>09–11</small></div>
+            <div class="band-skills"><span class="chip strong">Industry</span><span class="chip strong">Templates</span><span class="chip strong">Best Practice</span><span class="chip">咨询 Reference</span><span class="chip">外部镜像 Skill</span></div>
+            <div class="band-out">提供行业样例、标准模板和产品化复用。</div>
+          </div>
+        </div>
+        <div class="notes">这一分类有意避免按 CRM、ERP、Dify、LangChain 等工具或系统建顶层目录。企业问题应该由交付阶段组织，工具只是实现选择。</div>
+      </section>
+
+      <section class="slide" data-title="五段生命周期">
+        <div class="section-head">
+          <div class="section-num">04</div>
+          <div><h2>五段生命周期：Audit → Evals → Deploy → Adopt → Reuse</h2><p>仓库把 FDE 三阶段扩展为完整企业闭环，避免项目止于 PoC 或上线。</p></div>
+        </div>
+        <div class="lifecycle">
+          <div class="life-stage"><span class="index">01</span><h3>Audit 审计</h3><p>看清组织、工作流、数据与真实问题。</p><div class="dirs">01 Foundation<br>02 Discovery</div></div>
+          <div class="life-stage"><span class="index">02</span><h3>Evals 评估</h3><p>形成主方案，验证技术、风险与价值。</p><div class="dirs">03 Solution Design<br>04 AI Delivery · 08 Security</div></div>
+          <div class="life-stage"><span class="index">03</span><h3>Deploy 部署</h3><p>进入客户环境，完成上线、集成和接管。</p><div class="dirs">05 Deployment<br>06 Integration</div></div>
+          <div class="life-stage"><span class="index">04</span><h3>Adopt 采纳</h3><p>让用户持续使用，并形成可见业务结果。</p><div class="dirs">07 Operations<br>09 Industry</div></div>
+          <div class="life-stage"><span class="index">05</span><h3>Reuse 复用</h3><p>把单客户经验转成模板、组件和产品能力。</p><div class="dirs">10 Templates<br>11 Best Practice</div></div>
+        </div>
+        <div class="notes">Audit、Evals、Deployment 是核心主轴；Adoption 和 Reuse 是企业落地常被忽略的两段。没有采纳，技术没有价值；没有复用，交付无法规模化。</div>
+      </section>
+
+      <section class="slide" data-title="七个 Stage Gate">
+        <div class="section-head">
+          <div class="section-num">05</div>
+          <div><h2>七个 Stage Gate：用证据决定是否进入下一阶段</h2><p>Gate 不是文档数量检查。只有证据能支撑资源、风险和技术决策，项目才真正过门。</p></div>
+        </div>
+        <div class="gate-grid">
+          <div class="gate"><strong>G0 · 立项</strong><p>决策链、范围、验收、变更机制和升级路径书面化。</p></div>
+          <div class="gate"><strong>G1 · 发现</strong><p>问题、流程、基线、边界和人工兜底清晰。</p></div>
+          <div class="gate"><strong>G2 · 方案</strong><p>唯一主方案、淘汰项、回退和接口契约齐备。</p></div>
+          <div class="gate"><strong>G3 · 评估</strong><p>Golden Dataset、回归、风险整改和 ROI 达标。</p></div>
+          <div class="gate"><strong>G4 · 生产</strong><p>监控、回滚、灾备、权限与运维接管通过。</p></div>
+          <div class="gate"><strong>G5 · 采纳</strong><p>活跃、任务成功、业务结果和运营 Owner 成立。</p></div>
+          <div class="gate"><strong>G6 · 复用</strong><p>组件、模板、评估集、产品反馈和复盘进入资产库。</p></div>
+        </div>
+        <div class="notes">每次阶段评审都应明确：当前 Gate、缺什么证据、谁补齐、什么时候复审。不能用更漂亮的 PPT 掩盖事实和验证缺口。</div>
+      </section>
+
+      <section class="slide" data-title="Audit 类 Skill">
+        <div class="section-head">
+          <div class="section-num">06</div>
+          <div><h2>Audit：先把人、流程和问题看清</h2><p>Foundation 固化交付基线；Discovery 把模糊诉求转成可证伪业务假设。</p></div>
+        </div>
+        <div class="grid g2">
+          <div class="card dark-card">
+            <span class="signal">01 FOUNDATION</span>
+            <h3 style="margin-top:16px">立项与交付基线</h3>
+            <ul class="skill-list">
+              <li>Stakeholder-Mapping</li><li>SOW-Generator</li>
+              <li>FDE-Self-Assessment</li><li>FDE-Growth-Roadmap</li>
+              <li>Communication-Script-Library</li>
+            </ul>
+            <p style="margin-top:18px"><b>过门证据：</b>干系人图、SOW、验收口径、升级路径。</p>
+          </div>
+          <div class="card">
+            <span class="signal teal">02 DISCOVERY</span>
+            <h3 style="margin-top:16px">需求发现与咨询拆解</h3>
+            <ul class="skill-list">
+              <li>Business-Interview</li><li>Process-Mapping</li>
+              <li>Consultative-Problem-Solving</li><li>FDE-Issue-Tree-Analysis</li>
+              <li>Expectation-Management</li><li>Executive-Communication</li>
+              <li>AIBP-Collaboration</li><li>Sidecar-AI-Transformation</li>
+            </ul>
+            <p style="margin-top:18px"><b>过门证据：</b>场景卡、As-Is、Issue Tree、基线和边界。</p>
+          </div>
+        </div>
+        <div class="quote">Discovery 的完成标志：能把需求写成“谁，在什么流程，用什么输入，达到什么指标，AI 不做什么”。</div>
+        <div class="notes">企业项目最昂贵的错误往往发生在 Discovery 不足时。强调 Business Interview、Process Mapping 和 Issue Tree 的顺序，不要一上来就做技术选型。</div>
+      </section>
+
+      <section class="slide" data-title="Evals 类 Skill">
+        <div class="section-head">
+          <div class="section-num">07</div>
+          <div><h2>Evals：从“想做什么”到“为何这样做”</h2><p>方案规格、AI 评估和安全门禁必须并行设计，而不是在上线前补材料。</p></div>
+        </div>
+        <div class="grid g3">
+          <div class="card accent">
+            <span class="signal orange">03 SOLUTION</span>
+            <h3 style="margin-top:14px">方案规格</h3>
+            <ul class="skill-list" style="grid-template-columns:1fr">
+              <li>FDE-PoC-Tech-Stack-Selector</li>
+              <li>PRD-Generator</li>
+              <li>API-Design-Review</li>
+            </ul>
+            <p style="margin-top:17px">主方案、降级方案、淘汰项、ADR、接口契约。</p>
+          </div>
+          <div class="card teal">
+            <span class="signal teal">04 AI DELIVERY</span>
+            <h3 style="margin-top:14px">构建与评估</h3>
+            <ul class="skill-list" style="grid-template-columns:1fr">
+              <li>RAG-Evaluation</li>
+              <li>Tool-Audit</li>
+            </ul>
+            <p style="margin-top:17px">Golden Dataset、五层指标、工具风险、人审节点。</p>
+          </div>
+          <div class="card yellow">
+            <span class="signal">08 SECURITY</span>
+            <h3 style="margin-top:14px">权限与合规</h3>
+            <ul class="skill-list" style="grid-template-columns:1fr">
+              <li>RBAC-Audit</li>
+              <li>数据分级与最小权限</li>
+              <li>日志、撤权、职责分离</li>
+            </ul>
+            <p style="margin-top:17px">权限矩阵、审计报告、整改项和合规对照。</p>
+          </div>
+        </div>
+        <div class="quote">所有“最新、支持、兼容、可私有化、生产级”判断，必须在执行当天核对官方证据。</div>
+        <div class="notes">PoC Tech Stack Selector 明确要求联网检索；没有当期证据只能输出预选方案。安全门禁不要推迟到上线前，否则会导致返工甚至项目终止。</div>
+      </section>
+
+      <section class="slide" data-title="Deploy Adopt Reuse">
+        <div class="section-head">
+          <div class="section-num">08</div>
+          <div><h2>Deploy、Adopt、Reuse：让方案进入系统与组织</h2><p>上线解决技术接入，采纳解决真实使用，复用解决规模化。</p></div>
+        </div>
+        <div class="grid g3">
+          <div class="card dark-card">
+            <span class="signal">05–06 DEPLOY</span>
+            <h3 style="margin-top:15px">部署与集成</h3>
+            <ul class="skill-list" style="grid-template-columns:1fr">
+              <li>Private-Deployment-Gateway</li>
+              <li>Feishu-Integration</li>
+            </ul>
+            <p style="margin-top:18px">网络、身份、密钥、日志、回滚、联调与运维接管。</p>
+          </div>
+          <div class="card teal">
+            <span class="signal teal">07 &amp; 09 ADOPT</span>
+            <h3 style="margin-top:15px">运营与行业</h3>
+            <ul class="skill-list" style="grid-template-columns:1fr">
+              <li>Customer-Service-Bot</li>
+              <li>FDE-Adoption-Growth</li>
+              <li>SQL-Dashboard-Brief</li>
+              <li>AI-Operations-Daily</li>
+            </ul>
+            <p style="margin-top:18px">采纳漏斗、Champion、SOP、业务看板和周复盘。</p>
+          </div>
+          <div class="card yellow">
+            <span class="signal">10–11 REUSE</span>
+            <h3 style="margin-top:15px">模板与最佳实践</h3>
+            <ul class="skill-list" style="grid-template-columns:1fr">
+              <li>SOW-Template</li>
+              <li>FDE-Full-Lifecycle</li>
+              <li>Diagnostic-FDE</li>
+              <li>FDE-Customer-Product-Bridge</li>
+            </ul>
+            <p style="margin-top:18px">模板、方法论、产品反馈和可复用交付资产。</p>
+          </div>
+        </div>
+        <div class="notes">这一页强调 PoC 后半程。Deployment 不只是模型在内网运行；Adoption 不只是培训一次；Reuse 不只是写复盘，而是进入产品和下一项目。</div>
+      </section>
+
+      <section class="slide" data-title="31 个核心 Skill 地图">
+        <div class="section-head">
+          <div class="section-num">09</div>
+          <div><h2>31 个核心 Skill：按交付阶段查找，而不是按工具查找</h2><p>每个分类都有明确的输入、输出和下一阶段关系。</p></div>
+        </div>
+        <div class="category-map">
+          <div class="category-row"><div class="category-code">01</div><div class="category-name">Foundation · 5</div><div class="category-skills">Stakeholder · SOW · Self Assessment · Growth · Communication</div></div>
+          <div class="category-row"><div class="category-code">02</div><div class="category-name">Discovery · 8</div><div class="category-skills">Interview · Process · Problem Solving · Issue Tree · Expectation · Executive · AIBP · Sidecar</div></div>
+          <div class="category-row"><div class="category-code">03</div><div class="category-name">Solution · 3</div><div class="category-skills">Tech Stack Selector · PRD · API Review</div></div>
+          <div class="category-row"><div class="category-code">04</div><div class="category-name">AI Delivery · 2</div><div class="category-skills">RAG Evaluation · Tool Audit</div></div>
+          <div class="category-row"><div class="category-code">05</div><div class="category-name">Deployment · 1</div><div class="category-skills">Private Deployment Gateway</div></div>
+          <div class="category-row"><div class="category-code">06</div><div class="category-name">Integration · 1</div><div class="category-skills">Feishu Integration</div></div>
+          <div class="category-row"><div class="category-code">07</div><div class="category-name">Operations · 3</div><div class="category-skills">Customer Service · Adoption Growth · SQL Dashboard</div></div>
+          <div class="category-row"><div class="category-code">08</div><div class="category-name">Security · 1</div><div class="category-skills">RBAC Audit</div></div>
+          <div class="category-row"><div class="category-code">09</div><div class="category-name">Industry · 1</div><div class="category-skills">AI Operations Daily</div></div>
+          <div class="category-row"><div class="category-code">10</div><div class="category-name">Templates · 1</div><div class="category-skills">SOW Template（另有 Career Job Search 补充包）</div></div>
+          <div class="category-row" style="grid-column:1 / -1"><div class="category-code">11</div><div class="category-name">Best Practice · 5</div><div class="category-skills">Palantir Pattern · China Consulting · Full Lifecycle · Diagnostic FDE · Customer Product Bridge</div></div>
+        </div>
+        <div class="notes">这是一页完整索引，适合现场快速定位。31 个核心 Skill 的数量与 INDEX.md 一致；咨询 Reference 和 Career Job Search 模板包不计入核心数。</div>
+      </section>
+
+      <section class="slide" data-title="如何使用当前仓库">
+        <div class="section-head">
+          <div class="section-num">10</div>
+          <div><h2>两种核心调用形态 + 两类增强资产</h2><p>先识别目录形态，再决定自动调用还是显式路径执行。</p></div>
+        </div>
+        <div class="grid g4">
+          <div class="mode">
+            <div class="mode-no">A</div>
+            <h3>Agent 原生</h3>
+            <p>8 个核心目录含 <b>SKILL.md</b>，支持 Skill 发现机制的 Agent 可按名称调用。</p>
+            <span class="signal teal">8 / 31</span>
+          </div>
+          <div class="mode">
+            <div class="mode-no">B</div>
+            <h3>显式路径</h3>
+            <p>多数目录采用标准四件套；告诉 Agent 目录并要求逐文件执行。</p>
+            <div class="file-stack">
+              <div class="file"><b>README.md</b><span>边界与方法</span></div>
+              <div class="file"><b>prompt.md</b><span>分阶段 Prompt</span></div>
+              <div class="file"><b>checklist.md</b><span>过程门禁</span></div>
+              <div class="file"><b>evaluation.md</b><span>验收与失败处理</span></div>
+            </div>
+          </div>
+          <div class="mode">
+            <div class="mode-no">C</div>
+            <h3>外部镜像</h3>
+            <p><b>.agents/skills/</b> 中 19 个 Skill 补充 RAG、MCP、部署、安全和行业实现。</p>
+            <span class="signal">19 LOCKED</span>
+          </div>
+          <div class="mode">
+            <div class="mode-no">D</div>
+            <h3>咨询 Reference</h3>
+            <p>MECE、麦肯锡框架、报告和 PPT 等 6 个资产增强分析与表达。</p>
+            <span class="signal orange">不替代证据</span>
+          </div>
+        </div>
+        <div class="notes">强调运行时差异：目录里有 SKILL.md 不代表所有客户端自动注册。无法自动发现时，显式给出路径和四件套执行顺序即可。</div>
+      </section>
+
+      <section class="slide" data-title="新客户 PoC 全链路">
+        <div class="section-head">
+          <div class="section-num">11</div>
+          <div><h2>典型打法一：新客户 AI PoC 从入场到复用</h2><p>一个总控 Skill 管生命周期，各专项 Skill 对应具体交付物。</p></div>
+        </div>
+        <div class="route-grid">
+          <div class="route-step"><strong>Stakeholder Mapping</strong><span>决策链、Owner、阻力与升级路径</span></div>
+          <div class="route-step"><strong>Business Interview</strong><span>访谈、痛点与指标假设</span></div>
+          <div class="route-step"><strong>Process Mapping</strong><span>As-Is、介入点与例外</span></div>
+          <div class="route-step"><strong>Problem Solving</strong><span>Issue Tree 与可证伪假设</span></div>
+          <div class="route-step"><strong>SOW + PRD</strong><span>范围、验收、规格与数据需求</span></div>
+          <div class="route-step"><strong>Tech Stack Selector</strong><span>主方案、降级、淘汰项、10 日蓝图</span></div>
+          <div class="route-step"><strong>RAG / Tool Eval</strong><span>Golden Dataset、回归与风险</span></div>
+          <div class="route-step"><strong>RBAC Audit</strong><span>最小权限、日志与整改</span></div>
+          <div class="route-step"><strong>Private Deployment</strong><span>上线、监控、回滚与接管</span></div>
+          <div class="route-step"><strong>Enterprise Integration</strong><span>身份、API、消息和联调</span></div>
+          <div class="route-step"><strong>Adoption Growth</strong><span>Champion、培训、漏斗和业务看板</span></div>
+          <div class="route-step"><strong>Product Bridge</strong><span>组件、模板、产品反馈与复盘</span></div>
+        </div>
+        <div class="quote">主控建议：FDE-Full-Lifecycle 管 Audit / Evals / Deployment；专项 Skill 负责可验收交付物。</div>
+        <div class="notes">不是所有项目都必须机械执行 12 步。关键是每个 Gate 都有足够证据；可根据项目已有资产跳过已证明的步骤，但不能跳过对应问题。</div>
+      </section>
+
+      <section class="slide" data-title="三类专项打法">
+        <div class="section-head">
+          <div class="section-num">12</div>
+          <div><h2>典型打法二：RAG、Agent、私有化三类专项路线</h2><p>先验证最关键的不确定性，再增加工程复杂度。</p></div>
+        </div>
+        <div class="grid g3">
+          <div class="recipe">
+            <div class="recipe-no">01</div>
+            <h3>企业 RAG</h3>
+            <div class="mini-route"><span>业务访谈与流程</span><span>Issue Tree 定位问题</span><span>Tech Stack Selector</span><span>RAG Evaluation</span><span>Deploy → Adoption</span></div>
+            <p><b>核心门禁：</b>小规模 Golden Dataset；解析、召回、生成、引用和采纳分层评估。</p>
+          </div>
+          <div class="recipe">
+            <div class="recipe-no">02</div>
+            <h3>Agent / MCP</h3>
+            <div class="mini-route"><span>Problem Solving</span><span>PRD + API Review</span><span>Tech Stack Selector</span><span>Tool Audit</span><span>RBAC → Deploy</span></div>
+            <p><b>核心门禁：</b>确定性流程优先；高风险动作必须确认、幂等、审计和回滚。</p>
+          </div>
+          <div class="recipe">
+            <div class="recipe-no">03</div>
+            <h3>私有化 / 信创</h3>
+            <div class="mini-route"><span>Stakeholder + Interview</span><span>RBAC 前置</span><span>Tech Stack Selector</span><span>Private Gateway</span><span>API Review → Integrate</span></div>
+            <p><b>核心门禁：</b>不仅模型落内网，还要覆盖身份、密钥、供应链、容量、灾备和接管。</p>
+          </div>
+        </div>
+        <div class="notes">RAG、Agent 和私有化是三类高频任务。共同原则是先验证业务假设和最高风险，不要为了“未来规模”在 PoC 阶段提前建设复杂平台。</div>
+      </section>
+
+      <section class="slide" data-title="Sidecar 与采纳修复">
+        <div class="section-head">
+          <div class="section-num">13</div>
+          <div><h2>典型打法三：主链路阻力大，或 PoC 成功但没人用</h2><p>一个解决“怎么先验证”，另一个解决“为什么没形成持续使用”。</p></div>
+        </div>
+        <div class="grid g2">
+          <div class="card dark-card" style="min-height:375px">
+            <span class="signal">SIDECAR</span>
+            <h3 style="margin-top:16px">体外验证，不是绕开治理</h3>
+            <div class="mini-route">
+              <span>Stakeholder → Process</span>
+              <span>Sidecar-AI-Transformation</span>
+              <span>AIBP Collaboration</span>
+              <span>快速 PoC → Adoption</span>
+              <span>合并主链路 / 长期保留 / 终止</span>
+            </div>
+            <p>预先定义数据同步、权限审计、失败回退和终止条件。</p>
+          </div>
+          <div class="card" style="min-height:375px">
+            <span class="signal orange">ADOPTION RESCUE</span>
+            <h3 style="margin-top:16px">使用率低，先回到真实工作流</h3>
+            <div class="mini-route">
+              <span>Adoption Growth</span>
+              <span>Re-interview + Re-map Process</span>
+              <span>Expectation Management</span>
+              <span>SQL Dashboard</span>
+              <span>Executive → Product Bridge</span>
+            </div>
+            <p>不要只看调用量；重点看任务成功、使用成本和业务结果。</p>
+          </div>
+        </div>
+        <div class="notes">Sidecar 适合主系统改造阻力大但价值假设值得快速验证的场景。采纳修复则常常需要回退到 Discovery，而不是继续增加模型能力。</div>
+      </section>
+
+      <section class="slide" data-title="采纳漏斗诊断">
+        <div class="section-head">
+          <div class="section-num">14</div>
+          <div><h2>PoC 成功但没人用：从采纳漏斗定位真实阻塞</h2><p>技术指标通过，只证明系统“能用”；企业价值要求用户“愿意用、持续用、用出结果”。</p></div>
+        </div>
+        <div style="display:flex;gap:44px;align-items:start">
+          <div class="funnel">
+            <div class="funnel-step">目标用户可触达</div>
+            <div class="funnel-step">首次尝试</div>
+            <div class="funnel-step">任务成功</div>
+            <div class="funnel-step">持续使用</div>
+            <div class="funnel-step">业务结果</div>
+          </div>
+          <ol class="question-list">
+            <li>用户是否在目标流程中真的需要该能力？</li>
+            <li>使用成本是否高于原流程或替代方式？</li>
+            <li>输出是否可信、可解释并能继续行动？</li>
+            <li>是否有 Champion、反馈入口和运营 Owner？</li>
+            <li>指标是否测任务成功与业务结果，而非只测调用量？</li>
+          </ol>
+        </div>
+        <div class="notes">按漏斗逐层定位，不要把所有问题都归因于准确率。很多采纳问题来自入口、流程、信任、组织激励或缺少反馈闭环。</div>
+      </section>
+
+      <section class="slide" data-title="角色与责任">
+        <div class="section-head">
+          <div class="section-num">15</div>
+          <div><h2>角色与责任：同一个 Gate，需要不同角色共同签字</h2><p>FDE 是总控与技术业务翻译者，不是代替所有职能。</p></div>
+        </div>
+        <div class="roles">
+          <div class="role"><b>FDE / 交付负责人</b><p>阶段总控、关键取舍、结果与复用。</p></div>
+          <div class="role"><b>AIBP / 业务 Owner</b><p>业务真实性、优先级、用户和验收。</p></div>
+          <div class="role"><b>AI 工程师</b><p>可测原型、失败归因和工程质量。</p></div>
+          <div class="role"><b>架构 / IT</b><p>集成、身份、网络、运维和接管。</p></div>
+          <div class="role"><b>安全 / 合规</b><p>数据、权限、审计和整改门禁。</p></div>
+          <div class="role"><b>产品经理</b><p>规格、需求抽象和路线反馈。</p></div>
+          <div class="role"><b>客户成功 / 运营</b><p>采纳、培训、反馈和价值持续化。</p></div>
+          <div class="role"><b>高管 Sponsor</b><p>资源、优先级、阶段决策与冲突升级。</p></div>
+        </div>
+        <div class="quote">推荐机制：G0–G2 业务与技术双确认；G3–G4 IT / 安全加入门禁；G5–G6 运营与产品接棒。</div>
+        <div class="notes">避免 FDE 承担无限责任。每个 Gate 要明确谁提供输入、谁做决定、谁验收、谁接管。AIBP 双负责人机制尤其适合企业 AI 项目。</div>
+      </section>
+
+      <section class="slide" data-title="仓库治理">
+        <div class="section-head">
+          <div class="section-num">16</div>
+          <div><h2>当前治理重点：从 usable 走向 validated</h2><p>目录数量不是目标；现场证据、时效性、自动发现和可复用性才是。</p></div>
+        </div>
+        <div class="grid g4">
+          <div class="card accent"><h3>成熟度</h3><p><b>usable ≠ validated</b></p><p>记录行业、采用步骤、结果指标、失效内容和升级证据。</p></div>
+          <div class="card teal"><h3>自动发现</h3><p><b>8 / 31</b> 含 SKILL.md</p><p>优先补齐 Interview、Process、PRD、RAG、Tool、Deploy、RBAC、Adoption。</p></div>
+          <div class="card yellow"><h3>技术时效</h3><p><b>执行当天核验</b></p><p>模型、框架、许可证、数据政策和国产算力兼容性持续变化。</p></div>
+          <div class="card dark-card"><h3>企业安全</h3><p><b>最小必要 + 人工确认</b></p><p>密钥、生产配置、个人信息和高风险写操作必须受控。</p></div>
+        </div>
+        <div class="quote">项目复盘的最终问题：本次经验能否减少下一个客户的时间、风险或决策成本？</div>
+        <div class="notes">这页用于说明仓库下一阶段不是继续堆目录，而是做现场验证、补齐 SKILL.md、维护时效证据和建立安全治理。</div>
+      </section>
+
+      <section class="slide" data-title="90 天推进建议">
+        <div class="section-head">
+          <div class="section-num">17</div>
+          <div><h2>90 天推进建议：先打通主链，再扩大覆盖</h2><p>以真实项目为验证场，把高频能力升级为可发现、可测量、可复用的标准资产。</p></div>
+        </div>
+        <div>
+          <div class="priority"><div class="horizon">0–30 天</div><div class="action"><b>统一 Stage Gate 与任务卡</b><br>选择 1 个在途项目按 G0–G6 留存证据。</div><div class="proof">完整项目证据链</div></div>
+          <div class="priority"><div class="horizon">31–60 天</div><div class="action"><b>补齐高频主链 SKILL.md</b><br>优先 Interview、Process、PRD、RAG、Tool、Deploy、RBAC、Adoption。</div><div class="proof">自动发现覆盖提升</div></div>
+          <div class="priority"><div class="horizon">61–90 天</div><div class="action"><b>建立验证与资产化机制</b><br>对项目结果、复用次数、失效案例和版本变化做月度复盘。</div><div class="proof">usable → validated</div></div>
+          <div class="priority"><div class="horizon">持续</div><div class="action"><b>外部 Skill 只做实现增强</b><br>保留来源、版本、许可和数据安全核验，避免核心链路被工具绑架。</div><div class="proof">低锁定、可治理</div></div>
+        </div>
+        <div class="notes">建议从一个真实项目开始，不要先做大规模仓库重构。先让 Stage Gate 和关键 Skill 产生可观察结果，再扩充覆盖和成熟度。</div>
+      </section>
+
+      <section class="slide dark closing" data-title="结束">
+        <p class="slide-kicker">FDE ENTERPRISE DELIVERY SYSTEM</p>
+        <h2>按阶段调用，用证据过门，<br>以业务结果交付，以复用形成飞轮。</h2>
+        <p class="lede">本演示为单文件 16:9 HTML：支持键盘翻页、总览、讲者备注和一键打印。导出 PDF 时每页固定为一张幻灯片，颜色与版式保持一致。</p>
+        <div class="closing-links">
+          <div class="closing-link"><b>演示版</b>docs/fde-enterprise-skill-guide-PPT.html</div>
+          <div class="closing-link"><b>长文 HTML</b>docs/fde-enterprise-skill-guide.html</div>
+          <div class="closing-link"><b>PDF 友好 Markdown</b>docs/fde-enterprise-skill-guide.md</div>
+          <a class="closing-link" href="https://github.com/bingyue/fde-skills" target="_blank" rel="noopener"><b>GitHub 仓库</b>github.com/bingyue/fde-skills</a>
+        </div>
+        <div class="notes">收尾强调四个关键词：阶段、证据、结果、复用。现场可直接点击右下角“导出 PDF”，或使用浏览器打印另存为 PDF。</div>
+      </section>
+    </div>
+
+    <div class="help">← → / Space 翻页 · O 总览 · N 备注 · F 全屏</div>
+    <div class="chrome" aria-label="演示控制">
+      <button type="button" id="prev" aria-label="上一页">←</button>
+      <button type="button" id="next" aria-label="下一页">→</button>
+      <button type="button" id="overview-button" aria-label="打开总览">总览</button>
+      <button type="button" id="fullscreen" aria-label="全屏">全屏</button>
+      <button type="button" class="export" id="export" aria-label="导出 PDF">导出 PDF</button>
+    </div>
+    <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+    <div class="overview" id="overview" aria-label="幻灯片总览"></div>
+    <div class="notes-panel" id="notes-panel" aria-live="polite"></div>
+    <div class="print-note" id="print-note">打印设置：布局保持默认，目标选择“另存为 PDF”</div>
+  </main>
+
+  <script>
+    (() => {
+      "use strict";
+
+      const slides = [...document.querySelectorAll(".slide")];
+      const stage = document.getElementById("stage");
+      const progress = document.getElementById("progress-bar");
+      const overview = document.getElementById("overview");
+      const notesPanel = document.getElementById("notes-panel");
+      const printNote = document.getElementById("print-note");
+      const total = slides.length;
+      let current = 0;
+
+      const clamp = value => Math.max(0, Math.min(total - 1, value));
+
+      function addFooters() {
+        slides.forEach((slide, index) => {
+          const footer = document.createElement("div");
+          footer.className = "slide-footer";
+          footer.innerHTML = `<span>FDE 企业落地 Skill 指南</span><span>${String(index + 1).padStart(2, "0")} / ${String(total).padStart(2, "0")}</span>`;
+          slide.appendChild(footer);
+        });
+      }
+
+      function buildOverview() {
+        overview.innerHTML = slides.map((slide, index) => `
+          <button type="button" class="thumb" data-index="${index}">
+            <b>${String(index + 1).padStart(2, "0")}</b>
+            <span>${slide.dataset.title || `第 ${index + 1} 页`}</span>
+          </button>`).join("");
+        overview.querySelectorAll(".thumb").forEach(button => {
+          button.addEventListener("click", () => {
+            go(Number(button.dataset.index));
+            closeOverlays();
+          });
+        });
+      }
+
+      function resize() {
+        if (window.matchMedia("print").matches) return;
+        const edge = window.innerWidth < 700 ? 18 : 52;
+        const scale = Math.min(
+          (window.innerWidth - edge) / 1280,
+          (window.innerHeight - edge) / 720
+        );
+        document.documentElement.style.setProperty("--scale", String(Math.max(.1, scale)));
+      }
+
+      function readHash() {
+        const match = window.location.hash.match(/^#\/(\d+)$/);
+        return match ? clamp(Number(match[1]) - 1) : 0;
+      }
+
+      function updateNotes() {
+        const notes = slides[current].querySelector(".notes");
+        notesPanel.textContent = notes ? notes.textContent.trim() : "本页没有讲者备注。";
+      }
+
+      function go(index, updateHash = true) {
+        current = clamp(index);
+        slides.forEach((slide, idx) => slide.classList.toggle("is-active", idx === current));
+        progress.style.width = `${((current + 1) / total) * 100}%`;
+        document.querySelectorAll(".thumb").forEach((thumb, idx) => thumb.classList.toggle("current", idx === current));
+        updateNotes();
+        if (updateHash) history.replaceState(null, "", `#/${current + 1}`);
+        document.title = `${String(current + 1).padStart(2, "0")} / ${String(total).padStart(2, "0")} · ${slides[current].dataset.title} · FDE Skill 指南`;
+      }
+
+      function closeOverlays() {
+        overview.classList.remove("open");
+        notesPanel.classList.remove("open");
+      }
+
+      function toggleOverview() {
+        notesPanel.classList.remove("open");
+        overview.classList.toggle("open");
+      }
+
+      function toggleNotes() {
+        overview.classList.remove("open");
+        notesPanel.classList.toggle("open");
+      }
+
+      function requestFullscreen() {
+        if (!document.fullscreenElement) {
+          document.documentElement.requestFullscreen?.();
+        } else {
+          document.exitFullscreen?.();
+        }
+      }
+
+      function exportPdf() {
+        closeOverlays();
+        printNote.classList.remove("show");
+        void printNote.offsetWidth;
+        printNote.classList.add("show");
+        window.setTimeout(() => window.print(), 280);
+      }
+
+      document.getElementById("prev").addEventListener("click", () => go(current - 1));
+      document.getElementById("next").addEventListener("click", () => go(current + 1));
+      document.getElementById("overview-button").addEventListener("click", toggleOverview);
+      document.getElementById("fullscreen").addEventListener("click", requestFullscreen);
+      document.getElementById("export").addEventListener("click", exportPdf);
+
+      document.addEventListener("keydown", event => {
+        if (event.key === "Escape") {
+          closeOverlays();
+          return;
+        }
+        if (overview.classList.contains("open")) return;
+        if (["ArrowRight", "PageDown", " "].includes(event.key)) {
+          event.preventDefault();
+          go(current + 1);
+        } else if (["ArrowLeft", "PageUp"].includes(event.key)) {
+          event.preventDefault();
+          go(current - 1);
+        } else if (event.key === "Home") {
+          go(0);
+        } else if (event.key === "End") {
+          go(total - 1);
+        } else if (event.key.toLowerCase() === "o") {
+          toggleOverview();
+        } else if (event.key.toLowerCase() === "n") {
+          toggleNotes();
+        } else if (event.key.toLowerCase() === "f") {
+          requestFullscreen();
+        }
+      });
+
+      window.addEventListener("resize", resize);
+      window.addEventListener("hashchange", () => go(readHash(), false));
+      window.addEventListener("beforeprint", () => {
+        closeOverlays();
+        document.documentElement.style.setProperty("--scale", "1");
+      });
+      window.addEventListener("afterprint", resize);
+
+      addFooters();
+      buildOverview();
+      resize();
+      go(readHash(), false);
+    })();
+  </script>
+</body>
+</html>

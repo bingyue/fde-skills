@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: 100条SKU中10条缺单位、5条重复ID
+  constraints:
+    boundary: 不静默填充关键业务字段；保留原值与修正证据
+expected:
+  artifact: data-quality.md
+  decision: 单位完整率90%；重复ID阻断索引；先联系PIM owner修复
+  required_fields:
+  - 完整性
+  - 唯一性
+  - 一致性
+  - 时效
+  - 分层结果
+  - 修复计划
+checks:
+- 每条规则可复跑；关键失败样本可定位；修复有owner
+- 不静默填充关键业务字段；保留原值与修正证据
+negative_case:
+  input: 无字段含义
+  expected: 暂停语义清洗，先补数据字典。保留证据，不宣布未经验证的通过。

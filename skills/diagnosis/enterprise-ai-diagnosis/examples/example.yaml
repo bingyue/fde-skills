@@ -1,0 +1,23 @@
+kind: synthetic
+input:
+  context:
+    evidence: 客户要求智能体平台，客服FAQ老旧且没有维护人
+  constraints:
+    boundary: 证据不足必须标假设；不得把售前建议当生产承诺
+expected:
+  artifact: diagnosis-report.md
+  decision: 先确认维护责任和知识更新流程；建议只读FAQ试点；平台化待验证复用价值
+  required_fields:
+  - 问题树
+  - 证据
+  - 成熟度
+  - 机会
+  - 优先级
+  - PoC建议
+  - 停止项
+checks:
+- 结论可追溯原始证据；首选有owner、范围、评测、预算与退出条件
+- 证据不足必须标假设；不得把售前建议当生产承诺
+negative_case:
+  input: 没有业务基线
+  expected: 输出诊断缺口与取证计划，不虚构ROI。保留证据，不宣布未经验证的通过。

@@ -1,0 +1,23 @@
+kind: synthetic
+input:
+  context:
+    evidence: API需要模型密钥和向量库连接，实例可被重建
+  constraints:
+    boundary: 不得把密钥或客户数据打入镜像；不使用latest作为发布标识
+expected:
+  artifact: docker-release.md
+  decision: 镜像仅含代码与锁文件；密钥运行时挂载；数据保存在外部卷；发布记录digest
+  required_fields:
+  - 镜像digest
+  - 构建
+  - 用户
+  - 配置
+  - 健康
+  - 资源
+  - 回滚
+checks:
+- 干净环境可构建；非root启动；恢复和回滚有记录
+- 不得把密钥或客户数据打入镜像；不使用latest作为发布标识
+negative_case:
+  input: 依赖下载失败
+  expected: 终止构建，不静默退回未锁定版本。保留证据，不宣布未经验证的通过。

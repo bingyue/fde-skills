@@ -1,0 +1,18 @@
+kind: synthetic
+input:
+  context:
+    evidence: 'TODO: realistic customer evidence'
+  constraints:
+    boundary: 'TODO: permissions and resource limits'
+expected:
+  artifact: deliverable.md
+  decision: 'TODO: expected outcome'
+  required_fields:
+  - evidence
+  - decision
+  - next_action
+checks:
+- 'TODO: observable criterion'
+negative_case:
+  input: 'TODO: missing input or boundary case'
+  expected: 'TODO: safe and useful failure behavior'

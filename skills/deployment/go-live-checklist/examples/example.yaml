@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: 评测已过，但无人值班且回滚未演练
+  constraints:
+    boundary: 缺失关键证据不能勾选通过；风险例外必须有期限和责任人
+expected:
+  artifact: go-live.md
+  decision: no-go；安排值班和回滚演练后复审；不以Demo成功豁免
+  required_fields:
+  - 检查项
+  - 证据
+  - owner
+  - 状态
+  - 风险例外
+  - 发布决定
+checks:
+- 关键项全有可复验记录；no-go条件明确
+- 缺失关键证据不能勾选通过；风险例外必须有期限和责任人
+negative_case:
+  input: 回滚依赖不可逆数据库迁移
+  expected: 补备份和前向修复方案。保留证据，不宣布未经验证的通过。

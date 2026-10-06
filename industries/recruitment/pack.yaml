@@ -1,0 +1,90 @@
+name: recruitment
+display_name: 招聘 / Recruitment
+version: 1.0.0
+description: 职位理解、候选资料整理、面试与排程辅助
+extends:
+- agent-design
+- agent-task-evaluation
+- ai-security-testing
+- customer-discovery
+- customer-interview
+- delivery-handover
+- enterprise-ai-diagnosis
+- evaluation-driven-development
+- golden-dataset-design
+- human-in-the-loop
+- ontology-design
+- prd-generation
+- prompt-design
+- tool-design
+- workflow-design
+knowledge:
+- topic: 权威知识
+  guidance: 按recruitment业务对象登记有效版本、审核人、适用范围和更新周期；冲突资料进入复核。
+  source: 客户已批准的业务资料与数据目录；实施时填写具体来源
+- topic: 业务流程
+  guidance: 职位理解、候选资料整理、面试与排程辅助；每个流程定义触发、输入、系统后置条件与人工负责人。
+  source: 客户现场观察、流程SOP和授权访谈
+- topic: 政策边界
+  guidance: 由客户专业负责人核验适用地区、机构政策和当前要求；本Pack不构成法律或专业结论。
+  source: 客户合规/业务负责人确认的政策清单
+constraints:
+- 仅用与岗位职责相关且有来源的能力证据；不得推断种族、宗教、健康、生育计划等敏感属性
+- 筛选建议需人工复核；不自动拒绝候选人或决定录用
+- 候选资料按授权用途和保留期处理，支持纠错与删除
+metrics:
+- name: 证据引用率
+  definition: 有简历或访谈来源的判断数/判断总数
+  target: 所有推荐理由可追溯
+- name: 无关属性使用数
+  definition: 用与岗位无关的敏感属性作判断的次数
+  target: 必须为0
+- name: 排程正确率
+  definition: 参与者/时区/时间全部正确的邀请数/邀请总数
+  target: 人工确认后统计
+terminology:
+- term: 能力证据
+  definition: 候选人提供的与岗位职责相关的项目、行为和成果记录
+- term: 结构化面试
+  definition: 相同岗位按一致能力标准提问和记录证据
+- term: 人工复核
+  definition: 授权招聘者核对依据并独立作出招聘决定
+scenarios:
+- name: jd-clarification
+  task: 把岗位愿望改为可验证的工作能力与成果
+  skills:
+  - customer-interview
+  - prd-generation
+  acceptance: 每个必需条件与实际工作职责相关
+- name: resume-evidence
+  task: 从获授权简历提取经历证据
+  skills:
+  - prompt-design
+  - ontology-design
+  acceptance: 保留原文，不推断未披露的个人属性
+- name: matching-assistance
+  task: 按公开岗位标准整理证据与缺口
+  skills:
+  - agent-design
+  - human-in-the-loop
+  acceptance: 最终筛选由授权招聘者复核，可解释与可纠正
+- name: interview-plan
+  task: 生成针对工作能力的结构化面试题
+  skills:
+  - golden-dataset-design
+  - prompt-design
+  acceptance: 问题关联岗位，不询问无关敏感属性
+- name: scheduling
+  task: 生成面试时段与邀请草稿
+  skills:
+  - workflow-design
+  - tool-design
+  acceptance: 时区与参与者确认，避免重复外发
+- name: fairness-review
+  task: 检查岗位相关性、证据完整性和不同切片差异
+  skills:
+  - ai-security-testing
+  - agent-task-evaluation
+  acceptance: 不得自动淘汰或依据敏感个人属性评分
+cases:
+- case.md

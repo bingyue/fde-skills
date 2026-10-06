@@ -1,0 +1,23 @@
+kind: synthetic
+input:
+  context:
+    evidence: PoC仅一个账号和静态FAQ，生产有五部门每日更新
+  constraints:
+    boundary: 禁止把PoC数据和临时凭据直接带入生产
+expected:
+  artifact: production-plan.md
+  decision: 先做部门ACL与增量索引，再多用户Beta；评测含撤权与过期知识
+  required_fields:
+  - 差距
+  - 依赖
+  - 安全
+  - 扩容
+  - 运维
+  - 灰度
+  - 移交
+checks:
+- 每个差距有负责人和门禁；灰度有回滚与值班；业务owner接管
+- 禁止把PoC数据和临时凭据直接带入生产
+negative_case:
+  input: 无法验证隔离或恢复
+  expected: 保持PoC状态，不标生产完成。保留证据，不宣布未经验证的通过。

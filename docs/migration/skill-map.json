@@ -1,0 +1,271 @@
+[
+  {
+    "original": "01-Foundation/Communication-Script-Library/README.md",
+    "preserved": "legacy/01-Foundation/Communication-Script-Library/README.md",
+    "successors": [
+      "customer-interview",
+      "delivery-handover"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "01-Foundation/FDE-Growth-Roadmap/README.md",
+    "preserved": "legacy/01-Foundation/FDE-Growth-Roadmap/README.md",
+    "successors": [
+      "30-day-industry-learning"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "01-Foundation/FDE-Self-Assessment/README.md",
+    "preserved": "legacy/01-Foundation/FDE-Self-Assessment/README.md",
+    "successors": [
+      "ai-maturity-assessment"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "01-Foundation/SOW-Generator/README.md",
+    "preserved": "legacy/01-Foundation/SOW-Generator/README.md",
+    "successors": [
+      "poc-scope",
+      "enterprise-ai-pricing"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "01-Foundation/Stakeholder-Mapping/README.md",
+    "preserved": "legacy/01-Foundation/Stakeholder-Mapping/README.md",
+    "successors": [
+      "stakeholder-map"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "02-Discovery/AIBP-Collaboration-Playbook/README.md",
+    "preserved": "legacy/02-Discovery/AIBP-Collaboration-Playbook/README.md",
+    "successors": [
+      "stakeholder-map",
+      "delivery-handover"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "02-Discovery/Business-Interview/README.md",
+    "preserved": "legacy/02-Discovery/Business-Interview/README.md",
+    "successors": [
+      "customer-interview"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "02-Discovery/Consultative-Problem-Solving/README.md",
+    "preserved": "legacy/02-Discovery/Consultative-Problem-Solving/README.md",
+    "successors": [
+      "pain-point-analysis",
+      "enterprise-ai-diagnosis"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "02-Discovery/Executive-Communication-Framework/README.md",
+    "preserved": "legacy/02-Discovery/Executive-Communication-Framework/README.md",
+    "successors": [
+      "solution-brief"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "02-Discovery/Expectation-Management-Script/README.md",
+    "preserved": "legacy/02-Discovery/Expectation-Management-Script/README.md",
+    "successors": [
+      "poc-scope",
+      "human-in-the-loop"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "02-Discovery/FDE-Issue-Tree-Analysis/README.md",
+    "preserved": "legacy/02-Discovery/FDE-Issue-Tree-Analysis/README.md",
+    "successors": [
+      "pain-point-analysis",
+      "enterprise-ai-diagnosis"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "02-Discovery/Process-Mapping/README.md",
+    "preserved": "legacy/02-Discovery/Process-Mapping/README.md",
+    "successors": [
+      "business-process-mapping"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "02-Discovery/Sidecar-AI-Transformation/README.md",
+    "preserved": "legacy/02-Discovery/Sidecar-AI-Transformation/README.md",
+    "successors": [
+      "requirement-to-poc",
+      "poc-to-production"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "03-Solution-Design/API-Design-Review/README.md",
+    "preserved": "legacy/03-Solution-Design/API-Design-Review/README.md",
+    "successors": [
+      "tool-design",
+      "system-architecture"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "03-Solution-Design/FDE-PoC-Tech-Stack-Selector/README.md",
+    "preserved": "legacy/03-Solution-Design/FDE-PoC-Tech-Stack-Selector/README.md",
+    "successors": [
+      "technical-solution-design"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "03-Solution-Design/PRD-Generator/README.md",
+    "preserved": "legacy/03-Solution-Design/PRD-Generator/README.md",
+    "successors": [
+      "prd-generation"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "04-AI-Delivery/RAG-Evaluation/README.md",
+    "preserved": "legacy/04-AI-Delivery/RAG-Evaluation/README.md",
+    "successors": [
+      "rag-evaluation",
+      "evaluation-driven-development"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "04-AI-Delivery/Tool-Audit/README.md",
+    "preserved": "legacy/04-AI-Delivery/Tool-Audit/README.md",
+    "successors": [
+      "tool-calling-evaluation",
+      "mcp-design"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "05-Deployment/Private-Deployment-Gateway/README.md",
+    "preserved": "legacy/05-Deployment/Private-Deployment-Gateway/README.md",
+    "successors": [
+      "private-deployment"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "06-Integration/Feishu-Integration/README.md",
+    "preserved": "legacy/06-Integration/Feishu-Integration/README.md",
+    "successors": [
+      "tool-design",
+      "workflow-design"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "07-Operations/Customer-Service-Bot/README.md",
+    "preserved": "legacy/07-Operations/Customer-Service-Bot/README.md",
+    "successors": [
+      "agent-design",
+      "knowledge-base-design"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "07-Operations/FDE-Adoption-Growth/README.md",
+    "preserved": "legacy/07-Operations/FDE-Adoption-Growth/README.md",
+    "successors": [
+      "enterprise-acceptance",
+      "project-retrospective"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "07-Operations/SQL-Dashboard-Brief/README.md",
+    "preserved": "legacy/07-Operations/SQL-Dashboard-Brief/README.md",
+    "successors": [
+      "observability-design",
+      "cost-assessment"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "08-Security-Compliance/RBAC-Audit/README.md",
+    "preserved": "legacy/08-Security-Compliance/RBAC-Audit/README.md",
+    "successors": [
+      "permission-model",
+      "ai-security-testing"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "09-Industry/AI-Operations-Daily/README.md",
+    "preserved": "legacy/09-Industry/AI-Operations-Daily/README.md",
+    "successors": [
+      "industry-research",
+      "ai-opportunity-mapping"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "10-Templates/SOW-Template/README.md",
+    "preserved": "legacy/10-Templates/SOW-Template/README.md",
+    "successors": [
+      "poc-scope"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "11-Best-Practice/China-FDE-Consulting-Pattern/README.md",
+    "preserved": "legacy/11-Best-Practice/China-FDE-Consulting-Pattern/README.md",
+    "successors": [
+      "enterprise-ai-diagnosis",
+      "delivery-handover"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "11-Best-Practice/Diagnostic-FDE/README.md",
+    "preserved": "legacy/11-Best-Practice/Diagnostic-FDE/README.md",
+    "successors": [
+      "enterprise-ai-diagnosis",
+      "industry-research"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "11-Best-Practice/FDE-Customer-Product-Bridge/README.md",
+    "preserved": "legacy/11-Best-Practice/FDE-Customer-Product-Bridge/README.md",
+    "successors": [
+      "customer-discovery",
+      "prd-generation"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "11-Best-Practice/FDE-Full-Lifecycle/README.md",
+    "preserved": "legacy/11-Best-Practice/FDE-Full-Lifecycle/README.md",
+    "successors": [
+      "requirement-to-poc",
+      "poc-to-production"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  },
+  {
+    "original": "11-Best-Practice/Palantir-FDE-Pattern/README.md",
+    "preserved": "legacy/11-Best-Practice/Palantir-FDE-Pattern/README.md",
+    "successors": [
+      "ontology-design",
+      "field-observation"
+    ],
+    "decision": "Preserve full original material; use bounded canonical Skills for the named delivery tasks."
+  }
+]

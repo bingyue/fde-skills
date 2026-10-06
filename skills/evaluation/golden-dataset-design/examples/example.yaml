@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: 客服验收100题，其中20题权限边界，专家对3题有分歧
+  constraints:
+    boundary: 测试答案不进入prompt或开发调参；不得事后删除难例
+expected:
+  artifact: golden-dataset.md
+  decision: 裁决3题后冻结v1；权限20题独立门槛；更新答案发布v2
+  required_fields:
+  - 范围
+  - 标注协议
+  - 仲裁
+  - 冻结版本
+  - 泄漏检查
+  - 更新策略
+checks:
+- 冻结manifest可复现；分歧率与仲裁记录可查
+- 测试答案不进入prompt或开发调参；不得事后删除难例
+negative_case:
+  input: 业务政策变化
+  expected: 新建版本，不能改旧标签仍报同一测试集。保留证据，不宣布未经验证的通过。

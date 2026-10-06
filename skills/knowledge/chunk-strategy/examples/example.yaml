@@ -1,0 +1,22 @@
+kind: synthetic
+input:
+  context:
+    evidence: 维修SOP的警告在上页，动作在下页
+  constraints:
+    boundary: 表头不能与数值分离；流程警告不能切掉
+expected:
+  artifact: chunk-experiment.md
+  decision: 将警告与相关操作合为逻辑段；检索上下文带页码和版本
+  required_fields:
+  - 切分规则
+  - 元数据继承
+  - 对照配置
+  - 召回
+  - 成本
+  - 选择
+checks:
+- 选型来自同一冻结集的对照；切片可追溯到原文
+- 表头不能与数值分离；流程警告不能切掉
+negative_case:
+  input: OCR阅读顺序错乱
+  expected: 先修解析，不用加大chunk掩盖错误。保留证据，不宣布未经验证的通过。
